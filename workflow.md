@@ -8,7 +8,7 @@ Read the current thesis and experiment log. Select one premise with a clear surv
 
 ## 2. Script and storyboard
 
-Write the Indonesian narration and matching on-screen text, then map each scene to its purpose, visual, narration, timing, audio and asset. Read the script aloud at a natural pace; adjust duration for clarity. Check that the first seconds create curiosity, the world rule is understandable, the action causes the outcome, and the promised experience is delivered. Flag real-world survival claims for verification or identify the work as fiction.
+Write the Indonesian narration and matching on-screen text, then map each scene to its purpose, visual, narration, timing, audio and asset. For each important story constraint, specify what a viewer must be able to see, not only what narration says. Read the script aloud at a natural pace; adjust duration for clarity. Check that the first seconds create curiosity, the world rule is understandable, the action causes the outcome, and the promised experience is delivered. Flag real-world survival claims for verification or identify the work as fiction.
 
 ## 3. Prepare assets
 
@@ -20,11 +20,13 @@ Implement an editable composition in the existing parent Remotion project; add a
 
 ## 5. Review and revise
 
-Copy [the review checklist](templates/review.md) into the episode folder. Check the complete story, picture, sound, captions, consistency, rights and platform presentation. Document problems and revisions. Ask the owner for creative feedback when appropriate; apply it and review the affected portions again. Run `npm run lint` and the relevant build check after code changes. If a check fails, distinguish a new issue from a pre-existing one and report it. If preview or listening is unavailable, state exactly what remains unverified; do not mark that check as passed.
+Copy [the review checklist](templates/review.md) into the episode folder. Check the complete story, picture, sound, captions, consistency, rights and platform presentation. Align caption boundaries to actual speech, then review timing and pronunciation; proportional timing based on character counts is an estimate, not a sync check. Automatic transcription can flag dropped words but cannot replace listening. Inspect key frames at phone display size. Document problems and revisions. Ask the owner for creative feedback when appropriate; apply it and review the affected portions again. Run `npm run lint` and the relevant build check after code changes. If a check fails, distinguish a new issue from a pre-existing one and report it. If preview or listening is unavailable, state exactly what remains unverified; do not mark that check as passed.
 
 ## 6. Deliver or publish
 
-Provide the composition ID, preview instructions, episode files, test results, asset/rights status and open issues. If the owner explicitly requests a rendered video, render the approved composition to that episode's folder and play back the actual export, including audio and captions. An ordinary request to make a video means prepare a Studio preview by default under the installed Remotion skill; don't automatically render. Creating the episode is not permission to upload, schedule, or alter an account. If publication is separately authorized, follow [publishing.md](publishing.md) and record platform, URL, timestamp and packaging.
+If the agent's session accepts only text and images, keep audio files on disk. Decode the exported mix locally with FFmpeg, inspect its audio stream with ffprobe, and use local Indonesian speech recognition or compare it with the narration clips. Return timestamps, measurements and transcript excerpts as text. Leave pronunciation and mix judgments pending for a listener. If a session repeatedly reports “Audio input is not available” after a tool returns audio, resume from the saved workspace in a fresh text-only conversation. An ordinary “continue” can replay the rejected input.
+
+Provide the composition ID, preview instructions, episode files, test results, asset/rights status and open issues. Document reproducible commands, inputs, model versions and exact paths, and ensure scripts default to a new output or refuse to overwrite retained assets. Mark archived, environment-specific scripts clearly rather than presenting them as ready to rerun. If the owner explicitly requests a rendered video, render the approved composition to that episode's folder and play back the actual export, including audio and captions. An ordinary request to make a video means prepare a Studio preview by default under the installed Remotion skill; don't automatically render. Creating the episode is not permission to upload, schedule, or alter an account. If publication is separately authorized, follow [publishing.md](publishing.md) and record platform, URL, timestamp and packaging.
 
 ## 7. Learn and update
 
@@ -32,11 +34,10 @@ Record pre-publish comments and, after publication, available platform observati
 
 ## Episode file layout
 
-When requested, create a new child inside the existing `example content/` folder, for example:
+When requested, create a new child inside the `episodes/` folder, for example:
 
 ```text
-example content/
-  Day 1 on the 10th floor.mp4  # existing reference; preserve
+episodes/
   001-short-episode-slug/
     brief.md                  # copy from templates/episode-brief.md
     review.md                 # copy from templates/review.md
@@ -46,4 +47,4 @@ example content/
     final.mp4                 # only when an export is requested
 ```
 
-Folder names and the episode ID should be stable and descriptive. The playable Remotion code lives in the parent `src/` and served media in parent `public/`; link their relative paths in the brief so the episode can be reconstructed. Do not move, overwrite or edit the reference video. This layout is a proposal for future work; it does not indicate these episode files already exist.
+Folder names and the episode ID should be stable and descriptive. The playable Remotion code lives in the parent `src/` and served media in parent `public/`; link their relative paths in the brief so the episode can be reconstructed. For blind tests, keep reference media outside the producer's supplied working project and have a separate reviewer compare it afterward. Do not present this as a security boundary: agents have the filesystem access granted by their environment.

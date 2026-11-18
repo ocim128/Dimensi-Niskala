@@ -12,6 +12,10 @@ Use [the review checklist](templates/review.md). If possible, ask someone unfami
 
 Fix blocking issues such as incomprehensible plot, missing audio, misleading claims or unresolved rights before delivery/publishing. Retest affected moments after changes. Do not wait for metrics to repair an obvious defect.
 
+For a remake, use two short passages from the exported cut where the viewer should change their mind. Record the first visible clue, the first caption or spoken phrase that gives the answer away, and the character's physical response. Use actual timestamps. If a producer describes an action that is hard to see at phone size, check whether it happens inside the crop, whether it is covered, and whether its result survives the cut. Save a short sequence of frames when it explains the problem. Keep one successful passage as a comparison.
+
+When the owner identifies a distracting movement, find the adjacent frames where it breaks. Compare the replacements at that same moment and at normal speed before carrying the technique through a full episode. Record the owner's judgment separately from the producer's technical checks.
+
 ## 3. After publishing: collect consistently
 
 Copy [the performance template](templates/performance.md) into the episode folder. If available, collect each platform's native data at approximately 24 hours and 7 days after posting, recording actual observation time and timezone. Use additional checkpoints only when useful. For each platform record views, watch time or average view duration, retention/completion if available, shares, comments and follows/subscribers attributable to the post if available. Capture the retention curve or timestamps of drops/rewatches when the platform exposes them. Log qualitative comments with brief anonymized paraphrases. Never infer that a missing measure equals zero.

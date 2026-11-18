@@ -21,7 +21,7 @@ Register a new episode composition in `src/Root.tsx`, put its components under a
 If the user explicitly requests an MP4 export, run the CLI from the parent project root with the real composition ID and an episode-specific destination, for example:
 
 ```powershell
-npx remotion render src/index.ts COMPOSITION_ID "Survival-Fantasy-Content/example content/001-short-episode-slug/final.mp4"
+npx remotion render src/index.ts COMPOSITION_ID "Survival-Fantasy-Content/episodes/001-short-episode-slug/final.mp4"
 ```
 
 Replace both placeholders. The parent `remotion.config.ts` enables overwrite, so check that the output path is new or that replacement is intended before rendering. Verify the actual export's duration, aspect ratio, picture, audio and caption sync; a successful command alone does not establish quality. A reviewable Studio preview is useful even when no export has been requested.

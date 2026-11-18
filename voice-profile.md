@@ -19,7 +19,7 @@ This is a style prompt, not a fixed provider setting. Do not use a public figure
 
 ## Voice selection and continuity
 
-The owner chose the [v4 Indonesian-trained narrator](voice-samples-v4/README.md) for now, based on Candidate A's synthetic reference. They were unsure whether the accent improved and thought it might simply sound faster. Treat v4 as the current working voice; do not claim the accent is proven better. Earlier sets remain available for comparison. When an episode is requested:
+The owner chose the [v4 Indonesian-trained narrator](voice-samples-v4/README.md) for now, based on Candidate A's synthetic reference. They were unsure whether the accent improved and thought it might simply sound faster. Treat v4 as the current working voice; do not claim the accent is proven better. Earlier audition folders were removed by the owner; the one necessary reference was recovered separately with their permission. When an episode is requested:
 
 1. Use the v4 configuration and saved synthetic reference in the registry. Verify rights suitable for the intended use before publishing. The owner has made a creative selection; do not re-audition or switch voices by default.
 2. Keep the selected sample and a record of the provider, model/version, voice name and stable ID, applicable voice settings, language, output format and license/usage terms. Include the generation date, script and any seed or reproducibility setting only if the tool actually exposes it. Never record API keys or credentials. The provider may change a model, so these settings do not guarantee identical output.
@@ -41,7 +41,7 @@ Evaluate whether each sentence is easy to understand on a phone, whether pauses 
 | --- | --- |
 | Status | **v4 selected by owner for now**; perceived accent improvement uncertain, pacing may be faster. |
 | Provider / model and version | Local `pocket-tts` 3.1.0; `anak10thn/pocket-tts-indonesian` six-layer config pinned to `17257664e384561c957b02ac92edd1a24807f0e5` |
-| Voice name / stable ID | Candidate A-derived synthetic voice; no fixed speaker ID. Use [reference-a-indonesian.wav](voice-samples-v3/reference-a-indonesian.wav). |
+| Voice name / stable ID | Candidate A-derived synthetic voice; no fixed speaker ID. Use [narrator-v4-reference.wav](voice-assets/narrator-v4-reference.wav). |
 | Language / supported settings / output format | Indonesian; EOS threshold `-6.0`; [generation command and details](voice-samples-v4/README.md); samples MP3, 24 kHz, mono |
 | Clean reference sample / script / date | [v4 sample 01 and script](voice-samples-v4/README.md), generated 2026-11-18 |
 | License / attribution / intended use | Creative selection made; verify relevant model, training-data and asset rights and attribution before publication |

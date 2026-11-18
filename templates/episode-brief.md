@@ -1,6 +1,6 @@
 # Episode brief — [episode ID and working title]
 
-Copy this file into `example content/<episode-id>-<slug>/brief.md` for the first requested episode. Fill it in as decisions are made; `TBD` is better than a fabricated answer.
+Copy this file into `episodes/<episode-id>-<slug>/brief.md` for the first requested episode. Fill it in as decisions are made; `TBD` is better than a fabricated answer.
 
 ## Intent
 

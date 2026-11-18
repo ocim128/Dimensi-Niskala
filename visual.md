@@ -14,6 +14,24 @@ Keep the subject and immediate survival problem readable at phone size. Use a mi
 - Establish an unobstructed caption region per episode. Check text and small diagrams at phone size; use contrast, a dark backing or shadow where necessary. Never rely on color alone to communicate a danger or state.
 - Use motion to reveal geography, attention or cause and effect: purposeful pans, scale changes and staged diagram reveals. Avoid constant camera movement, flashes and transitions that obscure the action. Respect reduced sensory intensity when possible.
 - Show the consequence of the character's action; do not let unrelated generated imagery contradict narration. Include breathing room for details viewers must read.
+- Make each important constraint visible before relying on narration to explain it. For example, a highway jam should visibly block several lanes with closely packed, stationary vehicles; a few widely spaced cars do not establish a jam. Choose analogous proof for other settings.
+- Give each major beat a visible action or meaningful change in framing. A slow zoom alone does not show a character making a choice or a threat getting closer.
+
+### Staging a scene for a small screen
+
+Write down the question the shot should answer. For “Can she get across?”, compose a frame that shows her, the gap and the far bank together. Use an overlapping foreground edge to establish the viewpoint, give the action a distinct silhouette in the middle distance, and simplify the far bank so it reads at a glance. Choose a light source that helps separate the subject from its surroundings. Shrink the frame to 270 × 480 with captions hidden. If the gap disappears, reframe before adding texture.
+
+For decisions, draw three poses side by side. Show where the character is looking, what their hand or body does, and what visibly changes as a result. Carry an object, a direction of travel or an eyeline across the cut so the viewer can connect the poses. A deliberate hold gives the viewer time to notice the consequence.
+
+### Drawing a character who turns in space
+
+Block the turn with the head, neck and near shoulder visible together. Pick a few landmarks that identify the actor from every angle, such as Damar’s hair part, jaw and jacket collar. In each new view, draw where the nose crosses the cheek outline, how much of the far eye is visible, and where the ear sits above the collar. Keep the light on the side facing its source as the features rotate through it. Lead with the gaze, let the chin pass over the collar, then let the shoulder follow the weight.
+
+Use distinct drawn angles, a volume-aware rig, or a motivated cut to a separately drawn over-shoulder pose. Mirroring or squeezing a single profile across a visible turn produced the head flip the owner disliked. Inspect the frames immediately before and after every pose change, then replay the whole gesture with the background still. The nose, neck and clothing should describe the same movement even at phone size.
+
+### Timing a graphic to an event
+
+Choose the exact frame the event happens and build the movement around it. For a failing lantern, the hand reaches first, the wick flickers at contact, and only then does the light leave the face. Keep the camera steady through contact. If a graphic supplies a quantity, introduce it beside the relevant object when that quantity becomes important. Hold it still through a natural reading, then return attention to the actor. Scrub across the cue to check the order, then play at normal speed to judge the pause.
 
 ## Assets and consistency
 
@@ -21,4 +39,4 @@ Prefer editable Remotion shapes, text and diagrams for information that must rem
 
 ## Frame review
 
-Review the opening, every scene transition, caption-heavy moments, the consequence and the final frame in Studio. Check for clipping, spelling errors, unreadable text, inconsistent characters and misleading diagrams. A still-frame pass supplements, but does not replace, a real-time audiovisual review.
+Review the opening, every scene transition, caption-heavy moments, the consequence and the final frame in Studio. Check for clipping, spelling errors, unreadable text, inconsistent characters and misleading diagrams. Inspect essential text and labels at a realistic phone display size—for example, a 1080-pixel-wide frame displayed at 270 pixels makes a 28-pixel label only 7 pixels high. Increase type size or simplify the design until it is readable; also localize incidental text. A still-frame pass supplements, but does not replace, a real-time audiovisual review.
