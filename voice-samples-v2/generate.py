@@ -17,6 +17,7 @@ REFERENCE_TEXT = (
     "di sekitar saya padam."
 )
 SAMPLES = {
+    "01b-hutan-sunyi.mp3": REFERENCE_TEXT,
     "02-menara-lonceng.mp3": (
         "Di puncak menara ini, ada api yang tidak pernah padam. Tapi ada satu "
         "aturan: jangan pernah membunyikan loncengnya. Ketika badai datang, "
