@@ -23,11 +23,7 @@ Write down the question the shot should answer. For “Can she get across?”, c
 
 For decisions, draw three poses side by side. Show where the character is looking, what their hand or body does, and what visibly changes as a result. Carry an object, a direction of travel or an eyeline across the cut so the viewer can connect the poses. A deliberate hold gives the viewer time to notice the consequence.
 
-### Drawing a character who turns in space
-
-Block the turn with the head, neck and near shoulder visible together. Pick a few landmarks that identify the actor from every angle, such as Damar’s hair part, jaw and jacket collar. In each new view, draw where the nose crosses the cheek outline, how much of the far eye is visible, and where the ear sits above the collar. Keep the light on the side facing its source as the features rotate through it. Lead with the gaze, let the chin pass over the collar, then let the shoulder follow the weight.
-
-Use distinct drawn angles, a volume-aware rig, or a motivated cut to a separately drawn over-shoulder pose. Mirroring or squeezing a single profile across a visible turn produced the head flip the owner disliked. Inspect the frames immediately before and after every pose change, then replay the whole gesture with the background still. The nose, neck and clothing should describe the same movement even at phone size.
+When a character changes direction, a fixed landmark helps the viewer follow the movement. Keep the light tied to its source and check the silhouettes on either side of the pose change at normal speed. The [seated turn in attempt 03](episodes/001-kemacetan-terakhir/attempt-03/task.md) applies this to one particular performance.
 
 ### Timing a graphic to an event
 

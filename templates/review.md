@@ -31,11 +31,12 @@ Copy into the episode folder. Mark each item `pass`, `needs work`, `not checked`
 
 For a visual remake, inspect the opening, the decision and the payoff at 270 × 480 with audio muted and captions hidden. For each, record the time, what is visible, the inference it supports and any plausible misreading. Replay with sound and captions at normal speed. Identify one motion cue by its initiating frame, contact or change, and the first frame where the result is readable. Revise and replay any cue whose cause is hard to see.
 
-For a first-view comprehension check, show the episode once to an available viewer who has not seen the brief. Ask “Apa yang terjadi?”, “Kenapa tokohnya mengambil keputusan itu?” and “Apa yang kamu sadari di akhir?” Record their words before discussing the intended story. When reviewing alone, label your observations as a producer self-review and leave the viewer result open.
+For a first-view check, show the episode once to an available viewer who has not seen the brief. Ask “Bagian mana yang paling kamu ingat?” and “Ada bagian yang bikin bingung?” Record their words before discussing the intended moment. When reviewing alone, label your observations as a producer self-review and leave the viewer result open.
 
 - Owner feedback and action:
 - Independent viewer feedback and context (or `not available`):
 - Agent self-review:
 - Issue / severity / timestamp / fix / retest result:
+- Which change took the most rework, and what could have caught it earlier?
 - Unchecked items and reason:
 - Verdict: ready for preview / ready for export / ready for owner to publish / needs revision. Explain any limits.

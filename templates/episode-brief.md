@@ -7,10 +7,10 @@ Copy this file into `episodes/<episode-id>-<slug>/brief.md` for the first reques
 - Status / date / owner request:
 - Intended platforms and version(s):
 - Target language: Indonesian (unless the owner specifies otherwise).
-- One-sentence audience promise and extraordinary experience:
+- Moment the viewer should remember, and what they need to know just before it:
 - Format and point of view (selected for this episode):
 - Survival problem, fantasy rule, stakes, decision and immediate outcome:
-- Relevant hypothesis ID / predicted viewer response / observation plan:
+- Biggest uncertainty / simplest way to test it / what you would look or listen for (link a relevant hypothesis if available):
 - Working duration and why it fits the story:
 - Assumptions and open questions:
 

@@ -31,4 +31,6 @@ These are initial ideas, not validated facts. Status meanings: **proposed** = no
 
 **Attempt 03 prediction.** A seated turn drawn through distinct angles with weight carried into the shoulder will address the owner's main objection. Compare the same action in v2 and v3 at normal speed and phone size. Record whether the owner still sees the flip or notices a different defect. Keep the clean narration takes and report other editing changes so the comparison is interpretable. Status is proposed. [Attempt 03 task](episodes/001-kemacetan-terakhir/attempt-03/task.md)
 
+**Production decision · 18 November 2026.** The owner asked for a method that travels across different stories. Each episode will test its own biggest uncertainty and review a timed rough cut at phone size before polishing. The seated turn is the test for this remake. On attempt 03, record what the rough cut exposed and which change took the most rework. Effects on production time and viewer experience are still open. [Workflow](workflow.md#2-script-and-rough-cut)
+
 For new entries, include the episode IDs, platform and observation window, actual feedback or metric, comparisons and limitations. Link to episode performance/review files; never invent measurements. Record a decision even when the result is to keep testing.

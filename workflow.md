@@ -6,9 +6,13 @@ Use this process when the owner asks for an episode. The AI agent performs the c
 
 Read the current thesis and experiment log. Select one premise with a clear survival problem, an extraordinary fantasy element and a consequential choice. If a creative preference is unspecified, choose a reasonable starting assumption and label it; do not invent established canon or claim audience evidence. Copy [the episode brief](templates/episode-brief.md) into the episode folder and fill in the audience promise, hypothesis, story, language, visual plan and constraints. Identify one primary thing to learn. For a series, record continuity before and after the episode.
 
-## 2. Script and storyboard
+## 2. Script and rough cut
 
 Write the Indonesian narration and matching on-screen text, then map each scene to its purpose, visual, narration, timing, audio and asset. For each important story constraint, specify what a viewer must be able to see, not only what narration says. Read the script aloud at a natural pace; adjust duration for clarity. Check that the first seconds create curiosity, the world rule is understandable, the action causes the outcome, and the promised experience is delivered. Flag real-world survival claims for verification or identify the work as fiction.
+
+Name the moment the viewer should remember and what they need to know just before it. Try the cheapest version that tests what you are unsure about. Two panels can show whether a strange rule makes sense. A sound cue over a still can test whether the listener recognizes what has changed. Rough poses can test whether a gesture reads.
+
+Play the storyboard as a timed rough cut at phone size before polishing the assets. Use simple stills or existing shots, scratch or retained Indonesian narration, temporary captions and whichever sounds carry the story. Watch once at normal speed. Where does the clue first register? When does the viewer get the answer? Adjust the cut while it is cheap to move a line, hold a frame or drop a shot. Continue in the same Studio composition.
 
 ## 3. Prepare assets
 
