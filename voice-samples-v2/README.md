@@ -1,6 +1,6 @@
 # Narrator audition: firmer voice direction
 
-The owner found the first [Ardi samples](../voice-samples/README.md) too soft-spoken. These are a new candidate for a more assertive, masculine Indonesian narrator, inspired by the owner's reference to Tom Lembong. It is an original synthetic voice design, not his voice or a claim of a voice match. The outcome still needs listening and owner feedback.
+The owner found the first [Ardi samples](../voice-samples/README.md) too soft-spoken and judged this second candidate still too soft and too young. See the [new mature voice candidates](../voice-samples-v3/README.md). This set remains available for comparison. It is an original synthetic voice design, not Tom Lembong's voice or a claim of a voice match.
 
 | Sample | Passage | Approximate duration |
 | --- | --- | --- |
