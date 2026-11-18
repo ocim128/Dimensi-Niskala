@@ -10,7 +10,7 @@ import tempfile
 from gradio_client import Client, handle_file
 
 HERE = Path(__file__).resolve().parent
-REFERENCE_TEXT = (
+ENGLISH_REFERENCE_TEXT = (
     "The forest fell silent that night. Ahead of me stood a door that had not "
     "been there before. When I touched it, the light around me went out."
 )
@@ -23,17 +23,22 @@ AUDITION_TEXT = (
 
 def main():
     client = Client("k2-fsa/OmniVoice")
-    for label in ("a", "b"):
-        destination = HERE / f"candidate-{label}.mp3"
+    jobs = (
+        ("candidate-a.mp3", "reference-a.wav", ENGLISH_REFERENCE_TEXT),
+        ("candidate-b.mp3", "reference-b.wav", ENGLISH_REFERENCE_TEXT),
+        ("candidate-a-indonesian-reference.mp3", "reference-a-indonesian.wav", AUDITION_TEXT),
+    )
+    for output_name, reference_name, reference_text in jobs:
+        destination = HERE / output_name
         if destination.exists():
             print(f"Skipping existing {destination.name}", flush=True)
             continue
-        reference = HERE / f"reference-{label}.wav"
+        reference = HERE / reference_name
         audio, status = client.predict(
             text=AUDITION_TEXT,
             lang="Indonesian",
             ref_aud=handle_file(str(reference)),
-            ref_text=REFERENCE_TEXT,
+            ref_text=reference_text,
             instruct="",
             ns=32,
             gs=2,
@@ -45,7 +50,7 @@ def main():
             api_name="/_clone_fn",
         )
         if not audio:
-            raise RuntimeError(f"No audio for {label}: {status}")
+            raise RuntimeError(f"No audio for {output_name}: {status}")
         with tempfile.TemporaryDirectory(dir=HERE) as temp_dir:
             temp_output = Path(temp_dir) / destination.name
             subprocess.run(

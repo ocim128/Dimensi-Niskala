@@ -20,7 +20,7 @@ The agent prepares and reviews content; the owner decides whether to publish. Pr
 | Format | Vertical, standalone short-form episodes with optional recurring continuity | Hypothesis |
 | Story | Create an unbelievable experience through a survival situation in a fantasy world; explore the format | Owner's goal; format open |
 | Language | Indonesian narration and matching captions | Owner's choice |
-| Narrator | Masculine Indonesian male voice around 40, firm, confident and expressive | Earlier candidates too soft/young; new candidates awaiting feedback |
+| Narrator | Masculine Indonesian male voice around 40, firm, confident and expressive | Candidate A preferred; Indonesian accent refinement under review |
 | Tone and look | Tense, curious, readable; stylized, diagram-friendly visuals | Hypothesis |
 | First production destination | `example content/`, alongside the existing reference, with a new episode subfolder | Planned, not yet produced |
 

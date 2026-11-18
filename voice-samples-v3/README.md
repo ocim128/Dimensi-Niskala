@@ -1,9 +1,10 @@
 # Mature Indonesian narrator auditions
 
-The owner said the [previous candidate](../voice-samples-v2/README.md) was still too soft and too young, and requested a voice around age 40. These are two new **candidates**, generated with different descriptions and the same Indonesian script for a direct comparison. Their perceived age, firmness and suitability have not yet been assessed by the owner; the age and personality below describe generation intent, not a verified result or a real person.
+The owner said the [previous candidate](../voice-samples-v2/README.md) was still too soft and too young, and requested a voice around age 40. Two new candidates use different descriptions and the same Indonesian script. The owner prefers Candidate A and asked whether its Indonesian accent can improve without losing the liked voice. The reference-conditioned take below tests that request; its accent and voice similarity still require the owner's listening feedback.
 
 - [Candidate A — lower-mid register](candidate-a.mp3): requested a mature, firm and resonant voice with measured conversational energy.
 - [Candidate B — middle register](candidate-b.mp3): requested an assertive, expressive public-speaking delivery with clear articulation.
+- [Candidate A — Indonesian-reference take](candidate-a-indonesian-reference.mp3): same script, generated using Candidate A's Indonesian audio as its voice reference. Compare it with the original Candidate A above.
 
 ## Indonesian audition text
 
@@ -22,9 +23,11 @@ Both English references say: “The forest fell silent that night. Ahead of me s
 
 For both Indonesian outputs, OmniVoice was given the corresponding synthetic reference and its English transcript, Indonesian language, 32 steps, guidance 2, denoise enabled, speed 1.0, automatic duration and default preprocessing/postprocessing. WAV results were converted to mono 24 kHz MP3 using `libmp3lame -q:a 2`, with no music or added processing. The demos send text and audio to their respective servers. Their versions and outputs may change, and neither generated voice has a fixed provider voice ID; preserve the chosen reference file. See [generate.py](generate.py) for the Indonesian generation call.
 
+The Indonesian-reference take uses [reference-a-indonesian.wav](reference-a-indonesian.wav), the uncompressed Indonesian output underlying Candidate A, and the Indonesian audition text as its reference transcript. All OmniVoice generation settings remained the same. This is an experiment in reducing cross-language accent transfer, not a guarantee that pronunciation or voice quality improves; a further generation can also change the voice.
+
 ## Verification and limitations
 
-Both MP3s were decoded with FFmpeg. `faster-whisper` 1.2.1 with the multilingual `small` model and Indonesian selected recognized the intended audition text in both outputs, ignoring punctuation. This checks wording approximately; it does not establish natural pronunciation, age, forcefulness, consistency across future generations or similarity to a particular person's voice. The agent could not listen to the recordings. Owner feedback is needed before selecting either candidate.
+All three MP3s were decoded with FFmpeg. `faster-whisper` 1.2.1 with the multilingual `small` model and Indonesian selected recognized the intended audition text in all three, ignoring punctuation. This checks wording approximately; it does not establish natural pronunciation, accent, age, forcefulness, consistency across future generations or similarity to a particular person's voice. The agent could not listen to the recordings. Owner feedback is needed to compare Candidate A with the Indonesian-reference take.
 
 The upstream model and demo service terms should be checked for the intended platform and commercial use before publishing. The samples are provided for creative evaluation, not as a verified rights clearance.
 
