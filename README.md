@@ -20,7 +20,7 @@ The agent prepares and reviews content; the owner decides whether to publish. Pr
 | Format | Vertical, standalone short-form episodes with optional recurring continuity | Hypothesis |
 | Story | Create an unbelievable experience through a survival situation in a fantasy world; explore the format | Owner's goal; format open |
 | Language | Indonesian narration and matching captions | Owner's choice |
-| Narrator | Masculine Indonesian male voice, with measured and thoughtful delivery | Candidate samples generated; owner feedback pending |
+| Narrator | Masculine Indonesian male voice, firm, confident and expressive | First candidate too soft; second candidate awaiting feedback |
 | Tone and look | Tense, curious, readable; stylized, diagram-friendly visuals | Hypothesis |
 | First production destination | `example content/`, alongside the existing reference, with a new episode subfolder | Planned, not yet produced |
 
@@ -32,7 +32,8 @@ The existing `example content/Day 1 on the 10th floor.mp4` is a reference, not a
 - [visual.md](visual.md): art direction, legibility and scene continuity.
 - [language.md](language.md): narration, captions, tone and audio.
 - [voice-profile.md](voice-profile.md): narrator direction, voice selection and continuity registry.
-- [voice-samples/](voice-samples/README.md): five audition recordings, scripts and generation settings.
+- [voice-samples-v2/](voice-samples-v2/README.md): current narrator candidate and generation settings.
+- [voice-samples/](voice-samples/README.md): first audition set, retained for comparison.
 - [workflow.md](workflow.md): steps, handoffs, file layout and definition of done.
 - [remotion-production.md](remotion-production.md): working with the parent project and its future separation.
 - [publishing.md](publishing.md): platform-specific packaging, checks and source links.

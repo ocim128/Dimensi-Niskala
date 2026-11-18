@@ -1,6 +1,6 @@
 # Indonesian narrator samples
 
-Five clean narration references for the voice direction in [voice-profile.md](../voice-profile.md). They are auditions, not finished videos or established story canon. All five use the same voice and synthesis settings; different scripts provide examples of discovery, a rule, mystery, a dilemma and a consequence.
+Five clean narration references for the voice direction in [voice-profile.md](../voice-profile.md). The owner found this set too soft-spoken; retain it for comparison with the [new candidate](../voice-samples-v2/README.md). These are auditions, not finished videos or established story canon. All five use the same voice and synthesis settings; different scripts provide examples of discovery, a rule, mystery, a dilemma and a consequence.
 
 | Sample | Focus | Approximate duration |
 | --- | --- | --- |
