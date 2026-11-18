@@ -19,13 +19,13 @@ This is a style prompt, not a fixed provider setting. Do not use a public figure
 
 ## Voice selection and continuity
 
-The first [Ardi samples](voice-samples/README.md) were rejected by the owner as too soft-spoken. The [second candidate](voice-samples-v2/README.md) was still too soft and young. The owner prefers Candidate A from the [mature-voice auditions](voice-samples-v3/README.md) and wants an improved Indonesian accent without losing its character. The first Indonesian-reference take sounded unchanged to the owner. A [new experiment using an Indonesian-trained model](voice-samples-v4/README.md) awaits listening. When an episode is requested:
+The owner chose the [v4 Indonesian-trained narrator](voice-samples-v4/README.md) for now, based on Candidate A's synthetic reference. They were unsure whether the accent improved and thought it might simply sound faster. Treat v4 as the current working voice; do not claim the accent is proven better. Earlier sets remain available for comparison. When an episode is requested:
 
-1. Audition available voices with rights suitable for the intended platforms. Compare the same short Indonesian passage for clarity, masculine tone, measured delivery and natural pronunciation. Select the closest suitable option, rather than claiming a match to a specific person.
+1. Use the v4 configuration and saved synthetic reference in the registry. Verify rights suitable for the intended use before publishing. The owner has made a creative selection; do not re-audition or switch voices by default.
 2. Keep the selected sample and a record of the provider, model/version, voice name and stable ID, applicable voice settings, language, output format and license/usage terms. Include the generation date, script and any seed or reproducibility setting only if the tool actually exposes it. Never record API keys or credentials. The provider may change a model, so these settings do not guarantee identical output.
-3. Save the approved clean sample and voice record in a reusable project location and link them here and from the episode brief. Reuse the same voice ID and settings for later episodes, adjusting only what the episode needs. If a voice must change or is no longer available, compare candidates against the saved sample, record the change and get owner feedback when practical.
+3. Compare each episode's narration with the selected clean sample. Reuse the same reference and generation settings, adjusting only what the episode needs. If a voice must change or is no longer available, compare candidates against the saved sample, record the change and get owner feedback when practical.
 4. Generate from the final script in manageable phrases. Listen across joins for timbre, pacing, loudness and room tone; regenerate awkward portions, then recheck the complete narration. Preserve a clean narration master apart from the music and effects.
-5. Maintain a pronunciation list for recurring names and invented words, with a readable spelling and a phonetic or tool-specific rendering if needed. Update it as canon develops. Keep captions faithful to what is actually spoken.
+5. Maintain a pronunciation list for recurring names and invented words, with a readable spelling and a phonetic or tool-specific rendering if needed. Update it as canon develops. Keep captions faithful to what is actually spoken. Check pacing, since the owner noticed v4 may be faster; use script breaks and review naturalness before applying any speed adjustment.
 
 ## Audition passage
 
@@ -33,19 +33,19 @@ Use the same passage for initial comparisons and future voice replacements. It i
 
 > Malam itu, hutan tiba-tiba menjadi sunyi. Di depan saya, ada sebuah pintu yang tidak ada kemarin. Saat saya menyentuhnya, seluruh cahaya di sekitar saya padam. Sekarang, saya harus memilih: masuk, atau menunggu sesuatu datang dari kegelapan.
 
-Evaluate whether each sentence is easy to understand on a phone, whether pauses feel natural, and whether the reveal feels intriguing without overacting. Record impressions and any owner's feedback; do not mark the voice approved without a real audition.
+Evaluate whether each sentence is easy to understand on a phone, whether pauses feel natural, and whether the reveal feels intriguing without overacting. Record impressions and any owner's feedback. The owner has selected v4 for now; future changes still need their feedback when appropriate.
 
 ## Voice registry
 
 | Field | Current value |
 | --- | --- |
-| Status | Candidate A preferred; Indonesian accent refinement under review. Earlier candidates rejected as too soft; second set also too young. |
-| Provider / model and version | Qwen3-TTS voice-design demo and OmniVoice demo; weights not pinned; client `gradio_client` 2.7.2 |
-| Voice name / stable ID | Two synthetic voice designs, no fixed provider voice IDs; use the saved reference for the selected candidate |
-| Language / supported settings / output format | Indonesian; details in the sample record; MP3, 24 kHz, mono |
-| Clean reference sample / script / date | [Candidates A and B, references and scripts](voice-samples-v3/README.md), generated 2026-11-18 |
-| License / attribution / intended use | Creative evaluation; verify applicable model and demo service terms for publication |
+| Status | **v4 selected by owner for now**; perceived accent improvement uncertain, pacing may be faster. |
+| Provider / model and version | Local `pocket-tts` 3.1.0; `anak10thn/pocket-tts-indonesian` six-layer config pinned to `17257664e384561c957b02ac92edd1a24807f0e5` |
+| Voice name / stable ID | Candidate A-derived synthetic voice; no fixed speaker ID. Use [reference-a-indonesian.wav](voice-samples-v3/reference-a-indonesian.wav). |
+| Language / supported settings / output format | Indonesian; EOS threshold `-6.0`; [generation command and details](voice-samples-v4/README.md); samples MP3, 24 kHz, mono |
+| Clean reference sample / script / date | [v4 sample 01 and script](voice-samples-v4/README.md), generated 2026-11-18 |
+| License / attribution / intended use | Creative selection made; verify relevant model, training-data and asset rights and attribution before publication |
 | Pronunciation list | TBD; create when recurring terms exist |
-| Last continuity review / owner feedback | Owner prefers Candidate A and wants a more natural Indonesian accent without degrading it; the first Indonesian-reference take sounded unchanged. Indonesian-trained model samples await feedback. |
+| Last continuity review / owner feedback | Owner selected v4 for now; accent might be better or the same, and the delivery may be faster. |
 
 Do not fill TBD fields with invented values. Update this registry after listening and selection, and log meaningful changes in [experiments.md](experiments.md).

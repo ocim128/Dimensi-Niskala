@@ -1,6 +1,6 @@
 # Indonesian-trained narrator audition
 
-The owner prefers [Candidate A](../voice-samples-v3/candidate-a.mp3), but heard no improvement in the earlier Indonesian-reference take. These new recordings test a different speech model trained on Indonesian, using Candidate A's own synthetic Indonesian audio as the reference. The aim is a more natural Indonesian accent while retaining the preferred voice. This remains a test: the owner must judge both accent and voice similarity by listening.
+The owner selected these v4 recordings as the working narrator for now. They were unsure whether the accent was better or the same and noted that the delivery might sound faster. The recordings use a speech model trained on Indonesian, with [Candidate A](../voice-samples-v3/candidate-a.mp3)'s synthetic Indonesian audio as the reference. Accent improvement and voice similarity remain subjective; retain the prior samples for future comparisons.
 
 | Sample | Purpose | Script |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ The owner prefers [Candidate A](../voice-samples-v3/candidate-a.mp3), but heard 
 - Reference: [Candidate A's Indonesian synthetic WAV](../voice-samples-v3/reference-a-indonesian.wav), with no recording of a real person. The model attempts to carry its voice over; it can change timbre, prosody or perceived age. The model's author reports that its voice conditioning can make different voices sound more alike and that output is bandwidth-limited by its training data.
 - Clean audio only; source WAV converted to 24 kHz mono MP3 with FFmpeg `libmp3lame -q:a 2`. Do not assume the same voice or accent is retained across future generations without listening.
 - Both files decode successfully. `faster-whisper` 1.2.1 with the multilingual `small` model transcribed the intended words in these two short samples, allowing for punctuation. A separate, longer tower passage was misrecognized and was not included. This is an approximate wording check, not verification of accent, voice quality or speech accuracy by ear.
-- The model card lists CC BY 4.0 and credits the LEMAS dataset and Kyutai. Verify model, training-data and other applicable terms for the intended use and provide required attribution. The synthetic voice has not been approved for publication.
+- The model card lists CC BY 4.0 and credits the LEMAS dataset and Kyutai. The owner's creative selection does not resolve usage rights; verify model, training-data and other applicable terms for the intended use and provide required attribution before publishing.
 
 ## Reproduce
 
