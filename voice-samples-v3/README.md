@@ -1,6 +1,6 @@
 # Mature Indonesian narrator auditions
 
-The owner said the [previous candidate](../voice-samples-v2/README.md) was still too soft and too young, and requested a voice around age 40. Two new candidates use different descriptions and the same Indonesian script. The owner prefers Candidate A and asked whether its Indonesian accent can improve without losing the liked voice. The reference-conditioned take below tests that request; its accent and voice similarity still require the owner's listening feedback.
+The owner said the [previous candidate](../voice-samples-v2/README.md) was still too soft and too young, and requested a voice around age 40. Two new candidates use different descriptions and the same Indonesian script. The owner prefers Candidate A and asked whether its Indonesian accent can improve without losing the liked voice. The first reference-conditioned take below did not sound different to the owner; the accent remained the same.
 
 - [Candidate A — lower-mid register](candidate-a.mp3): requested a mature, firm and resonant voice with measured conversational energy.
 - [Candidate B — middle register](candidate-b.mp3): requested an assertive, expressive public-speaking delivery with clear articulation.

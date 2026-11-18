@@ -20,7 +20,7 @@ The agent prepares and reviews content; the owner decides whether to publish. Pr
 | Format | Vertical, standalone short-form episodes with optional recurring continuity | Hypothesis |
 | Story | Create an unbelievable experience through a survival situation in a fantasy world; explore the format | Owner's goal; format open |
 | Language | Indonesian narration and matching captions | Owner's choice |
-| Narrator | Masculine Indonesian male voice around 40, firm, confident and expressive | Candidate A preferred; Indonesian accent refinement under review |
+| Narrator | Masculine Indonesian male voice around 40, firm, confident and expressive | Candidate A preferred; Indonesian-trained model under review for accent |
 | Tone and look | Tense, curious, readable; stylized, diagram-friendly visuals | Hypothesis |
 | First production destination | `example content/`, alongside the existing reference, with a new episode subfolder | Planned, not yet produced |
 
@@ -32,7 +32,8 @@ The existing `example content/Day 1 on the 10th floor.mp4` is a reference, not a
 - [visual.md](visual.md): art direction, legibility and scene continuity.
 - [language.md](language.md): narration, captions, tone and audio.
 - [voice-profile.md](voice-profile.md): narrator direction, voice selection and continuity registry.
-- [voice-samples-v3/](voice-samples-v3/README.md): current mature narrator candidates and generation settings.
+- [voice-samples-v4/](voice-samples-v4/README.md): Indonesian-trained accent experiment using Candidate A.
+- [voice-samples-v3/](voice-samples-v3/README.md): mature narrator candidates and generation settings.
 - [voice-samples-v2/](voice-samples-v2/README.md): second audition set, retained for comparison.
 - [voice-samples/](voice-samples/README.md): first audition set, retained for comparison.
 - [workflow.md](workflow.md): steps, handoffs, file layout and definition of done.

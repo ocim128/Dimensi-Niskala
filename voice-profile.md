@@ -19,7 +19,7 @@ This is a style prompt, not a fixed provider setting. Do not use a public figure
 
 ## Voice selection and continuity
 
-The first [Ardi samples](voice-samples/README.md) were rejected by the owner as too soft-spoken. The [second candidate](voice-samples-v2/README.md) was still too soft and young. The owner prefers Candidate A from the [new mature-voice auditions](voice-samples-v3/README.md) and wants an improved Indonesian accent without losing its character. An Indonesian-reference take is available for comparison; its accent and voice similarity require listening. When an episode is requested:
+The first [Ardi samples](voice-samples/README.md) were rejected by the owner as too soft-spoken. The [second candidate](voice-samples-v2/README.md) was still too soft and young. The owner prefers Candidate A from the [mature-voice auditions](voice-samples-v3/README.md) and wants an improved Indonesian accent without losing its character. The first Indonesian-reference take sounded unchanged to the owner. A [new experiment using an Indonesian-trained model](voice-samples-v4/README.md) awaits listening. When an episode is requested:
 
 1. Audition available voices with rights suitable for the intended platforms. Compare the same short Indonesian passage for clarity, masculine tone, measured delivery and natural pronunciation. Select the closest suitable option, rather than claiming a match to a specific person.
 2. Keep the selected sample and a record of the provider, model/version, voice name and stable ID, applicable voice settings, language, output format and license/usage terms. Include the generation date, script and any seed or reproducibility setting only if the tool actually exposes it. Never record API keys or credentials. The provider may change a model, so these settings do not guarantee identical output.
@@ -46,6 +46,6 @@ Evaluate whether each sentence is easy to understand on a phone, whether pauses 
 | Clean reference sample / script / date | [Candidates A and B, references and scripts](voice-samples-v3/README.md), generated 2026-11-18 |
 | License / attribution / intended use | Creative evaluation; verify applicable model and demo service terms for publication |
 | Pronunciation list | TBD; create when recurring terms exist |
-| Last continuity review / owner feedback | Owner prefers Candidate A and wants a more natural Indonesian accent without degrading it; comparison take awaits feedback. |
+| Last continuity review / owner feedback | Owner prefers Candidate A and wants a more natural Indonesian accent without degrading it; the first Indonesian-reference take sounded unchanged. Indonesian-trained model samples await feedback. |
 
 Do not fill TBD fields with invented values. Update this registry after listening and selection, and log meaningful changes in [experiments.md](experiments.md).
