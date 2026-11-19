@@ -14,3 +14,11 @@ pnpm cli tts --voice jejak --text-file "take-1.txt" --output "take-1.mp3"
 ```
 
 For this draft, FFmpeg placed the seven takes at the listed offsets, attenuated the joined narration by 3 dB, and padded the voice track to 70.500 seconds. There was no speed change. The output was encoded with `libmp3lame -q:a 2`.
+
+## Builder assets · 19 November 2026
+
+- The supplied master is copied byte-for-byte to `public/assets/kemacetan-terakhir/attempt-05/narration-jejak.mp3`; SHA-256 matches the original above. It plays at normal speed. The timeline applies gain 0.9; the master itself is untouched.
+- Two new four-panel illustration atlases and an edited opening plate were made with the built-in image-generation tool. [Source images and complete prompts](sources/prompts.md); model version not exposed. Six selected 512 × 768 WebP crops and the selected opening PNG are served from `public/assets/kemacetan-terakhir/attempt-05/`. The initial, more realistic opening crop and unused empty-headrest option are retained there but not used in the composition. The generated art retains an anonymous viewer and an olive sleeve in hand inserts. Verify usage and publication rights before release.
+- Reused existing anonymous plates: `handle.webp`, `lock.webp`, `tollway-panic.webp`, `boots.webp`, `window-shadow.webp`, `empty-window.webp`, `night-traffic.webp`, `clock.webp` and `rear-passenger.webp`. Their earlier provenance is in [the episode asset ledger](../assets.md). The visible passenger is the supporting infected character, not the viewer.
+- Audio uses existing `traffic-bed`, `engine-idle`, `sub-drone`, `night-air`, `tension-rise`, `door-lock`, `body-fall`, `coat-shift`, `ignition-click`, `console-switch`, `shoe-left`, `shoe-right`, `glass-tick`, `glass-knock` and `metal-resonance` from [the shared ledger](../../../public/sfx/LICENSES.md). The dklon CC BY 3.0 credit in that ledger applies to the used `glass-knock`, `body-fall` and `coat-shift` excerpts.
+- The narrator-solo WAV, effects-solo WAV and full-mix WAV in this folder are local review artifacts, not new narration masters or an MP4 export. The latter two are the `-v2` files after the knock gain was raised; the earlier WAVs are retained for comparison. [Objective audio measurements](audio-review-measurements-v2.json) are described in [review.md](review.md).

@@ -1,0 +1,68 @@
+{
+  "voice": {
+    "duration": 71.2,
+    "overall": {
+      "rms_dbfs": -17.8,
+      "peak_dbfs": -3.79
+    },
+    "clipped_samples": 0,
+    "knocks": {
+      "59.1": {
+        "rms_dbfs": null,
+        "peak_dbfs": null
+      },
+      "59.7": {
+        "rms_dbfs": null,
+        "peak_dbfs": null
+      },
+      "64.0": {
+        "rms_dbfs": null,
+        "peak_dbfs": null
+      }
+    }
+  },
+  "effects": {
+    "duration": 71.2,
+    "overall": {
+      "rms_dbfs": -44.77,
+      "peak_dbfs": -16.72
+    },
+    "clipped_samples": 0,
+    "knocks": {
+      "59.1": {
+        "rms_dbfs": -43.37,
+        "peak_dbfs": -19.27
+      },
+      "59.7": {
+        "rms_dbfs": -43.37,
+        "peak_dbfs": -19.27
+      },
+      "64.0": {
+        "rms_dbfs": -37.28,
+        "peak_dbfs": -16.72
+      }
+    }
+  },
+  "mix": {
+    "duration": 71.2,
+    "overall": {
+      "rms_dbfs": -17.79,
+      "peak_dbfs": -3.52
+    },
+    "clipped_samples": 0,
+    "knocks": {
+      "59.1": {
+        "rms_dbfs": -43.37,
+        "peak_dbfs": -19.27
+      },
+      "59.7": {
+        "rms_dbfs": -43.37,
+        "peak_dbfs": -19.27
+      },
+      "64.0": {
+        "rms_dbfs": -37.28,
+        "peak_dbfs": -16.72
+      }
+    }
+  }
+}

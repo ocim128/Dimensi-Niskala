@@ -8,6 +8,8 @@ import type {CaptionBeat, EpisodeCaption, EpisodeManifest, EpisodeManifestV2} fr
 export type PreviewOptions = {
   showCaptions: boolean;
   soundOn: boolean;
+  narrationOn?: boolean;
+  effectsOn?: boolean;
 };
 
 type Props = PreviewOptions & {
@@ -15,7 +17,7 @@ type Props = PreviewOptions & {
   captions: EpisodeCaption[] | CaptionBeat[];
 };
 
-export function Episode({manifest, captions, showCaptions, soundOn}: Props) {
+export function Episode({manifest, captions, showCaptions, soundOn, narrationOn = true, effectsOn = true}: Props) {
   const {narration, scenes} = manifest;
   return <AbsoluteFill style={{backgroundColor: "#080c16"}}>
     <Track name="Gambar">
@@ -26,9 +28,9 @@ export function Episode({manifest, captions, showCaptions, soundOn}: Props) {
         </Sequence>;
       })}
     </Track>
-    {soundOn && <EpisodeAudio manifest={manifest} />}
+    {soundOn && effectsOn && <EpisodeAudio manifest={manifest} />}
     {(soundOn || showCaptions) && <Sequence name="Narasi dan takarir" from={narration.at} durationInFrames={narration.duration}>
-      {soundOn && <Audio src={staticFile(narration.asset)} volume={narration.gain} />}
+      {soundOn && narrationOn && <Audio src={staticFile(narration.asset)} volume={narration.gain} />}
       {showCaptions && <Captions captions={captions} />}
     </Sequence>}
   </AbsoluteFill>;
