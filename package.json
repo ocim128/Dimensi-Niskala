@@ -1,0 +1,25 @@
+{
+  "name": "survival-fantasy-content",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "check": "tsc && node scripts/check-episodes.mjs",
+    "build": "remotion bundle src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.544",
+    "@remotion/media": "4.0.544",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.544"
+  },
+  "devDependencies": {
+    "@remotion/captions": "4.0.544",
+    "@types/react": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}

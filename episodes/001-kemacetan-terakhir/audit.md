@@ -32,4 +32,4 @@ The preview is available in the parent Remotion project at `http://localhost:300
 
 ## Improvements applied before the next attempt
 
-The visual guide now requires a visible proof of each important environmental constraint and an actual phone-size text check. The workflow now calls for alignment against audio, a no-overwrite reproduction handoff, and a review that distinguishes automated checks from listening. These are hypotheses based on this one test, not evidence of audience performance. See [experiment history](../../experiments.md).
+The visual guide now requires a visible proof of each important environmental constraint and an actual phone-size text check. The workflow now calls for alignment against audio, a no-overwrite reproduction handoff, and a review that distinguishes automated checks from listening. These are hypotheses based on this one test, not evidence of audience performance. See [experiment history](../../archive/playbook/experiments.md).

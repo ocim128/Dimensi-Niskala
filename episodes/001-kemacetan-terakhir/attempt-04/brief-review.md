@@ -13,7 +13,7 @@ The reference is `Survival-Fantasy-References/zombie apocalypse.mp4`, outside th
 - An overhead traffic insert runs at 21.10–24.43 seconds, marking the trapped car. A cutaway at 36.37–38.00 seconds shows Damar ducking below the window.
 - Captions are larger. Tap captions have their own vertical position.
 - Code is `src/KemacetanTerakhirV4/` in the parent project and the composition is registered in `src/Root.tsx`. It imports existing attempt 03 scene components, cues and caption timings. It uses the existing media from `public/kemacetan-terakhir-v3/` and the narrator takes in `public/survival-blind/`.
-- Script, source asset records and voice settings remain linked in the [production brief](../production-brief.md), [attempt 03 handoff](../attempt-03/handoff.md) and [voice profile](../../../voice-profile.md). The two new diagrams are original SVG markup in `src/KemacetanTerakhirV4/sightline.tsx`. Voice model and asset rights remain unresolved for publication.
+- Script, source asset records and voice settings remain linked in the [production brief](../production-brief.md), [attempt 03 handoff](../attempt-03/handoff.md) and [voice profile](../../../archive/playbook/voice-profile.md). The two new diagrams are original SVG markup in `src/KemacetanTerakhirV4/sightline.tsx`. Voice model and asset rights remain unresolved for publication.
 
 ## Review
 

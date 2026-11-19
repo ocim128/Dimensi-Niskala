@@ -8,7 +8,7 @@ Pick one main hypothesis from [experiments.md](experiments.md), or add one. Writ
 
 ## 2. Before publishing: observe and repair
 
-Use [the review checklist](templates/review.md). If possible, ask someone unfamiliar with the story to describe the threat, what made the situation unbelievable, the choice and the outcome after one viewing. Record their words, confusion and where it happened without leading them. Also record the owner's feedback, the agent's own review and any unresolved issues separately. If no independent viewer is available, say so: an agent's self-review is useful but is not audience validation.
+Use [the review checklist](../../templates/review.md). If possible, ask someone unfamiliar with the story to describe the threat, what made the situation unbelievable, the choice and the outcome after one viewing. Record their words, confusion and where it happened without leading them. Also record the owner's feedback, the agent's own review and any unresolved issues separately. If no independent viewer is available, say so: an agent's self-review is useful but is not audience validation.
 
 Fix blocking issues such as incomprehensible plot, missing audio, misleading claims or unresolved rights before delivery/publishing. Retest affected moments after changes. Do not wait for metrics to repair an obvious defect.
 
@@ -18,7 +18,7 @@ When the owner identifies a distracting movement, find the adjacent frames where
 
 ## 3. After publishing: collect consistently
 
-Copy [the performance template](templates/performance.md) into the episode folder. If available, collect each platform's native data at approximately 24 hours and 7 days after posting, recording actual observation time and timezone. Use additional checkpoints only when useful. For each platform record views, watch time or average view duration, retention/completion if available, shares, comments and follows/subscribers attributable to the post if available. Capture the retention curve or timestamps of drops/rewatches when the platform exposes them. Log qualitative comments with brief anonymized paraphrases. Never infer that a missing measure equals zero.
+Copy [the performance template](../../templates/performance.md) into the episode folder. If available, collect each platform's native data at approximately 24 hours and 7 days after posting, recording actual observation time and timezone. Use additional checkpoints only when useful. For each platform record views, watch time or average view duration, retention/completion if available, shares, comments and follows/subscribers attributable to the post if available. Capture the retention curve or timestamps of drops/rewatches when the platform exposes them. Log qualitative comments with brief anonymized paraphrases. Never infer that a missing measure equals zero.
 
 Platform metrics have different definitions, reporting windows, audience sizes and eligibility. Compare within the same platform using the same metric, time since publication, video version and a similar format; preserve the native label. Do not directly compare platform view counts or calculate completion from average watch time. Context such as changed length, audience, release time and small sample size can explain apparent differences. Treat early data as provisional and record its limitations.
 

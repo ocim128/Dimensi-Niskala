@@ -42,7 +42,7 @@ Include generated voice, music, effects, fonts, images, footage and any external
 
 ## Narrator continuity
 
-- Voice registry / clean reference sample: `voice-profile.md` in the content folder; sample path TBD.
+- Voice registry / clean reference sample: `voice-samples-v4/README.md` in the project root. Sample path TBD.
 - Provider / model version / voice ID / language / settings used: TBD.
 - Narration master path / generation date / output format: TBD.
 - Recurring names and pronunciation decisions: TBD.
@@ -50,7 +50,7 @@ Include generated voice, music, effects, fonts, images, footage and any external
 
 ## Implementation and delivery
 
-- Parent Remotion code paths, public asset paths and composition ID: TBD.
+- Remotion manifest, public asset paths and composition ID: TBD.
 - FPS, frame duration, output dimensions and output version: TBD.
 - Preview and verification status: TBD.
 - Export location if explicitly requested: TBD.

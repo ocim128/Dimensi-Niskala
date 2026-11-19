@@ -1,0 +1,172 @@
+{
+  "id": "KemacetanTerakhirMotionComic",
+  "fps": 30,
+  "duration": 2544,
+  "captions": "captions.json",
+  "narration": {"asset":"assets/kemacetan-terakhir/narration.mp3","at":0,"duration":2489,"gain":0.71},
+  "beds": [
+    {"name":"Lalu lintas senja","asset":"sfx/traffic-bed.wav","at":0,"duration":845,"gain":0.11,"fadeIn":0,"fadeOut":88,"loop":true},
+    {"name":"Getar mesin","asset":"sfx/engine-idle.wav","at":0,"duration":890,"gain":0.075,"fadeIn":8,"fadeOut":15,"loop":true},
+    {"name":"Gangguan dari luar","asset":"sfx/sub-drone.wav","at":305,"duration":545,"gain":0.19,"fadeIn":20,"fadeOut":95},
+    {"name":"Udara di jalan tol","asset":"sfx/night-air.wav","at":870,"duration":1045,"gain":0.19,"fadeIn":38,"fadeOut":175,"loop":true},
+    {"name":"Deru rendah","asset":"sfx/sub-drone.wav","at":1130,"duration":590,"gain":0.14,"fadeIn":66,"fadeOut":94},
+    {"name":"Ketegangan kursi belakang","asset":"sfx/tension-rise.wav","at":2150,"duration":139,"gain":0.18,"fadeIn":18,"fadeOut":6},
+    {"name":"Sisa gema","asset":"sfx/sub-drone.wav","at":2289,"duration":255,"gain":0.15,"fadeIn":10,"fadeOut":85}
+  ],
+  "scenes": [
+    {
+      "id": "threat", "name": "Ancaman di luar pintu", "at": 0,
+      "plate": "assets/kemacetan-terakhir/door-threat.webp",
+      "camera": {"from":{"scale":1.05,"x":0,"y":0},"to":{"scale":1.14,"x":10,"y":31}}
+    },
+    {
+      "id": "hold", "name": "Bertahan di kursi pengemudi", "at": 82,
+      "plate": "assets/kemacetan-terakhir/cabin-plate.webp",
+      "camera": {"from":{"scale":1.1,"x":0,"y":-21},"to":{"scale":1.14,"x":-9,"y":-26}},
+      "layers": [{"asset":"assets/kemacetan-terakhir/driver-neutral.webp","x":21,"y":24,"width":47,"drift":{"x":0.3,"y":0.16}}]
+    },
+    {
+      "id": "panic", "name": "Orang-orang lari", "at": 203,
+      "plate": "assets/kemacetan-terakhir/tollway-panic.webp",
+      "camera": {"from":{"scale":1.04,"x":0,"y":0},"to":{"scale":1.17,"x":0,"y":-34}}
+    },
+    {
+      "id": "reach", "name": "Tangan bergerak ke pintu", "at": 362,
+      "plate": "assets/kemacetan-terakhir/cabin-plate.webp",
+      "camera": {"from":{"scale":1.14,"x":-11,"y":-26},"to":{"scale":1.17,"x":-19,"y":-30}},
+      "layers": [{"asset":"assets/kemacetan-terakhir/driver-reach.webp","x":19,"y":27,"width":76,"enter":{"at":0,"duration":20,"x":-2.5,"y":-0.8}}],
+      "cues": [{"name":"Jaket bergeser","asset":"sfx/coat-shift.wav","at":2,"duration":9,"gain":0.095}]
+    },
+    {
+      "id": "handle", "name": "Gagang pintu", "at": 386,
+      "plate": "assets/kemacetan-terakhir/handle.webp",
+      "camera": {"from":{"scale":1.08,"x":10,"y":22},"to":{"scale":1.17,"x":3,"y":19}}
+    },
+    {
+      "id": "witness", "name": "Pengendara di depan kaca", "at": 417,
+      "plate": "assets/kemacetan-terakhir/lean.webp",
+      "camera": {"from":{"scale":1.06,"x":0,"y":0},"to":{"scale":1.16,"x":-11,"y":13}}
+    },
+    {
+      "id": "tackle", "name": "Tubuh membentur aspal", "at": 482,
+      "plate": "assets/kemacetan-terakhir/tackle.webp",
+      "camera": {"from":{"scale":1.08,"x":0,"y":24},"to":{"scale":1.19,"x":-3,"y":47}},
+      "hit": {"at":3,"duration":13,"strength":19},
+      "cues": [{"name":"Benturan di jalan","asset":"sfx/body-fall.wav","at":3,"duration":19,"gain":0.19}]
+    },
+    {
+      "id": "recoil", "name": "Tangan ditarik", "at": 549,
+      "plate": "assets/kemacetan-terakhir/cabin-plate.webp",
+      "camera": {"from":{"scale":1.15,"x":-8,"y":-22},"to":{"scale":1.14,"x":0,"y":-20}},
+      "layers": [{"asset":"assets/kemacetan-terakhir/driver-recoil.webp","x":18,"y":25,"width":51,"enter":{"at":0,"duration":8,"x":2.3,"y":-0.6}}],
+      "cues": [{"name":"Tarikan lengan","asset":"sfx/coat-shift.wav","at":0,"duration":9,"gain":0.105}]
+    },
+    {
+      "id": "lock", "name": "Kunci ditekan", "at": 595,
+      "plate": "assets/kemacetan-terakhir/lock.webp",
+      "camera": {"from":{"scale":1.05,"x":0,"y":0},"to":{"scale":1.19,"x":8,"y":22}},
+      "hit": {"at":11,"duration":8,"strength":5},
+      "cues": [{"name":"Klik kunci pintu","asset":"sfx/door-lock.wav","at":11,"duration":18,"gain":0.13}]
+    },
+    {
+      "id": "gridlock", "name": "Mobil terjepit", "at": 641,
+      "plate": "assets/kemacetan-terakhir/boxed-in.webp",
+      "camera": {"from":{"scale":1.14,"x":0,"y":-20},"to":{"scale":1.045,"x":0,"y":0}}
+    },
+    {
+      "id": "ignition", "name": "Mesin, lampu, dan radio", "at": 791,
+      "plate": "assets/kemacetan-terakhir/ignition.webp",
+      "camera": {"from":{"scale":1.04,"x":0,"y":0},"to":{"scale":1.22,"x":18,"y":-85}},
+      "blackout": {"at":131,"duration":28,"opacity":0.57},
+      "cues": [{"name":"Kontak mesin","asset":"sfx/ignition-click.wav","at":89,"duration":6,"gain":0.14},{"name":"Lampu mati","asset":"sfx/console-switch.wav","at":130,"duration":6,"gain":0.13},{"name":"Radio mati","asset":"sfx/console-switch.wav","at":161,"duration":6,"gain":0.1}]
+    },
+    {
+      "id": "duck", "name": "Merunduk di bawah jendela", "at": 975,
+      "plate": "assets/kemacetan-terakhir/hide.webp",
+      "camera": {"from":{"scale":1.08,"x":23,"y":-15},"to":{"scale":1.15,"x":28,"y":-45}},
+      "cues": [{"name":"Jaket menyentuh kursi","asset":"sfx/coat-shift.wav","at":2,"duration":9,"gain":0.11}]
+    },
+    {
+      "id": "approach", "name": "Sepatu mendekat", "at": 1052,
+      "plate": "assets/kemacetan-terakhir/boots.webp",
+      "camera": {"from":{"scale":1.05,"x":0,"y":0},"to":{"scale":1.24,"x":0,"y":30}},
+      "cues": [{"name":"Langkah pertama","asset":"sfx/shoe-left.wav","at":4,"duration":12,"gain":0.105},{"name":"Langkah kedua","asset":"sfx/shoe-right.wav","at":22,"duration":10,"gain":0.14},{"name":"Langkah terakhir","asset":"sfx/shoe-left.wav","at":42,"duration":12,"gain":0.17}]
+    },
+    {
+      "id": "shadow", "name": "Bayangan menutupi kaca", "at": 1105,
+      "plate": "assets/kemacetan-terakhir/window-shadow.webp",
+      "camera": {"from":{"scale":1.05,"x":0,"y":0},"to":{"scale":1.2,"x":-17,"y":20}},
+      "blackout": {"at":22,"duration":38,"opacity":0.15}
+    },
+    {
+      "id": "breath", "name": "Menahan napas", "at": 1190,
+      "plate": "assets/kemacetan-terakhir/hide.webp",
+      "camera": {"from":{"scale":1.16,"x":36,"y":-51},"to":{"scale":1.23,"x":52,"y":-52}}
+    },
+    {
+      "id": "retreat", "name": "Langkah menjauh", "at": 1358,
+      "plate": "assets/kemacetan-terakhir/empty-window.webp",
+      "camera": {"from":{"scale":1.14,"x":0,"y":0},"to":{"scale":1.08,"x":0,"y":0}},
+      "cues": [{"name":"Langkah menjauh","asset":"sfx/shoe-right.wav","at":4,"duration":10,"gain":0.075},{"name":"Langkah di kejauhan","asset":"sfx/shoe-left.wav","at":24,"duration":12,"gain":0.044}]
+    },
+    {
+      "id": "supplies", "name": "Air, permen karet, dan ponsel", "at": 1402,
+      "plate": "assets/kemacetan-terakhir/supplies.webp",
+      "camera": {"from":{"scale":1.055,"x":0,"y":0},"to":{"scale":1.15,"x":-10,"y":-24}},
+      "label": {"text":"60%","at":150,"x":66.5,"y":36},
+      "cues": [{"name":"Barang bergeser di kursi","asset":"sfx/coat-shift.wav","at":1,"duration":9,"gain":0.073}]
+    },
+    {
+      "id": "night", "name": "Jalan tol mulai sunyi", "at": 1626,
+      "plate": "assets/kemacetan-terakhir/night-traffic.webp",
+      "camera": {"from":{"scale":1.17,"x":0,"y":-45},"to":{"scale":1.045,"x":0,"y":0}}
+    },
+    {
+      "id": "clock", "name": "Pukul tiga dini hari", "at": 1791,
+      "plate": "assets/kemacetan-terakhir/clock.webp",
+      "camera": {"from":{"scale":1.04,"x":0,"y":0},"to":{"scale":1.11,"x":0,"y":-17}},
+      "label": {"text":"03:00","at":0,"x":71,"y":54}
+    },
+    {
+      "id": "window", "name": "Ketukan di jendela", "at": 1884,
+      "plate": "assets/kemacetan-terakhir/empty-window.webp",
+      "camera": {"from":{"scale":1.07,"x":0,"y":-12},"to":{"scale":1.16,"x":-7,"y":-10}},
+      "hit": {"at":31,"duration":8,"strength":8},
+      "cues": [{"name":"Ketukan pertama","asset":"sfx/glass-knock.wav","at":31,"duration":12,"gain":0.18},{"name":"Ketukan kedua","asset":"sfx/glass-knock.wav","at":58,"duration":12,"gain":0.16}]
+    },
+    {
+      "id": "empty", "name": "Jendela kosong", "at": 1961,
+      "plate": "assets/kemacetan-terakhir/empty-window.webp",
+      "camera": {"from":{"scale":1.2,"x":-14,"y":-25},"to":{"scale":1.22,"x":-24,"y":-22}}
+    },
+    {
+      "id": "behind", "name": "Suara dari belakang", "at": 2069,
+      "plate": "assets/kemacetan-terakhir/look-ahead.webp",
+      "camera": {"from":{"scale":1.09,"x":0,"y":0},"to":{"scale":1.18,"x":-5,"y":36}},
+      "cues": [{"name":"Ketukan ketiga","asset":"sfx/glass-tick.wav","at":30,"duration":6,"gain":0.155},{"name":"Ketukan di belakang","asset":"sfx/glass-knock.wav","at":66,"duration":12,"gain":0.138}]
+    },
+    {
+      "id": "contact", "name": "Jari menyentuh sandaran", "at": 2146,
+      "plate": "assets/kemacetan-terakhir/headrest.webp",
+      "camera": {"from":{"scale":1.05,"x":0,"y":0},"to":{"scale":1.19,"x":19,"y":28}},
+      "cues": [{"name":"Jari meremas sandaran","asset":"sfx/coat-shift.wav","at":1,"duration":9,"gain":0.116}]
+    },
+    {
+      "id": "turn", "name": "Pengemudi menoleh", "at": 2234,
+      "plate": "assets/kemacetan-terakhir/look-back.webp",
+      "camera": {"from":{"scale":1.16,"x":-16,"y":18},"to":{"scale":1.085,"x":0,"y":8}}
+    },
+    {
+      "id": "reveal", "name": "Ada penumpang di kursi belakang", "at": 2285,
+      "plate": "assets/kemacetan-terakhir/rear-passenger.webp",
+      "camera": {"from":{"scale":1.05,"x":0,"y":0},"to":{"scale":1.22,"x":4,"y":48}},
+      "cues": [{"name":"Gema saat wajah terlihat","asset":"sfx/metal-resonance.wav","at":0,"duration":23,"gain":0.13}]
+    },
+    {
+      "id": "eyes", "name": "Tatapan penumpang", "at": 2428,
+      "plate": "assets/kemacetan-terakhir/rear-passenger.webp",
+      "camera": {"from":{"scale":1.46,"x":0,"y":116},"to":{"scale":1.55,"x":0,"y":133}},
+      "blackout": {"at":83,"duration":32,"opacity":1}
+    }
+  ]
+}

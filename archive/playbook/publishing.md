@@ -12,6 +12,6 @@ Publish only when the owner has authorized posting and the episode has passed re
 
 ## Record after publication
 
-For each platform record the episode ID, published URL, date/time and timezone, title, description, tags, disclosed AI status, actual version and material differences. Capture metrics at the planned observation times in a copy of [the performance template](templates/performance.md). Record when figures were observed, not just their values. Use the platform's own metric labels and definitions; unavailable metrics stay blank or `not available`, never zero by assumption. Keep platform data separate.
+For each platform record the episode ID, published URL, date/time and timezone, title, description, tags, disclosed AI status, actual version and material differences. Capture metrics at the planned observation times in a copy of [the performance template](../../templates/performance.md). Record when figures were observed, not just their values. Use the platform's own metric labels and definitions; unavailable metrics stay blank or `not available`, never zero by assumption. Keep platform data separate.
 
 Official analytics starting points: [YouTube Shorts analytics](https://support.google.com/youtube/answer/12942217?co=YOUTUBE._YTVideoType%3Dshorts&hl=en-GB) and [TikTok comment insights](https://support.tiktok.com/en/using-tiktok/growing-your-audience/comment-insights-on-tiktok). Availability and definitions may differ by account and change over time.

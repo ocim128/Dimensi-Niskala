@@ -23,7 +23,7 @@ Write down the question the shot should answer. For “Can she get across?”, c
 
 For decisions, draw three poses side by side. Show where the character is looking, what their hand or body does, and what visibly changes as a result. Carry an object, a direction of travel or an eyeline across the cut so the viewer can connect the poses. A deliberate hold gives the viewer time to notice the consequence.
 
-When a character changes direction, a fixed landmark helps the viewer follow the movement. Keep the light tied to its source and check the silhouettes on either side of the pose change at normal speed. The [seated turn in attempt 03](episodes/001-kemacetan-terakhir/attempt-03/task.md) applies this to one particular performance.
+When a character changes direction, a fixed landmark helps the viewer follow the movement. Keep the light tied to its source and check the silhouettes on either side of the pose change at normal speed. The [seated turn in attempt 03](../../episodes/001-kemacetan-terakhir/attempt-03/task.md) applies this to one particular performance.
 
 ### Timing a graphic to an event
 

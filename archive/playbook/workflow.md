@@ -4,7 +4,7 @@ Use this process when the owner asks for an episode. The AI agent performs the c
 
 ## 1. Choose and brief
 
-Read the current thesis and experiment log. Select one premise with a clear survival problem, an extraordinary fantasy element and a consequential choice. If a creative preference is unspecified, choose a reasonable starting assumption and label it; do not invent established canon or claim audience evidence. Copy [the episode brief](templates/episode-brief.md) into the episode folder and fill in the audience promise, hypothesis, story, language, visual plan and constraints. Identify one primary thing to learn. For a series, record continuity before and after the episode.
+Read the current thesis and experiment log. Select one premise with a clear survival problem, an extraordinary fantasy element and a consequential choice. If a creative preference is unspecified, choose a reasonable starting assumption and label it; do not invent established canon or claim audience evidence. Copy [the episode brief](../../templates/episode-brief.md) into the episode folder and fill in the audience promise, hypothesis, story, language, visual plan and constraints. Identify one primary thing to learn. For a series, record continuity before and after the episode.
 
 ## 2. Script and rough cut
 
@@ -32,7 +32,7 @@ Implement an editable composition in the existing parent Remotion project; add a
 
 ## 5. Review and revise
 
-Copy [the review checklist](templates/review.md) into the episode folder. Check the complete story, picture, sound, captions, consistency, rights and platform presentation. Align caption boundaries to actual speech, then review timing and pronunciation; proportional timing based on character counts is an estimate, not a sync check. Automatic transcription can flag dropped words but cannot replace listening. Inspect key frames at phone display size. Document problems and revisions. Ask the owner for creative feedback when appropriate; apply it and review the affected portions again. Run `npm run lint` and the relevant build check after code changes. If a check fails, distinguish a new issue from a pre-existing one and report it. If preview or listening is unavailable, state exactly what remains unverified; do not mark that check as passed.
+Copy [the review checklist](../../templates/review.md) into the episode folder. Check the complete story, picture, sound, captions, consistency, rights and platform presentation. Align caption boundaries to actual speech, then review timing and pronunciation; proportional timing based on character counts is an estimate, not a sync check. Automatic transcription can flag dropped words but cannot replace listening. Inspect key frames at phone display size. Document problems and revisions. Ask the owner for creative feedback when appropriate; apply it and review the affected portions again. Run `npm run lint` and the relevant build check after code changes. If a check fails, distinguish a new issue from a pre-existing one and report it. If preview or listening is unavailable, state exactly what remains unverified; do not mark that check as passed.
 
 ## 6. Deliver or publish
 

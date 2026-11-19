@@ -4,7 +4,7 @@ Recreate the episode in the parent `tiktok-video` Remotion workspace. **The owne
 
 ## Inputs and comparison
 
-Use the [written story and Indonesian script](../production-brief.md), [visual guide](../../../visual.md), [voice profile](../../../voice-profile.md) and [installed Remotion instructions](../../../../.agents/skills/remotion-best-practices/SKILL.md). This is a revision of our own production. You may inspect or reuse v2 source, episode assets and [the six frames of the defect](../attempt-02/head-turn-frames.jpg). Keep the original example videos and private reviewer references outside the production process.
+Use the [written story and Indonesian script](../production-brief.md), [visual guide](../../../archive/playbook/visual.md), [voice profile](../../../archive/playbook/voice-profile.md) and [installed Remotion instructions](../../../../.agents/skills/remotion-best-practices/SKILL.md). This is a revision of our own production. You may inspect or reuse v2 source, episode assets and [the six frames of the defect](../attempt-02/head-turn-frames.jpg). Keep the original example videos and private reviewer references outside the production process.
 
 Use the existing twelve v4 narration takes in `public/survival-blind/`, the v2 sound cues and Indonesian caption timings as the comparison baseline. Keep the story, narrator, gridlock, three inventory values and rear-seat payoff recognizable. Use a fresh composition ID `KemacetanTerakhirV3`, source folder `src/KemacetanTerakhirV3/`, and new media folder `public/kemacetan-terakhir-v3/`. Register v3 alongside v1 and v2. Build at 1080 × 1920, 30 fps.
 
@@ -19,7 +19,7 @@ Use the existing twelve v4 narration takes in `public/survival-blind/`, the v2 s
 
 Use the rough turn, v2 shots and the retained Indonesian takes to play the whole story once in the v3 Studio composition at phone size, with captions on. Watch for two discoveries. Can you see what makes Damar pull his hand off the door? When can you tell where the tapping comes from? In v2, “tetap di dalam mobil” precedes the visible chase, and “dari kursi belakang” gives away the location over the mirror. Try moving the picture or moving a take together with its captions. Settle the order in the rough cut, then finish the affected shots.
 
-Use the [timing guidance](../../../remotion-production.md#timing-that-survives-an-edit) for the revised cues. For example, moving the passenger shot should carry the fingertip contact and its tap sound together.
+Use the [timing guidance](../../../archive/playbook/remotion-production.md#timing-that-survives-an-edit) for the revised cues. For example, moving the passenger shot should carry the fingertip contact and its tap sound together.
 
 ## Carry the performance through the episode
 
