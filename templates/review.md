@@ -12,6 +12,8 @@ Copy into the episode folder. Mark each item `pass`, `needs work`, `not checked`
 
 ## Picture, sound and accessibility
 
+- [ ] Character model sheet and seated pose inspected at full size and phone size. Head, jaw, neck, collar, shoulders, torso and seat connect coherently across the views actually used.
+- [ ] Representative neutral hold, turn and story action played in real time. Character remains appealing and recognizable, with no obvious deformations, sliding joints, broken contact or abrupt pose changes. Note the test interval and any unresolved defect.
 - [ ] Full composition played in real time, including scene boundaries and final frame; no broken assets or unintended blank frames.
 - [ ] Phone-size readability, contrast, edge clearance, diagrams and localized labels checked; platform UI preview checked when available.
 - [ ] Indonesian narration is intelligible; pronunciation, levels, music and effects checked by listening.

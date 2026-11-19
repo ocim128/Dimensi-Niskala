@@ -16,7 +16,15 @@ Play the storyboard as a timed rough cut at phone size before polishing the asse
 
 ## 3. Prepare assets
 
-Create or source only what the storyboard needs. Follow [the voice profile](voice-profile.md) to audition or reuse the narrator and keep a clean sample, voice settings and pronunciation choices. Track prompts, chosen versions, paths, permissions, licenses and attribution in the brief; mark unknown rights as unresolved and do not publish with unresolved rights. Record character and prop references so the next scene or episode can stay consistent. Put web-served media under the parent project's `public/` as described in [remotion-production.md](remotion-production.md); preserve source material and use project-relative paths.
+Create or source only what the storyboard needs. When the owner supplies narration, use their recording and keep the spoken script synchronized with it. Otherwise, follow [the voice profile](voice-profile.md) to audition or reuse the narrator and keep a clean sample, voice settings and pronunciation choices. Track prompts, chosen versions, paths, permissions, licenses and attribution in the brief; mark unknown rights as unresolved and do not publish with unresolved rights. Record character and prop references so the next scene or episode can stay consistent. Put web-served media under the parent project's `public/` as described in [remotion-production.md](remotion-production.md); preserve source material and use project-relative paths.
+
+### Develop the character before animation
+
+Treat the drawing as a production asset that needs its own review. Before building the full rig, make a model sheet showing the character's head, neck, shoulders and torso together in front, three-quarter, side and seated views. Keep hair, face, clothing, body proportions and lighting coherent across views. Include the actual chair or other contact point where the story needs it. Check that the jaw connects naturally through the neck into the shoulders, the collar sits at the neck base, and the torso supports the head. Compare silhouette and proportions at full size and at phone size.
+
+Build a short moving test from that design in the real composition. Include a neutral hold, a look or turn, and one story action with head, neck, shoulders and seat visible. Review its start, middle and end frames at full size, then play it at normal speed at phone size. Check anatomy, drawing appeal, identity, contact with the seat, pose transitions and expression. A smooth rig can still carry an unattractive or malformed design. If the test has a visible design defect, revise the model sheet and repeat before propagating it into the episode. Record the chosen reference, test location, observations and any unverified checks in the handoff. Owner review is valuable when available; the agent should also make its own visual judgment and fix clear defects.
+
+Choose the technique for the shot after the design works: drawn poses, layered artwork, a rigged model or a combination. Test a representative movement before committing the whole story to that technique. Keep Remotion as the episode assembly and preview environment. Record any supporting tools, assets and reproducibility requirements.
 
 ## 4. Build and preview
 

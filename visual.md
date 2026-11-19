@@ -35,4 +35,6 @@ Prefer editable Remotion shapes, text and diagrams for information that must rem
 
 ## Frame review
 
+When a reference-driven remake feels unlike its source, compare the visual function of successive beats before polishing individual drawings. Note when the source shows the character, the surrounding space, a prop close-up or an explanatory graphic, then compare those functions with the new cut. Write the intended information and motion into a fresh storyboard. Test the sequence at normal speed and phone size, and record whether the result communicates the same situation.
+
 Review the opening, every scene transition, caption-heavy moments, the consequence and the final frame in Studio. Check for clipping, spelling errors, unreadable text, inconsistent characters and misleading diagrams. Inspect essential text and labels at a realistic phone display size—for example, a 1080-pixel-wide frame displayed at 270 pixels makes a 28-pixel label only 7 pixels high. Increase type size or simplify the design until it is readable; also localize incidental text. A still-frame pass supplements, but does not replace, a real-time audiovisual review.

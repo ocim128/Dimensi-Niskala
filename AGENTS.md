@@ -2,6 +2,7 @@
 
 - Before working on content in this folder, read [README.md](README.md), [creative-thesis.md](creative-thesis.md), [visual.md](visual.md), [language.md](language.md), [voice-profile.md](voice-profile.md), [workflow.md](workflow.md), and any relevant episode brief and experiment history. The owner's current instructions override these working assumptions.
 - Make videos with the parent Remotion project as described in [remotion-production.md](remotion-production.md). Follow the applicable installed Remotion skills. Preserve existing user files and the reference video.
+- For a cartoon character design or acting test, follow the project [cartoon character development skill](.agents/skills/cartoon-character-development/SKILL.md).
 - Indonesian narration and captions and a masculine Indonesian male narrator are the owner's current choices. The owner wants viewers to have an unbelievable experience; the storytelling format remains open. Make assumptions explicit and do not invent established canon, results, permissions or feedback.
 - For an episode, maintain a brief, script, asset and rights record, and review using the templates. Record the composition ID and paths to code and media that live outside this folder. Update the feedback and decision log when evidence exists.
 - Creating a video, rendering an export and publishing are distinct actions. Follow the owner's request and applicable Remotion skill instructions. Do not post, schedule, message people or change accounts without authorization.

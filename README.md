@@ -4,7 +4,7 @@ This is the working playbook for an AI agent making original survival-fantasy vi
 
 ## Start here
 
-For the next production of *Kemacetan Terakhir*, open the [attempt 03 producer task](episodes/001-kemacetan-terakhir/attempt-03/task.md) from the parent Remotion workspace. It starts with the head turn identified in the [attempt 02 audit](episodes/001-kemacetan-terakhir/attempt-02/audit.md).
+For the next production of *Kemacetan Terakhir*, open the [attempt 4 remake task](episodes/001-kemacetan-terakhir/attempt-04/remake-task.md) from the parent Remotion workspace. It builds on the [attempt 3 reference comparison](episodes/001-kemacetan-terakhir/attempt-03/reference-audit.md).
 
 1. Read [the creative thesis](creative-thesis.md), [visual direction](visual.md), [language and audio](language.md), and [narration voice profile](voice-profile.md).
 2. Follow [the production workflow](workflow.md) and use the [episode brief](templates/episode-brief.md).

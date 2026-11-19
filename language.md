@@ -12,6 +12,8 @@ The script should stand on its own, match what the visuals show, and end with an
 
 Captions should match the final spoken audio, including important sound cues when useful. Time them to the real speech, split at natural phrases and allow enough time to read. Use high contrast and large, legible text, with restrained emphasis for key words. Check spelling, punctuation, names, overlap with UI and the final frame. If no speech is used, supply the information in intentional on-screen text rather than inventing a transcript. Keep an editable transcript or caption source with the episode.
 
+[WhisperX](https://github.com/m-bain/whisperX) is an optional tool for word-level audio alignment. Check its installed version and available Indonesian alignment model before relying on it. Align the actual owner-supplied recording, inspect missing or misplaced timestamps, and correct the result against the audio. Automated alignment is a starting point for review. Preserve the source recording and write outputs to episode-specific paths.
+
 The parent project's `npm run create-subtitles` uses Whisper and is configured with `WHISPER_MODEL = "medium.en"` and `WHISPER_LANG = "en"`. Indonesian requires a multilingual model and the appropriate language setting in `whisper-config.mjs`; inspect the current tooling and its inputs before changing shared configuration. It may install Whisper and download a model, processes all of `public/` when run without arguments, and is not a substitute for a human/agent correction pass. Prefer targeting only the intended source file and avoid overwriting other work.
 
 ## Voice and sound
