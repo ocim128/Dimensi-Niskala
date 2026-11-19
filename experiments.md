@@ -33,4 +33,6 @@ These are initial ideas, not validated facts. Status meanings: **proposed** = no
 
 **Production decision · 18 November 2026.** The owner asked for a method that travels across different stories. Each episode will test its own biggest uncertainty and review a timed rough cut at phone size before polishing. The seated turn is the test for this remake. On attempt 03, record what the rough cut exposed and which change took the most rework. Effects on production time and viewer experience are still open. [Workflow](workflow.md#2-script-and-rough-cut)
 
+**Attempt 04 remake · 19 November 2026.** Test the owner's supplied recording with a separate cartoon composition, stronger synthesized sound and alternating door, exterior, inventory and reveal views. This is a production draft, not evidence of audience response. Automatic speech timing, full listening, character acting and owner feedback remain open. [Handoff and review](episodes/001-kemacetan-terakhir/attempt-04/handoff.md).
+
 For new entries, include the episode IDs, platform and observation window, actual feedback or metric, comparisons and limitations. Link to episode performance/review files; never invent measurements. Record a decision even when the result is to keep testing.
