@@ -4,7 +4,7 @@ Artwork and narration are served from [the episode’s media directory](../../pu
 
 | Asset | Origin and scope |
 | --- | --- |
-| `narration.mp3` | Byte-for-byte copy of [the owner’s 82.94 s recording](kemacetan2-diperbaiki.mp3), previously authorized for the episode preview. Provider, underlying voice rights and publication permission remain open. SHA-256 `EDEF1F8BFF0315B9452ECD52E9CAE749C5989F8EE0CF6160D0D9AC4821E40F26`. |
+| `narration.mp3` | Byte-for-byte copy of [the owner’s 82.94 s recording](kemacetan2-diperbaiki.mp3), previously authorized for the episode preview. The owner confirmed it was generated in ShortZ with the Jejak preset (`jejak`). Underlying voice rights and publication permission remain open. SHA-256 `EDEF1F8BFF0315B9452ECD52E9CAE749C5989F8EE0CF6160D0D9AC4821E40F26`. |
 | Baseline driver design | [Attempt 04 cartoon study](attempt-04/damar-cartoon-study.png), the project’s internal visual reference for the driver. |
 | Raster plates and pose studies | Generated with the built-in ImageGen tool on 19 November 2026, using the internal character reference and the prompts below. The output quadrants were cropped and encoded to WebP for the composition. The pose crops retain alpha. Publication rights review is pending. |
 | Audio effects | Source recordings from rubberduck and techiew (CC0) plus dklon (CC BY 3.0). See the SFX ledger for filenames, changes, source and credit. |

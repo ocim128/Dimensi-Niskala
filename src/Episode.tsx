@@ -3,7 +3,7 @@ import {AbsoluteFill, Sequence, staticFile, Track} from "remotion";
 import {Captions} from "./components/Captions";
 import {EpisodeAudio} from "./components/EpisodeAudio";
 import {RasterScene} from "./components/RasterScene";
-import type {EpisodeCaption, EpisodeManifest} from "./manifest-types";
+import type {CaptionBeat, EpisodeCaption, EpisodeManifest, EpisodeManifestV2} from "./manifest-types";
 
 export type PreviewOptions = {
   showCaptions: boolean;
@@ -11,8 +11,8 @@ export type PreviewOptions = {
 };
 
 type Props = PreviewOptions & {
-  manifest: EpisodeManifest;
-  captions: EpisodeCaption[];
+  manifest: EpisodeManifest | EpisodeManifestV2;
+  captions: EpisodeCaption[] | CaptionBeat[];
 };
 
 export function Episode({manifest, captions, showCaptions, soundOn}: Props) {

@@ -1,0 +1,1284 @@
+{
+  "schemaVersion": 2,
+  "id": "KemacetanTerakhirMotionComicRecut",
+  "fps": 30,
+  "duration": 2120,
+  "captions": "captions.json",
+  "narration": {
+    "asset": "assets/kemacetan-terakhir/narration-recut-120.wav",
+    "at": 0,
+    "duration": 2074,
+    "gain": 0.71
+  },
+  "beds": [
+    {
+      "name": "Lalu lintas senja",
+      "asset": "sfx/traffic-bed.wav",
+      "at": 0,
+      "duration": 704,
+      "gain": 0.11,
+      "fadeIn": 0,
+      "fadeOut": 73,
+      "loop": true
+    },
+    {
+      "name": "Getar mesin",
+      "asset": "sfx/engine-idle.wav",
+      "at": 0,
+      "duration": 742,
+      "gain": 0.075,
+      "fadeIn": 7,
+      "fadeOut": 13,
+      "loop": true
+    },
+    {
+      "name": "Gangguan dari luar",
+      "asset": "sfx/sub-drone.wav",
+      "at": 254,
+      "duration": 454,
+      "gain": 0.19,
+      "fadeIn": 17,
+      "fadeOut": 79
+    },
+    {
+      "name": "Udara di jalan tol",
+      "asset": "sfx/night-air.wav",
+      "at": 725,
+      "duration": 871,
+      "gain": 0.19,
+      "fadeIn": 32,
+      "fadeOut": 146,
+      "loop": true
+    },
+    {
+      "name": "Deru rendah",
+      "asset": "sfx/sub-drone.wav",
+      "at": 942,
+      "duration": 492,
+      "gain": 0.14,
+      "fadeIn": 55,
+      "fadeOut": 78
+    },
+    {
+      "name": "Ketegangan kursi belakang",
+      "asset": "sfx/tension-rise.wav",
+      "at": 1792,
+      "duration": 116,
+      "gain": 0.18,
+      "fadeIn": 15,
+      "fadeOut": 5
+    },
+    {
+      "name": "Sisa gema",
+      "asset": "sfx/sub-drone.wav",
+      "at": 1908,
+      "duration": 212,
+      "gain": 0.15,
+      "fadeIn": 8,
+      "fadeOut": 71
+    }
+  ],
+  "art": {
+    "styleId": "kemacetan-illustrated-v1",
+    "rasterAssets": {
+      "assets/kemacetan-terakhir/door-threat.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/tollway-panic.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/lean.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/handle.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/tackle.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/lock.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/boxed-in.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/ignition.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/hide.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/boots.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/window-shadow.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/empty-window.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/cabin-plate.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/night-traffic.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/clock.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/look-ahead.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/headrest.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/look-back.webp": "kemacetan-illustrated-v1",
+      "assets/kemacetan-terakhir/rear-passenger.webp": "kemacetan-illustrated-v1"
+    }
+  },
+  "script": {
+    "format": "survival-tactics-curiosity-gap",
+    "hook": {
+      "at": 0,
+      "line": "Di luar pintu mobilmu, ada zombie."
+    },
+    "promise": {
+      "at": 90,
+      "line": "Kalau kamu keluar sekarang, mereka akan melihatmu.",
+      "openLoop": "Apakah diam di mobil cukup untuk menghindari ancaman?"
+    },
+    "tactics": {
+      "at": 360,
+      "steps": [
+        {
+          "number": 1,
+          "at": 457,
+          "line": "Kamu menarik tanganmu dan mengunci pintu.",
+          "detail": "Pintu dikunci setelah melihat serangan."
+        },
+        {
+          "number": 2,
+          "at": 813,
+          "line": "Lalu kamu merunduk di bawah jendela.",
+          "detail": "Posisi tersembunyi di bawah garis jendela."
+        }
+      ]
+    },
+    "ending": {
+      "at": 1650,
+      "twistAt": 1904,
+      "payoff": "Seseorang duduk di kursi belakang. Dia sudah terinfeksi."
+    }
+  },
+  "scenes": [
+    {
+      "id": "threat",
+      "name": "Ancaman di luar pintu",
+      "at": 0,
+      "plate": "assets/kemacetan-terakhir/door-threat.webp",
+      "camera": {
+        "from": {
+          "scale": 1.05,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.14,
+          "x": 10,
+          "y": 31
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "time-sunset",
+          "type": "timestampBadge",
+          "text": "HARI 1 · SENJA",
+          "at": 0,
+          "duration": 50,
+          "revealFrames": 12
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "hold",
+      "name": "Bertahan di kursi pengemudi",
+      "at": 68,
+      "plate": "assets/kemacetan-terakhir/door-threat.webp",
+      "camera": {
+        "from": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -21
+        },
+        "to": {
+          "scale": 1.14,
+          "x": -9,
+          "y": -26
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "danger",
+          "type": "tacticalCallout",
+          "text": "JANGAN KELUAR",
+          "at": 5,
+          "duration": 60,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "panic",
+      "name": "Orang-orang lari",
+      "at": 169,
+      "plate": "assets/kemacetan-terakhir/tollway-panic.webp",
+      "camera": {
+        "from": {
+          "scale": 1.04,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.17,
+          "x": 0,
+          "y": -34
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "outbreak",
+          "type": "tacticalCallout",
+          "text": "WABAH DI JALAN TOL",
+          "at": 10,
+          "duration": 75,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "reach",
+      "name": "Tangan bergerak ke pintu",
+      "at": 302,
+      "plate": "assets/kemacetan-terakhir/lean.webp",
+      "camera": {
+        "from": {
+          "scale": 1.14,
+          "x": -11,
+          "y": -26
+        },
+        "to": {
+          "scale": 1.17,
+          "x": -19,
+          "y": -30
+        }
+      },
+      "cues": [
+        {
+          "name": "Jaket bergeser",
+          "asset": "sfx/coat-shift.wav",
+          "at": 2,
+          "duration": 8,
+          "gain": 0.095
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "instinct",
+          "type": "tacticalCallout",
+          "text": "INSTING: LARI",
+          "at": 0,
+          "duration": 18,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "handle",
+      "name": "Gagang pintu",
+      "at": 322,
+      "plate": "assets/kemacetan-terakhir/handle.webp",
+      "camera": {
+        "from": {
+          "scale": 1.08,
+          "x": 10,
+          "y": 22
+        },
+        "to": {
+          "scale": 1.17,
+          "x": 3,
+          "y": 19
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "witness",
+      "name": "Pengendara di depan kaca",
+      "at": 348,
+      "plate": "assets/kemacetan-terakhir/lean.webp",
+      "camera": {
+        "from": {
+          "scale": 1.06,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.16,
+          "x": -11,
+          "y": 13
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "tackle",
+      "name": "Tubuh membentur aspal",
+      "at": 402,
+      "plate": "assets/kemacetan-terakhir/tackle.webp",
+      "camera": {
+        "from": {
+          "scale": 1.08,
+          "x": 0,
+          "y": 24
+        },
+        "to": {
+          "scale": 1.19,
+          "x": -3,
+          "y": 47
+        }
+      },
+      "hit": {
+        "at": 3,
+        "duration": 11,
+        "strength": 19
+      },
+      "cues": [
+        {
+          "name": "Benturan di jalan",
+          "asset": "sfx/body-fall.wav",
+          "at": 3,
+          "duration": 16,
+          "gain": 0.19
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "impact-shake"
+    },
+    {
+      "id": "recoil",
+      "name": "Tangan ditarik",
+      "at": 458,
+      "plate": "assets/kemacetan-terakhir/lean.webp",
+      "camera": {
+        "from": {
+          "scale": 1.15,
+          "x": -8,
+          "y": -22
+        },
+        "to": {
+          "scale": 1.14,
+          "x": 0,
+          "y": -20
+        }
+      },
+      "cues": [
+        {
+          "name": "Tarikan lengan",
+          "asset": "sfx/coat-shift.wav",
+          "at": 0,
+          "duration": 8,
+          "gain": 0.105
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "step-one",
+          "type": "tacticalCallout",
+          "text": "01: KUNCI PINTU",
+          "at": 5,
+          "duration": 30,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "lock",
+      "name": "Kunci ditekan",
+      "at": 496,
+      "plate": "assets/kemacetan-terakhir/lock.webp",
+      "camera": {
+        "from": {
+          "scale": 1.05,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.19,
+          "x": 8,
+          "y": 22
+        }
+      },
+      "hit": {
+        "at": 9,
+        "duration": 7,
+        "strength": 5
+      },
+      "cues": [
+        {
+          "name": "Klik kunci pintu",
+          "asset": "sfx/door-lock.wav",
+          "at": 9,
+          "duration": 15,
+          "gain": 0.13
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "gridlock",
+      "name": "Mobil terjepit",
+      "at": 534,
+      "plate": "assets/kemacetan-terakhir/boxed-in.webp",
+      "camera": {
+        "from": {
+          "scale": 1.14,
+          "x": 0,
+          "y": -20
+        },
+        "to": {
+          "scale": 1.045,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "blocked",
+          "type": "tacticalCallout",
+          "text": "TERJEBAK",
+          "at": 5,
+          "duration": 55,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        },
+        {
+          "id": "traffic-diagram",
+          "type": "radarDiagram",
+          "at": 70,
+          "duration": 45,
+          "revealFrames": 20,
+          "box": {
+            "x": 0.12,
+            "y": 0.19,
+            "width": 0.7,
+            "height": 0.28
+          },
+          "paths": [
+            {
+              "points": [
+                {
+                  "x": 0.12,
+                  "y": 0.5
+                },
+                {
+                  "x": 0.45,
+                  "y": 0.5
+                }
+              ],
+              "arrow": true
+            },
+            {
+              "points": [
+                {
+                  "x": 0.88,
+                  "y": 0.5
+                },
+                {
+                  "x": 0.55,
+                  "y": 0.5
+                }
+              ],
+              "arrow": true
+            }
+          ]
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "ignition",
+      "name": "Mesin, lampu, dan radio",
+      "at": 659,
+      "plate": "assets/kemacetan-terakhir/ignition.webp",
+      "camera": {
+        "from": {
+          "scale": 1.04,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.22,
+          "x": 18,
+          "y": -85
+        }
+      },
+      "blackout": {
+        "at": 109,
+        "duration": 23,
+        "opacity": 0.57
+      },
+      "cues": [
+        {
+          "name": "Kontak mesin",
+          "asset": "sfx/ignition-click.wav",
+          "at": 74,
+          "duration": 5,
+          "gain": 0.14
+        },
+        {
+          "name": "Lampu mati",
+          "asset": "sfx/console-switch.wav",
+          "at": 108,
+          "duration": 5,
+          "gain": 0.13
+        },
+        {
+          "name": "Radio mati",
+          "asset": "sfx/console-switch.wav",
+          "at": 134,
+          "duration": 5,
+          "gain": 0.1
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "engine",
+          "type": "tacticalCallout",
+          "text": "MESIN MATI",
+          "at": 65,
+          "duration": 32,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        },
+        {
+          "id": "lights",
+          "type": "tacticalCallout",
+          "text": "LAMPU MATI",
+          "at": 102,
+          "duration": 28,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        },
+        {
+          "id": "radio",
+          "type": "tacticalCallout",
+          "text": "RADIO MATI",
+          "at": 133,
+          "duration": 20,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "duck",
+      "name": "Merunduk di bawah jendela",
+      "at": 813,
+      "plate": "assets/kemacetan-terakhir/hide.webp",
+      "camera": {
+        "from": {
+          "scale": 1.08,
+          "x": 23,
+          "y": -15
+        },
+        "to": {
+          "scale": 1.15,
+          "x": 28,
+          "y": -45
+        }
+      },
+      "cues": [
+        {
+          "name": "Jaket menyentuh kursi",
+          "asset": "sfx/coat-shift.wav",
+          "at": 2,
+          "duration": 8,
+          "gain": 0.11
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "sill",
+          "type": "tacticalCallout",
+          "text": "02: DI BAWAH JENDELA",
+          "at": 4,
+          "duration": 55,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          },
+          "guide": [
+            {
+              "x": 0.1,
+              "y": 0.8
+            },
+            {
+              "x": 0.95,
+              "y": 0.8
+            }
+          ]
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "approach",
+      "name": "Sepatu mendekat",
+      "at": 877,
+      "plate": "assets/kemacetan-terakhir/boots.webp",
+      "camera": {
+        "from": {
+          "scale": 1.05,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.24,
+          "x": 0,
+          "y": 30
+        }
+      },
+      "cues": [
+        {
+          "name": "Langkah pertama",
+          "asset": "sfx/shoe-left.wav",
+          "at": 3,
+          "duration": 10,
+          "gain": 0.105
+        },
+        {
+          "name": "Langkah kedua",
+          "asset": "sfx/shoe-right.wav",
+          "at": 18,
+          "duration": 8,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah terakhir",
+          "asset": "sfx/shoe-left.wav",
+          "at": 35,
+          "duration": 10,
+          "gain": 0.17
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "shadow",
+      "name": "Bayangan menutupi kaca",
+      "at": 921,
+      "plate": "assets/kemacetan-terakhir/window-shadow.webp",
+      "camera": {
+        "from": {
+          "scale": 1.05,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.2,
+          "x": -17,
+          "y": 20
+        }
+      },
+      "blackout": {
+        "at": 18,
+        "duration": 32,
+        "opacity": 0.15
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "dread-drift"
+    },
+    {
+      "id": "breath",
+      "name": "Menahan napas",
+      "at": 992,
+      "plate": "assets/kemacetan-terakhir/hide.webp",
+      "camera": {
+        "from": {
+          "scale": 1.16,
+          "x": 36,
+          "y": -51
+        },
+        "to": {
+          "scale": 1.23,
+          "x": 52,
+          "y": -52
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "breath",
+          "type": "tacticalCallout",
+          "text": "TAHAN NAPAS",
+          "at": 55,
+          "duration": 55,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "dread-drift"
+    },
+    {
+      "id": "retreat",
+      "name": "Langkah menjauh",
+      "at": 1132,
+      "plate": "assets/kemacetan-terakhir/empty-window.webp",
+      "camera": {
+        "from": {
+          "scale": 1.14,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.08,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "cues": [
+        {
+          "name": "Langkah menjauh",
+          "asset": "sfx/shoe-right.wav",
+          "at": 3,
+          "duration": 8,
+          "gain": 0.075
+        },
+        {
+          "name": "Langkah di kejauhan",
+          "asset": "sfx/shoe-left.wav",
+          "at": 20,
+          "duration": 10,
+          "gain": 0.044
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "supplies",
+      "name": "Air, permen karet, dan ponsel",
+      "at": 1168,
+      "plate": "assets/kemacetan-terakhir/cabin-plate.webp",
+      "camera": {
+        "from": {
+          "scale": 1.055,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.15,
+          "x": -10,
+          "y": -24
+        }
+      },
+      "cues": [
+        {
+          "name": "Barang bergeser di kursi",
+          "asset": "sfx/coat-shift.wav",
+          "at": 1,
+          "duration": 8,
+          "gain": 0.073
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "inventory",
+          "type": "supplyChecklist",
+          "at": 0,
+          "duration": 184,
+          "revealFrames": 180,
+          "box": {
+            "x": 0.09,
+            "y": 0.22,
+            "width": 0.82,
+            "height": 0.36
+          },
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.5,
+              "display": "½ botol"
+            },
+            {
+              "label": "PERMEN KARET",
+              "value": 1,
+              "display": "1 bungkus"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.6,
+              "display": "60%"
+            }
+          ]
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "night",
+      "name": "Jalan tol mulai sunyi",
+      "at": 1355,
+      "plate": "assets/kemacetan-terakhir/night-traffic.webp",
+      "camera": {
+        "from": {
+          "scale": 1.17,
+          "x": 0,
+          "y": -45
+        },
+        "to": {
+          "scale": 1.045,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "nighttime",
+          "type": "timestampBadge",
+          "text": "HARI 1 · MALAM",
+          "at": 0,
+          "duration": 55,
+          "revealFrames": 12
+        },
+        {
+          "id": "quiet",
+          "type": "tacticalCallout",
+          "text": "SUARA MULAI HILANG",
+          "at": 80,
+          "duration": 48,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "dread-drift"
+    },
+    {
+      "id": "clock",
+      "name": "Pukul tiga dini hari",
+      "at": 1493,
+      "plate": "assets/kemacetan-terakhir/clock.webp",
+      "camera": {
+        "from": {
+          "scale": 1.04,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.11,
+          "x": 0,
+          "y": -17
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "time-three",
+          "type": "timestampBadge",
+          "text": "03:00 · DINI HARI",
+          "at": 0,
+          "duration": 70,
+          "revealFrames": 12
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "window",
+      "name": "Ketukan di jendela",
+      "at": 1570,
+      "plate": "assets/kemacetan-terakhir/empty-window.webp",
+      "camera": {
+        "from": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -12
+        },
+        "to": {
+          "scale": 1.16,
+          "x": -7,
+          "y": -10
+        }
+      },
+      "hit": {
+        "at": 26,
+        "duration": 7,
+        "strength": 8
+      },
+      "cues": [
+        {
+          "name": "Ketukan pertama",
+          "asset": "sfx/glass-knock.wav",
+          "at": 26,
+          "duration": 10,
+          "gain": 0.18
+        },
+        {
+          "name": "Ketukan kedua",
+          "asset": "sfx/glass-knock.wav",
+          "at": 48,
+          "duration": 10,
+          "gain": 0.16
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "empty",
+      "name": "Jendela kosong",
+      "at": 1634,
+      "plate": "assets/kemacetan-terakhir/empty-window.webp",
+      "camera": {
+        "from": {
+          "scale": 1.2,
+          "x": -14,
+          "y": -25
+        },
+        "to": {
+          "scale": 1.22,
+          "x": -24,
+          "y": -22
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "empty",
+          "type": "tacticalCallout",
+          "text": "KACA KOSONG",
+          "at": 30,
+          "duration": 50,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "behind",
+      "name": "Suara dari belakang",
+      "at": 1724,
+      "plate": "assets/kemacetan-terakhir/look-ahead.webp",
+      "camera": {
+        "from": {
+          "scale": 1.09,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.18,
+          "x": -5,
+          "y": 36
+        }
+      },
+      "cues": [
+        {
+          "name": "Ketukan ketiga",
+          "asset": "sfx/glass-tick.wav",
+          "at": 25,
+          "duration": 5,
+          "gain": 0.155
+        },
+        {
+          "name": "Ketukan di belakang",
+          "asset": "sfx/glass-knock.wav",
+          "at": 55,
+          "duration": 10,
+          "gain": 0.138
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "contact",
+      "name": "Jari menyentuh sandaran",
+      "at": 1788,
+      "plate": "assets/kemacetan-terakhir/headrest.webp",
+      "camera": {
+        "from": {
+          "scale": 1.05,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.19,
+          "x": 19,
+          "y": 28
+        }
+      },
+      "cues": [
+        {
+          "name": "Jari meremas sandaran",
+          "asset": "sfx/coat-shift.wav",
+          "at": 1,
+          "duration": 8,
+          "gain": 0.116
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "finger-path",
+          "type": "blueprintOverlay",
+          "at": 5,
+          "duration": 45,
+          "revealFrames": 20,
+          "box": {
+            "x": 0.15,
+            "y": 0.18,
+            "width": 0.68,
+            "height": 0.35
+          },
+          "paths": [
+            {
+              "points": [
+                {
+                  "x": 0.7,
+                  "y": 0.15
+                },
+                {
+                  "x": 0.58,
+                  "y": 0.43
+                },
+                {
+                  "x": 0.48,
+                  "y": 0.62
+                }
+              ],
+              "arrow": true
+            }
+          ]
+        }
+      ],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "turn",
+      "name": "Pengemudi menoleh",
+      "at": 1862,
+      "plate": "assets/kemacetan-terakhir/look-back.webp",
+      "camera": {
+        "from": {
+          "scale": 1.16,
+          "x": -16,
+          "y": 18
+        },
+        "to": {
+          "scale": 1.085,
+          "x": 0,
+          "y": 8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "cameraPreset": "slow-push"
+    },
+    {
+      "id": "reveal",
+      "name": "Ada penumpang di kursi belakang",
+      "at": 1904,
+      "plate": "assets/kemacetan-terakhir/rear-passenger.webp",
+      "camera": {
+        "from": {
+          "scale": 1.05,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.22,
+          "x": 4,
+          "y": 48
+        }
+      },
+      "cues": [
+        {
+          "name": "Gema saat wajah terlihat",
+          "asset": "sfx/metal-resonance.wav",
+          "at": 0,
+          "duration": 19,
+          "gain": 0.13
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "backseat",
+          "type": "tacticalCallout",
+          "text": "KURSI BELAKANG",
+          "at": 68,
+          "duration": 42,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "punch-in"
+    },
+    {
+      "id": "eyes",
+      "name": "Tatapan penumpang",
+      "at": 2023,
+      "plate": "assets/kemacetan-terakhir/rear-passenger.webp",
+      "camera": {
+        "from": {
+          "scale": 1.46,
+          "x": 0,
+          "y": 116
+        },
+        "to": {
+          "scale": 1.55,
+          "x": 0,
+          "y": 133
+        }
+      },
+      "blackout": {
+        "at": 69,
+        "duration": 27,
+        "opacity": 1
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "infected",
+          "type": "tacticalCallout",
+          "text": "TERINFEKSI",
+          "at": 35,
+          "duration": 52,
+          "revealFrames": 16,
+          "box": {
+            "x": 0.09,
+            "y": 0.15,
+            "width": 0.82,
+            "height": 0.24
+          }
+        }
+      ],
+      "cameraPreset": "slow-push"
+    }
+  ]
+}

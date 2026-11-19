@@ -1,6 +1,8 @@
 import type {Caption} from "@remotion/captions";
 
 export type EpisodeCaption = Caption & {emphasis?: string};
+export type CaptionColor = "white" | "yellow" | "red" | "default" | "highlight" | "danger";
+export type CaptionBeat = Omit<Caption, "text"> & {words: {text: string; color?: CaptionColor}[]};
 
 type Camera = {scale: number; x: number; y: number};
 
@@ -44,4 +46,29 @@ export type EpisodeManifest = {
   narration: {asset: string; at: number; duration: number; gain: number};
   beds: Bed[];
   scenes: Scene[];
+};
+
+export type Point = {x: number; y: number};
+export type HudBox = Point & {width: number; height: number};
+export type DiagramPath = {points: Point[]; label?: string; arrow?: boolean; dashed?: boolean};
+export type HudTiming = {id: string; at: number; duration: number; revealFrames: number};
+export type Hud =
+  | (HudTiming & {type: "timestampBadge"; text: string})
+  | (HudTiming & {type: "tacticalCallout"; text: string; box: HudBox; guide?: [Point, Point]})
+  | (HudTiming & {type: "supplyChecklist"; box: HudBox; items: {label: string; value: number; display: string}[]})
+  | (HudTiming & {type: "radarDiagram" | "blueprintOverlay"; box: HudBox; paths: DiagramPath[]});
+export type CameraPreset = "slow-push" | "punch-in" | "dread-drift" | "impact-shake";
+export type CharacterComposite = {mode: "baked"} | {mode: "masked"; layers: RasterLayer[]; foreground: string};
+export type SceneV2 = Omit<Scene, "layers" | "label"> & {characters: CharacterComposite; hud: Hud[]; cameraPreset?: CameraPreset};
+export type EpisodeManifestV2 = Omit<EpisodeManifest, "scenes"> & {
+  schemaVersion: 2;
+  art: {styleId: string; rasterAssets: Record<string, string>};
+  script: {
+    format: "survival-tactics-curiosity-gap";
+    hook: {at: number; line: string};
+    promise: {at: number; line: string; openLoop: string};
+    tactics: {at: number; steps: {number: number; at: number; line: string; detail: string}[]};
+    ending: {at: number; twistAt: number; payoff: string};
+  };
+  scenes: SceneV2[];
 };
