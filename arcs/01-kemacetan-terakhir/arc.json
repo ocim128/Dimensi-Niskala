@@ -4,6 +4,10 @@
   "maxEpisodes": 7,
   "threatStyle": "Grounded survival outbreak with uncanny, quiet niskala behavior: fixed stares, eerie smiles, and patient rule-testing.",
   "benchmark": "out/kemacetan-terakhir-attempt06-teen-zombie.mp4",
+  "continuityApproval": {
+    "status": "approved",
+    "productionEpisode": 2
+  },
   "characters": [
     {
       "id": "arc-01-driver",
@@ -35,68 +39,68 @@
     {
       "episodeNumber": 2,
       "arcStage": "Immediate Escape",
-      "startClock": null,
-      "endClock": null,
-      "entryInventory": null,
-      "exitInventory": null,
-      "startLocation": null,
-      "endLocation": null,
-      "endingHook": null
+      "startClock": "HARI 1 • 03:05",
+      "endClock": "HARI 1 • 03:20",
+      "entryInventory": {"water": "50%", "battery": "60%"},
+      "exitInventory": {"water": "40%", "battery": "57%"},
+      "startLocation": "Mobil RHD terkunci di jalan tol macet",
+      "endLocation": "Di balik truk boks di bahu tol",
+      "endingHook": "Pengemudi tetap berjongkok di balik truk saat terdengar bunyi pengait sabuk terlepas dari kursi belakang MPV setir kanan yang kosong di sebelahnya"
     },
     {
       "episodeNumber": 3,
       "arcStage": "Resource Crisis",
-      "startClock": null,
-      "endClock": null,
-      "entryInventory": null,
-      "exitInventory": null,
-      "startLocation": null,
-      "endLocation": null,
-      "endingHook": null
+      "startClock": "HARI 1 • 05:30",
+      "endClock": "HARI 1 • 05:40",
+      "entryInventory": {"water": "40%", "battery": "48%"},
+      "exitInventory": {"water": "100%", "battery": "45%"},
+      "startLocation": "Jalur menuju minimarket rest area",
+      "endLocation": "Pojok tembok dekat gudang belakang minimarket",
+      "endingHook": "Setelah pengemudi keluar lewat pintu gudang belakang, bel di atas pintu depan berbunyi saat gadis mendorong pintu kaca manual sedikit dari dalam"
     },
     {
       "episodeNumber": 4,
       "arcStage": "False Sanctuary",
-      "startClock": null,
-      "endClock": null,
-      "entryInventory": null,
-      "exitInventory": null,
-      "startLocation": null,
-      "endLocation": null,
-      "endingHook": null
+      "startClock": "HARI 2 • 21:00",
+      "endClock": "HARI 2 • 23:30",
+      "entryInventory": {"water": "80%", "battery": "30%"},
+      "exitInventory": {"water": "70%", "battery": "25%"},
+      "startLocation": "Ruko kosong dekat pintu keluar tol",
+      "endLocation": "Kamar lantai dua ruko",
+      "endingHook": "Gadis tersenyum tanpa berkedip di sudut kamar, di belakang botol bertutup merah yang tadi dipasang di tangga"
     },
     {
       "episodeNumber": 5,
       "arcStage": "Human Variable",
-      "startClock": null,
-      "endClock": null,
-      "entryInventory": null,
-      "exitInventory": null,
-      "startLocation": null,
-      "endLocation": null,
-      "endingHook": null
+      "startClock": "HARI 3 • 14:00",
+      "endClock": "HARI 3 • 14:10",
+      "entryInventory": {"water": "40%", "battery": "18%"},
+      "exitInventory": {"water": "40%", "battery": "14%"},
+      "startLocation": "Gang permukiman dekat JPO",
+      "endLocation": "Di samping pos berkaca di kaki tangga JPO",
+      "endingHook": "Di kaca pos dekat JPO, gadis mengetuk dan berbisik dari belakang. SMS mengumumkan Pos Evakuasi Stasiun buka HARI 5, PUKUL 05:00"
     },
     {
       "episodeNumber": 6,
       "arcStage": "Rule Breakdown",
-      "startClock": null,
-      "endClock": null,
-      "entryInventory": null,
-      "exitInventory": null,
-      "startLocation": null,
-      "endLocation": null,
-      "endingHook": null
+      "startClock": "HARI 4 • 22:00",
+      "endClock": "HARI 4 • 22:12",
+      "entryInventory": {"water": "15%", "battery": "3%"},
+      "exitInventory": {"water": "15%", "battery": "0%"},
+      "startLocation": "Mulut terowongan menuju stasiun",
+      "endLocation": "Cekungan tangga darurat di luar terowongan",
+      "endingHook": "Setelah pengemudi mundur ke tangga darurat, gadis di bawah lampu hijau stasiun mengetuk kaca tiga kali"
     },
     {
       "episodeNumber": 7,
       "arcStage": "Finale & Handoff to Arc 02",
-      "startClock": null,
-      "endClock": null,
-      "entryInventory": null,
-      "exitInventory": null,
-      "startLocation": null,
-      "endLocation": null,
-      "endingHook": null
+      "startClock": "HARI 5 • 05:00",
+      "endClock": "HARI 5 • 05:12",
+      "entryInventory": {"water": "15%", "battery": "0%"},
+      "exitInventory": {"water": "0%", "battery": "0%"},
+      "startLocation": "Sisi luar Pos Evakuasi Stasiun, akses dari tangga darurat",
+      "endLocation": "Jalan setapak samping rel di luar pos",
+      "endingHook": "Pengemudi keluar lewat jalan setapak samping rel dan meninggalkan tulisan JANGAN IKUT BARISAN. HARI 5 • MALAM, satpam shift malam bersepatu PDL menyorot tulisan itu di samping spanduk POS EVAKUASI"
     }
   ]
 }

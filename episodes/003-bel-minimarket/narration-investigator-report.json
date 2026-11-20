@@ -1,0 +1,540 @@
+{
+  "version": 1,
+  "voiceId": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "voiceName": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "provider": "gemini-cloud",
+  "model": "gemini-3.8-flash-tts",
+  "master": true,
+  "masterFilter": "highpass=f=85,equalizer=f=140:t=q:w=1.2:g=1,equalizer=f=450:t=q:w=1.5:g=-1,equalizer=f=3200:t=q:w=1.2:g=1,loudnorm=I=-14:LRA=6:TP=-1.5,aformat=sample_fmts=s16",
+  "asrModel": "small",
+  "generatedAt": "2026-11-20T07:02:39.523Z",
+  "passed": false,
+  "totalChunks": 6,
+  "verifiedChunks": 3,
+  "warningChunks": 0,
+  "failedChunks": 3,
+  "plannedDurationSec": 73.07,
+  "finalAlignment": {
+    "transcript": "Cari air saat wabah, jauhi pintu depan. Di res area ini cuma mini market yang masih menyala. Botol air, kelihatan dari parkiran. Bell gerak di atas pintu kaca itu bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, disamping tumpukan galon dan kerat minuman. Pastikan kamu bisa keluar lewat celah yang sama. Kedua, ambil air dari rak belakang. Masukkan air botol yang masih tersegel ketas belanja kain dari mobilmu. Ambil center kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara. Cek layar sekali saja. Di cermin sudut, lorong tempat kamu masuk terlihat kosong. Kamu sudah keluar lewat gudang saat bel depan berbunyi. Dari pojok tembok, kamu lihat pintu kaca itu terbuka sedikit. Gadis itu mendorong pintunya pelan dari dalam. Selama kamu sibuk mencari jalan masuk yang sunyi, dia sudah ada di toko.",
+    "mismatches": [
+      {
+        "expected": "rest",
+        "heard": "res"
+      },
+      {
+        "expected": "bel",
+        "heard": "bell"
+      },
+      {
+        "expected": "krat",
+        "heard": "kerat"
+      },
+      {
+        "expected": "senter",
+        "heard": "center"
+      }
+    ],
+    "passed": false
+  },
+  "audioQuality": {
+    "integratedLufs": -16.7,
+    "loudnessRangeLu": 3.5,
+    "noiseFloorDbfs": -19.8,
+    "targets": {
+      "integratedLufs": -14,
+      "loudnessRangeLu": [
+        5,
+        7
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "tag": null,
+      "text": "Cari air saat wabah, jauhi pintu depan. Di rest area ini cuma minimarket yang masih menyala. Botol air kelihatan dari parkiran.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.992,
+      "bestWordRatio": 0.952,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.952,
+          "similarity": 0.992,
+          "wpm": 108,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\"",
+            "word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Cari air saat wabah, jauhi pintu depan. Di res area ini cuma mini market yang masih menyala. Botol air kelihatan dari parkiran.",
+          "mismatches": [
+            {
+              "expected": "rest",
+              "heard": "res"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Cari air saat wabah, jauhi pintu depan. Di res area ini cuma mini market yang masih menyala. Botol air kelihatan dari parkiran.",
+          "rawMismatches": [
+            {
+              "expected": "rest",
+              "heard": "res"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.952,
+          "similarity": 0.992,
+          "wpm": 115,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\"",
+            "word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Cari air saat wabah, jauhi pintu depan. Di res area ini cuma mini market yang masih menyala. Botol air kelihatan dari parkiran.",
+          "mismatches": [
+            {
+              "expected": "rest",
+              "heard": "res"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Cari air saat wabah, jauhi pintu depan. Di res area ini cuma mini market yang masih menyala. Botol air kelihatan dari parkiran.",
+          "rawMismatches": [
+            {
+              "expected": "rest",
+              "heard": "res"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.952,
+          "similarity": 0.992,
+          "wpm": 110,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\"",
+            "word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Cari air saat wabah, jauhi pintu depan. Di res area ini, cuma mini market yang masih menyala. Botol air kelihatan dari parkiran.",
+          "mismatches": [
+            {
+              "expected": "rest",
+              "heard": "res"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Cari air saat wabah, jauhi pintu depan. Di res area ini, cuma mini market yang masih menyala. Botol air kelihatan dari parkiran.",
+          "rawMismatches": [
+            {
+              "expected": "rest",
+              "heard": "res"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "tag": null,
+      "text": "Bel gerak di atas pintu kaca itu bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, di samping tumpukan galon dan krat minuman.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.994,
+      "bestWordRatio": 0.962,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.923,
+          "similarity": 0.988,
+          "wpm": 121,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\"",
+            "word mismatch (ratio 0.92): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Bel gerak di atas pintu kaca itu, bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, disamping tumpukan galon dan kerat minumat.",
+          "mismatches": [
+            {
+              "expected": "krat",
+              "heard": "kerat"
+            },
+            {
+              "expected": "minuman",
+              "heard": "minumat"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Bel gerak di atas pintu kaca itu, bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, disamping tumpukan galon dan kerat minuman.",
+          "rawMismatches": [
+            {
+              "expected": "krat",
+              "heard": "kerat"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.962,
+          "similarity": 0.994,
+          "wpm": 120,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\"",
+            "word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Bel gerak di atas pintu kaca itu, bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, disamping tumpukan galon dan kerat minuman.",
+          "mismatches": [
+            {
+              "expected": "krat",
+              "heard": "kerat"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Bel gerak di atas pintu kaca itu, bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, disamping tumpukan galon dan kerat minuman.",
+          "rawMismatches": [
+            {
+              "expected": "krat",
+              "heard": "kerat"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.962,
+          "similarity": 0.994,
+          "wpm": 122,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\"",
+            "word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Bel gerak di atas pintu kaca itu, bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, disamping tumpukan galon dan kerat minuman.",
+          "mismatches": [
+            {
+              "expected": "krat",
+              "heard": "kerat"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Bel gerak di atas pintu kaca itu, bisa terdengar sampai belakang. Pertama, cari pintu gudang belakang. Pintu itu terbuka sedikit, disamping tumpukan galon dan kerat minuman.",
+          "rawMismatches": [
+            {
+              "expected": "krat",
+              "heard": "kerat"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "tag": null,
+      "text": "Pastikan kamu bisa keluar lewat celah yang sama. Kedua, ambil air dari rak belakang. Masukkan air botol yang masih tersegel ke tas belanja kain dari mobilmu.",
+      "retries": 0,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 124,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Pastikan kamu bisa keluar lewat celah yang sama. Kedua, ambil air dari rak belakang. Masukkan air botol yang masih tersegel ke tas belanja kain dari mobilmu.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Pastikan kamu bisa keluar lewat celah yang sama. Kedua, ambil air dari rak belakang. Masukkan air botol yang masih tersegel ke tas belanja kain dari mobilmu.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "tag": null,
+      "text": "Ambil senter kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara, cek layar sekali saja.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.991,
+      "bestWordRatio": 0.944,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.889,
+          "similarity": 0.986,
+          "wpm": 99,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.89): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\"",
+            "raw: 95 wpm outside 130±25%",
+            "word mismatch (ratio 0.89): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ambil center kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara. Cek klayar sekali saja.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "layar",
+              "heard": "klayar"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Ambil center kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara. Cek klayar sekali saja.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "layar",
+              "heard": "klayar"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.89): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\"",
+            "95 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.944,
+          "similarity": 0.991,
+          "wpm": 103,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\"",
+            "word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ambil center kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara. Cek layar sekali saja.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Ambil center kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara. Cek layar sekali saja.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.944,
+          "similarity": 0.991,
+          "wpm": 93,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\"",
+            "raw: 90 wpm outside 130±25%",
+            "word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\"",
+            "93 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ambil center kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara. Cek layar sekali saja.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Ambil center kecil di meja kasir. Ketiga, batasi waktu. Pasang pengatur waktu tanpa suara. Cek layar sekali saja.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\"",
+            "90 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "tag": null,
+      "text": "Di cermin sudut, lorong tempat kamu masuk terlihat kosong. Kamu sudah keluar lewat gudang saat bel depan berbunyi. Dari pojok tembok, kamu lihat pintu kaca itu terbuka sedikit.",
+      "retries": 1,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.964,
+          "similarity": 0.994,
+          "wpm": 124,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"di cermin sudut lorong tempat kamu masuk terlihat kosong kamu sudah keluar lewat\"",
+            "word mismatch (ratio 0.96): heard \"di cermin sudut lorong tempat kamu masuk terlihat kosong kamu sudah keluar lewat\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di cermin sudut, lorong tempat kamu masuk terlihat kosong. Kamu sudah keluar lewat kudang saat bel depan berbunyi. Dari pojok tembok, kamu lihat pintu kaca itu terbuka sedikit.",
+          "mismatches": [
+            {
+              "expected": "gudang",
+              "heard": "kudang"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Di cermin sudut, lorong tempat kamu masuk terlihat kosong. Kamu sudah keluar lewat kudang saat bel depan berbunyi. Dari pojok tembok, kamu lihat pintu kaca itu terbuka sedikit.",
+          "rawMismatches": [
+            {
+              "expected": "gudang",
+              "heard": "kudang"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"di cermin sudut lorong tempat kamu masuk terlihat kosong kamu sudah keluar lewat\""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 115,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di cermin sudut, lorong tempat kamu masuk terlihat kosong. Kamu sudah keluar lewat gudang saat bel depan berbunyi. Dari pojok tembok, kamu lihat pintu kaca itu terbuka sedikit.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Di cermin sudut, lorong tempat kamu masuk terlihat kosong. Kamu sudah keluar lewat gudang saat bel depan berbunyi. Dari pojok tembok, kamu lihat pintu kaca itu terbuka sedikit.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "tag": null,
+      "text": "Gadis itu mendorong pintunya pelan dari dalam. Selama kamu sibuk mencari jalan masuk yang sunyi, dia sudah ada di toko.",
+      "retries": 0,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 126,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Gadis itu mendorong pintunya pelan dari dalam. Selama kamu sibuk mencari jalan masuk yang sunyi, dia sudah ada di toko.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Gadis itu mendorong pintunya pelan dari dalam. Selama kamu sibuk mencari jalan masuk yang sunyi, dia sudah ada di toko.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    }
+  ]
+}

@@ -21,6 +21,13 @@ Give viewers an unbelievable survival experience in an imagined world. Show the 
 
 The sole visual and audio benchmark is Episode 001 Attempt 06 with the smiling teenage passenger reveal. Use the canonical driver and passenger sheets under `public/assets/characters/`. The copied generation records preserve prompt provenance, and the arc record designates the locked sheets. Attempts 02–05 are production history. [Locked benchmark cut](out/kemacetan-terakhir-attempt06-teen-zombie.mp4)
 
+## Indonesian Grounding Rule
+
+- Default to familiar Indonesian streets and buildings. Use narrow concrete gangs, weathered ruko, `teralis jendela`, and overhead cables on `tiang listrik`.
+- Default to right-hand-drive family MPVs and city cars. Give minimarkets manual push-pull glass doors with an overhead ding-dong motion chime, plus a `gudang belakang` beside `tumpukan galon` and drink crates.
+- Ground escape routes and public spaces in `tangga darurat`, `jalan samping rel`, `toa stasiun`, and `spanduk pos evakuasi`. Give each detail a purpose in the scene.
+- Write the words people would say aloud. Use `pengait sabuk`, `tangga darurat`, `jalur samping rel`, and `meja kasir` in place of stiff or translated terms.
+
 ## Episode 002+ factory loop
 
 1. **Write.** Budget strictly **130–155 spoken Indonesian words**. At Gemini Flash thriller pacing this is roughly 62–74 seconds. Count spoken words only. In the first sentence, establish both the situation and the survival rule within three seconds, as in “Saat macet di tengah wabah, jangan buka kaca.” Context belongs in the hook.

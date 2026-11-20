@@ -1,0 +1,732 @@
+{
+  "version": 1,
+  "voiceId": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "voiceName": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "provider": "gemini-cloud",
+  "model": "gemini-3.8-flash-tts",
+  "master": true,
+  "masterFilter": "highpass=f=85,equalizer=f=140:t=q:w=1.2:g=1,equalizer=f=450:t=q:w=1.5:g=-1,equalizer=f=3200:t=q:w=1.2:g=1,loudnorm=I=-14:LRA=6:TP=-1.5,aformat=sample_fmts=s16",
+  "asrModel": "small",
+  "generatedAt": "2026-11-20T07:07:33.423Z",
+  "passed": false,
+  "totalChunks": 7,
+  "verifiedChunks": 3,
+  "warningChunks": 0,
+  "failedChunks": 4,
+  "plannedDurationSec": 76.955,
+  "finalAlignment": {
+    "transcript": "Saat dengar teriakan dari rumah terkunci, jangan sahut, kamu perlu lewat gang ini untuk sampai kejembatan penyebrangan, disebrang seseorang melambai dari balik tembok. Dari rumah di sebelahmu, terdengar orang minta tolong. Pertama, dengarkan sampai kalimatnya selesai. Suara itu mengulang kata yang sama dengan jeda yang sama. Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah JPO ke orang disebrang. Dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembok gang itu tanpa bersuara. di kaki tangga JPO kamu berhenti di samping pos berkaca ponselmu bergetar pos evakuasi stasiun dibuka hari kelima pukul lima pagi teriakan dari gang berhenti kaca pos di belakangmu di ketuk di pantulannya kamu lihat gadis itu berdiri dekat dia berbisik kalau kaca di ketuk kenapa kamu masih menoleh",
+    "mismatches": [
+      {
+        "expected": "penyeberangan",
+        "heard": null
+      },
+      {
+        "expected": "di",
+        "heard": "penyebrangan"
+      },
+      {
+        "expected": "seberang",
+        "heard": "disebrang"
+      },
+      {
+        "expected": "di",
+        "heard": null
+      },
+      {
+        "expected": "seberang",
+        "heard": "disebrang"
+      }
+    ],
+    "passed": false
+  },
+  "audioQuality": {
+    "integratedLufs": -16.3,
+    "loudnessRangeLu": 3.6,
+    "noiseFloorDbfs": -19.3,
+    "targets": {
+      "integratedLufs": -14,
+      "loudnessRangeLu": [
+        5,
+        7
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "tag": null,
+      "text": "Saat dengar teriakan dari rumah terkunci, jangan sahut. Kamu perlu lewat gang ini untuk sampai ke jembatan penyeberangan. Di seberang, seseorang melambai dari balik tembok.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.991,
+      "bestWordRatio": 0.917,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.894,
+          "similarity": 0.988,
+          "wpm": 112,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.89): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \"",
+            "word mismatch (ratio 0.89): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Saat dengar teriakan dari rumah terkunci. Jangan sahut. Kamu perlu lewat gang ini untuk sampai kejembatan penyebrangan. Disebrang, seseorang melambai dari balik tembok.",
+          "mismatches": [
+            {
+              "expected": "penyeberangan",
+              "heard": null
+            },
+            {
+              "expected": "di",
+              "heard": "penyebrangan"
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Saat dengar teriakan dari rumah terkunci, jangan sahut. Kamu perlu lewat gang ini untuk sampai kejembatan penyebrangan. Disebrang, seseorang melambai dari balik tembok.",
+          "rawMismatches": [
+            {
+              "expected": "penyeberangan",
+              "heard": null
+            },
+            {
+              "expected": "di",
+              "heard": "penyebrangan"
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.89): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.851,
+          "similarity": 0.982,
+          "wpm": 100,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.85): heard \"saat dengar teriakan dari rumah tergunci jangan sahut kamu perlu lewat gang ini \"",
+            "word mismatch (ratio 0.85): heard \"saat dengar teriakan dari rumah tergunci jangan sahut kamu perlu lewat gang ini \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Saat dengar teriakan dari rumah tergunci, jangan sahut. Kamu perlu lewat gang ini untuk sampai kejembatan penyebrangan. Disebrang, seseorang melambai dari balik tembok.",
+          "mismatches": [
+            {
+              "expected": "terkunci",
+              "heard": "tergunci"
+            },
+            {
+              "expected": "penyeberangan",
+              "heard": null
+            },
+            {
+              "expected": "di",
+              "heard": "penyebrangan"
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Saat dengar teriakan dari rumah tergunci, jangan sahut. Kamu perlu lewat gang ini untuk sampai kejembatan penyebrangan. Disebrang, seseorang melambai dari balik tembok.",
+          "rawMismatches": [
+            {
+              "expected": "terkunci",
+              "heard": "tergunci"
+            },
+            {
+              "expected": "penyeberangan",
+              "heard": null
+            },
+            {
+              "expected": "di",
+              "heard": "penyebrangan"
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.85): heard \"saat dengar teriakan dari rumah tergunci jangan sahut kamu perlu lewat gang ini \""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.917,
+          "similarity": 0.991,
+          "wpm": 105,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.89): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \"",
+            "word mismatch (ratio 0.92): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Saat dengar teriakan dari rumah terkunci, jangan sahut. Kamu perlu lewat gang ini untuk sampai kejembatan penyebrangan. Di sebrang, seseorang melambai dari balik tembok.",
+          "mismatches": [
+            {
+              "expected": "penyeberangan",
+              "heard": "penyebrangan"
+            },
+            {
+              "expected": "seberang",
+              "heard": "sebrang"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Saat dengar teriakan dari rumah terkunci, jangan sahut. Kamu perlu lewat gang ini untuk sampai kejembatan penyebrangan. Disebrang, seseorang melambai dari balik tembok.",
+          "rawMismatches": [
+            {
+              "expected": "penyeberangan",
+              "heard": null
+            },
+            {
+              "expected": "di",
+              "heard": "penyebrangan"
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.89): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "tag": null,
+      "text": "Dari rumah di sebelahmu, terdengar orang minta tolong. Pertama, dengarkan sampai kalimatnya selesai. Suara itu mengulang kata yang sama, dengan jeda yang sama.",
+      "retries": 1,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 100,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 97 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dari rumah di sebelahmu, terdengar orang minta tolong. Pertama, dengarkan sampai kalimatnya selesai. Suara itu mengulang kata yang sama dengan jeda yang sama.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dari rumah di sebelahmu, terdengar orang minta tolong. Pertama, dengarkan sampai kalimatnya selesai. Suara itu mengulang kata yang sama dengan jeda yang sama.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "97 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 101,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dari rumah di sebelahmu, terdengar orang minta tolong. Pertama, dengarkan sampai kalimatnya selesai. Suara itu mengulang kata yang sama dengan jeda yang sama.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dari rumah di sebelahmu, terdengar orang minta tolong. Pertama, dengarkan sampai kalimatnya selesai. Suara itu mengulang kata yang sama dengan jeda yang sama.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "tag": null,
+      "text": "Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah JPO ke orang di seberang.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.992,
+      "bestWordRatio": 0.93,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.93,
+          "similarity": 0.992,
+          "wpm": 114,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah JPO ke orang disebrang.",
+          "mismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah JPO ke orang disebrang.",
+          "rawMismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "rawEndTruncated": true,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.884,
+          "similarity": 0.984,
+          "wpm": 127,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.88): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "word mismatch (ratio 0.88): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah GPO ke orang disebrang.",
+          "mismatches": [
+            {
+              "expected": "jpo",
+              "heard": "gpo"
+            },
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah GPO ke orang disebrang.",
+          "rawMismatches": [
+            {
+              "expected": "jpo",
+              "heard": "gpo"
+            },
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "rawEndTruncated": true,
+          "rawReasons": [
+            "word mismatch (ratio 0.88): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.93,
+          "similarity": 0.992,
+          "wpm": 115,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah JPO ke orang disebrang.",
+          "mismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Kamu menunggu satu putaran lagi. Kedua, cari siapa yang bisa melihatmu dari tempat aman. Kamu tunjuk arah JPO ke orang disebrang.",
+          "rawMismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "seberang",
+              "heard": "disebrang"
+            }
+          ],
+          "rawEndTruncated": true,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "tag": null,
+      "text": "Dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembok gang itu tanpa bersuara. Di kaki tangga JPO, kamu berhenti di samping pos berkaca.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.917,
+          "similarity": 0.982,
+          "wpm": 104,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.92): heard \"dia menunjuk balik lalu mundur dari pagar ketiga susuri tembok gang itu tanpa be\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "word mismatch (ratio 0.92): heard \"dia menunjuk balik lalu mundur dari pagar ketiga susuri tembok gang itu tanpa be\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembok gang itu tanpa bersuara. Di kaki tangga GPO, kamu berhenti di samping pos perkacat.",
+          "mismatches": [
+            {
+              "expected": "jpo",
+              "heard": "gpo"
+            },
+            {
+              "expected": "berkaca",
+              "heard": "perkacat"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembok gang itu tanpa bersuara. Di kaki tangga GPO, kamu berhenti di samping pos perkaca.",
+          "rawMismatches": [
+            {
+              "expected": "jpo",
+              "heard": "gpo"
+            },
+            {
+              "expected": "berkaca",
+              "heard": "perkaca"
+            }
+          ],
+          "rawEndTruncated": true,
+          "rawReasons": [
+            "word mismatch (ratio 0.92): heard \"dia menunjuk balik lalu mundur dari pagar ketiga susuri tembok gang itu tanpa be\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.958,
+          "similarity": 0.993,
+          "wpm": 108,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.92): heard \"dia menunjuk balik lalu mundur dari pagar ketiga susuri tembuk gang itu tanpa be\"",
+            "word mismatch (ratio 0.96): heard \"dia menunjuk balik lalu mundur dari pagar ketiga susuri tembuk gang itu tanpa be\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembuk gang itu tanpa bersuara. Di kaki tangga JPO, kamu berhenti di samping pos berkaca.",
+          "mismatches": [
+            {
+              "expected": "tembok",
+              "heard": "tembuk"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembuk gang itu tanpa bersuara. Di kaki tangga GPU, kamu berhenti di samping pos berkaca.",
+          "rawMismatches": [
+            {
+              "expected": "tembok",
+              "heard": "tembuk"
+            },
+            {
+              "expected": "jpo",
+              "heard": "gpu"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.92): heard \"dia menunjuk balik lalu mundur dari pagar ketiga susuri tembuk gang itu tanpa be\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 99,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 97 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembok gang itu tanpa bersuara. Di kaki tangga JPO, kamu berhenti di samping pos berkaca.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dia menunjuk balik, lalu mundur dari pagar. Ketiga, susuri tembok gang itu tanpa bersuara. Di kaki tangga JPO, kamu berhenti di samping pos berkaca.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "97 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "tag": null,
+      "text": "Ponselmu bergetar. Pos evakuasi stasiun dibuka hari kelima, pukul lima pagi. Teriakan dari gang berhenti.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 98,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 93 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ponselmu bergetar, pos evakuasi stasiun dibuka hari kelima, pukul lima pagi, teriakan dari gang berhenti.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Ponselmu bergetar. Pos evakuasi stasiun dibuka hari kelima. Pukul lima pagi. Teriakan dari gang berhenti.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "93 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 96,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 92 wpm outside 130±25%",
+            "96 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ponselmu bergetar, pos evakuasi stasiun dibuka hari kelima, pukul lima pagi, teriakan dari gang berhenti.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Ponselmu bergetar, pos evakuasi stasiun dibuka hari kelima, pukul lima pagi, teriakan dari gang berhenti.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "92 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 89,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 85 wpm outside 130±25%",
+            "89 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ponselmu bergetar, pos evakuasi stasiun dibuka hari kelima. Pukul lima pagi, teriakan dari gang berhenti.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Ponselmu bergetar, pos evakuasi stasiun dibuka hari kelima. Pukul lima pagi, teriakan dari gang berhenti.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "85 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "tag": null,
+      "text": "Kaca pos di belakangmu diketuk. Di pantulannya, kamu lihat gadis itu berdiri dekat. Dia berbisik.",
+      "retries": 0,
+      "status": "verified",
+      "bestSimilarity": 0.989,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 0.989,
+          "wpm": 102,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kacapos di belakangmu di ketuk, di pantulannya, kamu lihat gadis itu berdiri dekat, dia berbisik.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Kaca pos di belakangmu di ketuk, di pantulannya, kamu lihat gadis itu berdiri dekat, dia berbisik.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "tag": null,
+      "text": "“Kalau kaca diketuk... kenapa kamu masih menoleh?”",
+      "retries": 1,
+      "status": "verified",
+      "bestSimilarity": 0.989,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.857,
+          "similarity": 0.989,
+          "wpm": 87,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.86): heard \"kalau kaca diketu kenapa kamu masih menoleh\"",
+            "raw: 83 wpm outside 130±25%",
+            "word mismatch (ratio 0.86): heard \"kalau kaca diketu kenapa kamu masih menoleh\"",
+            "87 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalau kaca diketu, kenapa kamu masih menoleh?",
+          "mismatches": [
+            {
+              "expected": "diketuk",
+              "heard": "diketu"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kalau kaca diketu, kenapa kamu masih menoleh?",
+          "rawMismatches": [
+            {
+              "expected": "diketuk",
+              "heard": "diketu"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.86): heard \"kalau kaca diketu kenapa kamu masih menoleh\"",
+            "83 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 0.989,
+          "wpm": 112,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalau kaca di ketuk, kenapa kamu masih menoleh?",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Kalau kaca di ketuk, kenapa kamu masih menoleh?",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    }
+  ]
+}

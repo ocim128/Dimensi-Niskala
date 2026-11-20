@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "voiceId": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "voiceName": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "provider": "gemini-cloud",
+  "model": "gemini-3.8-flash-tts",
+  "master": true,
+  "masterFilter": "highpass=f=85,equalizer=f=140:t=q:w=1.2:g=1,equalizer=f=450:t=q:w=1.5:g=-1,equalizer=f=3200:t=q:w=1.2:g=1,loudnorm=I=-14:LRA=6:TP=-1.5,aformat=sample_fmts=s16",
+  "asrModel": "small",
+  "generatedAt": "2026-11-20T07:11:58.880Z",
+  "passed": false,
+  "totalChunks": 7,
+  "verifiedChunks": 3,
+  "warningChunks": 0,
+  "failedChunks": 4,
+  "plannedDurationSec": 86.215,
+  "finalAlignment": {
+    "transcript": "Di pos evakuasi, jauhi barisan yang membisu, pagar stasiun masih tertutup, lampu berkedip, sirena menyala, dan toa pos mengulang pengumuman. Orang di dalam berdiri rapi tanpa bicara, kamu sudah menunggu semalaman. Pertama, cari orang yang benar-benar memberi arahan. Dari luar pagar, kamu dengar Toa memanggil nomor anterian yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju. Di samping pagar ada jalan setapak samping rel. Kamu bisa kesana dengan menyusuri tembok luar pos. Ketiga, kalau memilih mundur, tinggalkan tanda untuk orang berikutnya. Dengan serpihan batu putih, kamu tulis peringatan di beton luar. Jangan ikut barisan. Sirena berhenti. Pagar terbuka pelan. Gadis itu tersenyum dari ujung barisan. Dan semua kepala menoleh ke tempat kamu tadi berdiri. Kamu mundur lewat jalur samping rel, Sampai lampu pos hilang. Malamnya, sepasang sepatu bot berhenti di depan tulisanmu. Center menyala. Seseorang membacanya.",
+    "mismatches": [
+      {
+        "expected": "sirene",
+        "heard": "sirena"
+      },
+      {
+        "expected": "antrean",
+        "heard": "anterian"
+      },
+      {
+        "expected": "sirene",
+        "heard": "sirena"
+      },
+      {
+        "expected": "senter",
+        "heard": "center"
+      }
+    ],
+    "passed": false
+  },
+  "audioQuality": {
+    "integratedLufs": -16.5,
+    "loudnessRangeLu": 3.8,
+    "noiseFloorDbfs": -20.2,
+    "targets": {
+      "integratedLufs": -14,
+      "loudnessRangeLu": [
+        5,
+        7
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "tag": null,
+      "text": "Di pos evakuasi, jauhi barisan yang membisu. Pagar stasiun masih tertutup. Lampu berkedip, sirene menyala, dan toa pos mengulang pengumuman.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.993,
+      "bestWordRatio": 0.95,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.9,
+          "similarity": 0.978,
+          "wpm": 101,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.90): heard \"di pos evakuasi jauhi barisan yang mempisu pagar stasiun masih tertutup lampu be\"",
+            "raw: 97 wpm outside 130±25%",
+            "word mismatch (ratio 0.90): heard \"di pos evakuasi jauhi barisan yang mempisu pagar stasiun masih tertutup lampu be\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di pos evakuasi, jauhi barisan yang mempisu, pagar stasiun masih tertutup, lampu berkedip, sirina menyala, dan toa pos mengulang pengumuman.",
+          "mismatches": [
+            {
+              "expected": "membisu",
+              "heard": "mempisu"
+            },
+            {
+              "expected": "sirene",
+              "heard": "sirina"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Di pos evakuasi, jauhi barisan yang mempisu, pagar stasiun masih tertutup, lampu berkedip, sirina menyala, dan toa pos mengulang pengumuman.",
+          "rawMismatches": [
+            {
+              "expected": "membisu",
+              "heard": "mempisu"
+            },
+            {
+              "expected": "sirene",
+              "heard": "sirina"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.90): heard \"di pos evakuasi jauhi barisan yang mempisu pagar stasiun masih tertutup lampu be\"",
+            "97 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.947,
+          "similarity": 0.993,
+          "wpm": 87,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.89): heard \"dipos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu ber\"",
+            "raw: 84 wpm outside 130±25%",
+            "word mismatch (ratio 0.95): heard \"dipos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu ber\"",
+            "87 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dipos Evakuasi, Jauhi Barisan Yang Membisu, Pagar Stasiun Masih Tertutup, Lampu Berkedip, Sirene Menyalah, Dan Toa Pos Mengulang Pengumuman.",
+          "mismatches": [
+            {
+              "expected": "menyala",
+              "heard": "menyalah"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Dipos Evakuasi, Jauhi Barisan Yang Membisu, Pagar Stasiun Masih Tertutup, Lampu Berkedip, Sirina Menyalah, dan Toa Pos Mengulang Pengumuman.",
+          "rawMismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirina"
+            },
+            {
+              "expected": "menyala",
+              "heard": "menyalah"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.89): heard \"dipos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu ber\"",
+            "84 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.95,
+          "similarity": 0.993,
+          "wpm": 90,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"di pos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu be\"",
+            "raw: 87 wpm outside 130±25%",
+            "word mismatch (ratio 0.95): heard \"di pos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu be\"",
+            "90 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di pos evakuasi, jauhi barisan yang membisu, pagar stasiun masih tertutup, lampu berkedip, sirena menyala, dan toa pos mengulang pengumuman.",
+          "mismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirena"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Di pos evakuasi, jauhi barisan yang membisu, pagar stasiun masih tertutup, lampu berkedip, sirena menyala, dan toa pos mengulang pengumuman.",
+          "rawMismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirena"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"di pos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu be\"",
+            "87 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "tag": null,
+      "text": "Orang di dalam berdiri rapi tanpa bicara. Kamu sudah menunggu semalaman. Pertama, cari orang yang benar-benar memberi arahan.",
+      "retries": 0,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 102,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Orang di dalam berdiri rapi tanpa bicara, kamu sudah menunggu semalaman. Pertama, cari orang yang benar-benar memberi arahan.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Orang di dalam berdiri rapi tanpa bicara, kamu sudah menunggu semalaman. Pertama, cari orang yang benar-benar memberi arahan.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "tag": null,
+      "text": "Dari luar pagar, kamu dengar toa memanggil nomor antrean yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.988,
+      "bestWordRatio": 0.952,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.952,
+          "similarity": 0.988,
+          "wpm": 110,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \"",
+            "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dari luar pagar, kamu dengar toa memanggil nomor anterian yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju.",
+          "mismatches": [
+            {
+              "expected": "antrean",
+              "heard": "anterian"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Dari luar pagar, kamu dengar toa memanggil nomor anterian yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju.",
+          "rawMismatches": [
+            {
+              "expected": "antrean",
+              "heard": "anterian"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.952,
+          "similarity": 0.988,
+          "wpm": 117,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \"",
+            "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dari luar pagar, kamu dengar toa memanggil nomor anterian yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju.",
+          "mismatches": [
+            {
+              "expected": "antrean",
+              "heard": "anterian"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Dari luar pagar, kamu dengar toa memanggil nomor anterian yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju.",
+          "rawMismatches": [
+            {
+              "expected": "antrean",
+              "heard": "anterian"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.952,
+          "similarity": 0.988,
+          "wpm": 107,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \"",
+            "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dari luar pagar, kamu dengar Toa memanggil nomor anterian yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju.",
+          "mismatches": [
+            {
+              "expected": "antrean",
+              "heard": "anterian"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Dari luar pagar, kamu dengar Toa memanggil nomor anterian yang sama. Tak ada yang menyahut. Kedua, cek jalan keluar sebelum maju.",
+          "rawMismatches": [
+            {
+              "expected": "antrean",
+              "heard": "anterian"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "tag": null,
+      "text": "Di samping pagar ada jalan setapak samping rel. Kamu bisa ke sana dengan menyusuri tembok luar pos. Ketiga, kalau memilih mundur, tinggalkan tanda untuk orang berikutnya.",
+      "retries": 0,
+      "status": "verified",
+      "bestSimilarity": 0.997,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 0.997,
+          "wpm": 113,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di samping pagar ada jalan setapak samping rel. Kamu bisa kesana dengan menyusuri tembok luar pos. Ketiga, kalau memilih mundur, tinggalkan tanda untuk orang berikutnya.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Di samping pagar ada jalan setapak samping rel. Kamu bisa kesana dengan menyusuri tembok luar pos. Ketiga, kalau memilih mundur, tinggalkan tanda untuk orang berikutnya.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "tag": null,
+      "text": "Dengan serpihan batu putih, kamu tulis peringatan di beton luar. Jangan ikut barisan. Sirene berhenti.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.99,
+      "bestWordRatio": 0.933,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.933,
+          "similarity": 0.98,
+          "wpm": 103,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dengan serpihan batu putih, kamu tulis peringatan di beton luar. Jangan ikut barisan. Sirina berhenti.",
+          "mismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirina"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Dengan serpihan batu putih, kamu tulis peringatan di beton luar. Jangan ikut barisan. Sirene, berhenti.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.933,
+          "similarity": 0.98,
+          "wpm": 92,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+            "raw: 89 wpm outside 130±25%",
+            "word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+            "92 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dengan serpihan batu putih, kamu tulis peringatan di beton luar. Jangan ikut barisan, Sirina berhenti.",
+          "mismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirina"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Dengan serpihan batu putih, kamu tulis peringatan di beton luar. Jangan ikut barisan, Sirina berhenti.",
+          "rawMismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirina"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+            "89 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.933,
+          "similarity": 0.99,
+          "wpm": 90,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+            "raw: 87 wpm outside 130±25%",
+            "word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+            "90 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dengan serpihan batu putih, kamu tulis peringatan di beton luar, jangan ikut barisan. Sirena berhenti.",
+          "mismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirena"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Dengan serpihan batu putih, kamu tulis peringatan di beton luar, jangan ikut barisan. Sirena berhenti.",
+          "rawMismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirena"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+            "87 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "tag": null,
+      "text": "Pagar terbuka pelan. Gadis itu tersenyum dari ujung barisan, dan semua kepala menoleh ke tempat kamu tadi berdiri. Kamu mundur lewat jalur samping rel sampai lampu pos hilang.",
+      "retries": 1,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.964,
+          "similarity": 0.994,
+          "wpm": 104,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"pagar terbuka pelan gadis itu tersenyum dari ujung parisan dan semua kepala meno\"",
+            "word mismatch (ratio 0.96): heard \"pagar terbuka pelan gadis itu tersenyum dari ujung parisan dan semua kepala meno\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Pagar terbuka pelan, gadis itu tersenyum dari ujung Parisan, dan semua kepala menoleh ke tempat kamu tadi berdiri, kamu mundur lewat jalur samping rel sampai lampu pos hilang.",
+          "mismatches": [
+            {
+              "expected": "barisan",
+              "heard": "parisan"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Pagar terbuka pelan, gadis itu tersenyum dari ujung Parisan, dan semua kepala menoleh ke tempat kamu tadi berdiri, kamu mundur lewat jalur samping rel sampai lampu pos hilang.",
+          "rawMismatches": [
+            {
+              "expected": "barisan",
+              "heard": "parisan"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"pagar terbuka pelan gadis itu tersenyum dari ujung parisan dan semua kepala meno\""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 101,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Pagar terbuka pelan, gadis itu tersenyum dari ujung barisan, dan semua kepala menoleh ke tempat kamu tadi berdiri, kamu mundur lewat jalur samping rel, sampai lampu pos hilang.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Pagar terbuka pelan, gadis itu tersenyum dari ujung barisan, dan semua kepala menoleh ke tempat kamu tadi berdiri, kamu mundur lewat jalur samping rel, sampai lampu pos hilang.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "tag": null,
+      "text": "Malamnya, sepasang sepatu bot berhenti di depan tulisanmu. Senter menyala. Seseorang membacanya.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.989,
+      "bestWordRatio": 0.917,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.917,
+          "similarity": 0.989,
+          "wpm": 82,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "raw: 79 wpm outside 130±25%",
+            "word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "82 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Malamnya, sepasang sepatu bot berhenti di depan tulisanmu. Center menyala, seseorang membacanya.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Malamnya, sepasang sepatu bot berhenti di depan tulisanmu, center menyala, seseorang membacanya.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "79 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.917,
+          "similarity": 0.989,
+          "wpm": 77,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "raw: 74 wpm outside 130±25%",
+            "word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "77 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Malamnya, sepasang sepatu bot berhenti di depan tulisanmu. Center menyala, seseorang membacanya.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Malamnya, sepasang sepatu bot berhenti di depan tulisanmu. Center menyala, seseorang membacanya.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "74 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.917,
+          "similarity": 0.989,
+          "wpm": 80,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "raw: 77 wpm outside 130±25%",
+            "word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "80 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Malamnya, sepasang sepatu bot berhenti di depan tulisanmu. Center menyala, seseorang membacanya.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Malamnya, sepasang sepatu bot berhenti di depan tulisanmu. Center menyala, seseorang membacanya.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+            "77 wpm outside 130±25%"
+          ]
+        }
+      ]
+    }
+  ]
+}
