@@ -20,7 +20,7 @@
 
 ## 2. Audio
 
-Master aktif [narration-investigator.mp3](narration-investigator.mp3), ShortZ Gemini 3.8 Flash TTS Investigator: 73.07 detik. [Laporan ASR](narration-investigator-report.json). Edit tanpa perubahan kecepatan: [narration-prepared.mp3](narration-prepared.mp3) 71.666 detik; [timestamp](narration-timestamps.json) dan [peta edit](audio-edit-map.json). Masih perlu pemeriksaan pendengaran untuk kata yang ditandai, batas edit, jeda dan tarikan napas sebelum dikunci.
+Master aktif [narration-investigator.mp3](narration-investigator.mp3), ShortZ Gemini 3.8 Flash TTS Investigator: 73.07 detik. [Laporan ASR](narration-investigator-report.json). Edit tanpa perubahan kecepatan: [narration-prepared.mp3](narration-prepared.mp3) 71.666 detik; [timestamp](narration-timestamps.json) dan [peta edit](audio-edit-map.json). Pemilik otomatis menerima narator ini tanpa gerbang review pendengaran; tanda ASR, batas edit dan penempatan cue tetap tercatat sebagai belum ditinjau secara auditif, bukan bukti bahwa sudah diperiksa.
 
 **Foley** — Ding-dong dari bel gerak di atas pintu kaca terdengar saat gadis mendorong pintu dari dalam. Sisakan ruang untuk bunyinya setelah pengemudi keluar. Biarkan pantulan di kulkas tanpa aksen audio. [Pustaka dan atribusi](../../public/sfx/LICENSES.md)
 

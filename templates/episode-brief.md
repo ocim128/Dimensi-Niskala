@@ -22,9 +22,9 @@ Read the record before writing. If the story changes the carried state, show how
 
 ## 2. Lock one ShortZ master
 
-- Generate the whole script in **one ShortZ `gemini-3.8-flash-tts` request**. Record [master path], [voice ID and settings], [generation date] and [word timestamps]. Keep the master and timing sidecar with the episode.
+- Reuse the existing prepared Investigator take when available; otherwise generate the whole script in **one ShortZ `gemini-3.8-flash-tts` request**. Record [master path], [voice ID and settings], [generation date] and [word timestamps]. Keep the master and timing sidecar with the episode. The owner accepts this narrator automatically; do not require a separate listening approval or claim a review was performed.
 - **Measured narration duration** — [___ s]. Target 60–73 s prepared narration; flag narration or video below 61 s or above 78 s. Tighten dead air without speeding up the voice; preserve dramatic and foley pauses. Confirm the opening sentence fits within three seconds and lock the source, duration and word timing before building the timeline.
-- **Audio review** — [pronunciation, pauses, delivery and gaps reserved for independent SFX]
+- **Audio handoff** — [owner-accepted narration, known ASR uncertainties, pauses and gaps reserved for independent SFX; report any review actually performed]
 
 ### Mandatory Audio & Foley Cue Sheet
 

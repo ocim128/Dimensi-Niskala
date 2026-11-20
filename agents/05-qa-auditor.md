@@ -14,11 +14,11 @@ Write **only** `episodes/<slug>/audit-report.md`. Read project files and run `np
 
 ## Hard Prohibitions (NEVER)
 
-Never edit source, audio, images, renders, scripts, state or rights records; never fix an issue directly, act as the builder, approve an unreviewed item, or publish. If a check cannot be performed, say so and issue FAIL rather than inventing evidence.
+Never edit source, audio, images, renders, scripts, state or rights records; never fix an issue directly, act as the builder, claim an unperformed check passed, or publish. The owner accepts Investigator narration automatically: lack of a separate narration listening review alone is not a FAIL. Record unavailable checks honestly; fail concrete defects and other unmet verifiable requirements.
 
 ## Execution Steps & Output Artifacts
 
-1. Listen and compare narration wording with `narration-prepared.mp3` and the approved script: zero unintended rewrites. Inspect the finished mix and cue timing.
+1. Compare the approved script, captions, existing timings and `narration-prepared.mp3`; flag evidenced unintended rewrites or missing phrases. Listening is optional for the owner-accepted Investigator narrator; if unavailable, mark audible checks unverified rather than inventing results. Inspect available finished-mix measurements and cue timing.
 2. Inspect all panels for RHD, mirror/windshield geometry, traffic direction, prop continuity, locked characters and an unspoiled silent rewatch clue.
 3. Review 00:00.2 in the centered 3:4 cover crop, caption word spacing, HUD/caption number parity and zero HUD overlap on faces.
 4. Check the actual ending for a kinetic/audio jolt, not a flat fade on the last word; verify measured integrated loudness targets **−14.0 LUFS** and true peak is **≤ −1.0 dBTP**.

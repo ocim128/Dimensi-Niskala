@@ -43,3 +43,10 @@ Source `ambient_horror.ogg`, [Ambient horror](https://opengameart.org/content/am
 ## Climax derivatives
 
 `prepared/climax-riser.wav` is a filtered, faded and peak-normalized derivative of techiew's CC0 `tension-rise`. `prepared/climax-stinger.wav` layers dklon's CC BY 3.0 `body-fall` with rubberduck's CC0 `metal-resonance` and techiew's CC0 `sub-drone`, filtered, faded and peak-normalized. Rebuild these two files with `node scripts/prep-sfx.mjs --climax`; originals are retained. The dklon attribution above applies to every cut using the stinger. Peak normalization is to approximately ?1 dBFS, not a true-peak guarantee for the finished mix.
+
+## Episode 003 candidate minimarket effects
+
+- `sources/frosty-ham-doorbell-original.wav`: [Doorbell by frosty ham](https://opengameart.org/content/doorbell), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/); original WAV from the linked page. SHA-256 `705e4cec5d602df88813165bd2bac53cbfdbe593a552b1e7fe41cb7a26e9bc0f`. `prepared/minimarket-doorbell-outside.wav` is high-passed at 180 Hz, low-passed at 2200 Hz and normalized to -1 dBFS sample peak. Candidate: audible ding-dong and perspective suitability still need review.
+- `sources/laleksic-door-creak-open-original.wav`: `door_creak_open.wav` from [Various Sound Effects by laleksic](https://opengameart.org/content/various-sound-effects), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). SHA-256 `67ec6952f3de32852ea5a188e6118546107e4d2ca15b3fd4cab64d8993877227`. `prepared/minimarket-door-creak-outside.wav` is high-passed at 150 Hz, low-passed at 2200 Hz and normalized to -1 dBFS sample peak. Candidate: appropriateness for the glass-door action still needs listening.
+
+These candidates and the existing climax derivatives require listening in the episode mix; sample peak is not a finished-mix true-peak guarantee.

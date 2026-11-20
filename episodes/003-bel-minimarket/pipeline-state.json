@@ -1,8 +1,26 @@
 {
-  "brief": {"status": "pass", "notes": "Owner initialized brief as passed. Existing 140-word script is a pre-existing exception to the 115–130-word new-script budget; do not silently rewrite the existing take."},
-  "audio": {"status": "ready", "notes": "Existing narration-prepared.mp3 is 71.67 s; listening review of ASR flags, edit boundaries and pauses is still required before audio passes."},
-  "images": {"status": "pending", "notes": ""},
-  "render": {"status": "pending", "notes": ""},
-  "audit": {"status": "pending", "notes": ""},
-  "publish": {"status": "pending", "notes": ""}
+  "brief": {
+    "status": "pass",
+    "notes": "Owner initialized brief as passed. Existing 140-word script is a pre-existing exception to the 115–130-word new-script budget; do not silently rewrite the existing take."
+  },
+  "audio": {
+    "status": "pass",
+    "notes": "Owner automatically accepts the existing 71.666 s Investigator narration; Agent 02 is skipped. No listening review is claimed. See audio-handoff.md for provisional ASR, cue and mix notes; Agent 04 finalizes SFX and measurements."
+  },
+  "images": {
+    "status": "ready",
+    "notes": "Agent 03 is next. Establish scenario and rule visually in the first 3 seconds; ASR estimates the spoken rule ends at 3.68 s, which remains unverified."
+  },
+  "render": {
+    "status": "pending",
+    "notes": ""
+  },
+  "audit": {
+    "status": "pending",
+    "notes": ""
+  },
+  "publish": {
+    "status": "pending",
+    "notes": ""
+  }
 }

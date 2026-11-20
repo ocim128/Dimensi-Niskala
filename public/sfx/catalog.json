@@ -91,5 +91,21 @@
       ],
       "processing": "--climax: layered impact, filtered metal and sub, peak normalized to -1 dBFS."
     }
+  ],
+  "supplementalCandidates": [
+    {
+      "name": "minimarket-doorbell-outside",
+      "source": "public/sfx/sources/frosty-ham-doorbell-original.wav",
+      "output": "public/sfx/prepared/minimarket-doorbell-outside.wav",
+      "processing": "highpass 180 Hz, lowpass 2200 Hz, peak normalized to -1 dBFS; candidate requires listening in context",
+      "license": "CC0 1.0; frosty ham; see LICENSES.md"
+    },
+    {
+      "name": "minimarket-door-creak-outside",
+      "source": "public/sfx/sources/laleksic-door-creak-open-original.wav",
+      "output": "public/sfx/prepared/minimarket-door-creak-outside.wav",
+      "processing": "highpass 150 Hz, lowpass 2200 Hz, peak normalized to -1 dBFS; candidate requires listening in context",
+      "license": "CC0 1.0; laleksic; see LICENSES.md"
+    }
   ]
 }

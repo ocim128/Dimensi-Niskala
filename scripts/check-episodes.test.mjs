@@ -259,8 +259,8 @@ test("pipeline state accepts documented statuses and rejects missing or invalid 
   assert.doesNotThrow(() => validatePipelineState(state));
   const episode = JSON.parse(readFileSync("episodes/003-bel-minimarket/pipeline-state.json", "utf8"));
   assert.doesNotThrow(() => validatePipelineState(episode));
-  assert.equal(episode.brief.status, "pass");
-  assert.equal(episode.audio.status, "ready");
+  const progressed = structuredClone(state); progressed.audio.status = "pass"; progressed.images.status = "ready";
+  assert.doesNotThrow(() => validatePipelineState(progressed));
   const missing = structuredClone(state); delete missing.audit;
   assert.throws(() => validatePipelineState(missing), /missing audit stage/);
   const badStatus = structuredClone(state); badStatus.render.status = "approved";

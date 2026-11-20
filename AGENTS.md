@@ -17,8 +17,10 @@
 
 Use the [studio role contracts and pipeline state](agents/README.md) for new episode handoffs. The orchestrator contract is currently human-operated; it does not authorize agents to publish.
 
+The owner accepts the Gemini 3.8 Flash TTS Investigator narrator automatically; a separate listening approval is not a prerequisite for production. For Arc 01, reuse each episode's existing prepared narration and timing files and skip Agent 02. Record this owner acceptance without claiming a listening review occurred. Agent 04 supplies any missing cue-sheet foley or in-world voice SFX during assembly; final mix measurements and the normal QA gate still apply.
+
 1. Write **115–130 spoken Indonesian words**. Sentence one establishes both the scenario and the survival rule within three seconds. Use second-person narration with the arc’s locked survivor.
-2. Generate the whole script in **one ShortZ `gemini-3.8-flash-tts` call**. Lock the master, measured duration and word timestamps before generating visuals or building the timeline. Target 60–73 seconds of prepared narration and a 62–75-second final video; flag narration or video below 61 seconds or above 78 seconds. Never change vocal speed to meet the budget.
+2. Reuse an existing prepared Investigator take when available; otherwise generate the whole script in **one ShortZ `gemini-3.8-flash-tts` invocation**. Record the master, measured duration and available word timestamps before generating visuals or building the timeline. Target 60–73 seconds of prepared narration and a 62–75-second final video; flag narration or video below 61 seconds or above 78 seconds. Never change vocal speed to meet the budget.
 3. Plan **10–12 unique 9:16 panels** and assign each to a story beat. Keep Indonesian vehicle interiors right-hand drive across all angles.
 4. Assemble against the locked narration. Set the manifest’s `openingTitle` to 3–4 punchy words and show it from 00:00.0 to 00:01.8 in the upper-center 3:4 safe zone. Use frame 00:00.2 for the cover and prohibit flash-frame thumbnails. Match caption numbers to the HUD, run the validator and complete the [final review](templates/review.md).
 

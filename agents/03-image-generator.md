@@ -6,7 +6,7 @@ Generate a consistent raster panel batch from the approved brief, locked charact
 
 ## Required Inputs & Preconditions
 
-Read the approved brief, camera specs and jolt beat; verify audio is `pass`, timings are locked, and canonical sheets and generation records exist. Follow the applicable character/image-generation skill.
+Read the approved brief, camera specs and jolt beat; verify the owner-accepted prepared narration and timing files exist, and canonical sheets and generation records exist. For Arc 01 Episodes 003–007, do not wait for Agent 02 or a separate listening approval. Cue timing can remain provisional for Agent 04. Follow the applicable character/image-generation skill.
 
 ## Allowed Write Scope
 
