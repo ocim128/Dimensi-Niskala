@@ -9,6 +9,8 @@ import alternate from "../episodes/001-kemacetan-terakhir/recut-v2-alternate/man
 import alternateCaptions from "../episodes/001-kemacetan-terakhir/recut-v2-alternate/captions.json";
 import attempt05 from "../episodes/001-kemacetan-terakhir/attempt-05/manifest.json";
 import attempt05Captions from "../episodes/001-kemacetan-terakhir/attempt-05/captions.json";
+import attempt06 from "../episodes/001-kemacetan-terakhir/attempt-06/manifest.json";
+import attempt06Captions from "../episodes/001-kemacetan-terakhir/attempt-06/captions.json";
 
 const KemacetanTerakhir = (options: PreviewOptions) => <Episode
   manifest={kemacetan satisfies EpisodeManifest}
@@ -22,6 +24,7 @@ const KemacetanRecut = (options: PreviewOptions) => <Episode
 />;
 const KemacetanAlternate = (options: PreviewOptions) => <Episode manifest={alternate as EpisodeManifestV2} captions={alternateCaptions as CaptionBeat[]} {...options} />;
 const KemacetanAttempt05 = (options: PreviewOptions) => <Episode manifest={attempt05 as EpisodeManifestV2} captions={attempt05Captions as CaptionBeat[]} {...options} />;
+const KemacetanAttempt06 = (options: PreviewOptions) => <Episode manifest={attempt06 as EpisodeManifestV2} captions={attempt06Captions as CaptionBeat[]} {...options} />;
 
 export const Root = () => <><Composition
   id="KemacetanTerakhirMotionComic"
@@ -35,6 +38,12 @@ export const Root = () => <><Composition
 <Composition id="KemacetanTerakhirMotionComicRecut" component={KemacetanRecut} width={1080} height={1920} fps={30} durationInFrames={2120} defaultProps={{showCaptions: true, soundOn: true}} />
 <Composition id="KemacetanTerakhirMotionComicAlternate" component={KemacetanAlternate} width={1080} height={1920} fps={30} durationInFrames={2120} defaultProps={{showCaptions: true, soundOn: true}} />
 <Composition id="KemacetanTerakhirMotionComicAttempt05" component={KemacetanAttempt05} width={1080} height={1920} fps={30} durationInFrames={2136} defaultProps={{
+  showCaptions: true,
+  soundOn: true,
+  narrationOn: true,
+  effectsOn: true,
+}} />
+<Composition id="KemacetanTerakhirMotionComicAttempt06" component={KemacetanAttempt06} width={1080} height={1920} fps={30} durationInFrames={2136} defaultProps={{
   showCaptions: true,
   soundOn: true,
   narrationOn: true,

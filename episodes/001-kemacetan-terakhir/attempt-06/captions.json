@@ -1,0 +1,743 @@
+[
+  {
+    "startMs": 0,
+    "endMs": 1000,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kalau"
+      },
+      {
+        "text": "kaca"
+      },
+      {
+        "text": "diketuk,",
+        "color": "danger"
+      }
+    ]
+  },
+  {
+    "startMs": 1320,
+    "endMs": 2780,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "jangan"
+      },
+      {
+        "text": "langsung"
+      },
+      {
+        "text": "menoleh."
+      }
+    ]
+  },
+  {
+    "startMs": 2920,
+    "endMs": 4020,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Saat"
+      },
+      {
+        "text": "wabah"
+      },
+      {
+        "text": "menutup"
+      }
+    ]
+  },
+  {
+    "startMs": 4020,
+    "endMs": 4620,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "jalan"
+      },
+      {
+        "text": "tol,"
+      }
+    ]
+  },
+  {
+    "startMs": 5000,
+    "endMs": 5900,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "dua"
+      },
+      {
+        "text": "langkah"
+      },
+      {
+        "text": "ini"
+      }
+    ]
+  },
+  {
+    "startMs": 5900,
+    "endMs": 6860,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "bisa"
+      },
+      {
+        "text": "menyembunyikanmu."
+      }
+    ]
+  },
+  {
+    "startMs": 7420,
+    "endMs": 8780,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Satu"
+      },
+      {
+        "text": "bunyi"
+      },
+      {
+        "text": "bisa"
+      }
+    ]
+  },
+  {
+    "startMs": 8780,
+    "endMs": 9660,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "membuatmu"
+      },
+      {
+        "text": "salah"
+      }
+    ]
+  },
+  {
+    "startMs": 9660,
+    "endMs": 10650,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "melihat"
+      },
+      {
+        "text": "arah."
+      }
+    ]
+  },
+  {
+    "startMs": 12289,
+    "endMs": 14991,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Pertama,"
+      },
+      {
+        "text": "kunci",
+        "color": "highlight"
+      },
+      {
+        "text": "semua"
+      },
+      {
+        "text": "pintu.",
+        "color": "highlight"
+      }
+    ]
+  },
+  {
+    "startMs": 15588,
+    "endMs": 16430,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Mobil"
+      },
+      {
+        "text": "di"
+      },
+      {
+        "text": "depan"
+      }
+    ]
+  },
+  {
+    "startMs": 16430,
+    "endMs": 17605,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "dan"
+      },
+      {
+        "text": "belakang"
+      },
+      {
+        "text": "sudah"
+      },
+      {
+        "text": "rapat."
+      }
+    ]
+  },
+  {
+    "startMs": 18237,
+    "endMs": 19395,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Gagang"
+      },
+      {
+        "text": "pintu",
+        "color": "highlight"
+      },
+      {
+        "text": "tinggal"
+      }
+    ]
+  },
+  {
+    "startMs": 19395,
+    "endMs": 20640,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "sejengkal"
+      },
+      {
+        "text": "dari"
+      },
+      {
+        "text": "tanganmu"
+      }
+    ]
+  },
+  {
+    "startMs": 20886,
+    "endMs": 22202,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "saat"
+      },
+      {
+        "text": "seseorang"
+      },
+      {
+        "text": "diterkam",
+        "color": "danger"
+      }
+    ]
+  },
+  {
+    "startMs": 22202,
+    "endMs": 22904,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "di"
+      },
+      {
+        "text": "sela"
+      },
+      {
+        "text": "mobil."
+      }
+    ]
+  },
+  {
+    "startMs": 23272,
+    "endMs": 24009,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Tarik"
+      },
+      {
+        "text": "tanganmu."
+      }
+    ]
+  },
+  {
+    "startMs": 24553,
+    "endMs": 25219,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Tekan"
+      },
+      {
+        "text": "kunci.",
+        "color": "highlight"
+      }
+    ]
+  },
+  {
+    "startMs": 25974,
+    "endMs": 26693,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kalau"
+      },
+      {
+        "text": "mobil"
+      },
+      {
+        "text": "tak"
+      }
+    ]
+  },
+  {
+    "startMs": 26693,
+    "endMs": 27167,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "bisa"
+      },
+      {
+        "text": "maju,"
+      }
+    ]
+  },
+  {
+    "startMs": 27167,
+    "endMs": 28605,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "pintu",
+        "color": "highlight"
+      },
+      {
+        "text": "tertutup"
+      },
+      {
+        "text": "itu"
+      }
+    ]
+  },
+  {
+    "startMs": 28605,
+    "endMs": 30184,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "satu-satunya"
+      },
+      {
+        "text": "batas"
+      }
+    ]
+  },
+  {
+    "startMs": 30184,
+    "endMs": 31412,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "antara"
+      },
+      {
+        "text": "kamu"
+      },
+      {
+        "text": "dan"
+      },
+      {
+        "text": "jalan."
+      }
+    ]
+  },
+  {
+    "startMs": 32276,
+    "endMs": 32603,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kedua,"
+      }
+    ]
+  },
+  {
+    "startMs": 33259,
+    "endMs": 34172,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "hilangkan"
+      },
+      {
+        "text": "tanda"
+      }
+    ]
+  },
+  {
+    "startMs": 34172,
+    "endMs": 35052,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "kalau"
+      },
+      {
+        "text": "ada"
+      },
+      {
+        "text": "orang"
+      }
+    ]
+  },
+  {
+    "startMs": 35052,
+    "endMs": 35500,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "di"
+      },
+      {
+        "text": "dalam."
+      }
+    ]
+  },
+  {
+    "startMs": 36259,
+    "endMs": 37259,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Matikan"
+      },
+      {
+        "text": "mesin,",
+        "color": "highlight"
+      }
+    ]
+  },
+  {
+    "startMs": 37810,
+    "endMs": 39190,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "lampu,",
+        "color": "highlight"
+      },
+      {
+        "text": "dan"
+      },
+      {
+        "text": "radio.",
+        "color": "highlight"
+      }
+    ]
+  },
+  {
+    "startMs": 40017,
+    "endMs": 41207,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Turunkan"
+      },
+      {
+        "text": "badan"
+      },
+      {
+        "text": "sampai"
+      }
+    ]
+  },
+  {
+    "startMs": 41207,
+    "endMs": 41914,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "garis"
+      },
+      {
+        "text": "jendela",
+        "color": "highlight"
+      }
+    ]
+  },
+  {
+    "startMs": 41914,
+    "endMs": 43190,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "ada"
+      },
+      {
+        "text": "di"
+      },
+      {
+        "text": "atas"
+      },
+      {
+        "text": "kepalamu."
+      }
+    ]
+  },
+  {
+    "startMs": 43466,
+    "endMs": 44759,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kalau"
+      },
+      {
+        "text": "langkah"
+      },
+      {
+        "text": "berhenti"
+      }
+    ]
+  },
+  {
+    "startMs": 44759,
+    "endMs": 45724,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "di"
+      },
+      {
+        "text": "samping"
+      },
+      {
+        "text": "pintu,",
+        "color": "highlight"
+      }
+    ]
+  },
+  {
+    "startMs": 46155,
+    "endMs": 47897,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "biarkan"
+      },
+      {
+        "text": "bayangannya"
+      },
+      {
+        "text": "lewat"
+      },
+      {
+        "text": "dulu."
+      }
+    ]
+  },
+  {
+    "startMs": 48672,
+    "endMs": 50241,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Air",
+        "color": "highlight"
+      },
+      {
+        "text": "tinggal"
+      },
+      {
+        "text": "setengah"
+      },
+      {
+        "text": "botol,"
+      }
+    ]
+  },
+  {
+    "startMs": 50655,
+    "endMs": 52103,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "baterai",
+        "color": "highlight"
+      },
+      {
+        "text": "enam"
+      },
+      {
+        "text": "puluh"
+      },
+      {
+        "text": "persen."
+      }
+    ]
+  },
+  {
+    "startMs": 52103,
+    "endMs": 53190,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kamu"
+      },
+      {
+        "text": "cuma"
+      },
+      {
+        "text": "perlu"
+      }
+    ]
+  },
+  {
+    "startMs": 53190,
+    "endMs": 55017,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "bertahan"
+      },
+      {
+        "text": "sampai"
+      },
+      {
+        "text": "pagi."
+      }
+    ]
+  },
+  {
+    "startMs": 55439,
+    "endMs": 57422,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Pukul"
+      },
+      {
+        "text": "tiga"
+      },
+      {
+        "text": "pagi,"
+      }
+    ]
+  },
+  {
+    "startMs": 58135,
+    "endMs": 60430,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "jalan"
+      },
+      {
+        "text": "akhirnya"
+      },
+      {
+        "text": "sunyi."
+      }
+    ]
+  },
+  {
+    "startMs": 62527,
+    "endMs": 64436,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Jendelanya",
+        "color": "highlight"
+      },
+      {
+        "text": "kosong."
+      }
+    ]
+  },
+  {
+    "startMs": 66420,
+    "endMs": 68884,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Yang"
+      },
+      {
+        "text": "mengetuk",
+        "color": "danger"
+      },
+      {
+        "text": "duduk"
+      }
+    ]
+  },
+  {
+    "startMs": 68884,
+    "endMs": 70563,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "tepat"
+      },
+      {
+        "text": "di"
+      },
+      {
+        "text": "belakangmu.",
+        "color": "highlight"
+      }
+    ]
+  }
+]

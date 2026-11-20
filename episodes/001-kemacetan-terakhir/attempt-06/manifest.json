@@ -1,0 +1,1324 @@
+{
+  "schemaVersion": 2,
+  "id": "KemacetanTerakhirMotionComicAttempt06",
+  "fps": 30,
+  "duration": 2136,
+  "captions": "captions.json",
+  "narration": {
+    "asset": "assets/001-kemacetan-terakhir/attempt-06/narration-edit.wav",
+    "at": 0,
+    "duration": 2122,
+    "gain": 0.9
+  },
+  "beds": [
+    {
+      "name": "Lalu lintas",
+      "asset": "sfx/traffic-bed.wav",
+      "at": 0,
+      "duration": 1080,
+      "gain": 0.1,
+      "fadeIn": 0,
+      "fadeOut": 80,
+      "loop": true
+    },
+    {
+      "name": "Mesin",
+      "asset": "sfx/engine-idle.wav",
+      "at": 0,
+      "duration": 1080,
+      "gain": 0.065,
+      "fadeIn": 8,
+      "fadeOut": 30,
+      "loop": true
+    },
+    {
+      "name": "Tekanan di jalan",
+      "asset": "sfx/sub-drone.wav",
+      "at": 360,
+      "duration": 550,
+      "gain": 0.12,
+      "fadeIn": 20,
+      "fadeOut": 75
+    },
+    {
+      "name": "Udara malam",
+      "asset": "sfx/night-air.wav",
+      "at": 1140,
+      "duration": 580,
+      "gain": 0.13,
+      "fadeIn": 35,
+      "fadeOut": 80,
+      "loop": true
+    },
+    {
+      "name": "Munculnya penumpang",
+      "asset": "sfx/tension-rise.wav",
+      "at": 1950,
+      "duration": 140,
+      "gain": 0.11,
+      "fadeIn": 20,
+      "fadeOut": 20
+    }
+  ],
+  "art": {
+    "styleId": "gritty-dark-anime-comic",
+    "rasterAssets": {
+      "assets/001-kemacetan-terakhir/attempt-06/hook-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/sheet-sit.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/traffic-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/attack-window.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/waiting-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/lock-hand.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/lock-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/behind-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/reach-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/attack-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/recoil-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/lock-press-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/ignition-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/duck-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/boots.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/shadow-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/supplies-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/sheet-recoil.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/window-close.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/window-wide.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/turn-character.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/headrest-knock.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/passenger-distinct.webp": "gritty-dark-anime-comic"
+    }
+  },
+  "script": {
+    "format": "survival-tactics-curiosity-gap",
+    "hook": {
+      "at": 0,
+      "line": "Kalau kaca diketuk, jangan langsung menoleh."
+    },
+    "promise": {
+      "at": 90,
+      "line": "Saat wabah menutup jalan tol, dua langkah ini bisa menyembunyikanmu.",
+      "openLoop": "Satu bunyi bisa membuatmu salah melihat arah."
+    },
+    "tactics": {
+      "at": 360,
+      "steps": [
+        {
+          "number": 1,
+          "at": 360,
+          "line": "Pertama, kunci semua pintu.",
+          "detail": "Mobil di depan dan belakang sudah rapat."
+        },
+        {
+          "number": 2,
+          "at": 960,
+          "line": "Kedua, hilangkan tanda kalau ada orang di dalam.",
+          "detail": "Matikan mesin, lampu, dan radio; merunduk di bawah jendela."
+        }
+      ]
+    },
+    "ending": {
+      "at": 1650,
+      "twistAt": 2019,
+      "payoff": "Yang mengetuk duduk tepat di belakangmu."
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "name": "Ketukan di kaca",
+      "at": 0,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/hook-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "day",
+          "type": "timestampBadge",
+          "text": "HARI 1 · MALAM",
+          "at": 0,
+          "duration": 50,
+          "revealFrames": 12
+        },
+        {
+          "id": "warning",
+          "type": "tacticalCallout",
+          "text": "JANGAN MENOLEH",
+          "at": 12,
+          "duration": 45,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver visibly tense beside the threatened window."
+      }
+    },
+    {
+      "id": "driver",
+      "name": "Terjebak di kursi pengemudi",
+      "at": 66,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/sheet-sit.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Driver seated and alert."
+      }
+    },
+    {
+      "id": "traffic",
+      "name": "Jalan tertutup",
+      "at": 132,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/traffic-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver observes blocked traffic."
+      }
+    },
+    {
+      "id": "attack-early",
+      "name": "Ancaman di luar",
+      "at": 201,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/attack-window.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver reacts to attack beyond side glass."
+      }
+    },
+    {
+      "id": "listen",
+      "name": "Bunyi dari luar",
+      "at": 270,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/waiting-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver listens tensely beside the window."
+      }
+    },
+    {
+      "id": "rule-one",
+      "name": "Pertama: kunci pintu",
+      "at": 336,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/lock-hand.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "one",
+          "type": "tacticalCallout",
+          "text": "01 · KUNCI SEMUA PINTU",
+          "at": 8,
+          "duration": 45,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          },
+          "guide": [
+            {
+              "x": 0.1,
+              "y": 0.72
+            },
+            {
+              "x": 0.9,
+              "y": 0.72
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "tactical-hud",
+        "evidence": "Lock and approaching silhouette are shown with a guide."
+      }
+    },
+    {
+      "id": "lock-action",
+      "name": "Mengunci pintu",
+      "at": 405,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/lock-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver acts on the door lock."
+      },
+      "cues": [
+        {
+          "name": "Kunci pintu",
+          "asset": "sfx/door-lock.wav",
+          "at": 30,
+          "duration": 18,
+          "gain": 0.15
+        }
+      ]
+    },
+    {
+      "id": "boxed",
+      "name": "Mobil berhimpitan",
+      "at": 474,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/behind-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "threat-proximity",
+        "evidence": "Driver and blocked road establish the trapped car."
+      }
+    },
+    {
+      "id": "handle",
+      "name": "Sejengkal dari gagang",
+      "at": 540,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/reach-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "distance",
+          "type": "tacticalCallout",
+          "text": "GAGANG SEJENGKAL",
+          "at": 5,
+          "duration": 50,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver reaches toward the door under pressure."
+      }
+    },
+    {
+      "id": "attack",
+      "name": "Serangan di sela mobil",
+      "at": 612,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/attack-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver sees violence between cars."
+      },
+      "hit": {
+        "at": 15,
+        "duration": 12,
+        "strength": 10
+      },
+      "cues": [
+        {
+          "name": "Benturan di jalan",
+          "asset": "sfx/body-fall.wav",
+          "at": 15,
+          "duration": 19,
+          "gain": 0.15
+        }
+      ]
+    },
+    {
+      "id": "withdraw",
+      "name": "Tarik tangan",
+      "at": 678,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/recoil-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "withdraw",
+          "type": "tacticalCallout",
+          "text": "TARIK TANGAN",
+          "at": 4,
+          "duration": 45,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver pulls away from the handle."
+      },
+      "cues": [
+        {
+          "name": "Gerakan lengan",
+          "asset": "sfx/coat-shift.wav",
+          "at": 7,
+          "duration": 9,
+          "gain": 0.08
+        }
+      ]
+    },
+    {
+      "id": "lock",
+      "name": "Tekan kunci",
+      "at": 744,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/lock-press-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver presses the door lock."
+      },
+      "cues": [
+        {
+          "name": "Klik kunci",
+          "asset": "sfx/door-lock.wav",
+          "at": 3,
+          "duration": 18,
+          "gain": 0.15
+        }
+      ]
+    },
+    {
+      "id": "blocked",
+      "name": "Tidak bisa maju",
+      "at": 810,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/traffic-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver watches blocked traffic."
+      }
+    },
+    {
+      "id": "barrier",
+      "name": "Pintu sebagai batas",
+      "at": 876,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/hook-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "barrier",
+          "type": "tacticalCallout",
+          "text": "PINTU TERTUTUP",
+          "at": 5,
+          "duration": 45,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver remains inside against the threat."
+      }
+    },
+    {
+      "id": "between",
+      "name": "Jalan di balik pintu",
+      "at": 942,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/lock-hand.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "The hand is separated from the outside figure by the locked door."
+      }
+    },
+    {
+      "id": "rule-two",
+      "name": "Kedua: hilangkan tanda",
+      "at": 1008,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/attack-window.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "two",
+          "type": "tacticalCallout",
+          "text": "02 · HILANGKAN TANDA",
+          "at": 5,
+          "duration": 45,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver looks toward the danger while remaining hidden."
+      }
+    },
+    {
+      "id": "engine",
+      "name": "Mesin dimatikan",
+      "at": 1074,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/ignition-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "engine-label",
+          "type": "tacticalCallout",
+          "text": "MESIN · LAMPU · RADIO",
+          "at": 8,
+          "duration": 50,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver reaches to shut off the ignition."
+      },
+      "cues": [
+        {
+          "name": "Kontak mesin",
+          "asset": "sfx/ignition-click.wav",
+          "at": 15,
+          "duration": 6,
+          "gain": 0.13
+        },
+        {
+          "name": "Lampu",
+          "asset": "sfx/console-switch.wav",
+          "at": 40,
+          "duration": 6,
+          "gain": 0.12
+        },
+        {
+          "name": "Radio",
+          "asset": "sfx/console-switch.wav",
+          "at": 58,
+          "duration": 6,
+          "gain": 0.1
+        }
+      ]
+    },
+    {
+      "id": "hide-prepare",
+      "name": "Bersiap merunduk",
+      "at": 1140,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/sheet-sit.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver braces before ducking."
+      }
+    },
+    {
+      "id": "duck",
+      "name": "Di bawah jendela",
+      "at": 1206,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/duck-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "window-line",
+          "type": "tacticalCallout",
+          "text": "DI BAWAH GARIS JENDELA",
+          "at": 6,
+          "duration": 52,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          },
+          "guide": [
+            {
+              "x": 0.05,
+              "y": 0.72
+            },
+            {
+              "x": 0.95,
+              "y": 0.72
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "tactical-hud",
+        "evidence": "Visible driver ducks below the plotted window line."
+      }
+    },
+    {
+      "id": "footsteps",
+      "name": "Langkah mendekat",
+      "at": 1272,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/boots.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Boots are immediately outside the door."
+      },
+      "cues": [
+        {
+          "name": "Langkah mendekat",
+          "asset": "sfx/shoe-left.wav",
+          "at": 25,
+          "duration": 12,
+          "gain": 0.12
+        },
+        {
+          "name": "Langkah di samping",
+          "asset": "sfx/shoe-right.wav",
+          "at": 43,
+          "duration": 10,
+          "gain": 0.13
+        }
+      ]
+    },
+    {
+      "id": "shadow",
+      "name": "Bayangan lewat",
+      "at": 1338,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/shadow-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver watches the threat pass."
+      }
+    },
+    {
+      "id": "wait-low",
+      "name": "Tunggu bayangan",
+      "at": 1404,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/waiting-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver watches and waits for the threat to pass."
+      }
+    },
+    {
+      "id": "supplies",
+      "name": "Air dan baterai",
+      "at": 1470,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/supplies-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "inventory",
+          "type": "supplyChecklist",
+          "at": 2,
+          "duration": 65,
+          "revealFrames": 55,
+          "box": {
+            "x": 0.07,
+            "y": 0.5,
+            "width": 0.6,
+            "height": 0.22
+          },
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.5,
+              "display": "½ botol"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.6,
+              "display": "60%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "tactical-hud",
+        "evidence": "Checklist shows remaining water and battery below the driver?s face."
+      }
+    },
+    {
+      "id": "wait",
+      "name": "Menunggu pagi",
+      "at": 1542,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/hook-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver waits and watches the dark window."
+      }
+    },
+    {
+      "id": "stay",
+      "name": "Bertahan dalam mobil",
+      "at": 1611,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/sheet-recoil.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver keeps still and alert."
+      }
+    },
+    {
+      "id": "clock",
+      "name": "Pukul tiga pagi",
+      "at": 1680,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/sheet-sit.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "time",
+          "type": "timestampBadge",
+          "text": "03:00 · DINI HARI",
+          "at": 0,
+          "duration": 50,
+          "revealFrames": 12
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver remains awake in the car."
+      }
+    },
+    {
+      "id": "silence",
+      "name": "Jalan menjadi sunyi",
+      "at": 1749,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/traffic-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Driver watches the road as it goes quiet."
+      }
+    },
+    {
+      "id": "two-taps",
+      "name": "Dua ketukan di kaca",
+      "at": 1815,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/window-close.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "The side glass fills the frame as two taps draw attention there."
+      },
+      "cues": [
+        {
+          "name": "Ketukan kaca satu",
+          "asset": "sfx/glass-tick.wav",
+          "at": 3,
+          "duration": 6,
+          "gain": 0.5
+        },
+        {
+          "name": "Ketukan kaca dua",
+          "asset": "sfx/glass-tick.wav",
+          "at": 21,
+          "duration": 6,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "empty-window",
+      "name": "Jendela kosong",
+      "at": 1875,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/window-wide.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "empty",
+          "type": "tacticalCallout",
+          "text": "KACA KOSONG",
+          "at": 15,
+          "duration": 40,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "A distinct wider view establishes the empty exterior."
+      }
+    },
+    {
+      "id": "rear-knock",
+      "name": "Ketukan dari belakang",
+      "at": 1950,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/headrest-knock.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "An infected hand contacts the headrest on the rear-knock frame."
+      },
+      "cues": [
+        {
+          "name": "Ketukan dari belakang",
+          "asset": "sfx/glass-knock.wav",
+          "at": 0,
+          "duration": 13,
+          "gain": 0.45
+        }
+      ]
+    },
+    {
+      "id": "turn",
+      "name": "Reaksi sebelum melihat",
+      "at": 1965,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/turn-character.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "The driver recoils and turns toward the rear seat."
+      }
+    },
+    {
+      "id": "passenger",
+      "name": "Penumpang di belakang",
+      "at": 2019,
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/passenger-distinct.webp",
+      "camera": {
+        "from": {
+          "scale": 1.03,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.1,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "reveal",
+          "type": "tacticalCallout",
+          "text": "DI BELAKANGMU",
+          "at": 53,
+          "duration": 35,
+          "revealFrames": 12,
+          "box": {
+            "x": 0.08,
+            "y": 0.16,
+            "width": 0.84,
+            "height": 0.23
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "The infected passenger is revealed in the back seat."
+      },
+      "cameraPreset": "punch-in",
+      "blackout": {
+        "at": 90,
+        "duration": 25,
+        "opacity": 1
+      },
+      "cues": [
+        {
+          "name": "Gema penemuan",
+          "asset": "sfx/metal-resonance.wav",
+          "at": 0,
+          "duration": 23,
+          "gain": 0.11
+        }
+      ]
+    }
+  ]
+}
