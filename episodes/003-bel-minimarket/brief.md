@@ -20,9 +20,16 @@
 
 ## 2. Audio
 
-Master [narration-investigator.mp3](narration-investigator.mp3) dibuat dari [narasi.txt](narasi.txt) menggunakan ShortZ `gemini-cloud`, model `gemini-3.8-flash-tts`, dan suara Investigator (`voice_71a5a701-796e-421d-840e-0adc00b0816a`). Durasi 73.070 detik. Satu perintah ShortZ memproses 6 potongan internal. [Timestamp hasil ASR](narration-investigator-timestamps.json) dan [laporan pemeriksaan](narration-investigator-report.json). ShortZ menandai 3 potongan gagal dan penyelarasan akhir belum lulus. Periksa teks dan pengucapan dengan mendengarkan sebelum mengunci timestamp atau membuat caption. Periksa juga jeda untuk efek dan campuran audio. Master ini melampaui batas akhir 72 detik. Susun edit waktu yang alami sebelum mengunci durasi cut.
+Master aktif [narration-investigator.mp3](narration-investigator.mp3), ShortZ Gemini 3.8 Flash TTS Investigator: 73.07 detik. [Laporan ASR](narration-investigator-report.json). Edit tanpa perubahan kecepatan: [narration-prepared.mp3](narration-prepared.mp3) 71.666 detik; [timestamp](narration-timestamps.json) dan [peta edit](audio-edit-map.json). Masih perlu pemeriksaan pendengaran untuk kata yang ditandai, batas edit, jeda dan tarikan napas sebelum dikunci.
 
 **Foley** — Ding-dong dari bel gerak di atas pintu kaca terdengar saat gadis mendorong pintu dari dalam. Sisakan ruang untuk bunyinya setelah pengemudi keluar. Biarkan pantulan di kulkas tanpa aksen audio. [Pustaka dan atribusi](../../public/sfx/LICENSES.md)
+
+### Mandatory Audio & Foley Cue Sheet
+
+| Beat / Trigger Phrase | Asset Type (foley / voice-sfx / bed-cut) | Acoustic Treatment | Mix Rule |
+| --- | --- | --- | --- |
+| Setelah keluar lewat gudang belakang: “bel depan berbunyi” | foley: chime gerak minimarket Indonesia `ding-dong`, lalu derit dorongan pintu kaca | Sedikit teredam dari perspektif luar | Bunyi bel tepat saat pengemudi sudah keluar; ikuti dengan derit kaca halus saat pintu didorong dari dalam. Sisakan ruang untuk narator. |
+| Sosok pada pantulan kaca kulkas | bed-cut: larangan aksen | Ambience berlanjut alami | **Nol aksen SFX** pada petunjuk rewatch; tidak ada sting atau suara khusus. |
 
 ## 3. Sepuluh panel 9:16
 

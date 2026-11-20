@@ -20,9 +20,19 @@
 
 ## 2. Audio
 
-Master [narration-investigator.mp3](narration-investigator.mp3) dibuat dari [narasi.txt](narasi.txt) menggunakan ShortZ `gemini-cloud`, model `gemini-3.8-flash-tts`, dan suara Investigator (`voice_71a5a701-796e-421d-840e-0adc00b0816a`). Durasi 76.955 detik. Satu perintah ShortZ memproses 7 potongan internal. [Timestamp hasil ASR](narration-investigator-timestamps.json) dan [laporan pemeriksaan](narration-investigator-report.json). ShortZ menandai 4 potongan gagal dan penyelarasan akhir belum lulus. Periksa teks dan pengucapan dengan mendengarkan sebelum mengunci timestamp atau membuat caption. Periksa juga jeda untuk efek dan campuran audio. Master ini melampaui batas akhir 72 detik. Susun edit waktu yang alami sebelum mengunci durasi cut. Periksa khusus apakah kalimat langsung terakhir terdengar seperti bisikan yang diminta di brief.
+Master aktif [narration-investigator.mp3](narration-investigator.mp3), ShortZ Gemini 3.8 Flash TTS Investigator: 76.955 detik. [Laporan ASR](narration-investigator-report.json). Edit tanpa perubahan kecepatan: [narration-prepared.mp3](narration-prepared.mp3) 72.323 detik; [timestamp](narration-timestamps.json) dan [peta edit](audio-edit-map.json). Masih perlu pemeriksaan pendengaran untuk kata yang ditandai, batas edit, jeda dan tarikan napas sebelum dikunci. Untuk cut produksi, ganti hanya kalimat kutipan terakhir dengan voice-sfx sesuai cue sheet; simpan master dan edit saat ini.
 
-**Foley dan delivery** — Suara minta tolong sebagai sumber suara terpisah, dua putaran dengan jeda identik. Sesudah hening, sisakan ruang untuk satu ketukan kaca. Bacakan kalimat terakhir sebagai bisikan langsung dalam satu permintaan Gemini yang sama. [Pustaka dan atribusi](../../public/sfx/LICENSES.md)
+**Foley dan delivery** — Suara minta tolong dan bisikan gadis adalah voice-sfx terpisah; Investigator tetap satu-satunya narator. [Pustaka dan atribusi](../../public/sfx/LICENSES.md)
+
+### Mandatory Audio & Foley Cue Sheet
+
+| Beat / Trigger Phrase | Asset Type (foley / voice-sfx / bed-cut) | Acoustic Treatment | Mix Rule |
+| --- | --- | --- | --- |
+| Rule 1: suara meminta tolong mengulang kalimat | voice-sfx `entity-female`: satu file “Tolong... buka pintunya...” | `behind-wall` | Generate satu klip. Picu **file yang sama dua kali** pada Rule 1 di `manifest.json` dengan interval awal-ke-awal yang tetap dalam milidetik; lanjutkan loop file dan interval identik hingga cue bed-cut. Letakkan di bawah Investigator agar kata narator jelas. |
+| “Ponselmu bergetar” dan SMS pos evakuasi | foley: getaran HP pendek | Teredam, dekat tas atau genggaman | Picu pada beat SMS tanpa menutupi narasi. |
+| “Teriakan dari gang berhenti.” → “Kaca pos di belakangmu diketuk.” | bed-cut + foley: ketukan kaca Episode 001 | Potong plea mendadak ke hening; ketukan kaca tajam | Hard-cut loop plea pada kalimat berhenti, lalu picu callback kaca **tok-tok-tok** berisi 2–3 ketukan tepat pada beat kaca; sisakan ruang sebelum bisikan. |
+| “Dia berbisik.” → “Kalau kaca diketuk... kenapa kamu masih menoleh?” | voice-sfx `entity-female`: kalimat kutipan itu | `close-whisper`, dekat telinga | Setelah “Dia berbisik.”, picu klip bisikan langsung. Pada cut produksi, catat rentang kutipan terakhir di `audio-edit-map.json` dan mute/trim hanya bagian Investigator itu; jangan retake atau menimpa master/prepared saat ini. Perbarui timing dan caption untuk suara bisikan, ukur ulang durasi final, dan review sambungan tanpa speed-up. |
+| Bayangan diam pada kaca rumah | bed-cut: larangan aksen | Pertahankan perspektif plea di balik dinding | **Nol aksen SFX** khusus pada petunjuk rewatch. |
 
 ## 3. Sepuluh panel 9:16
 

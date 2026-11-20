@@ -1,6 +1,29 @@
 ﻿// Rebuild prepared derivatives; originals and their license record stay intact.
 import {readFileSync, mkdirSync, rmSync} from 'node:fs';
 import {spawnSync} from 'node:child_process';
+import {resolve} from 'node:path';
+
+// Optional world-voice treatment; leave the catalog rebuild unchanged when no
+// arguments are supplied. Keep each source intact and refuse to overwrite output.
+const profiles = {
+  'behind-wall': 'highpass=f=300,lowpass=f=1800,aecho=0.8:0.2:45:0.15',
+  'close-whisper': 'highpass=f=140,equalizer=f=3200:t=q:w=1:g=2',
+  'toa-megaphone': 'highpass=f=500,lowpass=f=2800,asoftclip=type=tanh:threshold=0.8:oversample=2,aecho=0.8:0.25:85:0.18',
+};
+const args = process.argv.slice(2);
+if (args.length) {
+  const validKeys = new Set(['--profile', '--input', '--output']);
+  if (args.length !== 6 || args.some((arg, i) => i % 2 === 0 && !validKeys.has(arg)))
+    throw Error('Usage: node scripts/prep-sfx.mjs --profile <behind-wall|close-whisper|toa-megaphone> --input <source> --output <new-file>');
+  const options = Object.fromEntries([0, 2, 4].map(i => [args[i], args[i + 1]]));
+  const filter = Object.hasOwn(profiles, options['--profile']) ? profiles[options['--profile']] : null;
+  if (!filter || !options['--input'] || !options['--output'] || resolve(options['--input']) === resolve(options['--output']))
+    throw Error('Choose a valid profile and distinct input and output files');
+  const result = spawnSync('ffmpeg', ['-hide_banner', '-nostdin', '-n', '-loglevel', 'error', '-i', options['--input'], '-af', filter, options['--output']], {encoding: 'utf8'});
+  if (result.error || result.status !== 0) throw Error(result.error ?? result.stderr);
+  console.log(`Applied ${options['--profile']} to ${options['--output']}`);
+  process.exit(0);
+}
 const catalog = JSON.parse(readFileSync('public/sfx/catalog.json', 'utf8').replace(/^\uFEFF/, ''));
 mkdirSync(catalog.outputDirectory, {recursive:true});
 function run(args) { const p=spawnSync('ffmpeg',['-hide_banner','-nostdin','-y',...args],{encoding:'utf8'}); if(p.status!==0) throw Error(p.stderr); return p.stderr; }

@@ -1,0 +1,79 @@
+{
+  "source": "episodes\\006-gema-di-underpass\\narration-investigator-revised.mp3",
+  "output": "episodes\\006-gema-di-underpass\\narration-prepared.mp3",
+  "sourceDurationSec": 76.75,
+  "preparedDurationSec": 71.745,
+  "silenceThresholdDb": -38,
+  "retainedGapSec": 0.35,
+  "crossfadeSec": 0.01,
+  "protectedFromSec": 56.86,
+  "cuts": [
+    {
+      "start": 1.746,
+      "end": 1.958
+    },
+    {
+      "start": 4.093,
+      "end": 4.546
+    },
+    {
+      "start": 6.327,
+      "end": 6.696
+    },
+    {
+      "start": 10.222,
+      "end": 10.79
+    },
+    {
+      "start": 15.194,
+      "end": 15.33
+    },
+    {
+      "start": 17.076,
+      "end": 17.303
+    },
+    {
+      "start": 20.606,
+      "end": 20.974
+    },
+    {
+      "start": 27.278,
+      "end": 27.713
+    },
+    {
+      "start": 32.276,
+      "end": 32.704
+    },
+    {
+      "start": 34.258,
+      "end": 34.384
+    },
+    {
+      "start": 36.793,
+      "end": 37.05
+    },
+    {
+      "start": 38.122,
+      "end": 38.259
+    },
+    {
+      "start": 40.576,
+      "end": 40.688
+    },
+    {
+      "start": 50.332,
+      "end": 50.478
+    },
+    {
+      "start": 52.356,
+      "end": 52.673
+    },
+    {
+      "start": 54.221,
+      "end": 54.775
+    }
+  ],
+  "playbackDucks": [],
+  "notes": "No playback speed change; only quiet gap centers removed. Inhales were not automatically ducked: review by ear. ASR timestamps and cuts require listening review.",
+  "minimumGapSec": 0.45
+}

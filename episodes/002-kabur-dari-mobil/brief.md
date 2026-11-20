@@ -20,9 +20,17 @@
 
 ## 2. Audio
 
-Master [narration-investigator.mp3](narration-investigator.mp3) dibuat dari [narasi.txt](narasi.txt) menggunakan ShortZ `gemini-cloud`, model `gemini-3.8-flash-tts`, dan suara Investigator (`voice_71a5a701-796e-421d-840e-0adc00b0816a`). Durasi 70.950 detik. Satu perintah ShortZ memproses 6 potongan internal. [Timestamp hasil ASR](narration-investigator-timestamps.json) dan [laporan pemeriksaan](narration-investigator-report.json). ShortZ menandai 1 potongan gagal dan penyelarasan akhir belum lulus. Periksa teks dan pengucapan dengan mendengarkan sebelum mengunci timestamp atau membuat caption. Periksa juga jeda untuk efek dan campuran audio.
+Master aktif [narration-investigator.mp3](narration-investigator.mp3), ShortZ Gemini 3.8 Flash TTS Investigator: 70.95 detik. [Laporan ASR](narration-investigator-report.json). Edit tanpa perubahan kecepatan: [narration-prepared.mp3](narration-prepared.mp3) 67.623 detik; [timestamp](narration-timestamps.json) dan [peta edit](audio-edit-map.json). Masih perlu pemeriksaan pendengaran untuk kata yang ditandai, batas edit, jeda dan tarikan napas sebelum dikunci.
 
 **Foley** — Klik sabuk pertama sangat pelan, klik terakhir bersih dan terpisah dari suara narator. Tahan napas sebelum bunyi terakhir. [Pustaka dan atribusi](../../public/sfx/LICENSES.md)
+
+### Mandatory Audio & Foley Cue Sheet
+
+| Beat / Trigger Phrase | Asset Type (foley / voice-sfx / bed-cut) | Acoustic Treatment | Mix Rule |
+| --- | --- | --- | --- |
+| Act 1: melepas sabuk dan membuka kunci pintu | foley: pengait sabuk manual dan pergeseran kunci | Dekat, teredam, halus | Gerakkan sesuai tangan; jangan gunakan dentang logam keras atau menutupi narator. |
+| Sebelum kalimat terakhir, lalu sabuk di kursi belakang mobil kosong terlepas | bed-cut + foley: klik pengait logam dan tarikan pendek sabuk + sting rendah | Klik terisolasi dengan kehadiran 1,5–3 kHz yang terdengar di ponsel | Turunkan ambience hingga hampir hening sebelum kalimat terakhir; beri ruang pada narator, bunyikan klik dan strap retract dari MPV kosong di sebelah, lalu sting low-end singkat. |
+| Pantulan pintu belakang di spion truk | bed-cut: larangan aksen | Pertahankan ambience alami | **Nol aksen SFX** pada petunjuk rewatch; jangan beri sting, klik, atau penekanan suara. |
 
 ## 3. Sepuluh panel 9:16
 

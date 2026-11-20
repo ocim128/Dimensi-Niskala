@@ -30,23 +30,23 @@ The sole visual and audio benchmark is Episode 001 Attempt 06 with the smiling t
 
 ## Episode 002+ factory loop
 
-1. **Write.** Budget strictly **130–155 spoken Indonesian words**. At Gemini Flash thriller pacing this is roughly 62–74 seconds. Count spoken words only. In the first sentence, establish both the situation and the survival rule within three seconds, as in “Saat macet di tengah wabah, jangan buka kaca.” Context belongs in the hook.
-2. **Lock audio.** Generate the entire script in one ShortZ request with `gemini-3.8-flash-tts`. Record the output’s measured duration and reviewed word timestamps before commissioning art or building the timeline. Treat raw takes shorter than 61 seconds or longer than 80 seconds as a timing issue to resolve at this stage. The finished cut still has a 72-second cap.
+1. **Write.** Budget strictly **115–130 spoken Indonesian words**. Gemini 3.8 Investigator thriller delivery averages roughly 1.7 words per second; measure each take. Count spoken words only. In the first sentence, establish both the situation and the survival rule within three seconds, as in “Saat macet di tengah wabah, jangan buka kaca.” Context belongs in the hook.
+2. **Lock audio.** Generate the entire script in one ShortZ request with `gemini-3.8-flash-tts`. Record the output’s measured duration and reviewed word timestamps before commissioning art or building the timeline. Target **60–73 seconds prepared narration** and **62–75 seconds final video**, reserving a tail for the ending. Flag narration or video below 61 seconds or above 78 seconds. Tighten dead air without speeding the voice; preserve dramatic and foley pauses.
 3. **Make panels.** Target **10–12 unique 9:16 key panels**, roughly one per 5–6-second story beat. Change the action, framing or tactical overlay within the beat to meet the plain-still limit. Keep each image assignment unique and avoid returning to a shot from a different mood. In Indonesian vehicles, specify **right-hand drive** in the prompt and verify the wheel, driver and dashboard orientation across angles.
 4. **Assemble and review.** Specify a punchy, conversational **3–4 word `openingTitle`** in the manifest. Display it from **00:00.0 to 00:01.8** in the **upper center of the centered 3:4 crop**. On a 1080 × 1920 canvas, the centered crop spans y = 240–1680. Use **00:00.2** as the TikTok cover and verify it in the three-column profile preview. A 0.1-second flash thumbnail is prohibited. Run the [validator](scripts/check-episodes.mjs) and [final review](templates/review.md).
 
-The validator checks the manifest-resolved narration and cut duration against 61–80 seconds, the `openingTitle` word count, and repeated image paths. These checks stop new episodes on failure and report warnings for Episode 001. Verify title placement and timing in the preview.
+The validator enforces 60–73 seconds of prepared narration and 62–75 seconds for new final cuts, and emits a warning for durations below 61 seconds or above 78 seconds. Legacy Episode 001 cuts remain compatible. It also checks the `openingTitle` word count and repeated image paths. Verify title placement and timing in the preview.
 
 ## Format and script
 
-Use **Survival-Tactics + Curiosity Gap** in every episode. The full cut runs **60–72 seconds**, with a hard maximum of **72 seconds** including any tail. Flat play-by-play narration is prohibited.
+Use **Survival-Tactics + Curiosity Gap** in every episode. The final cut runs **62–75 seconds** including its tail. Flat play-by-play narration is prohibited.
 
 | Time | Required story beat |
 | --- | --- |
 | 0–3 s | Establish both the scenario and the survival rule in the first sentence. |
 | 3–12 s | Make a promise and open a loop, for example *“…asalkan kamu tidak melakukan satu kesalahan fatal ini.”* |
 | 12–55 s | Present numbered tactical steps in Indonesian, starting with *Pertama… Kedua…* Give each step a concrete survival detail and show it in the shot or diagram. |
-| 55–70 s | Build quietly, then land a sharp twist that answers the open loop. At 60–69 seconds total, land the twist before the cut ends. |
+| 55–70 s | Build quietly, then land a sharp twist that answers the open loop. Land the twist before the cut ends. |
 
 ## Protagonist and shot purpose
 
@@ -73,6 +73,19 @@ Use **Survival-Tactics + Curiosity Gap** in every episode. The full cut runs **6
 - Use digits and match numeric formatting to the HUD, such as `60%`, `03:00` or `PUKUL 3 PAGI`. Spell numbers as needed in the spoken source and use the numeric form on screen.
 - Start with recorded location tone and foley, then add a restrained tension cue where it serves the scene. Leave room for the narration and let a quiet beat hold before a knock or reveal. Use the shared recordings or add new assets with an explicit redistribution license and source credit.
 - Keep narration text and sound directions separate. Send only spoken words to ShortZ. Put diegetic sounds such as door knocks in scene SFX cues and reserve audible space for them in the clean voice track. Caption the spoken line from the take. If a sound needs an accessibility caption, mark it as a sound cue timed to the effect.
+
+### Heard-if-mentioned world audio
+
+- **One narrator.** `investigator` is the locked storytelling voice for all Dimensi Niskala episodes. Keep the main narration a single-speaker track; never add multi-speaker narration parsing.
+- **Hear what is mentioned.** Audit the final spoken script for every in-scene sound, voice, public announcement, and meaningful stop or silence. Put each in the brief’s mandatory cue sheet with its trigger, separate SFX/bed asset, treatment and mix rule; time it in `manifest.json` and reserve space in the mix. Explicitly mark visual rewatch clues that must have no sound accent.
+- **Optional world voices.** Only when the episode explicitly mentions an in-scene voice or PA, generate `entity-female`, a flat, eerie young female voice for supernatural mimicry or close whispers, or `pa-announcer`, a flat, formal Indonesian public-announcement voice for loudspeakers, emergency radio or station TOAs. Treat each as a separate timestamped `voice-sfx` asset, not another main narrator. Record its source and rights; reuse the identical file when an identical repetition is required.
+- **Acoustic profiles.** Use `node scripts/prep-sfx.mjs --profile <name> --input <source> --output <new-file>` to create a derivative without overwriting the source. Mix and listen in context; the filters do not set cue timing or levels.
+
+| Profile | Purpose | FFmpeg filter chain |
+| --- | --- | --- |
+| `behind-wall` | Muffled interior, 300–1800 Hz, subtle room echo | `highpass=f=300,lowpass=f=1800,aecho=0.8:0.2:45:0.15` |
+| `close-whisper` | Dry, intimate presence; 140 Hz low-cut | `highpass=f=140,equalizer=f=3200:t=q:w=1:g=2` |
+| `toa-megaphone` | Nasal outdoor PA, 500–2800 Hz, light saturation and faint slapback | `highpass=f=500,lowpass=f=2800,asoftclip=type=tanh:threshold=0.8:oversample=2,aecho=0.8:0.25:85:0.18` |
 
 ## Finish a cut
 

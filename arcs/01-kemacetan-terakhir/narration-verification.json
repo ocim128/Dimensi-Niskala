@@ -1,0 +1,941 @@
+{
+  "scope": "Arc 01 episodes 002-007, selected takes; original and replacement ShortZ reports are retained alongside each episode",
+  "userReportedPriorError": "Episode 004 original final alarm was heard as alaram; revised script uses penanda.",
+  "generalCaveat": "No audible listening review has been completed. Reported misrecognition and zero-time ASR boundaries do not by themselves prove a real pronunciation or clipping error.",
+  "episodes": [
+    {
+      "episode": 2,
+      "report": "episodes/002-kabur-dari-mobil/narration-investigator-report.json",
+      "mismatches": [
+        {
+          "expected": "pintumu",
+          "heard": "pintungu",
+          "classification": "chunk-level ASR recognized pintumu; full-file ASR disagrees; listen"
+        },
+        {
+          "expected": "sela",
+          "heard": "selam",
+          "classification": "possible boundary/ASR error; listen"
+        },
+        {
+          "expected": "boks",
+          "heard": "box",
+          "classification": "harmless spelling variant box"
+        }
+      ],
+      "acceptedChunkFlags": [
+        {
+          "index": 0,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 1,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 2,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 3,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.92): heard \"sisakan tangan digagang sampai ada celah ketiga raih taskain berisi botol dan po\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "word mismatch (ratio 0.92): heard \"sisakan tangan digagang sampai ada celah ketiga raih taskain berisi botol dan po\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 4,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 5,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        }
+      ],
+      "interpretation": "WPM flags concern pacing; onset and last-word/truncation flags require listening; word-mismatch reasons are evaluated against mismatches above. ASR does not establish pronunciation or clipping."
+    },
+    {
+      "episode": 3,
+      "report": "episodes/003-bel-minimarket/narration-investigator-report.json",
+      "mismatches": [
+        {
+          "expected": "rest",
+          "heard": "res",
+          "classification": "harmless ASR spelling res area"
+        },
+        {
+          "expected": "bel",
+          "heard": "bell",
+          "classification": "harmless homophone bell"
+        },
+        {
+          "expected": "krat",
+          "heard": "kerat",
+          "classification": "possible pronunciation or ASR insertion; listen"
+        },
+        {
+          "expected": "senter",
+          "heard": "center",
+          "classification": "harmless homophone center"
+        }
+      ],
+      "acceptedChunkFlags": [
+        {
+          "index": 0,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\"",
+            "word mismatch (ratio 0.95): heard \"cari air saat wabah jauhi pintu depan di res area ini cuma mini market yang masi\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 1,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\"",
+            "word mismatch (ratio 0.96): heard \"bel gerak di atas pintu kaca itu bisa terdengar sampai belakang pertama cari pin\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 2,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 3,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\"",
+            "word mismatch (ratio 0.94): heard \"ambil center kecil di meja kasir ketiga batasi waktu pasang pengatur waktu tanpa\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 4,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 5,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        }
+      ],
+      "interpretation": "WPM flags concern pacing; onset and last-word/truncation flags require listening; word-mismatch reasons are evaluated against mismatches above. ASR does not establish pronunciation or clipping."
+    },
+    {
+      "episode": 4,
+      "report": "episodes/004-alarm-di-tangga/narration-investigator-revised-report.json",
+      "mismatches": [
+        {
+          "expected": "tersenggol",
+          "heard": "tersengol",
+          "classification": "possible pronunciation or ASR spelling; listen"
+        },
+        {
+          "expected": "senter",
+          "heard": "center",
+          "classification": "harmless homophone center"
+        },
+        {
+          "expected": "senter",
+          "heard": "center",
+          "classification": "harmless homophone center"
+        }
+      ],
+      "acceptedChunkFlags": [
+        {
+          "index": 0,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 1,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 2,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"kalau tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas k\"",
+            "word mismatch (ratio 0.93): heard \"kalau tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas k\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 3,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "raw: 94 wpm outside 130±25%",
+            "word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "97 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 4,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        }
+      ],
+      "interpretation": "WPM flags concern pacing; onset and last-word/truncation flags require listening; word-mismatch reasons are evaluated against mismatches above. ASR does not establish pronunciation or clipping.",
+      "priorReports": [
+        {
+          "report": "episodes/004-alarm-di-tangga/narration-investigator-report.json",
+          "mismatches": [
+            {
+              "expected": "di",
+              "heard": null,
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "ruko",
+              "heard": "diru",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "kosong",
+              "heard": "kokosong",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "senter",
+              "heard": "center",
+              "classification": "harmless homophone spelling"
+            },
+            {
+              "expected": "senter",
+              "heard": "center",
+              "classification": "harmless homophone spelling"
+            },
+            {
+              "expected": "alarm",
+              "heard": "alaram",
+              "classification": "real pronunciation issue reported by owner; replaced in revised script"
+            }
+          ],
+          "acceptedChunkFlags": [
+            {
+              "index": 0,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.91): heard \"sembunyi diru kokosong jauhi lantai 1 bayangan orang lewat sudah menutup kaca de\""
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 1,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 2,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 3,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.95): heard \"ketiga duduk menghadap pintu dan matikan layar ponsel center tetap di tangan kam\"",
+                "word mismatch (ratio 0.95): heard \"ketiga duduk menghadap pintu dan matikan layar ponsel center tetap di tangan kam\""
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 4,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.95): heard \"hampir tengah malam kamu mendengar plastik bergesek suaranya dekat sekali kamu a\"",
+                "raw: 91 wpm outside 130±25%",
+                "word mismatch (ratio 0.95): heard \"hampir tengah malam kamu mendengar plastik bergesek suaranya dekat sekali kamu a\"",
+                "93 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 5,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.97): heard \"dari sudut kamar jari gadis itu pelan pelan lepas dari botol di belakang botol g\"",
+                "raw: last word missing, truncated, or has invalid timestamps",
+                "word mismatch (ratio 0.97): heard \"dari sudut kamar jari gadis itu pelan pelan lepas dari botol di belakang botol g\"",
+                "last word missing, truncated, or has invalid timestamps"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            }
+          ],
+          "interpretation": "WPM flags are pacing; onset and last-word flags require listening. Failed retry attempts are retained in the original ShortZ report."
+        }
+      ]
+    },
+    {
+      "episode": 5,
+      "report": "episodes/005-suara-dari-rumah-kosong/narration-investigator-report.json",
+      "mismatches": [
+        {
+          "expected": "penyeberangan",
+          "heard": null,
+          "classification": "present in transcript; alignment omitted it"
+        },
+        {
+          "expected": "di",
+          "heard": "penyebrangan",
+          "classification": "ASR word boundary split/merge"
+        },
+        {
+          "expected": "seberang",
+          "heard": "disebrang",
+          "classification": "ASR di seberang word merge"
+        },
+        {
+          "expected": "di",
+          "heard": null,
+          "classification": "ASR word boundary split/merge"
+        },
+        {
+          "expected": "seberang",
+          "heard": "disebrang",
+          "classification": "ASR di seberang word merge"
+        }
+      ],
+      "acceptedChunkFlags": [
+        {
+          "index": 0,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.89): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \"",
+            "word mismatch (ratio 0.92): heard \"saat dengar teriakan dari rumah terkunci jangan sahut kamu perlu lewat gang ini \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 1,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 2,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "word mismatch (ratio 0.93): heard \"kamu menunggu 1 putaran lagi kedua cari siapa yang bisa melihatmu dari tempat am\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 3,
+          "status": "failed",
+          "reasons": [
+            "raw: 97 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 4,
+          "status": "failed",
+          "reasons": [
+            "raw: 93 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 5,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 6,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        }
+      ],
+      "interpretation": "WPM flags concern pacing; onset and last-word/truncation flags require listening; word-mismatch reasons are evaluated against mismatches above. ASR does not establish pronunciation or clipping."
+    },
+    {
+      "episode": 6,
+      "report": "episodes/006-gema-di-underpass/narration-investigator-revised-report.json",
+      "mismatches": [
+        {
+          "expected": "terowongan",
+          "heard": "terwongan",
+          "classification": "ASR omits a vowel; possible pronunciation or recognition difference; listen"
+        },
+        {
+          "expected": "senter",
+          "heard": "center",
+          "classification": "harmless homophone spelling center"
+        },
+        {
+          "expected": "terowongan",
+          "heard": "terwongan",
+          "classification": "ASR omits a vowel; possible pronunciation or recognition difference; listen"
+        },
+        {
+          "expected": "lihat",
+          "heard": "liat",
+          "classification": "ASR spelling or colloquial pronunciation; listen"
+        }
+      ],
+      "acceptedChunkFlags": [
+        {
+          "index": 0,
+          "status": "failed",
+          "transcript": "Kalau terwongan gelap, arahkan center ke lantai, ponselmu hampir mati, tapi peta menunjukkan stasiun di ujung terwongan. Papan Hijau bertuliskan Bintu Keluar, terlihat dari sini.",
+          "reasons": [
+            "raw: word mismatch (ratio 0.80): heard \"kalau terwongan gelap arahkan center ke lantai ponselmu hampir mati tapi peta me\"",
+            "raw: 97 wpm outside 130±25%",
+            "word mismatch (ratio 0.84): heard \"kalau terwongan gelap arahkan center ke lantai ponselmu hampir mati tapi peta me\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 1,
+          "status": "failed",
+          "transcript": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu. Dinding basah memantulkan cahaya sampai ujung.",
+          "reasons": [
+            "raw: 91 wpm outside 130±25%",
+            "96 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 2,
+          "status": "failed",
+          "transcript": "Cukup lihat pijakan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau senter meredup, kamu masih ingat letak tangga darurat.",
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"cukup lihat pijakan berikutnya kedua susuri dindin dan hitung tiang beton kalau \"",
+            "raw: 96 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 3,
+          "status": "failed",
+          "transcript": "Ketiga, hitung langkahmu sendiri. Dilorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+          "reasons": [
+            "raw: 88 wpm outside 130±25%",
+            "91 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 4,
+          "status": "failed",
+          "transcript": "Dekat lampu hijau, ponselmu mati, kamu berhenti mengambil napas, langkah di lorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan.",
+          "reasons": [
+            "raw: 87 wpm outside 130±25%",
+            "89 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 5,
+          "status": "verified",
+          "transcript": "Kamu mundur pelan ke tangga Darurat, di bawah lampu hijau stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        }
+      ],
+      "interpretation": "WPM flags concern pacing; word and onset flags require listening. ASR does not establish pronunciation or clipping.",
+      "priorReports": [
+        {
+          "report": "episodes/006-gema-di-underpass/narration-investigator-report.json",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center",
+              "classification": "harmless homophone center"
+            },
+            {
+              "expected": "meredup",
+              "heard": "merduk",
+              "classification": "chunk-level ASR recognized meredup; full-file ASR disagrees; listen"
+            },
+            {
+              "expected": "gema",
+              "heard": "gemah",
+              "classification": "harmless spelling variant gemah"
+            }
+          ],
+          "acceptedChunkFlags": [
+            {
+              "index": 0,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.96): heard \"kalau terowongan gelap arahkan center ke lantai ponselmu hampir mati tapi peta m\"",
+                "word mismatch (ratio 0.96): heard \"kalau terowongan gelap arahkan center ke lantai ponselmu hampir mati tapi peta m\""
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 1,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 2,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.96): heard \"kamu cuma perlu melihat pijakan berikutnya kedua susuri dinding dan hitung tiang\""
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 3,
+              "status": "failed",
+              "reasons": [
+                "raw: 87 wpm outside 130±25%",
+                "90 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 4,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 5,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            }
+          ],
+          "interpretation": "WPM flags concern pacing; onset and last-word/truncation flags require listening; word-mismatch reasons are evaluated against mismatches above. ASR does not establish pronunciation or clipping."
+        }
+      ],
+      "scriptWords": 121,
+      "rawDurationSec": 76.75,
+      "preparedDurationSec": 71.745,
+      "preparedAudio": "episodes/006-gema-di-underpass/narration-prepared.mp3",
+      "timestamps": "episodes/006-gema-di-underpass/narration-timestamps.json",
+      "protectedFromSec": 56.86,
+      "listeningReview": "pending",
+      "additionalFlag": "Chunk 0 ASR heard Bintu Keluar while the full transcript says Pintu Keluar; listen to verify the sign phrase."
+    },
+    {
+      "episode": 7,
+      "report": "episodes/007-pos-evakuasi-sunyi/narration-investigator-final-report.json",
+      "mismatches": [
+        {
+          "expected": "antrean",
+          "heard": "anterian",
+          "classification": "possible pronunciation or ASR spelling; listen"
+        },
+        {
+          "expected": "senter",
+          "heard": "center",
+          "classification": "harmless homophone center"
+        }
+      ],
+      "acceptedChunkFlags": [
+        {
+          "index": 0,
+          "status": "failed",
+          "reasons": [
+            "raw: 86 wpm outside 130±25%",
+            "88 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 1,
+          "status": "failed",
+          "reasons": [
+            "raw: 91 wpm outside 130±25%",
+            "95 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 2,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.94): heard \"dari luar pagar toa memanggil nomor anterian sama tak ada yang menyahut kedua ce\"",
+            "word mismatch (ratio 0.94): heard \"dari luar pagar toa memanggil nomor anterian sama tak ada yang menyahut kedua ce\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 3,
+          "status": "verified",
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 4,
+          "status": "failed",
+          "reasons": [
+            "raw: 82 wpm outside 130±25%",
+            "86 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 5,
+          "status": "failed",
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"kamu mundur lewat jalur samping rel sampai lampu pos hilang malamnya sepatu bot \"",
+            "raw: 95 wpm outside 130±25%",
+            "word mismatch (ratio 0.95): heard \"kamu mundur lewat jalur samping rel sampai lampu pos hilang malamnya sepatu bot \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        },
+        {
+          "index": 6,
+          "status": "failed",
+          "reasons": [
+            "raw: 48 wpm outside 130±25%",
+            "62 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ]
+        }
+      ],
+      "interpretation": "WPM flags concern pacing; onset and last-word/truncation flags require listening; word-mismatch reasons are evaluated against mismatches above. ASR does not establish pronunciation or clipping.",
+      "priorReports": [
+        {
+          "report": "episodes/007-pos-evakuasi-sunyi/narration-investigator-report.json",
+          "mismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirena",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "antrean",
+              "heard": "anterian",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "sirene",
+              "heard": "sirena",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "senter",
+              "heard": "center",
+              "classification": "harmless homophone spelling"
+            }
+          ],
+          "acceptedChunkFlags": [
+            {
+              "index": 0,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.95): heard \"di pos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu be\"",
+                "raw: 87 wpm outside 130±25%",
+                "word mismatch (ratio 0.95): heard \"di pos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu be\"",
+                "90 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 1,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 2,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \"",
+                "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian yang sama tak ada yang \""
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 3,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 4,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+                "raw: 87 wpm outside 130±25%",
+                "word mismatch (ratio 0.93): heard \"dengan serpihan batu putih kamu tulis peringatan di beton luar jangan ikut baris\"",
+                "90 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 5,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 6,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+                "raw: 79 wpm outside 130±25%",
+                "word mismatch (ratio 0.92): heard \"malamnya sepasang sepatu bot berhenti di depan tulisanmu center menyala seseoran\"",
+                "82 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            }
+          ],
+          "interpretation": "WPM flags are pacing; onset and last-word flags require listening. Failed retry attempts are retained in the original ShortZ report."
+        },
+        {
+          "report": "episodes/007-pos-evakuasi-sunyi/narration-investigator-revised-report.json",
+          "mismatches": [
+            {
+              "expected": "sirene",
+              "heard": "sirina",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "antrean",
+              "heard": "anterian",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "sirene",
+              "heard": "sirina",
+              "classification": "ASR difference; pronunciation or skipped word requires listening"
+            },
+            {
+              "expected": "senter",
+              "heard": "center",
+              "classification": "harmless homophone spelling"
+            }
+          ],
+          "acceptedChunkFlags": [
+            {
+              "index": 0,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.95): heard \"di pos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu be\"",
+                "raw: 83 wpm outside 130±25%",
+                "word mismatch (ratio 0.95): heard \"di pos evakuasi jauhi barisan yang membisu pagar stasiun masih tertutup lampu be\"",
+                "85 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 1,
+              "status": "failed",
+              "reasons": [
+                "raw: 95 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 2,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian sama tak ada yang menya\"",
+                "word mismatch (ratio 0.95): heard \"dari luar pagar kamu dengar toa memanggil nomor anterian sama tak ada yang menya\""
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 3,
+              "status": "verified",
+              "reasons": [],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 4,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.94): heard \"sirina berhenti pagar terbuka pelan gadis itu tersenyum dari ujung barisan dan s\"",
+                "raw: 86 wpm outside 130±25%",
+                "word mismatch (ratio 0.94): heard \"sirina berhenti pagar terbuka pelan gadis itu tersenyum dari ujung barisan dan s\"",
+                "89 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 5,
+              "status": "failed",
+              "reasons": [
+                "raw: word mismatch (ratio 0.95): heard \"kamu mundur lewat jalur samping rel sampai lampu pos hilang malamnya sepatu bot \"",
+                "raw: 89 wpm outside 130±25%",
+                "word mismatch (ratio 0.89): heard \"kamu mundur lewat jalur samping rel sampai lampu pos hilang malamnya sepatu bot \"",
+                "last word missing, truncated, or has invalid timestamps",
+                "92 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            },
+            {
+              "index": 6,
+              "status": "failed",
+              "reasons": [
+                "raw: 51 wpm outside 130±25%",
+                "60 wpm outside 130±25%"
+              ],
+              "warnings": [
+                "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+              ]
+            }
+          ],
+          "interpretation": "WPM flags are pacing; onset and last-word flags require listening. Failed retry attempts are retained in the original ShortZ report."
+        }
+      ]
+    }
+  ]
+}

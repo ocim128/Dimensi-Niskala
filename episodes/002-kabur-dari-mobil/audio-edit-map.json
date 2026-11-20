@@ -1,0 +1,53 @@
+{
+  "source": "episodes\\002-kabur-dari-mobil\\narration-investigator.mp3",
+  "output": "episodes\\002-kabur-dari-mobil\\narration-prepared.mp3",
+  "sourceDurationSec": 70.95,
+  "preparedDurationSec": 67.623,
+  "silenceThresholdDb": -38,
+  "crossfadeSec": 0.01,
+  "preservedFinalSec": 12,
+  "cuts": [
+    {
+      "start": 4.544,
+      "end": 4.827
+    },
+    {
+      "start": 7.124,
+      "end": 7.379
+    },
+    {
+      "start": 8.717,
+      "end": 8.989
+    },
+    {
+      "start": 18.697,
+      "end": 19.105
+    },
+    {
+      "start": 22.276,
+      "end": 22.529
+    },
+    {
+      "start": 31.062,
+      "end": 31.476
+    },
+    {
+      "start": 32.409,
+      "end": 32.695
+    },
+    {
+      "start": 37.496,
+      "end": 37.816
+    },
+    {
+      "start": 43.072,
+      "end": 43.321
+    },
+    {
+      "start": 57.403,
+      "end": 57.89
+    }
+  ],
+  "playbackDucks": [],
+  "notes": "No playback speed change; only quiet gap centers removed. Inhales were not automatically ducked: review by ear. ASR timestamps and cuts require listening review."
+}

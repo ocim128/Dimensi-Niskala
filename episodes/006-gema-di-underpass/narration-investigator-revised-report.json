@@ -1,0 +1,804 @@
+{
+  "version": 1,
+  "voiceId": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "voiceName": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "provider": "gemini-cloud",
+  "model": "gemini-3.8-flash-tts",
+  "master": true,
+  "masterFilter": "highpass=f=85,equalizer=f=140:t=q:w=1.2:g=1,equalizer=f=450:t=q:w=1.5:g=-1,equalizer=f=3200:t=q:w=1.2:g=1,loudnorm=I=-14:LRA=6:TP=-1.5,aformat=sample_fmts=s16",
+  "asrModel": "small",
+  "generatedAt": "2026-11-20T08:58:21.327Z",
+  "passed": false,
+  "totalChunks": 6,
+  "verifiedChunks": 1,
+  "warningChunks": 0,
+  "failedChunks": 5,
+  "plannedDurationSec": 76.75,
+  "finalAlignment": {
+    "transcript": "Kalau terwongan gelap arahkan center ke lantai, ponselmu hampir mati, tapi peta menunjukkan stasiun di ujung terwongan. Papan hijau bertuliskan pintu keluar terlihat dari sini. Siapa lagi di sana? Pertama, sorot lantai dekat kakimu. Dinding basah memantulkan cahaya sampai ujung. Cukup liat pijakan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau senter meredup, kamu masih ingat letak tangga darurat. Ketiga, hitung langkahmu sendiri. Dilorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan. Dekat lampu hijau, ponselmu mati. Kamu berhenti mengambil napas. Langkah di lorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan. Kamu mundur pelan ke tangga darurat. Di bawah lampu hijau stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+    "mismatches": [
+      {
+        "expected": "terowongan",
+        "heard": "terwongan"
+      },
+      {
+        "expected": "senter",
+        "heard": "center"
+      },
+      {
+        "expected": "terowongan",
+        "heard": "terwongan"
+      },
+      {
+        "expected": "lihat",
+        "heard": "liat"
+      }
+    ],
+    "passed": false
+  },
+  "audioQuality": {
+    "integratedLufs": -16.6,
+    "loudnessRangeLu": 3.6,
+    "noiseFloorDbfs": -19,
+    "targets": {
+      "integratedLufs": -14,
+      "loudnessRangeLu": [
+        5,
+        7
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "tag": null,
+      "text": "Kalau terowongan gelap, arahkan senter ke lantai. Ponselmu hampir mati, tapi peta menunjukkan stasiun di ujung terowongan. Papan hijau bertuliskan Pintu Keluar terlihat dari sini.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.983,
+      "bestWordRatio": 0.84,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.84,
+          "similarity": 0.983,
+          "wpm": 100,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.80): heard \"kalau terwongan gelap arahkan center ke lantai ponselmu hampir mati tapi peta me\"",
+            "raw: 97 wpm outside 130±25%",
+            "word mismatch (ratio 0.84): heard \"kalau terwongan gelap arahkan center ke lantai ponselmu hampir mati tapi peta me\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalau terwongan gelap, arahkan center ke lantai, ponselmu hampir mati, tapi peta menunjukkan stasiun di ujung terwongan. Papan Hijau bertuliskan Bintu Keluar, terlihat dari sini.",
+          "mismatches": [
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            },
+            {
+              "expected": "pintu",
+              "heard": "bintu"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kalau terwongan gelap, arahkan center ke lantai, ponselmu hampir mati, tapi peta menunjukkan stasiun di ujung terwongan. Papah Hijau bertuliskan Bintu Keluar, terlihat dari sini.",
+          "rawMismatches": [
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            },
+            {
+              "expected": "papan",
+              "heard": "papah"
+            },
+            {
+              "expected": "pintu",
+              "heard": "bintu"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.80): heard \"kalau terwongan gelap arahkan center ke lantai ponselmu hampir mati tapi peta me\"",
+            "97 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.833,
+          "similarity": 0.98,
+          "wpm": 105,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.83): heard \"kalau terwongan gelap arahkan senter kelantai ponsel muhambir mati tapi peta men\"",
+            "word mismatch (ratio 0.83): heard \"kalau terwongan gelap arahkan senter kelantai ponsel muhambir mati tapi peta men\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalau terwongan gelap, arahkan senter Kelantai. Ponsel Muhambir mati, tapi peta menunjukkan stasiun di ujung terwongan. Papan hijau bertuliskan, pintu keluar terlihat dari sini.",
+          "mismatches": [
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            },
+            {
+              "expected": "ponselmu",
+              "heard": "ponsel"
+            },
+            {
+              "expected": "hampir",
+              "heard": "muhambir"
+            },
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kalau terwongan gelap, arahkan senter Kelantai. Ponsel Muhambir mati, tapi peta menunjukkan stasiun di ujung terwongan. Papan Hijau bertuliskan, pintu keluar, terlihat dari sini.",
+          "rawMismatches": [
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            },
+            {
+              "expected": "ponselmu",
+              "heard": "ponsel"
+            },
+            {
+              "expected": "hampir",
+              "heard": "muhambir"
+            },
+            {
+              "expected": "terowongan",
+              "heard": "terwongan"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.83): heard \"kalau terwongan gelap arahkan senter kelantai ponsel muhambir mati tapi peta men\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.833,
+          "similarity": 0.977,
+          "wpm": 106,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.88): heard \"kalau trowongan gelap arahkan center kelantai ponsel mu hampir mati tapi peta me\"",
+            "word mismatch (ratio 0.83): heard \"kalau trowongan gelap arahkan center kelantai ponsel mu hampir mati tapi peta me\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalau trowongan gelap, arahkan center Kelantai, ponsel mu hampir mati, tapi peta menunjukkan stasiun di ujung trowongan. Papah Hijau bertuliskan Pintu Keluar, terlihat dari sini.",
+          "mismatches": [
+            {
+              "expected": "terowongan",
+              "heard": "trowongan"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "terowongan",
+              "heard": "trowongan"
+            },
+            {
+              "expected": "papan",
+              "heard": "papah"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kalau trowongan gelap, arahkan center Kelantai, ponsel mu hampir mati, tapi peta menunjukkan stasiun di ujung trowongan. Papan Hijau bertuliskan Pintu Keluar, terlihat dari sini.",
+          "rawMismatches": [
+            {
+              "expected": "terowongan",
+              "heard": "trowongan"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "terowongan",
+              "heard": "trowongan"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.88): heard \"kalau trowongan gelap arahkan center kelantai ponsel mu hampir mati tapi peta me\""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "tag": null,
+      "text": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu. Dinding basah memantulkan cahaya sampai ujung.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 96,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 91 wpm outside 130±25%",
+            "96 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu. Dinding basah memantulkan cahaya sampai ujung.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu. Dinding basah memantulkan cahaya sampai ujung.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "91 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.933,
+          "similarity": 0.99,
+          "wpm": 94,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"siapa lagi di sana pertama sorot lantai dekat kakimu dinding basah memantulkan c\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "raw: 90 wpm outside 130±25%",
+            "word mismatch (ratio 0.93): heard \"siapa lagi di sana pertama sorot lantai dekat kakimu dinding basah memantulkan c\"",
+            "last word missing, truncated, or has invalid timestamps",
+            "94 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu. Dinding basah memantulkan cahaya sampai ucung.",
+          "mismatches": [
+            {
+              "expected": "ujung",
+              "heard": "ucung"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu. Dinding basah memantulkan cahaya sampai ucung.",
+          "rawMismatches": [
+            {
+              "expected": "ujung",
+              "heard": "ucung"
+            }
+          ],
+          "rawEndTruncated": true,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"siapa lagi di sana pertama sorot lantai dekat kakimu dinding basah memantulkan c\"",
+            "last word missing, truncated, or has invalid timestamps",
+            "90 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.933,
+          "similarity": 0.99,
+          "wpm": 86,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"siapa lagi di sana pertama sorot lantai dekat kakimu dinding basah mementulkan c\"",
+            "raw: 83 wpm outside 130±25%",
+            "word mismatch (ratio 0.93): heard \"siapa lagi di sana pertama sorot lantai dekat kakimu dinding basah mementulkan c\"",
+            "86 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu, dinding basah mementulkan cahaya sampai ujung.",
+          "mismatches": [
+            {
+              "expected": "memantulkan",
+              "heard": "mementulkan"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Siapa lagi di sana? Pertama, sorot lantai dekat kakimu, dinding basah mementulkan cahaya sampai ujung.",
+          "rawMismatches": [
+            {
+              "expected": "memantulkan",
+              "heard": "mementulkan"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"siapa lagi di sana pertama sorot lantai dekat kakimu dinding basah mementulkan c\"",
+            "83 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "tag": null,
+      "text": "Cukup lihat pijakan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau senter meredup, kamu masih ingat letak tangga darurat.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.9,
+          "similarity": 0.985,
+          "wpm": 99,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.90): heard \"cukup lihat pijakan berikutnya kedua susuri dinding dan hitung tiang beton kalau\"",
+            "raw: 96 wpm outside 130±25%",
+            "word mismatch (ratio 0.90): heard \"cukup lihat pijakan berikutnya kedua susuri dinding dan hitung tiang beton kalau\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Cukup lihat pijakan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau center mereduk, kamu masih ingat letak tangga darurat.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "meredup",
+              "heard": "mereduk"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Cukup lihat pijakan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau center mereduk, kamu masih ingat letak tangga darurat.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "meredup",
+              "heard": "mereduk"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.90): heard \"cukup lihat pijakan berikutnya kedua susuri dinding dan hitung tiang beton kalau\"",
+            "96 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 100,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"cukup lihat pijakan berikutnya kedua susuri dindin dan hitung tiang beton kalau \"",
+            "raw: 96 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Cukup lihat pijakan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau senter meredup, kamu masih ingat letak tangga darurat.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Cukup lihat pijakan berikutnya. Kedua, susuri dindin dan hitung tiang beton. Kalau senter meredup, kamu masih ingat letak tangga darurat.",
+          "rawMismatches": [
+            {
+              "expected": "dinding",
+              "heard": "dindin"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"cukup lihat pijakan berikutnya kedua susuri dindin dan hitung tiang beton kalau \"",
+            "96 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.8,
+          "similarity": 0.97,
+          "wpm": 108,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.80): heard \"cukup melihat pijakkan berikutnya kedua susuri dinding dan hitung tiang beton ka\"",
+            "word mismatch (ratio 0.80): heard \"cukup melihat pijakkan berikutnya kedua susuri dinding dan hitung tiang beton ka\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Cukup melihat pijakkan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau center merduk, kamu masih ingat letak tangga darurat.",
+          "mismatches": [
+            {
+              "expected": "lihat",
+              "heard": "melihat"
+            },
+            {
+              "expected": "pijakan",
+              "heard": "pijakkan"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "meredup",
+              "heard": "merduk"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Cukup melihat pijakkan berikutnya. Kedua, susuri dinding dan hitung tiang beton. Kalau center merduk, kamu masih ingat letak tangga darurat.",
+          "rawMismatches": [
+            {
+              "expected": "lihat",
+              "heard": "melihat"
+            },
+            {
+              "expected": "pijakan",
+              "heard": "pijakkan"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "meredup",
+              "heard": "merduk"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.80): heard \"cukup melihat pijakkan berikutnya kedua susuri dinding dan hitung tiang beton ka\""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "tag": null,
+      "text": "Ketiga, hitung langkahmu sendiri. Di lorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.996,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.947,
+          "similarity": 0.993,
+          "wpm": 92,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 90 wpm outside 130±25%",
+            "word mismatch (ratio 0.95): heard \"ketiga hitung langkahmu sendiri dilorong sempit gemah membuat setiap langkah ter\"",
+            "92 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ketiga, hitung langkahmu sendiri. Dilorong sempit, gemah membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+          "mismatches": [
+            {
+              "expected": "gema",
+              "heard": "gemah"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Ketiga, hitung langkahmu sendiri. Dilorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "90 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 0.996,
+          "wpm": 91,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 88 wpm outside 130±25%",
+            "91 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ketiga, hitung langkahmu sendiri. Dilorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Ketiga, hitung langkahmu sendiri. Dilorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "88 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.947,
+          "similarity": 0.986,
+          "wpm": 90,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"ketiga hitum langkahmu sendiri dilorong sempit gema membuat setiap langkah terde\"",
+            "raw: 89 wpm outside 130±25%",
+            "word mismatch (ratio 0.95): heard \"ketiga hitum langkahmu sendiri dilorong sempit gema membuat setiap langkah terde\"",
+            "90 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ketiga, hitum langkahmu sendiri. Dilorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+          "mismatches": [
+            {
+              "expected": "hitung",
+              "heard": "hitum"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Ketiga, hitum langkahmu sendiri. Dilorong sempit, gema membuat setiap langkah terdengar dua kali. Ritmenya terdengar wajar selama kamu berjalan.",
+          "rawMismatches": [
+            {
+              "expected": "hitung",
+              "heard": "hitum"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"ketiga hitum langkahmu sendiri dilorong sempit gema membuat setiap langkah terde\"",
+            "89 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "tag": null,
+      "text": "Dekat lampu hijau, ponselmu mati. Kamu berhenti mengambil napas. Langkah di lorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 89,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 87 wpm outside 130±25%",
+            "89 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dekat lampu hijau, ponselmu mati, kamu berhenti mengambil napas, langkah di lorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dekat lampu hijau, ponselmu mati, kamu berhenti mengambil napas. Langkah dilorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "87 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 0.996,
+          "wpm": 93,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 91 wpm outside 130±25%",
+            "93 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dekat lampu hijau, ponselmu mati, kamu berhenti mengambil napas. Langkah dilorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dekat lampu hijau, ponselmu mati, kamu berhenti mengambil napas. Langkah dilorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "91 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 0.996,
+          "wpm": 93,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 92 wpm outside 130±25%",
+            "93 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dekat lampu hijau, ponselmu mati, kamu berhenti mengambil napas, langkah di lorong terus berjalan, melewati gelap di sisi mu, lalu berhenti di depan.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dekat lampu hijau, ponselmu mati, kamu berhenti mengambil napas, langkah di lorong terus berjalan, melewati gelap di sisimu, lalu berhenti di depan.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "92 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "tag": null,
+      "text": "Kamu mundur pelan ke tangga darurat. Di bawah lampu hijau stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+      "retries": 2,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.895,
+          "similarity": 0.986,
+          "wpm": 128,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.84): heard \"kamu mudur pelan ke tangga darurat di bawah lampuhi jauh stasiun gadis itu menat\"",
+            "word mismatch (ratio 0.89): heard \"kamu mudur pelan ke tangga darurat di bawah lampu hijau stasiun gadis itu menata\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kamu mudur pelan ke tangga Darurat. Di bawah lampu hijau stasiun, gadis itu menatapmu dan mengatuk kaca tiga kali.",
+          "mismatches": [
+            {
+              "expected": "mundur",
+              "heard": "mudur"
+            },
+            {
+              "expected": "mengetuk",
+              "heard": "mengatuk"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kamu mudur pelan ke tangga Darurat, di bawah lampuhi jauh stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+          "rawMismatches": [
+            {
+              "expected": "mundur",
+              "heard": "mudur"
+            },
+            {
+              "expected": "lampu",
+              "heard": "lampuhi"
+            },
+            {
+              "expected": "hijau",
+              "heard": "jauh"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.84): heard \"kamu mudur pelan ke tangga darurat di bawah lampuhi jauh stasiun gadis itu menat\""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.889,
+          "similarity": 0.982,
+          "wpm": 112,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.89): heard \"kamu mundur pelan ketangga darurat di bawah lampuhi jauh stasiun gadis itu menat\"",
+            "word mismatch (ratio 0.89): heard \"kamu mundur pelan ketangga darurat di bawah lampuhi jauh stasiun gadis itu menat\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kamu mundur pelan ketangga darurat, di bawah lampuhi jauh stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+          "mismatches": [
+            {
+              "expected": "lampu",
+              "heard": "lampuhi"
+            },
+            {
+              "expected": "hijau",
+              "heard": "jauh"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kamu mundur pelan ketangga darurat. Di bawah lampuhi jauh stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+          "rawMismatches": [
+            {
+              "expected": "lampu",
+              "heard": "lampuhi"
+            },
+            {
+              "expected": "hijau",
+              "heard": "jauh"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.89): heard \"kamu mundur pelan ketangga darurat di bawah lampuhi jauh stasiun gadis itu menat\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 100,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kamu mundur pelan ke tangga Darurat, di bawah lampu hijau stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Kamu mundur pelan ke tangga Darurat, di bawah lampu hijau stasiun, gadis itu menatapmu dan mengetuk kaca tiga kali.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    }
+  ]
+}

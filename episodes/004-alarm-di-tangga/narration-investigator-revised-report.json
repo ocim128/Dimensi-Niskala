@@ -1,0 +1,571 @@
+{
+  "version": 1,
+  "voiceId": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "voiceName": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "provider": "gemini-cloud",
+  "model": "gemini-3.8-flash-tts",
+  "master": true,
+  "masterFilter": "highpass=f=85,equalizer=f=140:t=q:w=1.2:g=1,equalizer=f=450:t=q:w=1.5:g=-1,equalizer=f=3200:t=q:w=1.2:g=1,loudnorm=I=-14:LRA=6:TP=-1.5,aformat=sample_fmts=s16",
+  "asrModel": "small",
+  "generatedAt": "2026-11-20T08:20:07.468Z",
+  "passed": false,
+  "totalChunks": 5,
+  "verifiedChunks": 3,
+  "warningChunks": 0,
+  "failedChunks": 2,
+  "plannedDurationSec": 70.805,
+  "finalAlignment": {
+    "transcript": "Sembunyi diruko kosong, jauhi lantai satu. Bayangan orang lewat menutup kaca depan. Lantai atas memberimu waktu istirahat. Asal kamu tahu siapa yang bisa mencapai pintumu. Pertama, jangan tarik pintu besi. Naik lewat tangga belakang, lalu cari jendela yang mengarah ke balkon sebelum duduk. Kedua, taruh botol kosong bertutup merah di anak tangga, kalau tersengol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel dan pegang center. Minum sedikit, sambil menunggu suara plastik dari tangga, hampir tengah malam, plastik bergesek dekat sekali. Kamu arahkan center ke lantai dan melihat tutup merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas. Dia tersenyum tanpa berkedip. Sudah di lantai atas sebelum kamu memasang penanda.",
+    "mismatches": [
+      {
+        "expected": "tersenggol",
+        "heard": "tersengol"
+      },
+      {
+        "expected": "senter",
+        "heard": "center"
+      },
+      {
+        "expected": "senter",
+        "heard": "center"
+      }
+    ],
+    "passed": false
+  },
+  "audioQuality": {
+    "integratedLufs": -16.7,
+    "loudnessRangeLu": 3.3,
+    "noiseFloorDbfs": -19.2,
+    "targets": {
+      "integratedLufs": -14,
+      "loudnessRangeLu": [
+        5,
+        7
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "tag": null,
+      "text": "Sembunyi di ruko kosong, jauhi lantai satu. Bayangan orang lewat menutup kaca depan. Lantai atas memberimu waktu istirahat, asal kamu tahu siapa yang bisa mencapai pintumu.",
+      "retries": 2,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.902,
+          "similarity": 0.991,
+          "wpm": 106,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.90): heard \"sembunyi diru kokosong jauhi lantai 1 bayangan orang lewat menutup kaca depan la\"",
+            "word mismatch (ratio 0.90): heard \"sembunyi diru kokosong jauhi lantai 1 bayangan orang lewat menutup kaca depan la\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Sembunyi diru kokosong, jauhi lantai satu. Bayangan orang lewat menutup kaca depan. Lantai atas memberimu waktu istirahat. Asal kamu tahu siapa yang bisa mencapai pintumu.",
+          "mismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "ruko",
+              "heard": "diru"
+            },
+            {
+              "expected": "kosong",
+              "heard": "kokosong"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Sembunyi diru kokosong, jauhi lantai satu. Bayangan orang lewat menutup kaca depan. Lantai atas memberimu waktu istirahat. Asal kamu tahu siapa yang bisa mencapai pintumu.",
+          "rawMismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "ruko",
+              "heard": "diru"
+            },
+            {
+              "expected": "kosong",
+              "heard": "kokosong"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.90): heard \"sembunyi diru kokosong jauhi lantai 1 bayangan orang lewat menutup kaca depan la\""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.941,
+          "similarity": 0.994,
+          "wpm": 107,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.94): heard \"sembunyi dirukok kosong jauhi lantai 1 bayangan orang lewat menutup kaca depan l\"",
+            "word mismatch (ratio 0.94): heard \"sembunyi dirukok kosong jauhi lantai 1 bayangan orang lewat menutup kaca depan l\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Sembunyi dirukok kosong, jauhi lantai satu, bayangan orang lewat menutup kaca depan. Lantai atas memberimu waktu istirahat, asal kamu tahu siapa yang bisa mencapai pintumu.",
+          "mismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "ruko",
+              "heard": "dirukok"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Sembunyi dirukok kosong, jauhi lantai satu, bayangan orang lewat menutup kaca depan. Lantai atas memberimu waktu istirahat, asal kamu tahu siapa yang bisa mencapai pintumu.",
+          "rawMismatches": [
+            {
+              "expected": "di",
+              "heard": null
+            },
+            {
+              "expected": "ruko",
+              "heard": "dirukok"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.94): heard \"sembunyi dirukok kosong jauhi lantai 1 bayangan orang lewat menutup kaca depan l\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 105,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Sembunyi di ruko kosong, jauhi lantai satu, bayangan orang lewat menutup kaca depan, lantai atas memberimu waktu istirahat, asal kamu tahu siapa yang bisa mencapai pintumu.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Sembunyi di ruko kosong, jauhi lantai satu, bayangan orang lewat menutup kaca depan, lantai atas memberimu waktu istirahat, asal kamu tahu siapa yang bisa mencapai pintumu.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "tag": null,
+      "text": "Pertama, jangan tarik pintu besi. Naik lewat tangga belakang, lalu cari jendela yang mengarah ke balkon sebelum duduk. Kedua, taruh botol kosong bertutup merah di anak tangga.",
+      "retries": 0,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 109,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Pertama, jangan tarik pintu besi. Naik lewat tangga belakang, lalu cari jendela yang mengarah ke Balkon sebelum duduk. Kedua, taruh botol kosong bertutup merah di anak tangga.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Pertama, jangan tarik pintu besi. Naik lewat tangga belakang, lalu cari jendela yang mengarah ke Balkon sebelum duduk. Kedua, taruh botol kosong bertutup merah di anak tangga.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "tag": null,
+      "text": "Kalau tersenggol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel, dan pegang senter. Minum sedikit sambil menunggu suara plastik dari tangga.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.993,
+      "bestWordRatio": 0.933,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.933,
+          "similarity": 0.993,
+          "wpm": 107,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"kalau tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas k\"",
+            "word mismatch (ratio 0.93): heard \"kalau tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas k\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalau tersengol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel, dan pegang center. Minum sedikit, sambil menunggu suara plastik dari tangga.",
+          "mismatches": [
+            {
+              "expected": "tersenggol",
+              "heard": "tersengol"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kalau tersengol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel, dan pegang center. Minum sedikit, sambil menunggu suara plastik dari tangga.",
+          "rawMismatches": [
+            {
+              "expected": "tersenggol",
+              "heard": "tersengol"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"kalau tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas k\""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.9,
+          "similarity": 0.985,
+          "wpm": 104,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.90): heard \"kalo tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas ke\"",
+            "word mismatch (ratio 0.90): heard \"kalo tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas ke\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalo tersengol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel dan pegang center. Minum sedikit, sambil menunggu suara plastik dari tangga.",
+          "mismatches": [
+            {
+              "expected": "kalau",
+              "heard": "kalo"
+            },
+            {
+              "expected": "tersenggol",
+              "heard": "tersengol"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kalo tersengol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel dan pegang center. Minum sedikit, sambil menunggu suara plastik dari tangga.",
+          "rawMismatches": [
+            {
+              "expected": "kalau",
+              "heard": "kalo"
+            },
+            {
+              "expected": "tersenggol",
+              "heard": "tersengol"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.90): heard \"kalo tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas ke\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.9,
+          "similarity": 0.985,
+          "wpm": 99,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.90): heard \"kalo tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas ke\"",
+            "word mismatch (ratio 0.90): heard \"kalo tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas ke\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Kalo tersengol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel dan pegang center. Minum sedikit sambil menunggu suara plastik dari tangga.",
+          "mismatches": [
+            {
+              "expected": "kalau",
+              "heard": "kalo"
+            },
+            {
+              "expected": "tersenggol",
+              "heard": "tersengol"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Kalo tersengol kaki, botol akan menggelinding sebelum orang itu sampai ke atas. Ketiga, duduk menghadap pintu, matikan layar ponsel dan pegang center. Minum sedikit, sambil menunggu suara plastik dari tangga.",
+          "rawMismatches": [
+            {
+              "expected": "kalau",
+              "heard": "kalo"
+            },
+            {
+              "expected": "tersenggol",
+              "heard": "tersengol"
+            },
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.90): heard \"kalo tersengol kaki botol akan menggelinding sebelum orang itu sampai ke atas ke\""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "tag": null,
+      "text": "Hampir tengah malam, plastik bergesek dekat sekali. Kamu arahkan senter ke lantai dan melihat tutup merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.994,
+      "bestWordRatio": 0.963,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.963,
+          "similarity": 0.994,
+          "wpm": 97,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "raw: 94 wpm outside 130±25%",
+            "word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "97 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Hampir tengah malam, plastik bergesek dekat sekali. Kamu arahkan center ke lantai dan melihat tutup merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Hampir tengah malam, plastik bergesek dekat sekali. Kamu arahkan center ke lantai dan melihat tutup merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "94 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.926,
+          "similarity": 0.988,
+          "wpm": 103,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.93): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "word mismatch (ratio 0.93): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Hampir tengah malam, plastik bergesek dekat sekali, kamu arahkan center ke lantai dan melihat tutuk merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "tutup",
+              "heard": "tutuk"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Hampir tengah malam, plastik bergesek dekat sekali, kamu arahkan center ke lantai dan melihat tutuk merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            },
+            {
+              "expected": "tutup",
+              "heard": "tutuk"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.93): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.963,
+          "similarity": 0.994,
+          "wpm": 92,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "raw: 90 wpm outside 130±25%",
+            "word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "92 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Hampir tengah malam, plastik bergesek dekat sekali. Kamu arahkan center ke lantai dan melihat tutup merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas.",
+          "mismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Hampir tengah malam, plastik bergesek dekat sekali. Kamu arahkan center ke lantai dan melihat tutup merah di samping sepatumu. Dari sudut kamar, jari gadis itu perlahan terlepas.",
+          "rawMismatches": [
+            {
+              "expected": "senter",
+              "heard": "center"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"hampir tengah malam plastik bergesek dekat sekali kamu arahkan center ke lantai \"",
+            "90 wpm outside 130±25%"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "tag": null,
+      "text": "Dia tersenyum tanpa berkedip, sudah di lantai atas sebelum kamu memasang penanda.",
+      "retries": 2,
+      "status": "verified",
+      "bestSimilarity": 0.994,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 97,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.92): heard \"dia tersenyum tanpa berkedip sudah di lante atas sebelum kamu memasang penanda\"",
+            "raw: 92 wpm outside 130±25%",
+            "97 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dia tersenyum tanpa berkedip. Sudah di lantai atas sebelum kamu memasang penanda.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dia tersenyum tanpa berkedip. Sudah di lante atas, sebelum kamu memasang penanda.",
+          "rawMismatches": [
+            {
+              "expected": "lantai",
+              "heard": "lante"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.92): heard \"dia tersenyum tanpa berkedip sudah di lante atas sebelum kamu memasang penanda\"",
+            "92 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 97,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 91 wpm outside 130±25%",
+            "97 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dia tersenyum tanpa berkedip. Sudah di lantai atas, sebelum kamu memasang penanda.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dia tersenyum tanpa berkedip. Sudah di lantai atas, sebelum kamu memasang penanda.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "91 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 0.994,
+          "wpm": 108,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Dia tersenyum tanpa berkedip. Sudah dilantai atas sebelum kamu memasang penanda.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Dia tersenyum tanpa berkedip. Sudah dilantai atas sebelum kamu memasang penanda.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    }
+  ]
+}

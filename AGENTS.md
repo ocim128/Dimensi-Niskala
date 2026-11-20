@@ -15,7 +15,10 @@
 
 ## Episode 002+ factory loop
 
-1. Write **130–155 spoken Indonesian words**. Sentence one establishes both the scenario and the survival rule within three seconds. Use second-person narration with the arc’s locked survivor.
-2. Generate the whole script in **one ShortZ `gemini-3.8-flash-tts` call**. Lock the master, measured duration and word timestamps before generating visuals or building the timeline. Review takes outside 61–80 seconds before proceeding.
+1. Write **115–130 spoken Indonesian words**. Sentence one establishes both the scenario and the survival rule within three seconds. Use second-person narration with the arc’s locked survivor.
+2. Generate the whole script in **one ShortZ `gemini-3.8-flash-tts` call**. Lock the master, measured duration and word timestamps before generating visuals or building the timeline. Target 60–73 seconds of prepared narration and a 62–75-second final video; flag narration or video below 61 seconds or above 78 seconds. Never change vocal speed to meet the budget.
 3. Plan **10–12 unique 9:16 panels** and assign each to a story beat. Keep Indonesian vehicle interiors right-hand drive across all angles.
 4. Assemble against the locked narration. Set the manifest’s `openingTitle` to 3–4 punchy words and show it from 00:00.0 to 00:01.8 in the upper-center 3:4 safe zone. Use frame 00:00.2 for the cover and prohibit flash-frame thumbnails. Match caption numbers to the HUD, run the validator and complete the [final review](templates/review.md).
+
+- **Heard if mentioned:** Keep `investigator` as the sole storytelling narrator across Dimensi Niskala; do not add multi-speaker parsing to its narration track. List every narrated in-world sound, voice, and meaningful sound cut in the brief’s mandatory cue sheet, then time and mix it as a separate manifest SFX or bed cue. Protect deliberately silent visual clues.
+- Generate `entity-female` (flat, eerie young female mimicry or close whisper) or `pa-announcer` (flat, formal Indonesian public announcement) as separate optional `voice-sfx` assets only when the episode explicitly mentions an in-scene voice or PA. Use the [acoustic profiles](STYLE_GUIDE.md#heard-if-mentioned-world-audio) as appropriate; retain and review the original narrator master and timing.

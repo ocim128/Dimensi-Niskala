@@ -1,0 +1,42 @@
+{
+  "source": "episodes\\004-alarm-di-tangga\\narration-investigator-revised.mp3",
+  "output": "episodes\\004-alarm-di-tangga\\narration-prepared.mp3",
+  "sourceDurationSec": 70.805,
+  "preparedDurationSec": 68.26,
+  "silenceThresholdDb": -38,
+  "retainedGapSec": 0.4,
+  "crossfadeSec": 0.01,
+  "protectedFromSec": 58.80500000000001,
+  "cuts": [
+    {
+      "start": 2.181,
+      "end": 2.48
+    },
+    {
+      "start": 4.247,
+      "end": 4.751
+    },
+    {
+      "start": 11.176,
+      "end": 11.475
+    },
+    {
+      "start": 25.058,
+      "end": 25.392
+    },
+    {
+      "start": 26.243,
+      "end": 26.528
+    },
+    {
+      "start": 36.118,
+      "end": 36.466
+    },
+    {
+      "start": 42.829,
+      "end": 43.235
+    }
+  ],
+  "playbackDucks": [],
+  "notes": "No playback speed change; only quiet gap centers removed. Inhales were not automatically ducked: review by ear. ASR timestamps and cuts require listening review."
+}

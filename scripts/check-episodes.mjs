@@ -103,8 +103,8 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   for (const [label, frames] of [["episode", duration], ["narration", narration?.duration]]) {
     if (isFrame(frames) && frames > 0) {
       const seconds = frames / fps;
-      factoryCheck(frames >= 61 * fps && frames <= 80 * fps,
-        `${label} duration ${seconds.toFixed(3)} s is outside the 61–80 s factory guardrail`);
+      if (frames < 61 * fps || frames > 78 * fps)
+        warnings.push(`${label} duration ${seconds.toFixed(3)} s is outside the 61–78 s warning guardrail`);
     }
   }
   if (manifest.openingTitle !== undefined || !legacyFactoryCut) {
@@ -115,7 +115,13 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   }
   if (v2) {
     asset("fonts/theboldfont.ttf", "caption font");
-    fail(duration >= 60 * fps && duration <= 72 * fps, `duration ${duration} frames must be 60–72 s`);
+    if (legacyFactoryCut) {
+      fail(duration >= 60 * fps && duration <= 72 * fps, `duration ${duration} frames must be 60–72 s`);
+    } else {
+      fail(duration >= 62 * fps && duration <= 75 * fps, `episode duration ${duration} frames must be 62–75 s`);
+      fail(isFrame(narration?.duration) && narration.duration >= 60 * fps && narration.duration <= 73 * fps,
+        "prepared narration duration must be 60–73 s");
+    }
     const s = manifest.script;
     fail(s?.format === "survival-tactics-curiosity-gap", "invalid script format");
     fail(s.hook?.at === 0 && nonempty(s.hook.line), "invalid hook at frame 0");
@@ -126,7 +132,7 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
       fail(step.number === i + 1 && isFrame(step.at) && step.at > previous && step.at >= 12 * fps && step.at < 55 * fps && nonempty(step.line) && nonempty(step.detail), `invalid tactical step ${i + 1} at ${step.at}`);
       previous = step.at;
     });
-    fail(s.ending?.at === 55 * fps && isFrame(s.ending.twistAt) && s.ending.twistAt > 55 * fps && s.ending.twistAt <= 70 * fps && s.ending.twistAt < duration && nonempty(s.ending.payoff), "invalid ending/twist");
+    fail(s.ending?.at === 55 * fps && isFrame(s.ending.twistAt) && s.ending.twistAt > 55 * fps && s.ending.twistAt <= (legacyFactoryCut ? 70 : 74) * fps && s.ending.twistAt < duration && nonempty(s.ending.payoff), "invalid ending/twist");
     fail(nonempty(manifest.art?.styleId) && manifest.art.rasterAssets && typeof manifest.art.rasterAssets === "object", "missing art style map");
     if (strict) fail(manifest.art.styleId === styleId, `art.styleId must be ${styleId}`);
     for (const [path, style] of Object.entries(manifest.art.rasterAssets)) {

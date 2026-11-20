@@ -1,0 +1,34 @@
+{
+  "source": "episodes\\007-pos-evakuasi-sunyi\\narration-investigator-final.mp3",
+  "output": "episodes\\007-pos-evakuasi-sunyi\\narration-prepared.mp3",
+  "sourceDurationSec": 73.795,
+  "preparedDurationSec": 72.004,
+  "silenceThresholdDb": -38,
+  "retainedGapSec": 0.4,
+  "crossfadeSec": 0.01,
+  "protectedFromSec": 47,
+  "cuts": [
+    {
+      "start": 4.342,
+      "end": 4.629
+    },
+    {
+      "start": 28.636,
+      "end": 29.003
+    },
+    {
+      "start": 36.79,
+      "end": 37.208
+    },
+    {
+      "start": 42.166,
+      "end": 42.573
+    },
+    {
+      "start": 46.056,
+      "end": 46.318
+    }
+  ],
+  "playbackDucks": [],
+  "notes": "No playback speed change; only quiet gap centers removed. Inhales were not automatically ducked: review by ear. ASR timestamps and cuts require listening review."
+}

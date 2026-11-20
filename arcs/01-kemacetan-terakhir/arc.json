@@ -67,7 +67,7 @@
       "exitInventory": {"water": "70%", "battery": "25%"},
       "startLocation": "Ruko kosong dekat pintu keluar tol",
       "endLocation": "Kamar lantai dua ruko",
-      "endingHook": "Gadis tersenyum tanpa berkedip di sudut kamar, di belakang botol bertutup merah yang tadi dipasang di tangga"
+      "endingHook": "Gadis tersenyum tanpa berkedip di sudut kamar; jari terlepas dari botol bertutup merah yang pengemudi jadikan penanda di tangga, membuktikan gadis itu sudah di lantai atas sebelum penanda dipasang"
     },
     {
       "episodeNumber": 5,
@@ -89,7 +89,16 @@
       "exitInventory": {"water": "15%", "battery": "0%"},
       "startLocation": "Mulut terowongan menuju stasiun",
       "endLocation": "Cekungan tangga darurat di luar terowongan",
-      "endingHook": "Setelah pengemudi mundur ke tangga darurat, gadis di bawah lampu hijau stasiun mengetuk kaca tiga kali"
+      "endingHook": "Setelah pengemudi mundur ke tangga darurat, gadis di bawah lampu hijau stasiun mengetuk kaca tiga kali",
+      "narration": {
+        "scriptWords": 121,
+        "rawDurationSec": 76.75,
+        "preparedDurationSec": 71.745,
+        "source": "episodes/006-gema-di-underpass/narration-investigator-revised.mp3",
+        "prepared": "episodes/006-gema-di-underpass/narration-prepared.mp3",
+        "timestamps": "episodes/006-gema-di-underpass/narration-timestamps.json",
+        "review": "Pending listening review of ASR flags, edit boundaries, and pauses."
+      }
     },
     {
       "episodeNumber": 7,
@@ -100,7 +109,7 @@
       "exitInventory": {"water": "0%", "battery": "0%"},
       "startLocation": "Sisi luar Pos Evakuasi Stasiun, akses dari tangga darurat",
       "endLocation": "Jalan setapak samping rel di luar pos",
-      "endingHook": "Pengemudi keluar lewat jalan setapak samping rel dan meninggalkan tulisan JANGAN IKUT BARISAN. HARI 5 • MALAM, satpam shift malam bersepatu PDL menyorot tulisan itu di samping spanduk POS EVAKUASI"
+      "endingHook": "Sirene berhenti; gadis tersenyum dan barisan menoleh. Pengemudi mundur lewat jalur samping rel dan meninggalkan tulisan JANGAN IKUT BARISAN. HARI 5 • MALAM, satpam shift malam bersepatu PDL menyorot tulisan itu di samping spanduk POS EVAKUASI"
     }
   ]
 }

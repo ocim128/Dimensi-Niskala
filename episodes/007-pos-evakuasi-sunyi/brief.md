@@ -1,6 +1,6 @@
 # Episode 007 · Pos Evakuasi Sunyi
 
-**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 140 kata](narasi.txt)
+**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 116 kata](narasi.txt)
 
 ## Arc Context
 
@@ -20,9 +20,18 @@
 
 ## 2. Audio
 
-Master [narration-investigator.mp3](narration-investigator.mp3) dibuat dari [narasi.txt](narasi.txt) menggunakan ShortZ `gemini-cloud`, model `gemini-3.8-flash-tts`, dan suara Investigator (`voice_71a5a701-796e-421d-840e-0adc00b0816a`). Durasi 86.215 detik. Satu perintah ShortZ memproses 7 potongan internal. [Timestamp hasil ASR](narration-investigator-timestamps.json) dan [laporan pemeriksaan](narration-investigator-report.json). ShortZ menandai 4 potongan gagal dan penyelarasan akhir belum lulus. Periksa teks dan pengucapan dengan mendengarkan sebelum mengunci timestamp atau membuat caption. Periksa juga jeda untuk efek dan campuran audio. Master ini melampaui batas akhir 72 detik. Susun edit waktu yang alami sebelum mengunci durasi cut. Durasi juga melampaui batas tinjauan 80 detik untuk narasi.
+Master aktif [narration-investigator-final.mp3](narration-investigator-final.mp3), ShortZ Gemini 3.8 Flash TTS Investigator: 73.795 detik. [Laporan ASR](narration-investigator-final-report.json). Edit tanpa perubahan kecepatan: [narration-prepared.mp3](narration-prepared.mp3) 72.004 detik; [timestamp](narration-timestamps.json) dan [peta edit](audio-edit-map.json). Masih perlu pemeriksaan pendengaran untuk kata yang ditandai, batas edit, jeda dan tarikan napas sebelum dikunci. [Master sebelumnya](narration-investigator.mp3) dan laporannya tetap disimpan sebagai arsip; naskahnya berbeda.
 
 **Foley** — Mulai dengan sirene dan pengumuman berulang dari toa pos. Barisan tetap membisu. Gesekan serpihan batu di beton terdengar sebelum sirene putus. Sisakan momen tenang saat senter satpam menyapu tulisan pada akhir. [Pustaka dan atribusi](../../public/sfx/LICENSES.md)
+
+### Mandatory Audio & Foley Cue Sheet
+
+| Beat / Trigger Phrase | Asset Type (foley / voice-sfx / bed-cut) | Acoustic Treatment | Mix Rule |
+| --- | --- | --- | --- |
+| Pembuka dan Rule 1: pengumuman toa berulang | voice-sfx `pa-announcer`: satu klip “Nomor antrean empat puluh dua... silakan masuk...” + foley/bed sirene peringatan | `toa-megaphone`; sirene jauh | Loop klip PA yang **sama** secara identik di bawah pembuka dan Rule 1, bersama bed sirene jauh; pengumuman dan sirene tetap di bawah Investigator, orang dalam barisan tetap bisu. |
+| Rule 3: menulis `JANGAN IKUT BARISAN` | foley: serpihan batu pada beton | Gesekan kasar, dekat | Sinkronkan dengan gerakan menulis tanpa menutupi narasi. |
+| “Suara peringatan berhenti.” → “Pagar terbuka.” | bed-cut + foley: gerbang besi berat | Hening mendadak, lalu derit gerbang | **Hard-cut bersamaan** sirene dan loop TOA menjadi hening tepat pada kalimat berhenti; picu derit berat pada “Pagar terbuka.” |
+| Handoff `HARI 5 • MALAM`: sepatu berhenti, senter menyala | foley: sepatu PDL dan klik mekanis senter | Langkah lambat berat di beton/kerikil, klik jelas dekat | Hentikan langkah di depan tulisan, lalu picu klik senter bersih; sisakan ruang dari narasi. |
 
 ## 3. Sepuluh panel 9:16
 

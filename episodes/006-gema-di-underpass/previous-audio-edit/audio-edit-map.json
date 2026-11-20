@@ -1,0 +1,42 @@
+{
+  "source": "episodes\\006-gema-di-underpass\\narration-investigator.mp3",
+  "output": "episodes\\006-gema-di-underpass\\narration-prepared.mp3",
+  "sourceDurationSec": 78.05,
+  "preparedDurationSec": 76.248,
+  "silenceThresholdDb": -38,
+  "retainedGapSec": 0.4,
+  "crossfadeSec": 0.01,
+  "protectedFromSec": 59,
+  "cuts": [
+    {
+      "start": 1.852,
+      "end": 2.078
+    },
+    {
+      "start": 18.377,
+      "end": 18.496
+    },
+    {
+      "start": 21.559,
+      "end": 21.786
+    },
+    {
+      "start": 28.859,
+      "end": 29.146
+    },
+    {
+      "start": 30.293,
+      "end": 30.45
+    },
+    {
+      "start": 39.737,
+      "end": 39.952
+    },
+    {
+      "start": 56.727,
+      "end": 57.228
+    }
+  ],
+  "playbackDucks": [],
+  "notes": "No playback speed change; only quiet gap centers removed. Inhales were not automatically ducked: review by ear. ASR timestamps and cuts require listening review."
+}

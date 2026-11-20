@@ -61,8 +61,8 @@ test("valid v2 and the exact comparison baseline", () => {
   closed.scenes[0].name += " revised";
   assert.throws(() => validateEpisode(closed, closedCaptions, closedOptions), /art.styleId/);
 });
-test("duration over 72 seconds and missing promise fail", () => {
-  const a = clone(); a.duration = 2161; assert.throws(() => validate(a), /duration/);
+test("duration over 75 seconds and missing promise fail", () => {
+  const a = clone(); a.duration = 2251; assert.throws(() => validate(a), /duration/);
   const b = clone(); b.script.promise.line = ""; assert.throws(() => validate(b), /promise/);
 });
 test("out-of-order tactical steps fail", () => {
@@ -191,15 +191,18 @@ test("factory duration checks include both the narration and the composition", (
   const a = clone();
   a.narration.duration = 61 * a.fps;
   assert.doesNotThrow(() => validate(a));
+  a.narration.duration = 60 * a.fps;
+  assert.ok(validate(a).warnings.some(warning => /narration duration.*61–78 s/.test(warning)));
   a.narration.duration--;
-  assert.throws(() => validate(a), /narration duration.*61–80 s/);
-  a.narration.duration = 80 * a.fps + 1;
-  assert.throws(() => validate(a), /narration duration.*61–80 s/);
+  assert.throws(() => validate(a), /narration duration.*60–73 s/);
+  a.duration = 74 * a.fps;
+  a.narration.duration = 73 * a.fps + 1;
+  assert.throws(() => validate(a), /narration duration.*60–73 s/);
   a.narration.duration = base.narration.duration;
-  a.duration = 80 * a.fps + 1;
-  assert.throws(() => validate(a), /episode duration.*61–80 s/);
-  a.duration = 61 * a.fps - 1;
-  assert.throws(() => validate(a), /episode duration.*61–80 s/);
+  a.duration = 75 * a.fps + 1;
+  assert.throws(() => validate(a), /episode duration.*62–75 s/);
+  a.duration = 62 * a.fps - 1;
+  assert.throws(() => validate(a), /episode duration.*62–75 s/);
 });
 
 test("new episodes require a readable three- or four-word opening title", () => {

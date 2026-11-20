@@ -1,0 +1,30 @@
+{
+  "source": "episodes\\003-bel-minimarket\\narration-investigator.mp3",
+  "output": "episodes\\003-bel-minimarket\\narration-prepared.mp3",
+  "sourceDurationSec": 73.07,
+  "preparedDurationSec": 71.666,
+  "silenceThresholdDb": -38,
+  "retainedGapSec": 0.4,
+  "crossfadeSec": 0.01,
+  "protectedFromSec": 54,
+  "cuts": [
+    {
+      "start": 8.607,
+      "end": 8.909
+    },
+    {
+      "start": 29.371,
+      "end": 29.807
+    },
+    {
+      "start": 41.043,
+      "end": 41.356
+    },
+    {
+      "start": 44.004,
+      "end": 44.317
+    }
+  ],
+  "playbackDucks": [],
+  "notes": "No playback speed change; only quiet gap centers removed. Inhales were not automatically ducked: review by ear. ASR timestamps and cuts require listening review."
+}

@@ -1,6 +1,6 @@
 # Episode 004 · Alarm di Tangga
 
-**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 143 kata](narasi.txt)
+**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 122 kata](narasi.txt)
 
 ## Arc Context
 
@@ -20,9 +20,16 @@
 
 ## 2. Audio
 
-Master [narration-investigator.mp3](narration-investigator.mp3) dibuat dari [narasi.txt](narasi.txt) menggunakan ShortZ `gemini-cloud`, model `gemini-3.8-flash-tts`, dan suara Investigator (`voice_71a5a701-796e-421d-840e-0adc00b0816a`). Durasi 81.450 detik. Satu perintah ShortZ memproses 6 potongan internal. [Timestamp hasil ASR](narration-investigator-timestamps.json) dan [laporan pemeriksaan](narration-investigator-report.json). ShortZ menandai 4 potongan gagal dan penyelarasan akhir belum lulus. Periksa teks dan pengucapan dengan mendengarkan sebelum mengunci timestamp atau membuat caption. Periksa juga jeda untuk efek dan campuran audio. Master ini melampaui batas akhir 72 detik. Susun edit waktu yang alami sebelum mengunci durasi cut. Durasi juga melampaui batas tinjauan 80 detik untuk narasi.
+Master aktif [narration-investigator-revised.mp3](narration-investigator-revised.mp3), ShortZ Gemini 3.8 Flash TTS Investigator: 70.805 detik. [Laporan ASR](narration-investigator-revised-report.json). Edit tanpa perubahan kecepatan: [narration-prepared.mp3](narration-prepared.mp3) 68.26 detik; [timestamp](narration-timestamps.json) dan [peta edit](audio-edit-map.json). Masih perlu pemeriksaan pendengaran untuk kata yang ditandai, batas edit, jeda dan tarikan napas sebelum dikunci. [Master sebelumnya](narration-investigator.mp3) dan laporannya tetap disimpan sebagai arsip; naskahnya berbeda.
 
 **Foley** — Gesek plastik pelan di lantai, lalu napas pengemudi. Botol tidak jatuh di tangga. [Pustaka dan atribusi](../../public/sfx/LICENSES.md)
+
+### Mandatory Audio & Foley Cue Sheet
+
+| Beat / Trigger Phrase | Asset Type (foley / voice-sfx / bed-cut) | Acoustic Treatment | Mix Rule |
+| --- | --- | --- | --- |
+| “plastik bergesek dekat sekali”, botol di samping sepatu | bed-cut + foley: botol plastik kosong bergesek di lantai ubin/beton | Close-mic, kering, sangat dekat | Sisakan hampir hening, lalu bunyikan gesekan di samping sepatu; **jangan** gunakan suara botol jatuh atau menggelinding menuruni tangga. |
+| Jejak kaki berlumpur di atas botol | bed-cut: larangan aksen | Ambience berlanjut alami | **Nol aksen SFX** pada petunjuk rewatch. |
 
 ## 3. Sepuluh panel 9:16
 
