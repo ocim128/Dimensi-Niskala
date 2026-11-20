@@ -1,6 +1,38 @@
 # Episode 002 · Kabur dari Mobil
 
-**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 138 kata](narasi.txt)
+> **Audio lock · 20 November 2026:** The 138-word draft below predates the current 115–130-word requirement and is retained as production history. The active [118-word script](narasi-v3.txt) uses the [64.850 s ShortZ take](narration-investigator-v3.mp3), without speed changes. One ShortZ CLI invocation submitted the whole script; ShortZ internally split it into six chunks and retried some chunks. The [report](narration-investigator-v3-report.json) marks three chunks failed. The owner listened to the three flagged clips and confirmed “spion,” “membentur” and “sela mobil” sounded correct without cut-off words. The [reviewed timestamps](narration-investigator-v3-reviewed-timestamps.json) place the end of “jangan buka pintu” at 2.70 s and match the script structurally; two merged token boundaries are estimated and full-take listening/caption-sync review remains open. See [the lock record](audio-lock-v3.json). The earlier 120-word v2 take failed verification and its opening rule ended around 3.94 s. No episode-2 exit state has been accepted or written back to the arc.
+
+**Produksi Episode 002.** Naskah lama 138 kata, rincian waktu dan urutan panel di bawah merupakan draf historis; naskah dan timing aktif tercatat pada catatan audio di atas dan `manifest.json`.
+
+**Cue sheet produksi aktif** (`Arc01Episode02`, 30 fps; waktu perkiraan):
+
+| Pemicu | Sumber dan perlakuan | Aturan mix |
+| --- | --- | --- |
+| Sepanjang ancaman dan pelarian, 00:00–00:59.4 | `sfx/prepared/traffic-bed.wav` dan `sfx/prepared/sub-drone.wav` | Ambience jalan dan tekanan rendah; turun ke hening sebelum kalimat terakhir. |
+| Pengait ditahan, 00:33.25 | `sfx/prepared/door-lock.wav` | Stand-in bunyi mekanis pendek dan pelan; perlu ditinjau apakah terbaca sebagai sabuk. |
+| Kunci pintu, 00:36.90 | `sfx/prepared/door-lock.wav` | Klik mekanis pelan di bawah narasi. |
+| Tas bergerak, sekitar 00:44.47 | `sfx/prepared/coat-shift.wav` | Gerakan kain pendek, tidak menutupi narasi. |
+| Pantulan pintu belakang, 00:48.2–00:50.7 | Ambience saja | Petunjuk tanpa aksen: tidak ada klik, sting, atau sorotan. Waktu draf 00:28–00:31 dipindah karena tokoh baru keluar sekitar 00:44–00:48. |
+| Sabuk di kursi belakang, 00:64.75–00:65.95 | `sfx/prepared/door-lock.wav`, `sfx/prepared/coat-shift.wav`, `sfx/prepared/reveal-sting.wav` | Klik setelah kata terakhir, lalu tarikan kain dan sting rendah singkat; identitas bunyi dan mix perlu didengar. |
+
+Air dan baterai masuk 50% / 60%; setelah minum dan memeriksa peta ditampilkan 40% / 57%. Waktu keluar HARI 1 • 03:20 dan state final baru masuk ke arc setelah cut diterima.
+
+**Panel produksi aktif** (semua berasal dari `public/assets/002-kabur-dari-mobil/`; waktu frame lihat manifest):
+
+| Mulai | Panel | Beat |
+| --- | --- | --- |
+| 00:00.0 | `01-hook.png` | Pengemudi dan gadis di mobil; judul serta state awal. |
+| 00:05.8 | `02-gridlock.png` | MPV terjepit, jalur ke truk. |
+| 00:12.0 | `02b-gap.png` | Celah terancam tertutup. |
+| 00:18.6 | `03-dashboard.png` | Hindari spion; gadis terlihat di pantulan. |
+| 00:30.0 | `04-belt.png` | Tahan pengait sabuk. |
+| 00:36.0 | `05-door.png` | Buka kunci pintu dan bersiap mengambil tas. |
+| 00:44.2 | `06-escape.png` | Keluar merunduk di sela kendaraan. |
+| 00:48.2 | `07-mirror-clue.png` | Pintu belakang dalam pantulan spion truk; tanpa aksen suara. |
+| 00:50.7 | `08-drink.png` | Minum dalam posisi berjongkok. |
+| 00:52.0 | `09-phone-v2.png` | Periksa peta di luar kendaraan. |
+| 00:54.2 | `10-notice.png` | Antisipasi dan state persediaan keluar. |
+| 01:00.0 | `11-empty-seat.png` | Kursi belakang kosong dan bunyi sabuk. |
 
 ## Arc Context
 

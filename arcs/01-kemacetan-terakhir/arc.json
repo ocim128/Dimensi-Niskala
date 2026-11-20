@@ -39,12 +39,16 @@
     {
       "episodeNumber": 2,
       "arcStage": "Immediate Escape",
+      "compositionId": "Arc01Episode02",
+      "status": "approved-locked",
+      "approvedDurationSec": 68.83,
       "startClock": "HARI 1 • 03:05",
       "endClock": "HARI 1 • 03:20",
       "entryInventory": {"water": "50%", "battery": "60%"},
       "exitInventory": {"water": "40%", "battery": "57%"},
       "startLocation": "Mobil RHD terkunci di jalan tol macet",
-      "endLocation": "Di balik truk boks di bahu tol",
+      "endLocation": "Berjongkok di balik truk boks di bahu tol",
+      "exitCarry": ["tas kain", "botol", "ponsel"],
       "endingHook": "Pengemudi tetap berjongkok di balik truk saat terdengar bunyi pengait sabuk terlepas dari kursi belakang MPV setir kanan yang kosong di sebelahnya"
     },
     {

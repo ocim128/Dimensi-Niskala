@@ -15,6 +15,8 @@
 
 ## Episode 002+ factory loop
 
+Use the [studio role contracts and pipeline state](agents/README.md) for new episode handoffs. The orchestrator contract is currently human-operated; it does not authorize agents to publish.
+
 1. Write **115–130 spoken Indonesian words**. Sentence one establishes both the scenario and the survival rule within three seconds. Use second-person narration with the arc’s locked survivor.
 2. Generate the whole script in **one ShortZ `gemini-3.8-flash-tts` call**. Lock the master, measured duration and word timestamps before generating visuals or building the timeline. Target 60–73 seconds of prepared narration and a 62–75-second final video; flag narration or video below 61 seconds or above 78 seconds. Never change vocal speed to meet the budget.
 3. Plan **10–12 unique 9:16 panels** and assign each to a story beat. Keep Indonesian vehicle interiors right-hand drive across all angles.

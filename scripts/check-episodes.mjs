@@ -274,8 +274,25 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
 function findManifests(dir) {
   return readdirSync(dir, {withFileTypes: true}).flatMap(entry => entry.isDirectory() ? findManifests(join(dir, entry.name)) : entry.name === "manifest.json" ? [join(dir, entry.name)] : []);
 }
+
+export function validatePipelineState(state, label = "pipeline-state.json") {
+  assert(state && typeof state === "object" && !Array.isArray(state), `${label}: expected a state object`);
+  for (const stage of ["brief", "audio", "images", "render", "audit", "publish"]) {
+    const entry = state[stage];
+    assert(entry && typeof entry === "object" && !Array.isArray(entry), `${label}: missing ${stage} stage`);
+    assert(["pending", "ready", "pass", "fail"].includes(entry.status), `${label}: invalid ${stage} status`);
+    assert(typeof entry.notes === "string", `${label}: ${stage} notes must be a string`);
+  }
+}
+
 export function checkAll(root = process.cwd()) {
   const episodeDir = resolve(root, "episodes"), publicDir = resolve(root, "public"), ids = new Set();
+  const templateState = resolve(root, "templates", "pipeline-state.json");
+  if (statSync(templateState, {throwIfNoEntry: false})?.isFile()) validatePipelineState(readJson(templateState), templateState);
+  for (const entry of readdirSync(episodeDir, {withFileTypes: true})) if (entry.isDirectory()) {
+    const statePath = join(episodeDir, entry.name, "pipeline-state.json");
+    if (statSync(statePath, {throwIfNoEntry: false})?.isFile()) validatePipelineState(readJson(statePath), statePath);
+  }
   const paths = findManifests(episodeDir).sort().map(path => ({
     path, manifestPath: relative(episodeDir, path).split(sep).join("/"),
   }));

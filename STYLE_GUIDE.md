@@ -48,6 +48,17 @@ Use **Survival-Tactics + Curiosity Gap** in every episode. The final cut runs **
 | 12–55 s | Present numbered tactical steps in Indonesian, starting with *Pertama… Kedua…* Give each step a concrete survival detail and show it in the shot or diagram. |
 | 55–70 s | Build quietly, then land a sharp twist that answers the open loop. Land the twist before the cut ends. |
 
+## Climax tension and final jolt
+
+Starting with Episode 003, preserve the grounded, uncanny `niskala` story and plan a kinetic payoff **after** narration, followed by a hard cut to black. Budget **1.0–1.5 seconds total from the final spoken word to the end**, including the vacuum, jolt and blackout; measure the final video against the 62–75-second target.
+
+1. **Tension ramp:** During the final 3–4 seconds of narration, creep the camera inward, subtly darken the vignette and rise a low-end tension bed beneath the hushed voice.
+2. **Silence vacuum:** At the final word or the trigger foley, hard-cut ambient sound for 120–180 ms before the strike. If trigger foley follows the last word, include that delay in the tail budget.
+3. **Kinetic jolt:** Strike for 0.7–1.1 s with a dedicated close-up/lunge panel or rapid 1.0 → 1.18 snap-zoom, decaying high-frequency camera shake of ±12–18 px over 280–350 ms, and a stark 1–2-frame flash or chromatic split. Layer a tight sub-boom and a sharp discordant screech or uncanny distorted inhale/shriek; keep it crisp on phone speakers and limit the finished mix to **≤ −1.0 dBTP**, without harsh clipping.
+4. **Blackout:** Hard-cut to black for 0.2–0.3 s before the loop. Keep the action and foley motivated by the episode; never spoil a silent rewatch clue with a sound accent.
+
+For Episode 007, place the crowd’s synchronized head-snap jolt after the final narrated word, then show the calm `HARI 5 • MALAM` satpam boot-and-flashlight handoff before blackout. Budget that brief silent handoff inside the same 1.0–1.5-second tail; stage the final narration so this ordering is possible without rewriting the locked take.
+
 ## Protagonist and shot purpose
 
 - A visible protagonist must appear in **at least 40% of shots**. Show them during the **first three seconds** to establish whose experience this is and where the threat is. Show at least **two reaction or action shots from 12–55 seconds**. The shot immediately before the final reveal must show the protagonist anticipating or reacting to the threat. An empty object or window must never cut straight to the scare.

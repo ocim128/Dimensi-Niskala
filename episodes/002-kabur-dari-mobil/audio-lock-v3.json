@@ -1,0 +1,12 @@
+{
+  "status": "production-locked",
+  "script": "narasi-v3.txt",
+  "wordCount": 118,
+  "source": "narration-investigator-v3.mp3",
+  "sha256": "4187e21a45367997d50ebd3b59ca5fb0fc605833b41689c098b914db414c18fd",
+  "durationSec": 64.85,
+  "timestamps": "narration-investigator-v3-reviewed-timestamps.json",
+  "speed": 1,
+  "ownerFeedback": "Owner listened to the flagged spion, membentur, and sela mobil clips and confirmed all three sound correct, with no cut-off words.",
+  "limitations": "ASR token timing reviewed structurally and against script; two merged tokens have estimated subdivisions, and full take/caption timing have not received a listening review. ShortZ report failed 3 of 6 internal chunks."
+}

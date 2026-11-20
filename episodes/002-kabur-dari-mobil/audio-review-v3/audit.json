@@ -1,0 +1,37 @@
+{
+  "status": "production locked after owner reviewed three flagged clips",
+  "script": "narasi-v3.txt",
+  "scriptWordCount": 118,
+  "audio": "narration-investigator-v3.mp3",
+  "audioSha256": "4187e21a45367997d50ebd3b59ca5fb0fc605833b41689c098b914db414c18fd",
+  "durationSeconds": 64.85,
+  "voiceId": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "model": "gemini-3.8-flash-tts",
+  "provider": "gemini-cloud",
+  "oneShortZInvocation": true,
+  "shortZInternalChunks": 6,
+  "shortZFailedChunks": [
+    1,
+    2,
+    4
+  ],
+  "asrOpeningRuleEndsSeconds": 2.7,
+  "asrTimingIssues": [],
+  "finalAlignmentMismatches": [
+    {
+      "expected": "spion",
+      "heard": "spyon"
+    },
+    {
+      "expected": "sela",
+      "heard": "selama"
+    },
+    {
+      "expected": "boks",
+      "heard": "box"
+    }
+  ],
+  "playbackSpeedChanged": false,
+  "notes": "Rule and word times remain ASR estimates. Two merged word tokens were subdivided by character proportion. Full-take listening and caption synchronization remain unverified. One CLI invocation triggered six internal ShortZ chunks and retries.",
+  "ownerReview": "Owner confirmed spion, membentur and sela mobil sounded correct without cut-off words."
+}

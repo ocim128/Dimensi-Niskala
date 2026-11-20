@@ -1,0 +1,9 @@
+{
+  "id": "09-phone-v2",
+  "prompt": "Create one vertical 9:16 illustrated story panel continuing the first reference. SAME woman, identity, olive work jacket, dark hair and rainy Indonesian toll road: she is OUTSIDE, crouched on wet asphalt behind the side of the same white box truck beside its rear wheel. She holds a phone showing an abstract map, with the same cloth bag and partly filled water bottle in her lap, anxiously glancing up. Medium view shows both knees and the truck wheel and wet road to establish that she is outdoors. No interior of any car, no seats, no seat belt, no steering wheel, no windshield. Keep the muted gritty dark anime/comic inking, midnight blue rain and red tail-light accents. Fully rendered single panel, no typography, captions, logo, watermark.",
+  "references": [
+    "assets/002-kabur-dari-mobil/08-drink.png",
+    "assets/characters/arc-01-driver/sheet.png"
+  ],
+  "reason": "First phone image incorrectly placed the survivor inside a car after escape."
+}

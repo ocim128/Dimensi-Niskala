@@ -12,11 +12,11 @@ export function Captions({captions}: {captions: EpisodeCaption[] | CaptionBeat[]
   if (!cue) return null;
 
   if ("words" in cue) return <AbsoluteFill style={{justifyContent: "flex-end", paddingBottom: 490, pointerEvents: "none"}}>
-    <div data-caption style={{alignSelf: "center", maxWidth: 860, textAlign: "center", fontFamily: "TheBoldFont, sans-serif", fontSize: 80, lineHeight: 1.05, fontWeight: 900, color: "#fff9ee", WebkitTextStroke: "3px #080c10", paintOrder: "stroke fill", textShadow: "0 5px 4px #000, 0 0 16px #000", textTransform: "uppercase"}}>
+    <div data-caption style={{alignSelf: "center", maxWidth: 860, display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: ".32em", rowGap: ".04em", textAlign: "center", fontFamily: "TheBoldFont, sans-serif", fontSize: 80, lineHeight: 1.05, fontWeight: 900, color: "#fff9ee", WebkitTextStroke: "3px #080c10", paintOrder: "stroke fill", textShadow: "0 5px 4px #000, 0 0 16px #000", textTransform: "uppercase"}}>
       {cue.words.map((word, i) => {
         const active = word.startMs !== undefined && word.endMs !== undefined && time >= word.startMs && time < word.endMs;
         const pulse = active ? interpolate(time - word.startMs!, [0, 100], [1, 1.06], {extrapolateRight: "clamp"}) : 1;
-        return <span key={i} style={{display: "inline-block", whiteSpace: "nowrap", marginLeft: i ? ".22em" : 0, transform: `scale(${pulse})`, color: word.color === "red" || word.color === "danger" ? "#f2544e" : word.color === "yellow" || word.color === "highlight" ? "#ffd052" : "#fff9ee"}}>{word.text}</span>;
+        return <span key={i} style={{display: "inline-block", whiteSpace: "nowrap", transform: `scale(${pulse})`, color: word.color === "red" || word.color === "danger" ? "#f2544e" : word.color === "yellow" || word.color === "highlight" ? "#ffd052" : "#fff9ee"}}>{word.text}</span>;
       })}
     </div>
   </AbsoluteFill>;

@@ -43,6 +43,7 @@ Target **10–12 unique 9:16 key panels**, roughly **5–6 seconds per beat**. K
 | Hook | [protagonist, situation and threat] | [title and action] |
 | Tactics | [one row per panel] | [HUD and numeric strings] |
 | Anticipation and reveal | [protagonist reaction followed by payoff] | [precise sound hit] |
+| Post-Narration Final Jolt (1.0–1.5s) | [dedicated close-up/lunge panel or snap-zoom; concrete threat action] | [final 3–4 s narration ramp; 120–180 ms silence; 0.7–1.1 s jolt with shake, 1–2-frame flash and limited stinger; 0.2–0.3 s hard black] |
 
 - **Asset and rights record** — [batch path, prompts, tools, voice rights, credits and any external dependencies]
 

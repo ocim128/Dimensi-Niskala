@@ -11,6 +11,8 @@ import attempt05 from "../episodes/001-kemacetan-terakhir/attempt-05/manifest.js
 import attempt05Captions from "../episodes/001-kemacetan-terakhir/attempt-05/captions.json";
 import attempt06 from "../episodes/001-kemacetan-terakhir/attempt-06/manifest.json";
 import attempt06Captions from "../episodes/001-kemacetan-terakhir/attempt-06/captions.json";
+import episode02 from "../episodes/002-kabur-dari-mobil/manifest.json";
+import episode02Captions from "../episodes/002-kabur-dari-mobil/captions.json";
 
 // Use for new episode registrations: the source file, not a fixed cap or the
 // editable manifest's potentially stale narration.duration, sets the runtime.
@@ -54,6 +56,7 @@ const KemacetanRecut = (options: PreviewOptions) => <Episode
 const KemacetanAlternate = (options: PreviewOptions) => <Episode manifest={alternate as EpisodeManifestV2} captions={alternateCaptions as CaptionBeat[]} {...options} />;
 const KemacetanAttempt05 = (options: PreviewOptions) => <Episode manifest={attempt05 as EpisodeManifestV2} captions={attempt05Captions as CaptionBeat[]} {...options} />;
 const KemacetanAttempt06 = (options: PreviewOptions) => <Episode manifest={attempt06 as EpisodeManifestV2} captions={attempt06Captions as CaptionBeat[]} {...options} />;
+const Arc01Episode02 = (options: PreviewOptions) => <Episode manifest={episode02 as EpisodeManifestV2} captions={episode02Captions as CaptionBeat[]} {...options} />;
 
 export const Root = () => <><Composition
   id="KemacetanTerakhirMotionComic"
@@ -78,4 +81,5 @@ export const Root = () => <><Composition
   narrationOn: true,
   effectsOn: true,
 }} />
+<Composition id="Arc01Episode02" component={Arc01Episode02} width={1080} height={1920} fps={episode02.fps} durationInFrames={episode02.duration} calculateMetadata={audioFirstMetadata(episode02 as EpisodeManifestV2)} defaultProps={{showCaptions: true, soundOn: true, narrationOn: true, effectsOn: true}} />
 </>;

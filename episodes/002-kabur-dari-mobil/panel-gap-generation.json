@@ -1,0 +1,8 @@
+{
+  "id": "02b-gap",
+  "prompt": "Make one vertical 9:16 illustrated comic panel continuing these visual references: the adult Indonesian woman driver with short dark hair and olive jacket is seated at the RIGHT-side steering wheel of her right-hand-drive MPV in a rain-soaked, stopped Indonesian toll traffic jam at night. View from passenger side into the car and out the driver's side window. She glances toward a narrow gap between her car and a white box truck; outside, a distant human silhouette is slowly moving toward that gap. Show the driver clearly and enough of the vehicle edges that the narrowing gap is readable. This is a separate shot from the references; no captions, text, watermark or split panels. Match gritty shaded hand-inked dark anime/comic linework, midnight blue and muted red taillight accents, natural anatomy.",
+  "references": [
+    "assets/002-kabur-dari-mobil/02-gridlock.png",
+    "assets/characters/arc-01-driver/sheet.png"
+  ]
+}

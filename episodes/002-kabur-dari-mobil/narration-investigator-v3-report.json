@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "voiceId": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "voiceName": "voice_71a5a701-796e-421d-840e-0adc00b0816a",
+  "provider": "gemini-cloud",
+  "model": "gemini-3.8-flash-tts",
+  "master": true,
+  "masterFilter": "highpass=f=85,equalizer=f=140:t=q:w=1.2:g=1,equalizer=f=450:t=q:w=1.5:g=-1,equalizer=f=3200:t=q:w=1.2:g=1,loudnorm=I=-14:LRA=6:TP=-1.5,aformat=sample_fmts=s16",
+  "asrModel": "small",
+  "generatedAt": "2026-11-20T10:33:20.007Z",
+  "passed": false,
+  "totalChunks": 6,
+  "verifiedChunks": 3,
+  "warningChunks": 0,
+  "failedChunks": 3,
+  "plannedDurationSec": 64.85,
+  "finalAlignment": {
+    "transcript": "Ada zombie. Jangan buka pintu. Mobilmu terkunci di tol yang macet. Satu bunyi bisa membuatnya tahu kapan kamu bergerak. Ada 3 langkah sebelum celah disamping mobil tertutup. Kalau kamu panik, dia mungkin bereaksi lebih dulu. Pertama, alihkan pandangan dari spyon. Tatap dasbor seperti kamu masih menunggu. Dari sudut mata, gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat melepasnya supaya tidak membentur pintu. Buka kunci pintumu saja. Pegang gagang sampai celah terbuka. Ketiga, raihtas berisi botol dan ponsel. Merunduklah keluar, lalu lewat selama mobil menuju truk box. Di balik truk, kamu minum dan memeriksa peta. tetap berjongkok. Di sebelahmu, ada mobil kosong dengan kaca setengah terbuka. Dari kursi belakangnya yang gelap, terdengar bunyi sabuk pengaman dilepas.",
+    "mismatches": [
+      {
+        "expected": "spion",
+        "heard": "spyon"
+      },
+      {
+        "expected": "sela",
+        "heard": "selama"
+      },
+      {
+        "expected": "boks",
+        "heard": "box"
+      }
+    ],
+    "passed": false
+  },
+  "audioQuality": {
+    "integratedLufs": -16.8,
+    "loudnessRangeLu": 3.4,
+    "noiseFloorDbfs": -19.8,
+    "targets": {
+      "integratedLufs": -14,
+      "loudnessRangeLu": [
+        5,
+        7
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "tag": null,
+      "text": "Ada zombie, jangan buka pintu. Mobilmu terkunci di tol yang macet. Satu bunyi bisa membuatnya tahu kapan kamu bergerak.",
+      "retries": 0,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 117,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ada zombie. Jangan buka pintu. Mobilmu terkunci di tol yang macet. Satu bunyi bisa membuatnya tahu kapan kamu bergerak.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Ada zombie. Jangan buka pintu. Mobilmu terkunci di tol yang macet. Satu bunyi bisa membuatnya tahu kapan kamu bergerak.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "tag": null,
+      "text": "Ada tiga langkah sebelum celah di samping mobil tertutup. Kalau kamu panik, dia mungkin bereaksi lebih dulu. Pertama, alihkan pandangan dari spion.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 0,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 110,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"ada 3 langkah sebelum celah disamping mobil tertutup kalau kamu panik dia mungki\"",
+            "raw: last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ada 3 langkah sebelum celah di samping mobil tertutup. Kalau kamu panik, dia mungkin bereaksi lebih dulu. Pertama, alihkan pandangan dari Spion.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Ada 3 langkah sebelum celah disamping mobil tertutup. Kalau kamu panik, dia mungkin bereaksi lebih dulu. Pertama, alihkan pandangan dari spyon.",
+          "rawMismatches": [
+            {
+              "expected": "spion",
+              "heard": "spyon"
+            }
+          ],
+          "rawEndTruncated": true,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"ada 3 langkah sebelum celah disamping mobil tertutup kalau kamu panik dia mungki\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.952,
+          "similarity": 0.989,
+          "wpm": 114,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"ada 3 langkah sebelum celah disamping mobil tertutup kalau kamu panik dia mungki\"",
+            "raw: last word missing, truncated, or has invalid timestamps",
+            "word mismatch (ratio 0.95): heard \"ada 3 langkah sebelum celah disamping mobil tertutup kalau kamu panik dia mungki\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ada 3 langkah sebelum celah disamping mobil tertutup. Kalau kamu panik, dia mungkin bereaksi lebih dulu. Pertama, alihkan pandangan dari spyon.",
+          "mismatches": [
+            {
+              "expected": "spion",
+              "heard": "spyon"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Ada 3 langkah sebelum celah disamping mobil tertutup. Kalau kamu panik, dia mungkin bereaksi lebih dulu. Pertama, alihkan pandangan dari spyon.",
+          "rawMismatches": [
+            {
+              "expected": "spion",
+              "heard": "spyon"
+            }
+          ],
+          "rawEndTruncated": true,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"ada 3 langkah sebelum celah disamping mobil tertutup kalau kamu panik dia mungki\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.933,
+          "similarity": 0.989,
+          "wpm": 105,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"ada 3 langkah sebelum celah di samping mobil tertutup kalau kamu panik dia mungk\"",
+            "word mismatch (ratio 0.93): heard \"ada 3 langkah sebelum celah di samping mobil tertutup kalau kamu panik dia mungk\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Ada tiga langkah sebelum celah di samping mobil tertutup. Kalau kamu panik, dia mungkin beri aksi lebih dulu. Pertama, alihkan pandangan dari spion.",
+          "mismatches": [
+            {
+              "expected": null,
+              "heard": "beri"
+            },
+            {
+              "expected": "bereaksi",
+              "heard": "aksi"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Ada tiga langkah sebelum celah di samping mobil tertutup. Kalau kamu panik, dia mungkin berreaksi lebih dulu. Pertama, alihkan pandangan dari spion.",
+          "rawMismatches": [
+            {
+              "expected": "bereaksi",
+              "heard": "berreaksi"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"ada 3 langkah sebelum celah di samping mobil tertutup kalau kamu panik dia mungk\""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "tag": null,
+      "text": "Tatap dasbor seperti kamu masih menunggu. Dari sudut mata, gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat melepasnya supaya tidak membentur pintu.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.997,
+      "bestWordRatio": 0.957,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.957,
+          "similarity": 0.99,
+          "wpm": 88,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 87 wpm outside 130±25%",
+            "word mismatch (ratio 0.96): heard \"tatap dasbor seperti kamu masih menunggu dari sudut mata gadis itu tetap terseny\"",
+            "88 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Tatap dasbor seperti kamu masih menunggu. Dari sudut mata gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat ngelepasnya supaya tidak membentur pintu.",
+          "mismatches": [
+            {
+              "expected": "melepasnya",
+              "heard": "ngelepasnya"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Tatap dasbor seperti kamu masih menunggu. Dari sudut mata gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat melepasnya supaya tidak membentur pintu.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "87 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.957,
+          "similarity": 0.997,
+          "wpm": 100,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.96): heard \"tatap dasbor seperti kamu masih menunggu dari sudut mata gadis itu tetap terseny\"",
+            "raw: 97 wpm outside 130±25%",
+            "word mismatch (ratio 0.96): heard \"tatap dasbor seperti kamu masih menunggu dari sudut mata gadis itu tetap terseny\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Tatap dasbor, seperti kamu masih menunggu. Dari sudut mata, gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat melepasnya supaya tidak membenturu pintu.",
+          "mismatches": [
+            {
+              "expected": "membentur",
+              "heard": "membenturu"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Tatap dasbor, seperti kamu masih menunggu. Dari sudut mata, gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat melepasnya supaya tidak membenturu pintu.",
+          "rawMismatches": [
+            {
+              "expected": "membentur",
+              "heard": "membenturu"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.96): heard \"tatap dasbor seperti kamu masih menunggu dari sudut mata gadis itu tetap terseny\"",
+            "97 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.957,
+          "similarity": 0.997,
+          "wpm": 99,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "word mismatch (ratio 0.96): heard \"tatap dasbohr seperti kamu masih menunggu dari sudut mata gadis itu tetap tersen\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Tatap dasbohr seperti kamu masih menunggu, dari sudut mata gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat melepasnya supaya tidak membentur pintu.",
+          "mismatches": [
+            {
+              "expected": "dasbor",
+              "heard": "dasbohr"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Tatap dasbor seperti kamu masih menunggu, dari sudut mata, gadis itu tetap tersenyum. Kedua, tahan pengait sabuk saat melepasnya supaya tidak membentur pintu.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "tag": null,
+      "text": "Buka kunci pintumu saja. Pegang gagang sampai celah terbuka. Ketiga, raih tas berisi botol dan ponsel.",
+      "retries": 2,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 99,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 96 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Buka kunci pintumu saja, pegang-gagang sampai celah terbuka. Ketiga, raih tas berisi botol dan ponsel.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Buka kunci pintumu saja, pegang-gagang sampai celah terbuka. Ketiga, raih tas berisi botol dan ponsel.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "96 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.903,
+          "similarity": 0.99,
+          "wpm": 99,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.90): heard \"buka kunci pintumu saja pegang gagang sampai celah terbuka ketiga raitas berisi \"",
+            "raw: 95 wpm outside 130±25%",
+            "word mismatch (ratio 0.90): heard \"buka kunci pintumu saja pegang gagang sampai celah terbuka ketiga raitas berisi \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Buka kunci pintumu saja, pegang-gagang sampai celah terbuka. Ketiga, raitas berisi botol dan ponsel.",
+          "mismatches": [
+            {
+              "expected": "raih",
+              "heard": null
+            },
+            {
+              "expected": "tas",
+              "heard": "raitas"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "Buka kunci pintumu saja, pegang-gagang sampai celah terbuka. Ketiga, raitas berisi botol dan ponsel.",
+          "rawMismatches": [
+            {
+              "expected": "raih",
+              "heard": null
+            },
+            {
+              "expected": "tas",
+              "heard": "raitas"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.90): heard \"buka kunci pintumu saja pegang gagang sampai celah terbuka ketiga raitas berisi \"",
+            "95 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 115,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Buka kunci pintumu saja. Pegang gagang sampai celah terbuka. Ketiga, raih tas berisi botol dan ponsel.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Buka kunci pintumu saja. Pegang gagang sampai celah terbuka. Ketiga, raih tas berisi botol dan ponsel.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "tag": null,
+      "text": "Merunduklah keluar, lalu lewat sela mobil menuju truk boks. Di balik truk, kamu minum dan memeriksa peta. Tetap berjongkok.",
+      "retries": 2,
+      "status": "failed",
+      "bestSimilarity": 0.975,
+      "bestWordRatio": 0.889,
+      "acceptedAttempt": 1,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 0.737,
+          "similarity": 0.967,
+          "wpm": 112,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.68): heard \"merunduklah keluar lalu lewat selama mobil menuju truck box di balik truck kamu \"",
+            "word mismatch (ratio 0.74): heard \"merunduklah keluar lalu lewat selama mobil menuju truck box di balik truck kamu \""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "merunduklah keluar, lalu lewat selama mobil menuju truck box. Di balik truck, kamu minum dan memberiksa peta. Tetap berjongkok.",
+          "mismatches": [
+            {
+              "expected": "sela",
+              "heard": "selama"
+            },
+            {
+              "expected": "truk",
+              "heard": "truck"
+            },
+            {
+              "expected": "boks",
+              "heard": "box"
+            },
+            {
+              "expected": "truk",
+              "heard": "truck"
+            },
+            {
+              "expected": "memeriksa",
+              "heard": "memberiksa"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "merunduklah keluar, lalu lewat selama mobil menuju truck box. Di balik truck, kamu minum dan memberi sapetah. Tetap berjongkok.",
+          "rawMismatches": [
+            {
+              "expected": "sela",
+              "heard": "selama"
+            },
+            {
+              "expected": "truk",
+              "heard": "truck"
+            },
+            {
+              "expected": "boks",
+              "heard": "box"
+            },
+            {
+              "expected": "truk",
+              "heard": "truck"
+            },
+            {
+              "expected": "memeriksa",
+              "heard": "memberi"
+            },
+            {
+              "expected": "peta",
+              "heard": "sapetah"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.68): heard \"merunduklah keluar lalu lewat selama mobil menuju truck box di balik truck kamu \""
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.889,
+          "similarity": 0.975,
+          "wpm": 120,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.89): heard \"merunduklah keluar lalu lewat selama mobil menuju truk box di balik truk kamu mi\"",
+            "word mismatch (ratio 0.89): heard \"merunduklah keluar lalu lewat selama mobil menuju truk box dibalik truk kamu min\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "merunduklah keluar, lalu lewat selama mobil menuju truk box. Dibalik truk, kamu minum dan memeriksa peta. Tetap berjongkok.",
+          "mismatches": [
+            {
+              "expected": "sela",
+              "heard": "selama"
+            },
+            {
+              "expected": "boks",
+              "heard": "box"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "merunduklah keluar, lalu lewat selama mobil menuju truk box. Di balik truk, kamu minum dan memeriksa peta. Tetap berjongkok.",
+          "rawMismatches": [
+            {
+              "expected": "sela",
+              "heard": "selama"
+            },
+            {
+              "expected": "boks",
+              "heard": "box"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.89): heard \"merunduklah keluar lalu lewat selama mobil menuju truk box di balik truk kamu mi\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 0.722,
+          "similarity": 0.962,
+          "wpm": 102,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.83): heard \"merunduhlah keluar lalu lewat selam mobil menuju truk box dibalik truk kamu minu\"",
+            "word mismatch (ratio 0.72): heard \"merunduhlah keluar lalu lewat selam mobil menuju truck box dibalik truck kamu mi\""
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "merunduhlah keluar, lalu lewat selam mobil menuju truck box. Dibalik truck, kamu minum dan memeriksa peta. Tetap berjongkok.",
+          "mismatches": [
+            {
+              "expected": "merunduklah",
+              "heard": "merunduhlah"
+            },
+            {
+              "expected": "sela",
+              "heard": "selam"
+            },
+            {
+              "expected": "truk",
+              "heard": "truck"
+            },
+            {
+              "expected": "boks",
+              "heard": "box"
+            },
+            {
+              "expected": "truk",
+              "heard": "truck"
+            }
+          ],
+          "endTruncated": false,
+          "rawTranscript": "merunduhlah keluar, lalu lewat selam mobil menuju truk box. Dibalik truk, kamu minum dan memeriksa peta. Tetap berjongkok.",
+          "rawMismatches": [
+            {
+              "expected": "merunduklah",
+              "heard": "merunduhlah"
+            },
+            {
+              "expected": "sela",
+              "heard": "selam"
+            },
+            {
+              "expected": "boks",
+              "heard": "box"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.83): heard \"merunduhlah keluar lalu lewat selam mobil menuju truk box dibalik truk kamu minu\""
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "tag": null,
+      "text": "Di sebelahmu ada mobil kosong dengan kaca setengah terbuka. Dari kursi belakangnya yang gelap, terdengar bunyi sabuk pengaman dilepas.",
+      "retries": 2,
+      "status": "verified",
+      "bestSimilarity": 1,
+      "bestWordRatio": 1,
+      "acceptedAttempt": 2,
+      "attempts": [
+        {
+          "seed": 0,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 100,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: 96 wpm outside 130±25%"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di sebelahmu, ada mobil kosong dengan kaca setengah terbuka. Dari kursi belakangnya yang gelap, terdengar bunyi sabuk pengaman dilepas.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Di sebelahmu, ada mobil kosong dengan kaca setengah terbuka. Dari kursi belakangnya yang gelap, terdengar bunyi sabuk pengaman dilepas.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "96 wpm outside 130±25%"
+          ]
+        },
+        {
+          "seed": 1,
+          "wordRatio": 0.895,
+          "similarity": 0.985,
+          "wpm": 114,
+          "expectedWpm": 130,
+          "passed": false,
+          "reasons": [
+            "raw: word mismatch (ratio 0.95): heard \"di sebelahmu ada mobil kosong dengan kaca setengah terbuka dari kursi belakangny\"",
+            "word mismatch (ratio 0.89): heard \"di sebelahmu ada mobil kosong dengan kaca setengah terbuka dari kursi belakangny\"",
+            "last word missing, truncated, or has invalid timestamps"
+          ],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di sebelahmu ada mobil kosong dengan kaca setengah terbuka dari kursi belakangnya yang kelap terdengar bunyi sabuk pengaman tilepas.",
+          "mismatches": [
+            {
+              "expected": "gelap",
+              "heard": "kelap"
+            },
+            {
+              "expected": "dilepas",
+              "heard": "tilepas"
+            }
+          ],
+          "endTruncated": true,
+          "rawTranscript": "Di sebelahmu ada mobil kosong dengan kaca setengah terbuka, dari kursi belakangnya yang kelap, terdengar bunyi sabuk pengaman dilepas.",
+          "rawMismatches": [
+            {
+              "expected": "gelap",
+              "heard": "kelap"
+            }
+          ],
+          "rawEndTruncated": false,
+          "rawReasons": [
+            "word mismatch (ratio 0.95): heard \"di sebelahmu ada mobil kosong dengan kaca setengah terbuka dari kursi belakangny\""
+          ]
+        },
+        {
+          "seed": 2,
+          "wordRatio": 1,
+          "similarity": 1,
+          "wpm": 107,
+          "expectedWpm": 130,
+          "passed": true,
+          "reasons": [],
+          "warnings": [
+            "speech starts at 0ms — onset may be clipped (whisper floors word starts)"
+          ],
+          "transcript": "Di sebelahmu, ada mobil kosong dengan kaca setengah terbuka dari kursi belakangnya yang gelap terdengar bunyi sabuk pengaman dilepas.",
+          "mismatches": [],
+          "endTruncated": false,
+          "rawTranscript": "Di sebelahmu, ada mobil kosong dengan kaca setengah terbuka. Dari kursi belakangnya yang gelap, terdengar bunyi sabuk pengaman dilepas.",
+          "rawMismatches": [],
+          "rawEndTruncated": false,
+          "rawReasons": []
+        }
+      ]
+    }
+  ]
+}

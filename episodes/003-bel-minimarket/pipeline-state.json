@@ -1,0 +1,8 @@
+{
+  "brief": {"status": "pass", "notes": "Owner initialized brief as passed. Existing 140-word script is a pre-existing exception to the 115–130-word new-script budget; do not silently rewrite the existing take."},
+  "audio": {"status": "ready", "notes": "Existing narration-prepared.mp3 is 71.67 s; listening review of ASR flags, edit boundaries and pauses is still required before audio passes."},
+  "images": {"status": "pending", "notes": ""},
+  "render": {"status": "pending", "notes": ""},
+  "audit": {"status": "pending", "notes": ""},
+  "publish": {"status": "pending", "notes": ""}
+}

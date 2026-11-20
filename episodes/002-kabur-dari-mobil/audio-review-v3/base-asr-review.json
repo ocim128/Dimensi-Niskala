@@ -1,0 +1,204 @@
+{
+  "status": "automated second opinion; not listening",
+  "results": [
+    {
+      "id": "01-spion",
+      "ok": true,
+      "transcript": "reaksi lebih dulu. Pertama, Alihkan Pandangan dari Spion. Katap...",
+      "words": [
+        {
+          "word": "reaksi",
+          "start": 0.0,
+          "end": 0.36
+        },
+        {
+          "word": "lebih",
+          "start": 0.36,
+          "end": 0.58
+        },
+        {
+          "word": "dulu.",
+          "start": 0.58,
+          "end": 0.86
+        },
+        {
+          "word": "Pertama,",
+          "start": 1.59,
+          "end": 2.12
+        },
+        {
+          "word": "Alihkan",
+          "start": 2.96,
+          "end": 3.52
+        },
+        {
+          "word": "Pandangan",
+          "start": 3.52,
+          "end": 4.06
+        },
+        {
+          "word": "dari",
+          "start": 4.06,
+          "end": 4.38
+        },
+        {
+          "word": "Spion.",
+          "start": 4.38,
+          "end": 4.7
+        },
+        {
+          "word": "Katap...",
+          "start": 5.22,
+          "end": 5.78
+        }
+      ],
+      "durationSec": 5.8
+    },
+    {
+      "id": "02-membentur",
+      "ok": true,
+      "transcript": "Tersegnung, kedua, tahan pengayet sabuk saat melepasnya supaya tidak membenturu pintu.",
+      "words": [
+        {
+          "word": "Tersegnung,",
+          "start": 0.0,
+          "end": 0.58
+        },
+        {
+          "word": "kedua,",
+          "start": 0.98,
+          "end": 1.8
+        },
+        {
+          "word": "tahan",
+          "start": 2.4,
+          "end": 2.76
+        },
+        {
+          "word": "pengayet",
+          "start": 2.76,
+          "end": 3.24
+        },
+        {
+          "word": "sabuk",
+          "start": 3.24,
+          "end": 3.64
+        },
+        {
+          "word": "saat",
+          "start": 3.64,
+          "end": 3.94
+        },
+        {
+          "word": "melepasnya",
+          "start": 3.94,
+          "end": 4.66
+        },
+        {
+          "word": "supaya",
+          "start": 4.66,
+          "end": 5.38
+        },
+        {
+          "word": "tidak",
+          "start": 5.38,
+          "end": 5.7
+        },
+        {
+          "word": "membenturu",
+          "start": 5.7,
+          "end": 6.24
+        },
+        {
+          "word": "pintu.",
+          "start": 6.24,
+          "end": 6.76
+        }
+      ],
+      "durationSec": 7.5
+    },
+    {
+      "id": "03-sela-mobil",
+      "ok": true,
+      "transcript": "Sel merunduklah ke luar, lalu lewat selama mobil menuju truckbox di balik truck kamu min",
+      "words": [
+        {
+          "word": "Sel",
+          "start": 0.0,
+          "end": 0.2
+        },
+        {
+          "word": "merunduklah",
+          "start": 0.2,
+          "end": 1.26
+        },
+        {
+          "word": "ke",
+          "start": 1.26,
+          "end": 1.38
+        },
+        {
+          "word": "luar,",
+          "start": 1.38,
+          "end": 1.76
+        },
+        {
+          "word": "lalu",
+          "start": 2.12,
+          "end": 2.32
+        },
+        {
+          "word": "lewat",
+          "start": 2.32,
+          "end": 2.64
+        },
+        {
+          "word": "selama",
+          "start": 2.64,
+          "end": 3.1
+        },
+        {
+          "word": "mobil",
+          "start": 3.1,
+          "end": 3.46
+        },
+        {
+          "word": "menuju",
+          "start": 3.46,
+          "end": 4.02
+        },
+        {
+          "word": "truckbox",
+          "start": 4.02,
+          "end": 4.72
+        },
+        {
+          "word": "di",
+          "start": 4.72,
+          "end": 5.44
+        },
+        {
+          "word": "balik",
+          "start": 5.44,
+          "end": 5.7
+        },
+        {
+          "word": "truck",
+          "start": 5.7,
+          "end": 5.96
+        },
+        {
+          "word": "kamu",
+          "start": 5.96,
+          "end": 6.7
+        },
+        {
+          "word": "min",
+          "start": 6.7,
+          "end": 6.94
+        }
+      ],
+      "durationSec": 7.0
+    }
+  ]
+}

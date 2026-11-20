@@ -50,6 +50,11 @@ Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan
 
 **Aset dan hak pakai** — Lembar karakter dan pustaka foley tercatat di atas. Catat prompt, file terpilih, sumber bunyi baru dan status hak pakai setelah produksi.
 
+### Post-Narration Jolt Beat
+
+Setelah “mengetuk kaca tiga kali”, biarkan tiga ketukan callback selesai, lalu vacuum dan snap-zoom ke mata gadis di balik kaca dengan sting pendek.
+Pertahankan langkah kedua dan bayangan terlambat tanpa aksen khusus; masukkan ketukan, jolt, dan hard cut ke hitam dalam tail 1,0–1,5 detik.
+
 ## 4. Handoff dan review
 
 Usulan ID komposisi `Arc01Episode06`. Target narasi siap 65–72 detik dan video akhir 62–75 detik. Angka di HUD dan takarir harus sama. Konfirmasi penonton baru memahami ancaman, pilihan, hasil dan petunjuk tanpa menonton episode sebelumnya. Review audio, gambar dan hak pakai masih menunggu produksi. Catat kontinuitas final di arc record setelah cut diterima.

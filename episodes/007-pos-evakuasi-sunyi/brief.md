@@ -50,6 +50,11 @@ Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan
 
 **Aset dan hak pakai** — Lembar karakter dan pustaka foley tercatat di atas. Catat prompt, file terpilih, sumber bunyi baru dan status hak pakai setelah produksi.
 
+### Post-Narration Jolt Beat
+
+Tunda sentakan kepala serentak panel 8 sampai setelah kata terakhir narasi: vacuum, lalu barisan sunyi snap serentak dengan shake, flash, dan sting.
+Setelah jolt tampilkan handoff tenang `HARI 5 • MALAM` satpam dan senter, lalu hard cut ke hitam; muat seluruh urutan dalam tail 1,0–1,5 detik.
+
 ## 4. Handoff dan review
 
-Usulan ID komposisi `Arc01Episode07`. Target akhir 61–72 detik. Angka di HUD dan takarir harus sama. Konfirmasi pengemudi benar-benar meninggalkan pos sebelum handoff. Penjaga muncul melalui sepatu dan senter saja. Review audio, gambar dan hak pakai masih menunggu produksi. Catat kontinuitas final di arc record setelah cut diterima.
+Usulan ID komposisi `Arc01Episode07`. Target video akhir 62–75 detik termasuk tail. Angka di HUD dan takarir harus sama. Konfirmasi pengemudi benar-benar meninggalkan pos sebelum handoff. Penjaga muncul melalui sepatu dan senter saja. Review audio, gambar dan hak pakai masih menunggu produksi. Catat kontinuitas final di arc record setelah cut diterima.

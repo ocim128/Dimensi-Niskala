@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import {copyFileSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync} from "node:fs";
 import {tmpdir} from "node:os";
 import {dirname, join, resolve} from "node:path";
-import {checkAll, validateEpisode} from "./check-episodes.mjs";
+import {checkAll, validateEpisode, validatePipelineState} from "./check-episodes.mjs";
 
 const tempRoot = mkdtempSync(join(tmpdir(), "episode-gates-"));
 after(() => rmSync(tempRoot, {recursive: true, force: true}));
@@ -242,4 +242,27 @@ test("arc metadata is optional and supports both ends of a seven-episode arc", (
   assert.throws(() => validate({...clone(), arcEpisode: 2}), /requires at least one characterSheets path/);
   assert.throws(() => validate({...clone(), arcEpisode: 2, characterSheets: [sheet, "assets/characters/missing.png"]}), /character sheet: missing asset/);
   assert.throws(() => validate({...clone(), arcEpisode: 2, characterSheets: ["../outside.png"]}), /character sheet: missing asset/);
+});
+
+test("pipeline state accepts documented statuses and rejects missing or invalid stages", () => {
+  const state = JSON.parse(readFileSync("templates/pipeline-state.json", "utf8"));
+  assert.doesNotThrow(() => validatePipelineState(state));
+  const episode = JSON.parse(readFileSync("episodes/003-bel-minimarket/pipeline-state.json", "utf8"));
+  assert.doesNotThrow(() => validatePipelineState(episode));
+  assert.equal(episode.brief.status, "pass");
+  assert.equal(episode.audio.status, "ready");
+  const missing = structuredClone(state); delete missing.audit;
+  assert.throws(() => validatePipelineState(missing), /missing audit stage/);
+  const badStatus = structuredClone(state); badStatus.render.status = "approved";
+  assert.throws(() => validatePipelineState(badStatus), /invalid render status/);
+  const badNotes = structuredClone(state); badNotes.audio.notes = null;
+  assert.throws(() => validatePipelineState(badNotes), /audio notes must be a string/);
+
+  // A draft without a manifest must still have its pipeline state checked.
+  const draftRoot = join(tempRoot, "draft-scan");
+  const draftDir = join(draftRoot, "episodes", "003-draft");
+  mkdirSync(draftDir, {recursive: true});
+  const invalidDraft = structuredClone(state); invalidDraft.images.status = "approved";
+  writeFileSync(join(draftDir, "pipeline-state.json"), JSON.stringify(invalidDraft));
+  assert.throws(() => checkAll(draftRoot), /invalid images status/);
 });

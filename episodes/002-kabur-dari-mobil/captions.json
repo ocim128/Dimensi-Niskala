@@ -1,0 +1,1086 @@
+[
+  {
+    "startMs": 0,
+    "endMs": 1580,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Ada",
+        "startMs": 0,
+        "endMs": 480
+      },
+      {
+        "text": "yang",
+        "startMs": 480,
+        "endMs": 900
+      },
+      {
+        "text": "duduk",
+        "startMs": 900,
+        "endMs": 1400,
+        "color": "yellow"
+      },
+      {
+        "text": "di",
+        "startMs": 1400,
+        "endMs": 1580
+      }
+    ]
+  },
+  {
+    "startMs": 1580,
+    "endMs": 2360,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "belakangmu,",
+        "startMs": 1580,
+        "endMs": 2180,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 2760,
+    "endMs": 4400,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "jangan",
+        "startMs": 2760,
+        "endMs": 3180
+      },
+      {
+        "text": "langsung",
+        "startMs": 3180,
+        "endMs": 3600
+      },
+      {
+        "text": "buka",
+        "startMs": 3600,
+        "endMs": 3840
+      },
+      {
+        "text": "pintu.",
+        "startMs": 3840,
+        "endMs": 4220,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 4607,
+    "endMs": 6247,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Mobilmu",
+        "startMs": 4607,
+        "endMs": 5267
+      },
+      {
+        "text": "terkunci",
+        "startMs": 5267,
+        "endMs": 5827
+      },
+      {
+        "text": "di",
+        "startMs": 5827,
+        "endMs": 6027
+      },
+      {
+        "text": "tengah",
+        "startMs": 6027,
+        "endMs": 6247
+      }
+    ]
+  },
+  {
+    "startMs": 6247,
+    "endMs": 6787,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "tol.",
+        "startMs": 6247,
+        "endMs": 6607
+      }
+    ]
+  },
+  {
+    "startMs": 7022,
+    "endMs": 8062,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Satu",
+        "startMs": 7022,
+        "endMs": 7502
+      },
+      {
+        "text": "bunyi",
+        "startMs": 7502,
+        "endMs": 7882,
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "startMs": 8300,
+    "endMs": 9640,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "bisa",
+        "startMs": 8300,
+        "endMs": 8620
+      },
+      {
+        "text": "memberi",
+        "startMs": 8620,
+        "endMs": 8976
+      },
+      {
+        "text": "tahu",
+        "startMs": 8976,
+        "endMs": 9180
+      },
+      {
+        "text": "penumpang",
+        "startMs": 9180,
+        "endMs": 9640
+      }
+    ]
+  },
+  {
+    "startMs": 9640,
+    "endMs": 11780,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "itu",
+        "startMs": 9640,
+        "endMs": 9960
+      },
+      {
+        "text": "kapan",
+        "startMs": 9960,
+        "endMs": 10920
+      },
+      {
+        "text": "kamu",
+        "startMs": 10920,
+        "endMs": 11460
+      },
+      {
+        "text": "akan",
+        "startMs": 11460,
+        "endMs": 11780
+      }
+    ]
+  },
+  {
+    "startMs": 11780,
+    "endMs": 12440,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "bergerak.",
+        "startMs": 11780,
+        "endMs": 12260
+      }
+    ]
+  },
+  {
+    "startMs": 12640,
+    "endMs": 14000,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kamu",
+        "startMs": 12640,
+        "endMs": 13100
+      },
+      {
+        "text": "punya",
+        "startMs": 13100,
+        "endMs": 13360
+      },
+      {
+        "text": "3",
+        "startMs": 13360,
+        "endMs": 13580
+      },
+      {
+        "text": "langkah",
+        "startMs": 13580,
+        "endMs": 14000
+      }
+    ]
+  },
+  {
+    "startMs": 14000,
+    "endMs": 15780,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "sebelum",
+        "startMs": 14000,
+        "endMs": 14960
+      },
+      {
+        "text": "orang",
+        "startMs": 14960,
+        "endMs": 15260
+      },
+      {
+        "text": "di",
+        "startMs": 15260,
+        "endMs": 15500
+      },
+      {
+        "text": "luar",
+        "startMs": 15500,
+        "endMs": 15780
+      }
+    ]
+  },
+  {
+    "startMs": 15780,
+    "endMs": 17140,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "menutup",
+        "startMs": 15780,
+        "endMs": 16260
+      },
+      {
+        "text": "celah",
+        "startMs": 16260,
+        "endMs": 16620,
+        "color": "yellow"
+      },
+      {
+        "text": "di",
+        "startMs": 16620,
+        "endMs": 16800
+      },
+      {
+        "text": "samping",
+        "startMs": 16800,
+        "endMs": 17140
+      }
+    ]
+  },
+  {
+    "startMs": 17140,
+    "endMs": 17620,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "mobil.",
+        "startMs": 17140,
+        "endMs": 17440
+      }
+    ]
+  },
+  {
+    "startMs": 17942,
+    "endMs": 18542,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Pertama,",
+        "startMs": 17942,
+        "endMs": 18362
+      }
+    ]
+  },
+  {
+    "startMs": 19182,
+    "endMs": 20862,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "jauhkan",
+        "startMs": 19182,
+        "endMs": 19602
+      },
+      {
+        "text": "pandangan",
+        "startMs": 19602,
+        "endMs": 20122
+      },
+      {
+        "text": "dari",
+        "startMs": 20122,
+        "endMs": 20362
+      },
+      {
+        "text": "spion.",
+        "startMs": 20362,
+        "endMs": 20682,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 21219,
+    "endMs": 22279,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Tatap",
+        "startMs": 21219,
+        "endMs": 21639
+      },
+      {
+        "text": "dasbor",
+        "startMs": 21639,
+        "endMs": 22099
+      }
+    ]
+  },
+  {
+    "startMs": 22599,
+    "endMs": 24219,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "seolah",
+        "startMs": 22599,
+        "endMs": 22919
+      },
+      {
+        "text": "kamu",
+        "startMs": 22919,
+        "endMs": 23219
+      },
+      {
+        "text": "masih",
+        "startMs": 23219,
+        "endMs": 23659
+      },
+      {
+        "text": "menunggu",
+        "startMs": 23659,
+        "endMs": 24219
+      }
+    ]
+  },
+  {
+    "startMs": 24219,
+    "endMs": 25139,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "macet",
+        "startMs": 24219,
+        "endMs": 24659
+      },
+      {
+        "text": "bergerak.",
+        "startMs": 24659,
+        "endMs": 25139
+      }
+    ]
+  },
+  {
+    "startMs": 25139,
+    "endMs": 26579,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Dari",
+        "startMs": 25139,
+        "endMs": 25819
+      },
+      {
+        "text": "sudut",
+        "startMs": 25819,
+        "endMs": 26099
+      },
+      {
+        "text": "mata,",
+        "startMs": 26099,
+        "endMs": 26399
+      }
+    ]
+  },
+  {
+    "startMs": 27019,
+    "endMs": 28239,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "kamu",
+        "startMs": 27019,
+        "endMs": 27319
+      },
+      {
+        "text": "lihat",
+        "startMs": 27319,
+        "endMs": 27639
+      },
+      {
+        "text": "gadis",
+        "startMs": 27639,
+        "endMs": 28019,
+        "color": "yellow"
+      },
+      {
+        "text": "itu",
+        "startMs": 28019,
+        "endMs": 28239
+      }
+    ]
+  },
+  {
+    "startMs": 28239,
+    "endMs": 29459,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "tetap",
+        "startMs": 28239,
+        "endMs": 28699
+      },
+      {
+        "text": "tersenyum.",
+        "startMs": 28699,
+        "endMs": 29279
+      }
+    ]
+  },
+  {
+    "startMs": 29635,
+    "endMs": 30215,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kedua,",
+        "startMs": 29635,
+        "endMs": 30035
+      }
+    ]
+  },
+  {
+    "startMs": 30659,
+    "endMs": 32439,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "tahan",
+        "startMs": 30659,
+        "endMs": 30959
+      },
+      {
+        "text": "pengait",
+        "startMs": 30959,
+        "endMs": 31339,
+        "color": "yellow"
+      },
+      {
+        "text": "sabuk",
+        "startMs": 31339,
+        "endMs": 31799,
+        "color": "yellow"
+      },
+      {
+        "text": "supaya",
+        "startMs": 31799,
+        "endMs": 32439
+      }
+    ]
+  },
+  {
+    "startMs": 32439,
+    "endMs": 33979,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "tidak",
+        "startMs": 32439,
+        "endMs": 32739
+      },
+      {
+        "text": "membentur",
+        "startMs": 32739,
+        "endMs": 33239
+      },
+      {
+        "text": "pintu",
+        "startMs": 33239,
+        "endMs": 33719,
+        "color": "yellow"
+      },
+      {
+        "text": "saat",
+        "startMs": 33719,
+        "endMs": 33979
+      }
+    ]
+  },
+  {
+    "startMs": 33979,
+    "endMs": 35139,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "kamu",
+        "startMs": 33979,
+        "endMs": 34359
+      },
+      {
+        "text": "melepasnya.",
+        "startMs": 34359,
+        "endMs": 34959
+      }
+    ]
+  },
+  {
+    "startMs": 35389,
+    "endMs": 36829,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Buka",
+        "startMs": 35389,
+        "endMs": 35749
+      },
+      {
+        "text": "kunci",
+        "startMs": 35749,
+        "endMs": 36069
+      },
+      {
+        "text": "pintumu",
+        "startMs": 36069,
+        "endMs": 36449
+      },
+      {
+        "text": "saja.",
+        "startMs": 36449,
+        "endMs": 36649
+      }
+    ]
+  },
+  {
+    "startMs": 37209,
+    "endMs": 38909,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Sisakan",
+        "startMs": 37209,
+        "endMs": 37669
+      },
+      {
+        "text": "tangan",
+        "startMs": 37669,
+        "endMs": 38269
+      },
+      {
+        "text": "di",
+        "startMs": 38269,
+        "endMs": 38449
+      },
+      {
+        "text": "gagang",
+        "startMs": 38449,
+        "endMs": 38909
+      }
+    ]
+  },
+  {
+    "startMs": 38909,
+    "endMs": 40489,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "sampai",
+        "startMs": 38909,
+        "endMs": 39549
+      },
+      {
+        "text": "ada",
+        "startMs": 39549,
+        "endMs": 39889
+      },
+      {
+        "text": "celah.",
+        "startMs": 39889,
+        "endMs": 40309,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 40650,
+    "endMs": 41210,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Ketiga,",
+        "startMs": 40650,
+        "endMs": 41030
+      }
+    ]
+  },
+  {
+    "startMs": 41910,
+    "endMs": 43090,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "raih",
+        "startMs": 41910,
+        "endMs": 42207
+      },
+      {
+        "text": "tas",
+        "startMs": 42207,
+        "endMs": 42430
+      },
+      {
+        "text": "kain",
+        "startMs": 42430,
+        "endMs": 42770
+      },
+      {
+        "text": "berisi",
+        "startMs": 42770,
+        "endMs": 43090
+      }
+    ]
+  },
+  {
+    "startMs": 43090,
+    "endMs": 44910,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "botol",
+        "startMs": 43090,
+        "endMs": 43510
+      },
+      {
+        "text": "dan",
+        "startMs": 43510,
+        "endMs": 43650
+      },
+      {
+        "text": "ponsel,",
+        "startMs": 43650,
+        "endMs": 44110
+      },
+      {
+        "text": "lalu",
+        "startMs": 44410,
+        "endMs": 44910
+      }
+    ]
+  },
+  {
+    "startMs": 44910,
+    "endMs": 46310,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "turun",
+        "startMs": 44910,
+        "endMs": 45410
+      },
+      {
+        "text": "serendah",
+        "startMs": 45410,
+        "endMs": 45810
+      },
+      {
+        "text": "kaca.",
+        "startMs": 45810,
+        "endMs": 46130
+      }
+    ]
+  },
+  {
+    "startMs": 46930,
+    "endMs": 47970,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Lewat",
+        "startMs": 46930,
+        "endMs": 47250
+      },
+      {
+        "text": "sela",
+        "startMs": 47250,
+        "endMs": 47510
+      },
+      {
+        "text": "mobil",
+        "startMs": 47510,
+        "endMs": 47790
+      }
+    ]
+  },
+  {
+    "startMs": 48250,
+    "endMs": 49350,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "sampai",
+        "startMs": 48250,
+        "endMs": 48750
+      },
+      {
+        "text": "ke",
+        "startMs": 48750,
+        "endMs": 48883
+      },
+      {
+        "text": "samping",
+        "startMs": 48883,
+        "endMs": 49350
+      }
+    ]
+  },
+  {
+    "startMs": 49350,
+    "endMs": 49850,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "truk",
+        "startMs": 49350,
+        "endMs": 49550,
+        "color": "yellow"
+      },
+      {
+        "text": "boks.",
+        "startMs": 49550,
+        "endMs": 49850
+      }
+    ]
+  },
+  {
+    "startMs": 49850,
+    "endMs": 52230,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Dari",
+        "startMs": 49850,
+        "endMs": 50710
+      },
+      {
+        "text": "balik",
+        "startMs": 50710,
+        "endMs": 51050
+      },
+      {
+        "text": "truk,",
+        "startMs": 51050,
+        "endMs": 51350,
+        "color": "yellow"
+      },
+      {
+        "text": "kamu",
+        "startMs": 51710,
+        "endMs": 52230
+      }
+    ]
+  },
+  {
+    "startMs": 52230,
+    "endMs": 53530,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "akhirnya",
+        "startMs": 52230,
+        "endMs": 52770
+      },
+      {
+        "text": "bisa",
+        "startMs": 52770,
+        "endMs": 52930
+      },
+      {
+        "text": "minum",
+        "startMs": 52930,
+        "endMs": 53390
+      },
+      {
+        "text": "dan",
+        "startMs": 53390,
+        "endMs": 53530
+      }
+    ]
+  },
+  {
+    "startMs": 53530,
+    "endMs": 54530,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "melihat",
+        "startMs": 53530,
+        "endMs": 53910
+      },
+      {
+        "text": "peta.",
+        "startMs": 53910,
+        "endMs": 54350
+      }
+    ]
+  },
+  {
+    "startMs": 54633,
+    "endMs": 56093,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Kamu",
+        "startMs": 54633,
+        "endMs": 55093
+      },
+      {
+        "text": "tetap",
+        "startMs": 55093,
+        "endMs": 55333
+      },
+      {
+        "text": "berjongkok",
+        "startMs": 55333,
+        "endMs": 55893
+      },
+      {
+        "text": "di",
+        "startMs": 55893,
+        "endMs": 56093
+      }
+    ]
+  },
+  {
+    "startMs": 56093,
+    "endMs": 56793,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "balik",
+        "startMs": 56093,
+        "endMs": 56333
+      },
+      {
+        "text": "truk.",
+        "startMs": 56333,
+        "endMs": 56613,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 57293,
+    "endMs": 58653,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Tepat",
+        "startMs": 57293,
+        "endMs": 57753
+      },
+      {
+        "text": "di",
+        "startMs": 57753,
+        "endMs": 57913
+      },
+      {
+        "text": "sebelahmu,",
+        "startMs": 57913,
+        "endMs": 58473
+      }
+    ]
+  },
+  {
+    "startMs": 58933,
+    "endMs": 60413,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "ada",
+        "startMs": 58933,
+        "endMs": 59233
+      },
+      {
+        "text": "mobil",
+        "startMs": 59233,
+        "endMs": 59633
+      },
+      {
+        "text": "kosong",
+        "startMs": 59633,
+        "endMs": 60193,
+        "color": "red"
+      },
+      {
+        "text": "dengan",
+        "startMs": 60193,
+        "endMs": 60413
+      }
+    ]
+  },
+  {
+    "startMs": 60413,
+    "endMs": 61793,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "kaca",
+        "startMs": 60413,
+        "endMs": 60993
+      },
+      {
+        "text": "setengah",
+        "startMs": 60993,
+        "endMs": 61373
+      },
+      {
+        "text": "terbuka.",
+        "startMs": 61373,
+        "endMs": 61793
+      }
+    ]
+  },
+  {
+    "startMs": 61793,
+    "endMs": 63913,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "Dari",
+        "startMs": 61793,
+        "endMs": 62573
+      },
+      {
+        "text": "kursi",
+        "startMs": 62573,
+        "endMs": 63133
+      },
+      {
+        "text": "belakangnya",
+        "startMs": 63133,
+        "endMs": 63753
+      },
+      {
+        "text": "yang",
+        "startMs": 63753,
+        "endMs": 63913
+      }
+    ]
+  },
+  {
+    "startMs": 63913,
+    "endMs": 64633,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "gelap,",
+        "startMs": 63913,
+        "endMs": 64453,
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "startMs": 64853,
+    "endMs": 66913,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "terdengar",
+        "startMs": 64853,
+        "endMs": 65453
+      },
+      {
+        "text": "bunyi",
+        "startMs": 65453,
+        "endMs": 65913,
+        "color": "red"
+      },
+      {
+        "text": "sabuk",
+        "startMs": 65913,
+        "endMs": 66433,
+        "color": "yellow"
+      },
+      {
+        "text": "pengaman",
+        "startMs": 66433,
+        "endMs": 66913
+      }
+    ]
+  },
+  {
+    "startMs": 66913,
+    "endMs": 67593,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "dilepas.",
+        "startMs": 66913,
+        "endMs": 67413
+      }
+    ]
+  }
+]

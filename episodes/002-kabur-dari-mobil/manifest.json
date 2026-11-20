@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 2,
+  "id": "Arc01Episode02",
+  "arcEpisode": 2,
+  "characterSheets": [
+    "assets/characters/arc-01-driver/sheet.png",
+    "assets/characters/arc-01-passenger-teen/sheet.png"
+  ],
+  "fps": 30,
+  "duration": 2065,
+  "captions": "captions.json",
+  "openingTitle": "KABUR DARI MOBIL",
+  "narration": {
+    "asset": "assets/002-kabur-dari-mobil/narration-prepared.mp3",
+    "at": 0,
+    "duration": 2029,
+    "gain": 0.9
+  },
+  "effectBusGain": 0.5,
+  "beds": [
+    {
+      "name": "Hujan jalan tol",
+      "asset": "sfx/prepared/traffic-bed.wav",
+      "at": 0,
+      "duration": 1851,
+      "gain": 0.32,
+      "fadeIn": 10,
+      "fadeOut": 9,
+      "loop": true,
+      "envelope": [
+        {
+          "frame": 0,
+          "gain": 0.75
+        },
+        {
+          "frame": 1050,
+          "gain": 0.75
+        },
+        {
+          "frame": 1620,
+          "gain": 0.52
+        },
+        {
+          "frame": 1824,
+          "gain": 0.38
+        },
+        {
+          "frame": 1848,
+          "gain": 0.015
+        }
+      ]
+    },
+    {
+      "name": "Udara malam",
+      "asset": "sfx/prepared/night-air.wav",
+      "at": 0,
+      "duration": 1851,
+      "gain": 0.12,
+      "fadeIn": 30,
+      "fadeOut": 9,
+      "loop": true,
+      "envelope": [
+        {
+          "frame": 0,
+          "gain": 0.5
+        },
+        {
+          "frame": 1050,
+          "gain": 0.5
+        },
+        {
+          "frame": 1824,
+          "gain": 0.35
+        },
+        {
+          "frame": 1848,
+          "gain": 0.01
+        }
+      ]
+    }
+  ],
+  "art": {
+    "styleId": "gritty-dark-anime-comic",
+    "rasterAssets": {
+      "assets/002-kabur-dari-mobil/01-hook.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/02-gridlock.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/02b-gap.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/03-dashboard.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/04-belt.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/05-door.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/06-escape.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/07-mirror-clue.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/08-drink.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/09-phone-v2.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/10-notice.png": "gritty-dark-anime-comic",
+      "assets/002-kabur-dari-mobil/11-empty-seat.png": "gritty-dark-anime-comic"
+    }
+  },
+  "script": {
+    "format": "survival-tactics-curiosity-gap",
+    "hook": {
+      "at": 0,
+      "line": "Ada yang duduk di belakangmu, jangan langsung buka pintu."
+    },
+    "promise": {
+      "at": 90,
+      "line": "Satu bunyi bisa memberi tahu penumpang itu kapan kamu akan bergerak.",
+      "openLoop": "Apa yang terdengar setelah kamu kabur?"
+    },
+    "tactics": {
+      "at": 360,
+      "steps": [
+        {
+          "number": 1,
+          "at": 538,
+          "line": "Pertama, jauhkan pandangan dari spion.",
+          "detail": "Tatap dasbor dan jangan menarik perhatian."
+        },
+        {
+          "number": 2,
+          "at": 889,
+          "line": "Kedua, tahan pengait sabuk.",
+          "detail": "Lepas sabuk tanpa membentur pintu."
+        },
+        {
+          "number": 3,
+          "at": 1220,
+          "line": "Ketiga, raih tas kain.",
+          "detail": "Merunduk keluar melalui sela kendaraan."
+        }
+      ]
+    },
+    "ending": {
+      "at": 1650,
+      "twistAt": 1854,
+      "payoff": "Bunyi sabuk pengaman terlepas dari kursi belakang mobil kosong."
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "name": "Pengemudi dan gadis di kursi belakang",
+      "at": 0,
+      "plate": "assets/002-kabur-dari-mobil/01-hook.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock",
+          "type": "timestampBadge",
+          "text": "HARI 1 · 03:05",
+          "at": 0,
+          "duration": 54,
+          "revealFrames": 5
+        },
+        {
+          "id": "rule",
+          "type": "tacticalCallout",
+          "text": "JANGAN BUKA PINTU",
+          "at": 90,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.095,
+            "width": 0.84,
+            "height": 0.15
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi dan gadis di kursi belakang"
+      }
+    },
+    {
+      "id": "gridlock",
+      "name": "Mobil terjepit di tol",
+      "at": 198,
+      "plate": "assets/002-kabur-dari-mobil/02-gridlock.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "boxed",
+          "type": "tacticalCallout",
+          "text": "MOBIL TERJEBAK",
+          "at": 5,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "locked",
+          "type": "tacticalCallout",
+          "text": "PINTU TERKUNCI",
+          "at": 89,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "threat-proximity",
+        "evidence": "Mobil terjepit di tol"
+      }
+    },
+    {
+      "id": "closing-gap",
+      "name": "Celah di samping truk terancam",
+      "at": 379,
+      "plate": "assets/002-kabur-dari-mobil/02b-gap.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "gap",
+          "type": "tacticalCallout",
+          "text": "CELAH MENUTUP",
+          "at": 3,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "outside",
+          "type": "tacticalCallout",
+          "text": "AWASI CELAH",
+          "at": 80,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "threat-proximity",
+        "evidence": "Celah di samping truk terancam"
+      }
+    },
+    {
+      "id": "look-away",
+      "name": "Pengemudi menghindari spion",
+      "at": 538,
+      "plate": "assets/002-kabur-dari-mobil/03-dashboard.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "one",
+          "type": "tacticalCallout",
+          "text": "01 · JAUHKAN PANDANGAN",
+          "at": 5,
+          "duration": 60,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.43,
+            "y": 0.14,
+            "width": 0.52,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "look",
+          "type": "tacticalCallout",
+          "text": "TATAP DASBOR",
+          "at": 90,
+          "duration": 55,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.43,
+            "y": 0.14,
+            "width": 0.52,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "wait",
+          "type": "tacticalCallout",
+          "text": "TETAP DIAM",
+          "at": 169,
+          "duration": 55,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.43,
+            "y": 0.14,
+            "width": 0.52,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "smile",
+          "type": "tacticalCallout",
+          "text": "DIA TERSENYUM",
+          "at": 255,
+          "duration": 55,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.43,
+            "y": 0.14,
+            "width": 0.52,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi menghindari spion"
+      }
+    },
+    {
+      "id": "belt",
+      "name": "Tahan pengait sabuk",
+      "at": 889,
+      "plate": "assets/002-kabur-dari-mobil/04-belt.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "two",
+          "type": "tacticalCallout",
+          "text": "02 · TAHAN PENGAIT",
+          "at": 3,
+          "duration": 55,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "belt",
+          "type": "tacticalCallout",
+          "text": "LEPAS PERLAHAN",
+          "at": 88,
+          "duration": 55,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Tahan pengait sabuk"
+      },
+      "cues": [
+        {
+          "name": "Pengait sabuk tertahan",
+          "asset": "sfx/prepared/door-lock.wav",
+          "at": 147,
+          "duration": 13,
+          "gain": 0.18
+        }
+      ]
+    },
+    {
+      "id": "door",
+      "name": "Buka hanya kunci pintu pengemudi",
+      "at": 1062,
+      "plate": "assets/002-kabur-dari-mobil/05-door.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "unlock",
+          "type": "tacticalCallout",
+          "text": "BUKA KUNCI PINTUMU",
+          "at": 3,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "handle",
+          "type": "tacticalCallout",
+          "text": "TAHAN GAGANG",
+          "at": 78,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "three",
+          "type": "tacticalCallout",
+          "text": "03 · RAIH TAS",
+          "at": 160,
+          "duration": 55,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "move",
+          "type": "tacticalCallout",
+          "text": "SIAP KELUAR",
+          "at": 230,
+          "duration": 32,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Buka hanya kunci pintu pengemudi"
+      },
+      "cues": [
+        {
+          "name": "Kunci pintu",
+          "asset": "sfx/prepared/door-lock.wav",
+          "at": 28,
+          "duration": 14,
+          "gain": 0.18
+        }
+      ]
+    },
+    {
+      "id": "escape",
+      "name": "Merunduk keluar dari mobil",
+      "at": 1332,
+      "plate": "assets/002-kabur-dari-mobil/06-escape.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "low",
+          "type": "tacticalCallout",
+          "text": "TETAP RENDAH",
+          "at": 3,
+          "duration": 55,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "truck",
+          "type": "tacticalCallout",
+          "text": "MENUJU TRUK",
+          "at": 85,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Merunduk keluar dari mobil"
+      }
+    },
+    {
+      "id": "clue",
+      "name": "Pantulan pintu belakang terbuka",
+      "at": 1496,
+      "plate": "assets/002-kabur-dari-mobil/07-mirror-clue.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pantulan pintu belakang terbuka"
+      }
+    },
+    {
+      "id": "water",
+      "name": "Berjongkok di balik truk dan minum",
+      "at": 1570,
+      "plate": "assets/002-kabur-dari-mobil/08-drink.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Berjongkok di balik truk dan minum"
+      }
+    },
+    {
+      "id": "map",
+      "name": "Memeriksa peta di balik truk",
+      "at": 1606,
+      "plate": "assets/002-kabur-dari-mobil/09-phone-v2.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-end",
+          "type": "timestampBadge",
+          "text": "HARI 1 · 03:20",
+          "at": 0,
+          "duration": 100,
+          "revealFrames": 5
+        },
+        {
+          "id": "exit",
+          "type": "supplyChecklist",
+          "at": 4,
+          "duration": 105,
+          "revealFrames": 55,
+          "box": {
+            "x": 0.04,
+            "y": 0.18,
+            "width": 0.46,
+            "height": 0.2
+          },
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.4,
+              "display": "40%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.57,
+              "display": "57%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Memeriksa peta di balik truk"
+      }
+    },
+    {
+      "id": "notice",
+      "name": "Pengemudi menyadari MPV kosong di sampingnya",
+      "at": 1719,
+      "plate": "assets/002-kabur-dari-mobil/10-notice.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "empty",
+          "type": "tacticalCallout",
+          "text": "MOBIL KOSONG",
+          "at": 28,
+          "duration": 65,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi menyadari MPV kosong di sampingnya"
+      }
+    },
+    {
+      "id": "reveal",
+      "name": "Pengait sabuk di kursi belakang kosong",
+      "at": 1854,
+      "plate": "assets/002-kabur-dari-mobil/11-empty-seat.png",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.075,
+          "x": 0,
+          "y": -5
+        }
+      },
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "backseat",
+          "type": "tacticalCallout",
+          "text": "KURSI BELAKANG",
+          "at": 30,
+          "duration": 65,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        },
+        {
+          "id": "empty-again",
+          "type": "tacticalCallout",
+          "text": "MOBIL KOSONG",
+          "at": 111,
+          "duration": 50,
+          "revealFrames": 5,
+          "box": {
+            "x": 0.08,
+            "y": 0.15,
+            "width": 0.84,
+            "height": 0.16
+          }
+        }
+      ],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Pengait sabuk di kursi belakang kosong"
+      },
+      "cues": [
+        {
+          "name": "Klik pengait sabuk",
+          "asset": "sfx/prepared/door-lock.wav",
+          "at": 175,
+          "duration": 13,
+          "gain": 0.75
+        },
+        {
+          "name": "Tarikan sabuk",
+          "asset": "sfx/prepared/coat-shift.wav",
+          "at": 177,
+          "duration": 9,
+          "gain": 0.24
+        },
+        {
+          "name": "Dengung akhir",
+          "asset": "sfx/prepared/episode02-sub-sting-delayed.wav",
+          "at": 175,
+          "duration": 36,
+          "gain": 0.38,
+          "fadeOut": 30
+        }
+      ]
+    }
+  ]
+}

@@ -48,6 +48,11 @@ Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan
 
 **Aset dan hak pakai** — Lembar karakter dan pustaka foley tercatat di atas. Catat prompt, file terpilih, sumber bunyi baru dan status hak pakai setelah produksi.
 
+### Post-Narration Jolt Beat
+
+Push-in ke botol merah dan senyum di sudut gelap; sesudah narasi dan vacuum, snap-cut ke wajah gadis yang mendadak memenuhi frame dengan sting tajam.
+Pertahankan gesek botol dekat sepatu dan jejak lumpur tanpa aksen; akhiri hard cut ke hitam dalam tail 1,0–1,5 detik.
+
 ## 4. Handoff dan review
 
-Usulan ID komposisi `Arc01Episode04`. Target akhir 61–72 detik. Angka di HUD dan takarir harus sama. Konfirmasi penonton baru memahami ancaman, pilihan, hasil dan petunjuk tanpa menonton episode sebelumnya. Review audio, gambar dan hak pakai masih menunggu produksi. Catat kontinuitas final di arc record setelah cut diterima.
+Usulan ID komposisi `Arc01Episode04`. Target video akhir 62–75 detik termasuk tail. Angka di HUD dan takarir harus sama. Konfirmasi penonton baru memahami ancaman, pilihan, hasil dan petunjuk tanpa menonton episode sebelumnya. Review audio, gambar dan hak pakai masih menunggu produksi. Catat kontinuitas final di arc record setelah cut diterima.
