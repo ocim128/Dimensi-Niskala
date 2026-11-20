@@ -49,4 +49,6 @@ These are initial ideas, not validated facts. Status meanings: **proposed** = no
 
 **Attempt 05 direction.** The owner closed the balanced Attempt 04 render and identified two issues. The pictured driver read as male even though the viewer was addressed as `kamu`, and the narrator voiced the diegetic knocks. Attempt 05 uses eye-line POV and anonymous inserts for the viewer-character, plus fresh Jejak narration with space reserved for separate knock effects. [Builder brief](../../episodes/001-kemacetan-terakhir/attempt-05/brief.md)
 
+**Attempt 06 narration · 20 November 2026.** The owner rejected the Jejak master for this cut due to speech quality and supplied a Gemini Flash take from ShortZ. The new source measures 73.68 s, and the ShortZ report flags three of six chunks for listening review. Agent 2 should re-establish the speech, caption and knock timing around this source. [Audio handoff](../../episodes/001-kemacetan-terakhir/attempt-06/brief.md)
+
 For new entries, include the episode IDs, platform and observation window, actual feedback or metric, comparisons and limitations. Link to episode performance/review files; never invent measurements. Record a decision even when the result is to keep testing.

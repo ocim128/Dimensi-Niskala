@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
-import {readFileSync, readdirSync, statSync} from "node:fs";
+import {createHash} from "node:crypto";
+import {readFileSync, readdirSync, realpathSync, statSync} from "node:fs";
 import {join, relative, resolve, sep} from "node:path";
 import {fileURLToPath} from "node:url";
 
@@ -7,6 +8,29 @@ const isFrame = (v) => Number.isInteger(v) && v >= 0;
 const nonempty = (v) => typeof v === "string" && v.trim().length > 0;
 const unit = (v) => Number.isFinite(v) && v >= 0 && v <= 1;
 const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
+const digest = (data) => createHash("sha256").update(data).digest("hex");
+const styleId = "gritty-dark-anime-comic";
+const assetBatchDir = (manifestPath) => `assets/${manifestPath.slice(0, -"/manifest.json".length)}`;
+const comparisonManifests = new Map([
+  ["001-kemacetan-terakhir/manifest.json", "6a8fc50c2866838e826378c74807190da4606aa7f795c4db2e653094c5364a40"],
+  ["001-kemacetan-terakhir/recut-v2/manifest.json", "2bf61aa0f37995353474339debf5457c27bfedaecff26be783a97d57b2086f42"],
+  ["001-kemacetan-terakhir/recut-v2-alternate/manifest.json", "8770fdf453b9c33adab467f10abd448acb75265b4c76a6b480cb0256fe01bcf2"],
+  ["001-kemacetan-terakhir/attempt-05/manifest.json", "3b9c322738c5dd01398eedac8e52ccc29882296a2d7f2337c5087056cc1f8280"],
+]);
+
+function checkEditorial(scenes, fps, twistAt, fail) {
+  const visible = scenes.filter(scene => scene.editorial.protagonist !== "absent");
+  fail(5 * visible.length >= 2 * scenes.length, `protagonist appears in ${visible.length}/${scenes.length} shots; at least 40% required`);
+  fail(visible.some(scene => scene.at < 3 * fps), "opening 0–3 s needs a visible protagonist");
+  const reactions = visible.filter(scene => scene.editorial.protagonist === "reaction");
+  fail(reactions.filter(scene => scene.at >= 12 * fps && scene.at < 55 * fps).length >= 2,
+    "12–55 s needs at least two protagonist reaction/action shots");
+  const reveal = scenes.findIndex(scene => scene.at === twistAt);
+  fail(reveal > 0, `final reveal must start a shot at twist frame ${twistAt}`);
+  const anticipation = scenes[reveal - 1];
+  fail(anticipation.editorial.protagonist === "reaction",
+    `${anticipation.id}: final reveal needs a visible protagonist reaction in the immediately preceding shot`);
+}
 
 function alphaCapable(path) {
   const data = readFileSync(path);
@@ -19,25 +43,47 @@ function alphaCapable(path) {
   return false;
 }
 
-export function validateEpisode(manifest, captions, {publicDir, manifestPath} = {}) {
+export function validateEpisode(manifest, captions, {publicDir, manifestPath, batchRoots = []} = {}) {
   const {id, duration, fps, narration, beds, scenes} = manifest;
   const prefix = `${id ?? manifestPath ?? "episode"}: `;
   const fail = (condition, message) => assert(condition, prefix + message);
+  const comparison = comparisonManifests.has(manifestPath) &&
+    comparisonManifests.get(manifestPath) === digest(JSON.stringify(manifest));
+  const strict = manifest.schemaVersion === 2 && !comparison;
+  if (strict) fail(typeof manifestPath === "string" && /^(?:[\w-]+\/)+manifest\.json$/.test(manifestPath),
+    "expected an episode-relative manifest path to determine the asset folder");
+  const batchDir = strict ? assetBatchDir(manifestPath) : null;
+  const childBatches = strict ? batchRoots.filter(root => root.startsWith(batchDir + "/")) : [];
+  const batchAssets = new Map();
   const asset = (name, context) => {
     fail(nonempty(name) && typeof publicDir === "string", `${context}: invalid asset path`);
     const full = resolve(publicDir, name);
     fail(full.startsWith(resolve(publicDir) + sep) && statSync(full, {throwIfNoEntry: false})?.isFile(), `${context}: missing asset ${name}`);
     return full;
   };
-  const clip = (c, available, name) => {
+  const batchAsset = (name, context, sharedSfx = false) => {
+    const full = asset(name, context);
+    if (strict) {
+      const root = sharedSfx && name.startsWith("sfx/") ? "sfx" : batchDir;
+      const canonical = relative(publicDir, full).split(sep).join("/");
+      const physicalPublic = realpathSync(publicDir);
+      const physical = relative(physicalPublic, realpathSync(full)).split(sep).join("/");
+      fail(canonical === name && physical === name && name.startsWith(root + "/"),
+        `${context}: asset ${name} must be in public/${batchDir}/${sharedSfx ? " or public/sfx/" : ""}`);
+      fail(!childBatches.some(child => name.startsWith(child + "/")),
+        `${context}: asset ${name} belongs to a nested attempt's batch`);
+    }
+    return full;
+  };
+  const clip = (c, available, name, sharedSfx = false) => {
     fail(c && typeof c === "object", `${name}: missing clip`);
-    asset(c.asset, name);
+    batchAsset(c.asset, name, sharedSfx);
     fail(isFrame(c.at) && isFrame(c.duration) && c.duration > 0 && c.at + c.duration <= available, `${name}: invalid frame interval ${c.at}+${c.duration}/${available}`);
     fail(Number.isFinite(c.gain) && c.gain >= 0 && c.gain <= 1, `${name}: invalid gain`);
   };
   fail(nonempty(id) && /^[a-zA-Z0-9-]+$/.test(id), "invalid composition id");
   fail(isFrame(fps) && fps > 0 && isFrame(duration) && duration > 0, "invalid duration/fps");
-  const baseline = manifest.schemaVersion === undefined && manifestPath === "001-kemacetan-terakhir/manifest.json" && id === "KemacetanTerakhirMotionComic" && fps === 30 && duration === 2544;
+  const baseline = manifest.schemaVersion === undefined && comparison;
   const v2 = manifest.schemaVersion === 2;
   fail(baseline || v2, "unsupported or missing schema version (only the exact comparison cut is grandfathered)");
   if (v2) {
@@ -55,21 +101,24 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath} = 
     });
     fail(s.ending?.at === 55 * fps && isFrame(s.ending.twistAt) && s.ending.twistAt > 55 * fps && s.ending.twistAt <= 70 * fps && s.ending.twistAt < duration && nonempty(s.ending.payoff), "invalid ending/twist");
     fail(nonempty(manifest.art?.styleId) && manifest.art.rasterAssets && typeof manifest.art.rasterAssets === "object", "missing art style map");
+    if (strict) fail(manifest.art.styleId === styleId, `art.styleId must be ${styleId}`);
     for (const [path, style] of Object.entries(manifest.art.rasterAssets)) {
-      asset(path, "art style map");
+      batchAsset(path, "art style map");
       fail(style === manifest.art.styleId, `art style map: missing or mixed style ID for ${path}`);
     }
   }
   fail(Array.isArray(scenes) && scenes[0]?.at === 0 && Array.isArray(beds), "missing scenes, beds, or scene at frame zero");
   clip(narration, duration, "narration");
   const sceneIds = new Set();
+  const plateUses = [];
   const activity = [];
   const activityInterval = (start, end) => {if (end > start) activity.push([start, end]);};
   const point = (p) => p && unit(p.x) && unit(p.y);
   const box = (b) => point(b) && unit(b.width) && unit(b.height) && b.width > 0 && b.height > 0 && b.x + b.width <= 1 && b.y + b.height <= 1;
   const raster = (path, context) => {
-    const full = asset(path, context);
+    const full = batchAsset(path, context);
     if (v2) fail(manifest.art.rasterAssets[path] === manifest.art.styleId, `${context}: missing or mixed style ID for ${path}`);
+    if (!batchAssets.has(full)) batchAssets.set(full, {path, fingerprint: digest(readFileSync(full))});
     return full;
   };
   for (const [index, scene] of scenes.entries()) {
@@ -77,13 +126,26 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath} = 
     const length = end - scene.at;
     fail(isFrame(scene.at) && isFrame(end) && length > 0 && end <= duration, `${scene.id}: invalid scene interval ${scene.at}–${end}`);
     fail(nonempty(scene.id) && !sceneIds.has(scene.id), `duplicate/missing scene id ${scene.id}`); sceneIds.add(scene.id);
-    raster(scene.plate, `${scene.id} plate`);
+    const plate = raster(scene.plate, `${scene.id} plate`);
+    if (strict) plateUses.push({scene, fingerprint: batchAssets.get(plate).fingerprint});
     fail(scene.camera?.from && scene.camera?.to && [scene.camera.from, scene.camera.to].every(c => Number.isFinite(c.scale) && c.scale > 0 && Number.isFinite(c.x) && Number.isFinite(c.y)), `${scene.id}: invalid camera`);
     let layers = scene.layers ?? [];
     if (v2) {
       fail(!("layers" in scene) && !("label" in scene), `${scene.id}: legacy layers/label are forbidden`);
       fail(scene.characters?.mode === "baked" || scene.characters?.mode === "masked", `${scene.id}: invalid character mode`);
       fail(Array.isArray(scene.hud), `${scene.id}: hud must be an array`);
+      if (strict) {
+        const e = scene.editorial;
+        fail(e && ["absent", "visible", "reaction"].includes(e.protagonist) &&
+          ["character-emotion", "threat-proximity", "tactical-hud"].includes(e.purpose) && nonempty(e.evidence),
+          `${scene.id}: expected editorial protagonist, shot purpose, and visible evidence`);
+        if (e.purpose === "character-emotion") fail(e.protagonist !== "absent",
+          `${scene.id}: character-emotion requires the visible protagonist`);
+        if (e.purpose === "tactical-hud") fail(scene.hud.some(h =>
+          ["radarDiagram", "blueprintOverlay", "supplyChecklist"].includes(h?.type) ||
+          (h?.type === "tacticalCallout" && Array.isArray(h.guide))),
+          `${scene.id}: tactical-hud requires a diagram, checklist, or plotted guide`);
+      }
       if (scene.characters.mode === "baked") fail(!("layers" in scene.characters) && !("foreground" in scene.characters), `${scene.id}: baked scene has cutouts`);
       if (scene.characters.mode === "masked") {
         layers = scene.characters.layers;
@@ -120,7 +182,7 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath} = 
     }
     for (const cue of scene.cues ?? []) {
       fail(cue.at < length, `${scene.id}/${cue.name}: cue starts outside scene`);
-      clip(cue, duration - scene.at, `${scene.id}/${cue.name}`);
+      clip(cue, duration - scene.at, `${scene.id}/${cue.name}`, true);
     }
     for (const [name, event] of [["hit", scene.hit], ["blackout", scene.blackout]]) if (event) {
       fail(isFrame(event.at) && Number.isInteger(event.duration) && event.duration > 0 && event.at + event.duration <= length, `${scene.id}: invalid ${name} interval`);
@@ -132,13 +194,23 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath} = 
       if (distinct) activityInterval(scene.at, scene.at + 1);
     }
   }
-  for (const bed of beds) {clip(bed, duration, bed.name); fail(isFrame(bed.fadeIn) && isFrame(bed.fadeOut) && bed.fadeIn + bed.fadeOut <= bed.duration, `${bed.name}: invalid fades`);}
+  for (const bed of beds) {clip(bed, duration, bed.name, true); fail(isFrame(bed.fadeIn) && isFrame(bed.fadeOut) && bed.fadeIn + bed.fadeOut <= bed.duration, `${bed.name}: invalid fades`);}
   if (v2) {
     activity.sort((a, b) => a[0] - b[0]);
     let cursor = 0;
     for (const [start, end] of [...activity, [duration, duration]]) {
       fail(2 * (start - cursor) <= 5 * fps, `plain still ${cursor}–${start} (${start - cursor} frames) exceeds 2.5 s`);
       cursor = Math.max(cursor, end);
+    }
+  }
+  if (strict) {
+    checkEditorial(scenes, fps, manifest.script.ending.twistAt, fail);
+    const previousByPlate = new Map();
+    for (const {scene, fingerprint} of plateUses) {
+      const previous = previousByPlate.get(fingerprint);
+      fail(!previous || scene.at - previous.at >= 15 * fps,
+        `${scene.id}: repeats the static plate from ${previous?.id} within 15 s (frames ${previous?.at} and ${scene.at})`);
+      previousByPlate.set(fingerprint, scene);
     }
   }
   fail(Array.isArray(captions) && captions.length > 0, "caption array is empty");
@@ -155,7 +227,7 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath} = 
     }
     previousEnd = c.endMs;
   }
-  return {id, scenes: scenes.length, captions: captions.length, duration, fps, baseline};
+  return {id, scenes: scenes.length, captions: captions.length, duration, fps, baseline, comparison, rasters: [...batchAssets.values()]};
 }
 
 function findManifests(dir) {
@@ -163,14 +235,28 @@ function findManifests(dir) {
 }
 export function checkAll(root = process.cwd()) {
   const episodeDir = resolve(root, "episodes"), publicDir = resolve(root, "public"), ids = new Set();
-  const paths = findManifests(episodeDir).sort();
+  const paths = findManifests(episodeDir).sort().map(path => ({
+    path, manifestPath: relative(episodeDir, path).split(sep).join("/"),
+  }));
   assert(paths.length > 0, "No episode manifests found");
-  return paths.map(path => {
+  const batchRoots = paths.map(({manifestPath}) => assetBatchDir(manifestPath));
+  const batches = new Map();
+  return paths.map(({path, manifestPath}) => {
     const manifest = readJson(path);
     assert(typeof manifest.captions === "string" && /^[\w-]+\.json$/.test(manifest.captions), `Invalid captions path: ${path}`);
     assert(!ids.has(manifest.id), `Duplicate composition ID: ${manifest.id}`); ids.add(manifest.id);
-    const result = validateEpisode(manifest, readJson(join(path, "..", manifest.captions)), {publicDir, manifestPath: relative(episodeDir, path).split(sep).join("/")});
-    console.log(`${result.id}: ${result.scenes} scenes, ${result.captions} captions, ${result.duration} frames (${(result.duration / result.fps).toFixed(2)} s)${result.baseline ? " [comparison baseline]" : " [v2]"}`);
+    const result = validateEpisode(manifest, readJson(join(path, "..", manifest.captions)), {publicDir, manifestPath, batchRoots});
+    const episode = manifestPath.split("/")[0];
+    const owners = batches.get(episode) ?? new Map();
+    batches.set(episode, owners);
+    for (const raster of result.rasters) {
+      const previous = owners.get(raster.fingerprint);
+      if (previous && previous.manifestPath !== manifestPath && (!previous.comparison || !result.comparison)) {
+        assert.fail(`${result.id}: same raster bytes in different attempts: ${previous.path} (${previous.manifestPath}) and ${raster.path} (${manifestPath})`);
+      }
+      if (!previous) owners.set(raster.fingerprint, {...raster, manifestPath, comparison: result.comparison});
+    }
+    console.log(`${result.id}: ${result.scenes} scenes, ${result.captions} captions, ${result.duration} frames (${(result.duration / result.fps).toFixed(2)} s)${result.comparison ? " [comparison]" : " [production v2]"}`);
     return result;
   });
 }
