@@ -1,0 +1,79 @@
+{
+  "outputDirectory": "public/sfx/prepared",
+  "oneShots": [
+    {
+      "name": "glass-knock",
+      "source": "public/sfx/glass-knock.wav",
+      "filters": "highpass=f=95,lowpass=f=6500,equalizer=f=240:t=q:w=1:g=3,equalizer=f=1750:t=q:w=0.9:g=3.5"
+    },
+    {
+      "name": "headrest-thud",
+      "source": "public/sfx/body-fall.wav",
+      "filters": "highpass=f=60,lowpass=f=4500,equalizer=f=230:t=q:w=1:g=3"
+    },
+    {
+      "name": "door-lock",
+      "source": "public/sfx/door-lock.wav"
+    },
+    {
+      "name": "body-fall",
+      "source": "public/sfx/body-fall.wav"
+    },
+    {
+      "name": "coat-shift",
+      "source": "public/sfx/coat-shift.wav"
+    },
+    {
+      "name": "ignition-click",
+      "source": "public/sfx/ignition-click.wav"
+    },
+    {
+      "name": "console-switch",
+      "source": "public/sfx/console-switch.wav"
+    },
+    {
+      "name": "shoe-left",
+      "source": "public/sfx/shoe-left.wav"
+    },
+    {
+      "name": "shoe-right",
+      "source": "public/sfx/shoe-right.wav"
+    },
+    {
+      "name": "metal-resonance",
+      "source": "public/sfx/metal-resonance.wav"
+    }
+  ],
+  "beds": [
+    {
+      "name": "traffic-bed",
+      "source": "public/sfx/traffic-bed.wav"
+    },
+    {
+      "name": "engine-idle",
+      "source": "public/sfx/engine-idle.wav"
+    },
+    {
+      "name": "sub-drone",
+      "source": "public/sfx/sub-drone.wav"
+    },
+    {
+      "name": "night-air",
+      "source": "public/sfx/night-air.wav"
+    },
+    {
+      "name": "tension-rise",
+      "source": "public/sfx/tension-rise.wav"
+    }
+  ],
+  "composites": [
+    {
+      "name": "reveal-sting",
+      "sources": [
+        "public/sfx/sub-drone.wav",
+        "public/sfx/metal-resonance.wav"
+      ],
+      "processing": "Filtered, layered and faded in scripts/prep-sfx.mjs; normalized to -1 dBFS."
+    }
+  ]
+}

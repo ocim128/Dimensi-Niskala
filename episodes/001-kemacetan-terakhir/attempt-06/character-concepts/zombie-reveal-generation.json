@@ -1,0 +1,11 @@
+{
+  "status": "Approved character concept applied to Attempt 06 passenger reveal",
+  "generator": "Built-in image generation; model version not exposed",
+  "asset": "public/assets/001-kemacetan-terakhir/attempt-06/passenger-teen-v1.png",
+  "reference": [
+    "public/assets/001-kemacetan-terakhir/attempt-06/passenger-distinct.webp",
+    "episodes/001-kemacetan-terakhir/attempt-06/character-concepts/zombie-teen-sheet-v2.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Edit the first input image, the vertical car backseat reveal frame. Replace the old male passenger with the SAME teenage Indonesian girl zombie from the second input image (the approved character sheet). Preserve the first image's existing vertical 9:16 framing and composition, rear seat, rain-covered windows, blue-gray night, subtle red taillight, car interior and the blurred driver's shoulder in the lower-left foreground. Maintain a credible seat and proportions. The new girl is seated in the rear seat, leaning toward the driver slightly, with her head, neck and shoulders naturally connected; make her face large and readable at TikTok phone size. Match the approved sheet: medium-brown skin with muted sickly undertones, shoulder-length wet messy black hair, one cloudy pale eye and one dark eye staring directly at the driver, the same unsettling small closed-mouth smile, the same worn muted mauve-brown overshirt and dark T-shirt. Her intent is predatory and unnervingly still, as in the sheet. Keep her clothed modestly and age-appropriate. Place her in the existing car seat; no extra people. Match existing gritty hand-inked dark anime/comic linework, muted tones, realistic anatomy and red/blue lighting. Keep it frightening without graphic gore. This should be a single full-bleed vertical 9:16 film frame, not a character sheet or collage; no lettering, subtitles, text, or watermark.",
+  "note": "The existing passenger art and character sheet are retained. Preceding hand shot remains unchanged."
+}

@@ -15,17 +15,22 @@ const originalPlate = readFileSync("public/assets/kemacetan-terakhir/door-threat
 const plates = Array.from({length: 30}, (_, i) => `${assetDir}/shot-${i}.webp`);
 const plateA = plates[0];
 const fg = `${assetDir}/seat.png`;
+const actor = `${assetDir}/actor.webp`;
+const opaque = `${assetDir}/opaque.webp`;
 mkdirSync(join(publicDir, assetDir), {recursive: true});
 mkdirSync(join(publicDir, "sfx"), {recursive: true});
 mkdirSync(join(publicDir, "fonts"), {recursive: true});
 for (const [i, plate] of plates.entries()) writeFileSync(join(publicDir, plate), Buffer.concat([originalPlate, Buffer.from([i])]));
 copyFileSync("public/assets/kemacetan-terakhir/seat-occluder.png", join(publicDir, fg));
+writeFileSync(join(publicDir, actor), originalPlate);
+writeFileSync(join(publicDir, opaque), originalPlate);
 writeFileSync(join(publicDir, assetDir, "narration.mp3"), "");
 writeFileSync(join(publicDir, "fonts/theboldfont.ttf"), "");
 writeFileSync(join(publicDir, "sfx/knock.wav"), "");
 const camera = {from: {scale: 1, x: 0, y: 0}, to: {scale: 1, x: 0, y: 0}};
 const base = {
   id: "FixtureV2", schemaVersion: 2, fps: 30, duration: 2100,
+  openingTitle: "Jangan Buka Kaca",
   captions: "captions.json", narration: {asset: `${assetDir}/narration.mp3`, at: 0, duration: 2100, gain: 0.7}, beds: [],
   art: {styleId, rasterAssets: Object.fromEntries(plates.map(plate => [plate, styleId]))},
   script: {format: "survival-tactics-curiosity-gap", hook: {at: 0, line: "Wabah datang"}, promise: {at: 90, line: "Apa bahayanya?", openLoop: "Apa di belakang?"}, tactics: {at: 360, steps: [{number: 1, at: 370, line: "Kunci", detail: "pintu"}, {number: 2, at: 800, line: "Sembunyi", detail: "jendela"}]}, ending: {at: 1650, twistAt: 1890, payoff: "Ada seseorang"}},
@@ -63,14 +68,16 @@ test("duration over 72 seconds and missing promise fail", () => {
 test("out-of-order tactical steps fail", () => {
   const a = clone(); a.script.tactics.steps[1].at = 369; assert.throws(() => validate(a), /tactical step/);
 });
-test("76 static frames crossing repeated shots fail", () => {
+test("consecutive scenes cannot reuse the same image path to break up a still", () => {
   const a = clone(); a.scenes[1].at = 38; a.scenes[1].plate = a.scenes[0].plate; a.scenes[2].at = 76;
-  assert.throws(() => validate(a), /plain still 0–76/);
+  assert.throws(() => validate(a), /repeated image asset/);
 });
-test("a single 75-frame still passes", () => {
+test("75 static frames pass and 76 fail", () => {
   const a = clone();
   a.scenes[1].at = 75;
   assert.doesNotThrow(() => validate(a));
+  a.scenes[1].at = 76;
+  assert.throws(() => validate(a), /plain still 0–76/);
 });
 test("settled HUD does not excuse an overlong hold", () => {
   const a = clone(); a.scenes.splice(1, 1); a.scenes[0].hud = [{id: "badge", type: "timestampBadge", text: "03.00", at: 0, duration: 140, revealFrames: 5}];
@@ -86,9 +93,11 @@ test("HUD box, foreground and mixed style errors fail", () => {
 test("masked character accepts an alpha foreground and rejects an opaque plate", () => {
   const a = clone();
   a.art.rasterAssets[fg] = styleId;
-  a.scenes[0].characters = {mode: "masked", layers: [{asset: plateA, x: 10, y: 10, width: 50}], foreground: fg};
+  a.art.rasterAssets[actor] = styleId;
+  a.scenes[0].characters = {mode: "masked", layers: [{asset: actor, x: 10, y: 10, width: 50}], foreground: fg};
   assert.doesNotThrow(() => validate(a));
-  a.scenes[0].characters.foreground = plateA;
+  a.art.rasterAssets[opaque] = styleId;
+  a.scenes[0].characters.foreground = opaque;
   assert.throws(() => validate(a), /not alpha-capable/);
 });
 test("five-word captions, invalid colors and missing assets fail", () => {
@@ -176,4 +185,58 @@ test("repository scan rejects raster copies placed in a different attempt's own 
     writeFileSync(join(dir, "captions.json"), JSON.stringify(captions));
   }
   assert.throws(() => checkAll(tempRoot), /same raster bytes in different attempts/);
+});
+
+test("factory duration checks include both the narration and the composition", () => {
+  const a = clone();
+  a.narration.duration = 61 * a.fps;
+  assert.doesNotThrow(() => validate(a));
+  a.narration.duration--;
+  assert.throws(() => validate(a), /narration duration.*61–80 s/);
+  a.narration.duration = 80 * a.fps + 1;
+  assert.throws(() => validate(a), /narration duration.*61–80 s/);
+  a.narration.duration = base.narration.duration;
+  a.duration = 80 * a.fps + 1;
+  assert.throws(() => validate(a), /episode duration.*61–80 s/);
+  a.duration = 61 * a.fps - 1;
+  assert.throws(() => validate(a), /episode duration.*61–80 s/);
+});
+
+test("new episodes require a readable three- or four-word opening title", () => {
+  for (const openingTitle of [undefined, null, "", "Tetap Tenang", "Buka Pintu Kalau Sudah Aman"]) {
+    assert.throws(() => validate({...clone(), openingTitle}), /openingTitle must contain 3–4 words/);
+  }
+  for (const openingTitle of ["Jangan   Buka Kaca", "Jangan Buka Kaca Mobil!"]) {
+    assert.doesNotThrow(() => validate({...clone(), openingTitle}));
+  }
+});
+
+test("a raster path repeated after fifteen seconds still fails the factory check", () => {
+  const a = clone();
+  a.scenes[7].plate = plateA;
+  assert.throws(() => validate(a), /repeated image asset.*first used at s0 plate/);
+});
+
+test("Episode 001 keeps passing with factory warnings for earlier cuts", () => {
+  const episodes = checkAll();
+  const original = episodes.find(episode => episode.id === "KemacetanTerakhirMotionComic");
+  const attempt06 = episodes.find(episode => episode.id === "KemacetanTerakhirMotionComicAttempt06");
+  assert.ok(original.warnings.some(warning => /episode duration 84\.800 s/.test(warning)));
+  assert.ok(attempt06.warnings.some(warning => /repeated image asset.*hook-character\.webp/.test(warning)));
+});
+
+test("arc metadata is optional and supports both ends of a seven-episode arc", () => {
+  assert.doesNotThrow(() => validate(clone()));
+  const sheet = "assets/characters/fixture-driver/sheet.png";
+  mkdirSync(join(publicDir, dirname(sheet)), {recursive: true});
+  copyFileSync(join(publicDir, fg), join(publicDir, sheet));
+  for (const arcEpisode of [1, 7]) {
+    assert.doesNotThrow(() => validate({...clone(), arcEpisode, characterSheets: [sheet]}));
+  }
+  for (const arcEpisode of [0, 8, 1.5, "2", null]) {
+    assert.throws(() => validate({...clone(), arcEpisode, characterSheets: [sheet]}), /arcEpisode must be an integer from 1 to 7/);
+  }
+  assert.throws(() => validate({...clone(), arcEpisode: 2}), /requires at least one characterSheets path/);
+  assert.throws(() => validate({...clone(), arcEpisode: 2, characterSheets: [sheet, "assets/characters/missing.png"]}), /character sheet: missing asset/);
+  assert.throws(() => validate({...clone(), arcEpisode: 2, characterSheets: ["../outside.png"]}), /character sheet: missing asset/);
 });

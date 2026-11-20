@@ -29,6 +29,14 @@ Copy into the episode folder. Mark each item `pass`, `needs work`, `not checked`
 - [ ] AI disclosure and current platform rules checked for the actual content when publishing.
 - [ ] If an export was requested, the actual exported file was played through with picture, audio and caption sync checked.
 
+## Final pre-publish checklist
+
+- [ ] **Cover at 00:00.2.** Check that the 3–4 word opening title is readable at phone size and sits within the upper-center 3:4 crop in the three-column profile preview. Check that it runs from 00:00.0 to 00:01.8.
+- [ ] **Shot repeats.** Review the cut at normal speed. Confirm zero mood-breaking repeats and check the validator’s duplicate image path result.
+- [ ] **HUD and caption numbers.** Compare each on-screen number against the corresponding HUD value and formatting, including percentages and clock times.
+- [ ] **Caption safe zone.** Check caption clearance from UI, edges and important picture details in the actual platform preview.
+- [ ] **Reveal SFX hit.** Listen to the final mix and verify the effect lands on the intended reveal frame without masking speech.
+
 ## Findings and feedback
 
 For a visual remake, inspect the opening, the decision and the payoff at 270 × 480 with audio muted and captions hidden. For each, record the time, what is visible, the inference it supports and any plausible misreading. Replay with sound and captions at normal speed. Identify one motion cue by its initiating frame, contact or change, and the first frame where the result is readable. Revise and replay any cue whose cause is hard to see.

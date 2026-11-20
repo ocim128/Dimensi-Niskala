@@ -1,9 +1,10 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
+import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
 import type {HudBox} from "../../manifest-types";
 
 export function SupplyChecklist({box, items, revealFrames}: {box: HudBox; items: {label: string; value: number; display: string}[]; revealFrames: number}) {
   const frame = useCurrentFrame(); const {fps} = useVideoConfig();
-  return <div style={{position: "absolute", left: `${box.x * 100}%`, top: `${box.y * 100}%`, width: `${box.width * 100}%`, height: `${box.height * 100}%`, boxSizing: "border-box", background: "rgba(19,31,37,.93)", border: "3px solid #9eaa9d", padding: "28px 34px", borderRadius: 18, color: "#f4ecd9", fontFamily: "Arial, sans-serif", boxShadow: "0 12px 35px #07101799"}}>
+  const entry = interpolate(frame, [0, 5], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateLeft: "clamp", extrapolateRight: "clamp"});
+  return <div style={{position: "absolute", left: `${box.x * 100}%`, top: `${box.y * 100}%`, width: `${box.width * 100}%`, height: `${box.height * 100}%`, opacity: entry, transform: `translateY(${(1-entry)*16}px)`, boxSizing: "border-box", background: "rgba(19,31,37,.93)", border: "3px solid #9eaa9d", padding: "28px 34px", borderRadius: 18, color: "#f4ecd9", fontFamily: "Arial, sans-serif", boxShadow: "0 12px 35px #07101799"}}>
     <div style={{fontSize: 52, fontWeight: 900, letterSpacing: 3, marginBottom: 25}}>PERSEDIAAN</div>
     {items.map((item, index) => {
       const delay = index * revealFrames / Math.max(items.length, 1);

@@ -2,7 +2,7 @@ import type {Caption} from "@remotion/captions";
 
 export type EpisodeCaption = Caption & {emphasis?: string};
 export type CaptionColor = "white" | "yellow" | "red" | "default" | "highlight" | "danger";
-export type CaptionBeat = Omit<Caption, "text"> & {words: {text: string; color?: CaptionColor}[]};
+export type CaptionBeat = Omit<Caption, "text"> & {words: {text: string; color?: CaptionColor; startMs?: number; endMs?: number}[]};
 
 type Camera = {scale: number; x: number; y: number};
 
@@ -12,9 +12,12 @@ export type Action = {
   at: number;
   duration: number;
   gain: number;
+  trimBefore?: number;
+  fadeIn?: number;
+  fadeOut?: number;
 };
 
-export type Bed = Action & {fadeIn: number; fadeOut: number; loop?: boolean};
+export type Bed = Action & {fadeIn: number; fadeOut: number; loop?: boolean; envelope?: {frame: number; gain: number}[]};
 
 export type RasterLayer = {
   asset: string;
@@ -36,6 +39,7 @@ export type Scene = {
   blackout?: {at: number; duration: number; opacity: number};
   label?: {text: string; at: number; x: number; y: number};
   cues?: Action[];
+  brightness?: number;
 };
 
 export type EpisodeManifest = {
@@ -43,7 +47,9 @@ export type EpisodeManifest = {
   fps: number;
   duration: number;
   captions: string;
-  narration: {asset: string; at: number; duration: number; gain: number};
+  narration: {asset: string; at: number; duration: number; gain: number; ducks?: {startSec: number; endSec: number; gainDb: number; fadeSec?: number}[]};
+  openingTitle?: string | {text: string; startSec?: number; endSec?: number};
+  effectBusGain?: number;
   beds: Bed[];
   scenes: Scene[];
 };

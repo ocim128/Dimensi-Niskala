@@ -8,6 +8,12 @@ import {BlueprintOverlay, RadarDiagram} from "./hud/BlueprintOverlay";
 const clamp = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
 const smooth = Easing.inOut(Easing.quad);
 
+function HudExit({duration, children}: {duration: number; children: React.ReactNode}) {
+  const frame = useCurrentFrame();
+  const opacity = interpolate(frame, [Math.max(0, duration - 5), duration], [1, 0], clamp);
+  return <AbsoluteFill style={{opacity, pointerEvents: "none"}}>{children}</AbsoluteFill>;
+}
+
 function CharacterLayer({layer, progress, legacy}: {layer: RasterLayer; progress: number; legacy: boolean}) {
   const frame = useCurrentFrame();
   const {asset, x, y, width, enter, drift} = layer;
@@ -67,11 +73,11 @@ export function RasterScene({scene, duration}: {scene: Scene | SceneV2; duration
     }} />
     {!legacy && <svg style={{position: "absolute", width: "100%", height: "100%", opacity: .03, pointerEvents: "none"}}><filter id={`film-grain-${scene.id}`}><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed={frame % 8} /></filter><rect width="100%" height="100%" filter={`url(#film-grain-${scene.id})`} /></svg>}
     {!legacy && (scene as SceneV2).hud.map((hud) => <Sequence key={hud.id} name={hud.id} from={hud.at} durationInFrames={hud.duration}>
-      {hud.type === "timestampBadge" && <TimestampBadge text={hud.text} revealFrames={hud.revealFrames}/>}
+      <HudExit duration={hud.duration}>{hud.type === "timestampBadge" && <TimestampBadge text={hud.text} revealFrames={hud.revealFrames}/>}
       {hud.type === "tacticalCallout" && <TacticalCallout text={hud.text} box={hud.box} guide={hud.guide} revealFrames={hud.revealFrames}/>}
       {hud.type === "supplyChecklist" && <SupplyChecklist box={hud.box} items={hud.items} revealFrames={hud.revealFrames}/>}
       {hud.type === "blueprintOverlay" && <BlueprintOverlay box={hud.box} paths={hud.paths} revealFrames={hud.revealFrames}/>}
-      {hud.type === "radarDiagram" && <RadarDiagram box={hud.box} paths={hud.paths} revealFrames={hud.revealFrames}/>}
+      {hud.type === "radarDiagram" && <RadarDiagram box={hud.box} paths={hud.paths} revealFrames={hud.revealFrames}/>}</HudExit>
     </Sequence>)}
     <AbsoluteFill style={{backgroundColor: "#040811", opacity: darkness}} />
   </AbsoluteFill>;

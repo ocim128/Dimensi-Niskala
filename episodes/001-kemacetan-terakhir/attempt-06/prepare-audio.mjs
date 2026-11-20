@@ -46,10 +46,17 @@ for(let i=0;i<words.length;i++) {
 }
 const mapTime = t => {const r=ranges.find((x,i)=>t>=x.start && (t<x.end || i===ranges.length-1)); if(!r) throw Error(`Missing source time ${t}`); return (r.out+(t-r.start)/r.speed)*1000;};
 let index=0;
-const captions=captions05.map(c=>{const first=index;index+=c.words.length;const last=words[index-1];const r=ranges.find((x,i)=>last.start>=x.start&&(last.start<x.end||i===ranges.length-1));const end=r.out+(Math.min(last.end,r.end)-r.start)/r.speed;return {startMs:Math.round(mapTime(words[first].start)),endMs:Math.round(end*1000),timestampMs:null,confidence:null,words:c.words};});
+const captions=captions05.map(c=>{const first=index;index+=c.words.length;const last=words[index-1];const r=ranges.find((x,i)=>last.start>=x.start&&(last.start<x.end||i===ranges.length-1));const end=r.out+(Math.min(last.end,r.end)-r.start)/r.speed;return {startMs:Math.round(mapTime(words[first].start)),endMs:Math.round(end*1000),timestampMs:null,confidence:null,words:c.words.map((word,i)=>({...word,startMs:Math.round(mapTime(words[first+i].start)),endMs:Math.round(mapTime(Math.min(words[first+i].end, r.end)))}))};});
 // Sidecar timestamps can overrun a chunk or overlap the next phrase.
 for(let i=0;i<captions.length-1;i++) captions[i].endMs=Math.min(captions[i].endMs,captions[i+1].startMs);
+for (const caption of captions) for (const word of caption.words) word.endMs = Math.min(word.endMs, caption.endMs);
+// Display the spoken numbers consistently with the inventory and time HUD.
+for (const caption of captions) {
+  const text = caption.words.map(word => norm(word.text));
+  if (text.join(' ') === 'baterai enam puluh persen') caption.words = [caption.words[0], {text:'60%',color:'highlight',startMs:caption.words[1].startMs,endMs:caption.words[3].endMs}];
+  if (text.join(' ') === 'pukul tiga pagi') caption.words[1] = {...caption.words[1],text:'3'};
+}
 writeFileSync(folder+'captions.json',JSON.stringify(captions,null,2)+'\n');
 if (!captionsOnly) copyFileSync('episodes/001-kemacetan-terakhir/attempt-05/narasi.txt',folder+'narasi.txt');
-writeFileSync(folder+'audio-edit-map.json',JSON.stringify({source:input,output,ranges,notes:'ASR-based alignment is provisional and requires listening.'},null,2)+'\n');
+writeFileSync(folder+'audio-edit-map.json',JSON.stringify({source:input,output,ranges,playbackDucks:[{startSec:62.06,endSec:62.62,gainDb:-3.5,fadeSec:.06,implementedIn:'manifest narration.ducks'}],notes:'ASR-based alignment is provisional and requires listening.'},null,2)+'\n');
 console.log(`Created ${output} and ${captions.length} provisional caption beats.`);

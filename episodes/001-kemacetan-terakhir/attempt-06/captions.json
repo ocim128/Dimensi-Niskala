@@ -6,14 +6,20 @@
     "confidence": null,
     "words": [
       {
-        "text": "Kalau"
+        "text": "Kalau",
+        "startMs": 0,
+        "endMs": 440
       },
       {
-        "text": "kaca"
+        "text": "kaca",
+        "startMs": 440,
+        "endMs": 640
       },
       {
         "text": "diketuk,",
-        "color": "danger"
+        "color": "danger",
+        "startMs": 640,
+        "endMs": 1000
       }
     ]
   },
@@ -24,13 +30,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "jangan"
+        "text": "jangan",
+        "startMs": 1320,
+        "endMs": 1620
       },
       {
-        "text": "langsung"
+        "text": "langsung",
+        "startMs": 1620,
+        "endMs": 1940
       },
       {
-        "text": "menoleh."
+        "text": "menoleh.",
+        "startMs": 1940,
+        "endMs": 2780
       }
     ]
   },
@@ -41,13 +53,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Saat"
+        "text": "Saat",
+        "startMs": 2920,
+        "endMs": 3260
       },
       {
-        "text": "wabah"
+        "text": "wabah",
+        "startMs": 3260,
+        "endMs": 3660
       },
       {
-        "text": "menutup"
+        "text": "menutup",
+        "startMs": 3660,
+        "endMs": 4020
       }
     ]
   },
@@ -58,10 +76,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "jalan"
+        "text": "jalan",
+        "startMs": 4020,
+        "endMs": 4260
       },
       {
-        "text": "tol,"
+        "text": "tol,",
+        "startMs": 4260,
+        "endMs": 4620
       }
     ]
   },
@@ -72,13 +94,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "dua"
+        "text": "dua",
+        "startMs": 5000,
+        "endMs": 5160
       },
       {
-        "text": "langkah"
+        "text": "langkah",
+        "startMs": 5160,
+        "endMs": 5580
       },
       {
-        "text": "ini"
+        "text": "ini",
+        "startMs": 5580,
+        "endMs": 5900
       }
     ]
   },
@@ -89,10 +117,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "bisa"
+        "text": "bisa",
+        "startMs": 5900,
+        "endMs": 6140
       },
       {
-        "text": "menyembunyikanmu."
+        "text": "menyembunyikanmu.",
+        "startMs": 6140,
+        "endMs": 6860
       }
     ]
   },
@@ -103,13 +135,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Satu"
+        "text": "Satu",
+        "startMs": 7420,
+        "endMs": 7840
       },
       {
-        "text": "bunyi"
+        "text": "bunyi",
+        "startMs": 7840,
+        "endMs": 8240
       },
       {
-        "text": "bisa"
+        "text": "bisa",
+        "startMs": 8240,
+        "endMs": 8780
       }
     ]
   },
@@ -120,10 +158,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "membuatmu"
+        "text": "membuatmu",
+        "startMs": 8780,
+        "endMs": 9320
       },
       {
-        "text": "salah"
+        "text": "salah",
+        "startMs": 9320,
+        "endMs": 9660
       }
     ]
   },
@@ -134,10 +176,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "melihat"
+        "text": "melihat",
+        "startMs": 9660,
+        "endMs": 10060
       },
       {
-        "text": "arah."
+        "text": "arah.",
+        "startMs": 10060,
+        "endMs": 10650
       }
     ]
   },
@@ -148,18 +194,26 @@
     "confidence": null,
     "words": [
       {
-        "text": "Pertama,"
+        "text": "Pertama,",
+        "startMs": 12289,
+        "endMs": 12816
       },
       {
         "text": "kunci",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 13518,
+        "endMs": 13939
       },
       {
-        "text": "semua"
+        "text": "semua",
+        "startMs": 13939,
+        "endMs": 14447
       },
       {
         "text": "pintu.",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 14447,
+        "endMs": 14991
       }
     ]
   },
@@ -170,13 +224,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Mobil"
+        "text": "Mobil",
+        "startMs": 15588,
+        "endMs": 15921
       },
       {
-        "text": "di"
+        "text": "di",
+        "startMs": 15921,
+        "endMs": 16132
       },
       {
-        "text": "depan"
+        "text": "depan",
+        "startMs": 16132,
+        "endMs": 16430
       }
     ]
   },
@@ -187,16 +247,24 @@
     "confidence": null,
     "words": [
       {
-        "text": "dan"
+        "text": "dan",
+        "startMs": 16430,
+        "endMs": 16570
       },
       {
-        "text": "belakang"
+        "text": "belakang",
+        "startMs": 16570,
+        "endMs": 16974
       },
       {
-        "text": "sudah"
+        "text": "sudah",
+        "startMs": 16974,
+        "endMs": 17202
       },
       {
-        "text": "rapat."
+        "text": "rapat.",
+        "startMs": 17202,
+        "endMs": 17605
       }
     ]
   },
@@ -207,14 +275,20 @@
     "confidence": null,
     "words": [
       {
-        "text": "Gagang"
+        "text": "Gagang",
+        "startMs": 18237,
+        "endMs": 18658
       },
       {
         "text": "pintu",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 18658,
+        "endMs": 19061
       },
       {
-        "text": "tinggal"
+        "text": "tinggal",
+        "startMs": 19061,
+        "endMs": 19395
       }
     ]
   },
@@ -225,13 +299,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "sejengkal"
+        "text": "sejengkal",
+        "startMs": 19395,
+        "endMs": 19956
       },
       {
-        "text": "dari"
+        "text": "dari",
+        "startMs": 19956,
+        "endMs": 20149
       },
       {
-        "text": "tanganmu"
+        "text": "tanganmu",
+        "startMs": 20149,
+        "endMs": 20640
       }
     ]
   },
@@ -242,14 +322,20 @@
     "confidence": null,
     "words": [
       {
-        "text": "saat"
+        "text": "saat",
+        "startMs": 20886,
+        "endMs": 21132
       },
       {
-        "text": "seseorang"
+        "text": "seseorang",
+        "startMs": 21132,
+        "endMs": 21570
       },
       {
         "text": "diterkam",
-        "color": "danger"
+        "color": "danger",
+        "startMs": 21570,
+        "endMs": 22202
       }
     ]
   },
@@ -260,13 +346,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "di"
+        "text": "di",
+        "startMs": 22202,
+        "endMs": 22412
       },
       {
-        "text": "sela"
+        "text": "sela",
+        "startMs": 22412,
+        "endMs": 22658
       },
       {
-        "text": "mobil."
+        "text": "mobil.",
+        "startMs": 22658,
+        "endMs": 22904
       }
     ]
   },
@@ -277,10 +369,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "Tarik"
+        "text": "Tarik",
+        "startMs": 23272,
+        "endMs": 23570
       },
       {
-        "text": "tanganmu."
+        "text": "tanganmu.",
+        "startMs": 23570,
+        "endMs": 24009
       }
     ]
   },
@@ -291,11 +387,15 @@
     "confidence": null,
     "words": [
       {
-        "text": "Tekan"
+        "text": "Tekan",
+        "startMs": 24553,
+        "endMs": 24868
       },
       {
         "text": "kunci.",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 24868,
+        "endMs": 25219
       }
     ]
   },
@@ -306,13 +406,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Kalau"
+        "text": "Kalau",
+        "startMs": 25974,
+        "endMs": 26219
       },
       {
-        "text": "mobil"
+        "text": "mobil",
+        "startMs": 26219,
+        "endMs": 26518
       },
       {
-        "text": "tak"
+        "text": "tak",
+        "startMs": 26518,
+        "endMs": 26693
       }
     ]
   },
@@ -323,10 +429,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "bisa"
+        "text": "bisa",
+        "startMs": 26693,
+        "endMs": 26851
       },
       {
-        "text": "maju,"
+        "text": "maju,",
+        "startMs": 26851,
+        "endMs": 27167
       }
     ]
   },
@@ -338,13 +448,19 @@
     "words": [
       {
         "text": "pintu",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 27167,
+        "endMs": 27939
       },
       {
-        "text": "tertutup"
+        "text": "tertutup",
+        "startMs": 27939,
+        "endMs": 28395
       },
       {
-        "text": "itu"
+        "text": "itu",
+        "startMs": 28395,
+        "endMs": 28605
       }
     ]
   },
@@ -355,10 +471,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "satu-satunya"
+        "text": "satu-satunya",
+        "startMs": 28605,
+        "endMs": 29588
       },
       {
-        "text": "batas"
+        "text": "batas",
+        "startMs": 29588,
+        "endMs": 30184
       }
     ]
   },
@@ -369,16 +489,24 @@
     "confidence": null,
     "words": [
       {
-        "text": "antara"
+        "text": "antara",
+        "startMs": 30184,
+        "endMs": 30570
       },
       {
-        "text": "kamu"
+        "text": "kamu",
+        "startMs": 30570,
+        "endMs": 30886
       },
       {
-        "text": "dan"
+        "text": "dan",
+        "startMs": 30886,
+        "endMs": 31096
       },
       {
-        "text": "jalan."
+        "text": "jalan.",
+        "startMs": 31096,
+        "endMs": 31412
       }
     ]
   },
@@ -389,7 +517,9 @@
     "confidence": null,
     "words": [
       {
-        "text": "Kedua,"
+        "text": "Kedua,",
+        "startMs": 32276,
+        "endMs": 32603
       }
     ]
   },
@@ -400,10 +530,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "hilangkan"
+        "text": "hilangkan",
+        "startMs": 33259,
+        "endMs": 33776
       },
       {
-        "text": "tanda"
+        "text": "tanda",
+        "startMs": 33776,
+        "endMs": 34172
       }
     ]
   },
@@ -414,13 +548,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "kalau"
+        "text": "kalau",
+        "startMs": 34172,
+        "endMs": 34466
       },
       {
-        "text": "ada"
+        "text": "ada",
+        "startMs": 34466,
+        "endMs": 34672
       },
       {
-        "text": "orang"
+        "text": "orang",
+        "startMs": 34672,
+        "endMs": 35052
       }
     ]
   },
@@ -431,10 +571,14 @@
     "confidence": null,
     "words": [
       {
-        "text": "di"
+        "text": "di",
+        "startMs": 35052,
+        "endMs": 35276
       },
       {
-        "text": "dalam."
+        "text": "dalam.",
+        "startMs": 35276,
+        "endMs": 35500
       }
     ]
   },
@@ -445,11 +589,15 @@
     "confidence": null,
     "words": [
       {
-        "text": "Matikan"
+        "text": "Matikan",
+        "startMs": 36259,
+        "endMs": 36759
       },
       {
         "text": "mesin,",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 36759,
+        "endMs": 37259
       }
     ]
   },
@@ -461,14 +609,20 @@
     "words": [
       {
         "text": "lampu,",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 37810,
+        "endMs": 38276
       },
       {
-        "text": "dan"
+        "text": "dan",
+        "startMs": 38552,
+        "endMs": 38793
       },
       {
         "text": "radio.",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 38793,
+        "endMs": 39190
       }
     ]
   },
@@ -479,13 +633,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Turunkan"
+        "text": "Turunkan",
+        "startMs": 40017,
+        "endMs": 40569
       },
       {
-        "text": "badan"
+        "text": "badan",
+        "startMs": 40569,
+        "endMs": 41000
       },
       {
-        "text": "sampai"
+        "text": "sampai",
+        "startMs": 41000,
+        "endMs": 41207
       }
     ]
   },
@@ -496,11 +656,15 @@
     "confidence": null,
     "words": [
       {
-        "text": "garis"
+        "text": "garis",
+        "startMs": 41207,
+        "endMs": 41552
       },
       {
         "text": "jendela",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 41552,
+        "endMs": 41914
       }
     ]
   },
@@ -511,16 +675,24 @@
     "confidence": null,
     "words": [
       {
-        "text": "ada"
+        "text": "ada",
+        "startMs": 41914,
+        "endMs": 42190
       },
       {
-        "text": "di"
+        "text": "di",
+        "startMs": 42190,
+        "endMs": 42345
       },
       {
-        "text": "atas"
+        "text": "atas",
+        "startMs": 42345,
+        "endMs": 42621
       },
       {
-        "text": "kepalamu."
+        "text": "kepalamu.",
+        "startMs": 42621,
+        "endMs": 43190
       }
     ]
   },
@@ -531,13 +703,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Kalau"
+        "text": "Kalau",
+        "startMs": 43466,
+        "endMs": 43776
       },
       {
-        "text": "langkah"
+        "text": "langkah",
+        "startMs": 43776,
+        "endMs": 44241
       },
       {
-        "text": "berhenti"
+        "text": "berhenti",
+        "startMs": 44241,
+        "endMs": 44759
       }
     ]
   },
@@ -548,14 +726,20 @@
     "confidence": null,
     "words": [
       {
-        "text": "di"
+        "text": "di",
+        "startMs": 44759,
+        "endMs": 45017
       },
       {
-        "text": "samping"
+        "text": "samping",
+        "startMs": 45017,
+        "endMs": 45293
       },
       {
         "text": "pintu,",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 45293,
+        "endMs": 45724
       }
     ]
   },
@@ -566,16 +750,24 @@
     "confidence": null,
     "words": [
       {
-        "text": "biarkan"
+        "text": "biarkan",
+        "startMs": 46155,
+        "endMs": 46638
       },
       {
-        "text": "bayangannya"
+        "text": "bayangannya",
+        "startMs": 46638,
+        "endMs": 47362
       },
       {
-        "text": "lewat"
+        "text": "lewat",
+        "startMs": 47362,
+        "endMs": 47621
       },
       {
-        "text": "dulu."
+        "text": "dulu.",
+        "startMs": 47621,
+        "endMs": 47897
       }
     ]
   },
@@ -587,16 +779,24 @@
     "words": [
       {
         "text": "Air",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 48672,
+        "endMs": 49034
       },
       {
-        "text": "tinggal"
+        "text": "tinggal",
+        "startMs": 49034,
+        "endMs": 49500
       },
       {
-        "text": "setengah"
+        "text": "setengah",
+        "startMs": 49500,
+        "endMs": 49862
       },
       {
-        "text": "botol,"
+        "text": "botol,",
+        "startMs": 49862,
+        "endMs": 50241
       }
     ]
   },
@@ -608,16 +808,15 @@
     "words": [
       {
         "text": "baterai",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 50655,
+        "endMs": 51172
       },
       {
-        "text": "enam"
-      },
-      {
-        "text": "puluh"
-      },
-      {
-        "text": "persen."
+        "text": "60%",
+        "color": "highlight",
+        "startMs": 51172,
+        "endMs": 52103
       }
     ]
   },
@@ -628,13 +827,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Kamu"
+        "text": "Kamu",
+        "startMs": 52103,
+        "endMs": 52724
       },
       {
-        "text": "cuma"
+        "text": "cuma",
+        "startMs": 52724,
+        "endMs": 52966
       },
       {
-        "text": "perlu"
+        "text": "perlu",
+        "startMs": 52966,
+        "endMs": 53190
       }
     ]
   },
@@ -645,13 +850,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "bertahan"
+        "text": "bertahan",
+        "startMs": 53190,
+        "endMs": 53724
       },
       {
-        "text": "sampai"
+        "text": "sampai",
+        "startMs": 53724,
+        "endMs": 54172
       },
       {
-        "text": "pagi."
+        "text": "pagi.",
+        "startMs": 54172,
+        "endMs": 55017
       }
     ]
   },
@@ -662,13 +873,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "Pukul"
+        "text": "Pukul",
+        "startMs": 55439,
+        "endMs": 56013
       },
       {
-        "text": "tiga"
+        "text": "3",
+        "startMs": 56013,
+        "endMs": 56274
       },
       {
-        "text": "pagi,"
+        "text": "pagi,",
+        "startMs": 56274,
+        "endMs": 57422
       }
     ]
   },
@@ -679,13 +896,19 @@
     "confidence": null,
     "words": [
       {
-        "text": "jalan"
+        "text": "jalan",
+        "startMs": 58135,
+        "endMs": 58639
       },
       {
-        "text": "akhirnya"
+        "text": "akhirnya",
+        "startMs": 58639,
+        "endMs": 59387
       },
       {
-        "text": "sunyi."
+        "text": "sunyi.",
+        "startMs": 59387,
+        "endMs": 60430
       }
     ]
   },
@@ -697,10 +920,14 @@
     "words": [
       {
         "text": "Jendelanya",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 62527,
+        "endMs": 63582
       },
       {
-        "text": "kosong."
+        "text": "kosong.",
+        "startMs": 63582,
+        "endMs": 64436
       }
     ]
   },
@@ -711,14 +938,20 @@
     "confidence": null,
     "words": [
       {
-        "text": "Yang"
+        "text": "Yang",
+        "startMs": 66420,
+        "endMs": 67045
       },
       {
         "text": "mengetuk",
-        "color": "danger"
+        "color": "danger",
+        "startMs": 67045,
+        "endMs": 67741
       },
       {
-        "text": "duduk"
+        "text": "duduk",
+        "startMs": 67741,
+        "endMs": 68884
       }
     ]
   },
@@ -729,14 +962,20 @@
     "confidence": null,
     "words": [
       {
-        "text": "tepat"
+        "text": "tepat",
+        "startMs": 68884,
+        "endMs": 69563
       },
       {
-        "text": "di"
+        "text": "di",
+        "startMs": 69563,
+        "endMs": 69866
       },
       {
         "text": "belakangmu.",
-        "color": "highlight"
+        "color": "highlight",
+        "startMs": 69866,
+        "endMs": 70563
       }
     ]
   }

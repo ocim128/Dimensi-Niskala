@@ -49,6 +49,13 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   const fail = (condition, message) => assert(condition, prefix + message);
   const comparison = comparisonManifests.has(manifestPath) &&
     comparisonManifests.get(manifestPath) === digest(JSON.stringify(manifest));
+  const legacyFactoryCut = comparison || manifestPath?.startsWith("001-kemacetan-terakhir/");
+  const warnings = [];
+  const factoryCheck = (condition, message) => {
+    if (condition) return;
+    if (legacyFactoryCut) warnings.push(message);
+    else fail(false, message);
+  };
   const strict = manifest.schemaVersion === 2 && !comparison;
   if (strict) fail(typeof manifestPath === "string" && /^(?:[\w-]+\/)+manifest\.json$/.test(manifestPath),
     "expected an episode-relative manifest path to determine the asset folder");
@@ -83,9 +90,29 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   };
   fail(nonempty(id) && /^[a-zA-Z0-9-]+$/.test(id), "invalid composition id");
   fail(isFrame(fps) && fps > 0 && isFrame(duration) && duration > 0, "invalid duration/fps");
+  if (manifest.arcEpisode !== undefined) {
+    fail(Number.isInteger(manifest.arcEpisode) && manifest.arcEpisode >= 1 && manifest.arcEpisode <= 7,
+      "arcEpisode must be an integer from 1 to 7");
+    fail(Array.isArray(manifest.characterSheets) && manifest.characterSheets.length > 0,
+      "arcEpisode requires at least one characterSheets path");
+    for (const sheet of manifest.characterSheets) asset(sheet, "character sheet");
+  }
   const baseline = manifest.schemaVersion === undefined && comparison;
   const v2 = manifest.schemaVersion === 2;
   fail(baseline || v2, "unsupported or missing schema version (only the exact comparison cut is grandfathered)");
+  for (const [label, frames] of [["episode", duration], ["narration", narration?.duration]]) {
+    if (isFrame(frames) && frames > 0) {
+      const seconds = frames / fps;
+      factoryCheck(frames >= 61 * fps && frames <= 80 * fps,
+        `${label} duration ${seconds.toFixed(3)} s is outside the 61–80 s factory guardrail`);
+    }
+  }
+  if (manifest.openingTitle !== undefined || !legacyFactoryCut) {
+    const words = nonempty(manifest.openingTitle)
+      ? manifest.openingTitle.trim().split(/\s+/u).filter(word => /[\p{L}\p{N}]/u.test(word)).length
+      : 0;
+    factoryCheck(words >= 3 && words <= 4, "openingTitle must contain 3–4 words");
+  }
   if (v2) {
     asset("fonts/theboldfont.ttf", "caption font");
     fail(duration >= 60 * fps && duration <= 72 * fps, `duration ${duration} frames must be 60–72 s`);
@@ -111,6 +138,8 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   clip(narration, duration, "narration");
   const sceneIds = new Set();
   const plateUses = [];
+  const firstRasterUses = new Map();
+  const reportedRasterRepeats = new Set();
   const activity = [];
   const activityInterval = (start, end) => {if (end > start) activity.push([start, end]);};
   const point = (p) => p && unit(p.x) && unit(p.y);
@@ -118,6 +147,12 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   const raster = (path, context) => {
     const full = batchAsset(path, context);
     if (v2) fail(manifest.art.rasterAssets[path] === manifest.art.styleId, `${context}: missing or mixed style ID for ${path}`);
+    const first = firstRasterUses.get(full);
+    if (!first) firstRasterUses.set(full, context);
+    else if (!reportedRasterRepeats.has(full)) {
+      factoryCheck(false, `${context}: repeated image asset ${path} (first used at ${first})`);
+      reportedRasterRepeats.add(full);
+    }
     if (!batchAssets.has(full)) batchAssets.set(full, {path, fingerprint: digest(readFileSync(full))});
     return full;
   };
@@ -227,7 +262,7 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
     }
     previousEnd = c.endMs;
   }
-  return {id, scenes: scenes.length, captions: captions.length, duration, fps, baseline, comparison, rasters: [...batchAssets.values()]};
+  return {id, scenes: scenes.length, captions: captions.length, duration, fps, baseline, comparison, warnings, rasters: [...batchAssets.values()]};
 }
 
 function findManifests(dir) {
@@ -256,6 +291,7 @@ export function checkAll(root = process.cwd()) {
       }
       if (!previous) owners.set(raster.fingerprint, {...raster, manifestPath, comparison: result.comparison});
     }
+    for (const warning of result.warnings) console.warn(`[warning] ${result.id}: ${warning}`);
     console.log(`${result.id}: ${result.scenes} scenes, ${result.captions} captions, ${result.duration} frames (${(result.duration / result.fps).toFixed(2)} s)${result.comparison ? " [comparison]" : " [production v2]"}`);
     return result;
   });

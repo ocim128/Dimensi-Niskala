@@ -1,57 +1,46 @@
 # Episode brief — [episode ID and working title]
 
-Copy this file into `episodes/<episode-id>-<slug>/brief.md` for the first requested episode. Fill it in as decisions are made; `TBD` is better than a fabricated answer.
+Copy this into `episodes/<episode-id>-<slug>/brief.md`. Complete each step before starting the next.
 
-## Intent
+## Arc Context
 
-- Status / date / owner request:
-- Intended platforms and version(s):
-- Target language: Indonesian (unless the owner specifies otherwise).
-- Moment the viewer should remember, and what they need to know just before it:
-- Format and point of view (selected for this episode):
-- Survival problem, fantasy rule, stakes, decision and immediate outcome:
-- Biggest uncertainty / simplest way to test it / what you would look or listen for (link a relevant hypothesis if available):
-- Working duration and why it fits the story:
-- Assumptions and open questions:
+- **Arc ID** — [ID and link to `arcs/<arc-id>/arc.json`]
+- **Episode X of 7** — [number and stage from the arc record]
+- **Entry State** — [clock, inventory and location from the preceding exit, or the established opening state for Episode 1]
+- **Exit State** — [clock, inventory, location and ending hook to write back to the arc record once the cut is accepted]
+- **Locked Character Sheet Paths** — [public-relative paths from `characters[].sheetPath` in the arc record]
 
-## Story and continuity
+Read the record before writing. If the story changes the carried state, show how it changed. Set the manifest’s `arcEpisode` to the episode number and copy the sheet paths into `characterSheets`.
 
-- Character, goal and defining appearance:
-- Setting, location and relevant world rules:
-- Starting state: inventory, relationships and unresolved threads:
-- Ending state and any next-episode thread:
-- Factual claims requiring verification, sources, or explicit fictional framing:
-- Final script and captions: [link to `script-id.md`].
+## 1. Write the script
 
-## Storyboard
+- **Premise and payoff** — [scenario, survival rule, choice, consequence and final reveal]
+- **Survivor** — [locked identity and visual traits from the arc, and the survivor’s goal in this episode]. Keep the Indonesian narration in second person, using `kamu` and forms like `mobilmu`. Rotate protagonists at the next arc on the same outbreak timeline.
+- **First sentence** — [immediate emergency and survival rule that both read within three seconds for a first-time FYP viewer]. Use the opening scene, `TimestampBadge` and `PERSEDIAAN` for the 20% serialized continuity.
+- **Spoken script** — [link to final script]. Count [___] spoken Indonesian words. Required range **130–155**.
+- **Story beats** — [promise and open loop, at least two numbered tactics, quiet build and a `niskala` reveal that exposes a blind spot in the rule the survivor followed]
 
-| Scene / approximate time | Purpose and action | Visual / on-screen text | Narration | Audio / asset |
-| --- | --- | --- | --- | --- |
-| Opening | TBD | TBD | TBD | TBD |
-| Choice / consequence | TBD | TBD | TBD | TBD |
+## 2. Lock one ShortZ master
 
-Add as many scenes as necessary; replace approximate times with actual frame ranges after implementation.
+- Generate the whole script in **one ShortZ `gemini-3.8-flash-tts` request**. Record [master path], [voice ID and settings], [generation date] and [word timestamps]. Keep the master and timing sidecar with the episode.
+- **Measured narration duration** — [___ s]. Resolve a duration outside 61–80 s before commissioning visuals. Confirm the opening sentence fits within three seconds and lock the source, duration and word timing before building the timeline.
+- **Audio review** — [pronunciation, pauses, delivery and gaps reserved for independent SFX]
 
-## Assets and permissions
+## 3. Plan the panels
 
-| Asset / relative path | Origin, tool, prompt and version | License / allowed use / attribution | Status |
-| --- | --- | --- | --- |
-| TBD | TBD | TBD | Unresolved |
+Target **10–12 unique 9:16 key panels**, roughly **5–6 seconds per beat**. Keep each image path unique and avoid shot reuse across moods. For an Indonesian vehicle interior, specify **right-hand drive** in every relevant prompt. Keep the wheel, driver and cabin layout consistent.
 
-Include generated voice, music, effects, fonts, images, footage and any external references. Link full prompts and license records as needed. Mark each asset cleared or unresolved; never assume generated means unrestricted.
+| Beat and time | Unique panel and narrative purpose | Motion, HUD or effect |
+| --- | --- | --- |
+| Hook | [protagonist, situation and threat] | [title and action] |
+| Tactics | [one row per panel] | [HUD and numeric strings] |
+| Anticipation and reveal | [protagonist reaction followed by payoff] | [precise sound hit] |
 
-## Narrator continuity
+- **Asset and rights record** — [batch path, prompts, tools, voice rights, credits and any external dependencies]
 
-- Voice registry / clean reference sample: `voice-samples-v4/README.md` in the project root. Sample path TBD.
-- Provider / model version / voice ID / language / settings used: TBD.
-- Narration master path / generation date / output format: TBD.
-- Recurring names and pronunciation decisions: TBD.
-- Changes from the established voice, listening comparison and owner feedback: TBD.
+## 4. Assemble and review
 
-## Implementation and delivery
-
-- Remotion manifest, public asset paths and composition ID: TBD.
-- FPS, frame duration, output dimensions and output version: TBD.
-- Preview and verification status: TBD.
-- Export location if explicitly requested: TBD.
-- Related [review](review.md), performance record and experiment decision: TBD.
+- **Composition** — [ID, manifest, FPS, frame duration, 9:16 dimensions, output version and preview]. Lock the final runtime within **61–72 seconds**.
+- **Opening cover** — Set `openingTitle` to [3–4 punchy, conversational words]. Show it **00:00.0–00:01.8** in the upper center of the centered **3:4** safe zone. Use **00:00.2** for the TikTok cover. Flash-frame thumbnails are prohibited.
+- **Captions and HUD** — Align to the locked narration. Record matching numeric strings such as `60%`, `03:00` or `PUKUL 3 PAGI`.
+- **Review and delivery** — [validator result, review link and export path if requested]. Complete the [pre-publish review](review.md) and record any owner feedback or decision.

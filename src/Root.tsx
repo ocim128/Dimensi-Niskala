@@ -1,4 +1,4 @@
-import {Composition} from "remotion";
+import {Composition, staticFile, type CalculateMetadataFunction} from "remotion";
 import {Episode, type PreviewOptions} from "./Episode";
 import type {CaptionBeat, EpisodeManifest, EpisodeManifestV2} from "./manifest-types";
 import kemacetan from "../episodes/001-kemacetan-terakhir/manifest.json";
@@ -11,6 +11,35 @@ import attempt05 from "../episodes/001-kemacetan-terakhir/attempt-05/manifest.js
 import attempt05Captions from "../episodes/001-kemacetan-terakhir/attempt-05/captions.json";
 import attempt06 from "../episodes/001-kemacetan-terakhir/attempt-06/manifest.json";
 import attempt06Captions from "../episodes/001-kemacetan-terakhir/attempt-06/captions.json";
+
+// Use for new episode registrations: the source file, not a fixed cap or the
+// editable manifest's potentially stale narration.duration, sets the runtime.
+export const audioFirstMetadata = (manifest: EpisodeManifest | EpisodeManifestV2): CalculateMetadataFunction<PreviewOptions> => async ({props, abortSignal}) => {
+  const seconds = await new Promise<number>((resolve, reject) => {
+    const audio = document.createElement("audio");
+    const cleanup = () => {
+      audio.removeEventListener("loadedmetadata", onMetadata);
+      audio.removeEventListener("error", onError);
+      abortSignal.removeEventListener("abort", onAbort);
+      audio.removeAttribute("src");
+      audio.load();
+    };
+    const onMetadata = () => {const duration = audio.duration; cleanup(); if (Number.isFinite(duration) && duration > 0) resolve(duration); else reject(new Error("Invalid narration duration"));};
+    const onError = () => {cleanup(); reject(new Error(`Cannot read narration metadata: ${manifest.narration.asset}`));};
+    const onAbort = () => {cleanup(); reject(new DOMException("Metadata request aborted", "AbortError"));};
+    audio.preload = "metadata";
+    audio.addEventListener("loadedmetadata", onMetadata);
+    audio.addEventListener("error", onError);
+    abortSignal.addEventListener("abort", onAbort, {once: true});
+    if (abortSignal.aborted) {onAbort(); return;}
+    audio.src = staticFile(manifest.narration.asset);
+    audio.load();
+  });
+  return {
+    durationInFrames: manifest.narration.at + Math.ceil((seconds + 1.2) * manifest.fps),
+    props: {...props, narrationDurationInFrames: Math.ceil(seconds * manifest.fps)},
+  };
+};
 
 const KemacetanTerakhir = (options: PreviewOptions) => <Episode
   manifest={kemacetan satisfies EpisodeManifest}
@@ -35,15 +64,15 @@ export const Root = () => <><Composition
   durationInFrames={kemacetan.duration}
   defaultProps={{showCaptions: true, soundOn: true}}
 />
-<Composition id="KemacetanTerakhirMotionComicRecut" component={KemacetanRecut} width={1080} height={1920} fps={30} durationInFrames={2120} defaultProps={{showCaptions: true, soundOn: true}} />
-<Composition id="KemacetanTerakhirMotionComicAlternate" component={KemacetanAlternate} width={1080} height={1920} fps={30} durationInFrames={2120} defaultProps={{showCaptions: true, soundOn: true}} />
-<Composition id="KemacetanTerakhirMotionComicAttempt05" component={KemacetanAttempt05} width={1080} height={1920} fps={30} durationInFrames={2136} defaultProps={{
+<Composition id="KemacetanTerakhirMotionComicRecut" component={KemacetanRecut} width={1080} height={1920} fps={recut.fps} durationInFrames={recut.duration} defaultProps={{showCaptions: true, soundOn: true}} />
+<Composition id="KemacetanTerakhirMotionComicAlternate" component={KemacetanAlternate} width={1080} height={1920} fps={alternate.fps} durationInFrames={alternate.duration} defaultProps={{showCaptions: true, soundOn: true}} />
+<Composition id="KemacetanTerakhirMotionComicAttempt05" component={KemacetanAttempt05} width={1080} height={1920} fps={attempt05.fps} durationInFrames={attempt05.duration} defaultProps={{
   showCaptions: true,
   soundOn: true,
   narrationOn: true,
   effectsOn: true,
 }} />
-<Composition id="KemacetanTerakhirMotionComicAttempt06" component={KemacetanAttempt06} width={1080} height={1920} fps={30} durationInFrames={2136} defaultProps={{
+<Composition id="KemacetanTerakhirMotionComicAttempt06" component={KemacetanAttempt06} width={1080} height={1920} fps={attempt06.fps} durationInFrames={attempt06.duration} calculateMetadata={audioFirstMetadata(attempt06 as EpisodeManifestV2)} defaultProps={{
   showCaptions: true,
   soundOn: true,
   narrationOn: true,

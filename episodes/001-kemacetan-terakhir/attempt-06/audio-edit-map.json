@@ -39,5 +39,14 @@
       "speed": 1.12
     }
   ],
+  "playbackDucks": [
+    {
+      "startSec": 62.06,
+      "endSec": 62.62,
+      "gainDb": -3.5,
+      "fadeSec": 0.06,
+      "implementedIn": "manifest narration.ducks"
+    }
+  ],
   "notes": "ASR-based alignment is provisional and requires listening."
 }

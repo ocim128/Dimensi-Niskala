@@ -2,62 +2,204 @@
   "schemaVersion": 2,
   "id": "KemacetanTerakhirMotionComicAttempt06",
   "fps": 30,
-  "duration": 2136,
+  "duration": 2157,
   "captions": "captions.json",
   "narration": {
     "asset": "assets/001-kemacetan-terakhir/attempt-06/narration-edit.wav",
     "at": 0,
-    "duration": 2122,
-    "gain": 0.9
+    "duration": 2121,
+    "gain": 0.9,
+    "ducks": [
+      {
+        "startSec": 62.06,
+        "endSec": 62.62,
+        "gainDb": -3.5,
+        "fadeSec": 0.06
+      }
+    ]
   },
   "beds": [
     {
-      "name": "Lalu lintas",
-      "asset": "sfx/traffic-bed.wav",
+      "name": "Cabin traffic",
+      "asset": "sfx/prepared/traffic-bed.wav",
       "at": 0,
       "duration": 1080,
-      "gain": 0.1,
+      "gain": 0.672,
       "fadeIn": 0,
-      "fadeOut": 80,
-      "loop": true
+      "fadeOut": 90,
+      "loop": true,
+      "envelope": [
+        {
+          "frame": 0,
+          "gain": 1
+        },
+        {
+          "frame": 1000,
+          "gain": 1
+        },
+        {
+          "frame": 1079,
+          "gain": 0.65
+        }
+      ]
     },
     {
-      "name": "Mesin",
-      "asset": "sfx/engine-idle.wav",
+      "name": "Engine rumble",
+      "asset": "sfx/prepared/engine-idle.wav",
       "at": 0,
       "duration": 1080,
-      "gain": 0.065,
-      "fadeIn": 8,
-      "fadeOut": 30,
+      "gain": 0.448,
+      "fadeIn": 10,
+      "fadeOut": 90,
       "loop": true
     },
     {
-      "name": "Tekanan di jalan",
-      "asset": "sfx/sub-drone.wav",
-      "at": 360,
-      "duration": 550,
-      "gain": 0.12,
-      "fadeIn": 20,
-      "fadeOut": 75
+      "name": "Dark drone",
+      "asset": "sfx/prepared/sub-drone.wav",
+      "at": 0,
+      "duration": 2019,
+      "gain": 0.672,
+      "fadeIn": 15,
+      "fadeOut": 0,
+      "loop": true,
+      "envelope": [
+        {
+          "frame": 0,
+          "gain": 0.5
+        },
+        {
+          "frame": 450,
+          "gain": 1
+        },
+        {
+          "frame": 1000,
+          "gain": 1
+        },
+        {
+          "frame": 1080,
+          "gain": 0.45
+        },
+        {
+          "frame": 1650,
+          "gain": 0.45
+        },
+        {
+          "frame": 1730,
+          "gain": 0.7
+        },
+        {
+          "frame": 1740,
+          "gain": 0.1
+        },
+        {
+          "frame": 1835,
+          "gain": 0.1
+        },
+        {
+          "frame": 1860,
+          "gain": 0.2
+        },
+        {
+          "frame": 1980,
+          "gain": 0.5
+        },
+        {
+          "frame": 2014,
+          "gain": 0.5
+        },
+        {
+          "frame": 2015,
+          "gain": 0
+        },
+        {
+          "frame": 2018,
+          "gain": 0
+        }
+      ]
     },
     {
-      "name": "Udara malam",
-      "asset": "sfx/night-air.wav",
-      "at": 1140,
-      "duration": 580,
-      "gain": 0.13,
-      "fadeIn": 35,
-      "fadeOut": 80,
-      "loop": true
+      "name": "Night cabin air",
+      "asset": "sfx/prepared/night-air.wav",
+      "at": 1050,
+      "duration": 969,
+      "gain": 0.504,
+      "fadeIn": 45,
+      "fadeOut": 0,
+      "loop": true,
+      "envelope": [
+        {
+          "frame": 0,
+          "gain": 0.8
+        },
+        {
+          "frame": 600,
+          "gain": 0.65
+        },
+        {
+          "frame": 680,
+          "gain": 0.8
+        },
+        {
+          "frame": 690,
+          "gain": 0.1
+        },
+        {
+          "frame": 785,
+          "gain": 0.1
+        },
+        {
+          "frame": 810,
+          "gain": 0.2
+        },
+        {
+          "frame": 950,
+          "gain": 0.4
+        },
+        {
+          "frame": 964,
+          "gain": 0.4
+        },
+        {
+          "frame": 965,
+          "gain": 0
+        },
+        {
+          "frame": 968,
+          "gain": 0
+        }
+      ]
     },
     {
-      "name": "Munculnya penumpang",
-      "asset": "sfx/tension-rise.wav",
-      "at": 1950,
-      "duration": 140,
-      "gain": 0.11,
-      "fadeIn": 20,
-      "fadeOut": 20
+      "name": "Reveal rise",
+      "asset": "sfx/prepared/tension-rise.wav",
+      "at": 1860,
+      "duration": 159,
+      "gain": 0.616,
+      "fadeIn": 100,
+      "fadeOut": 4,
+      "loop": true,
+      "envelope": [
+        {
+          "frame": 0,
+          "gain": 0
+        },
+        {
+          "frame": 120,
+          "gain": 0.8
+        },
+        {
+          "frame": 154,
+          "gain": 1
+        },
+        {
+          "frame": 155,
+          "gain": 0
+        },
+        {
+          "frame": 158,
+          "gain": 0
+        }
+      ]
     }
   ],
   "art": {
@@ -85,7 +227,8 @@
       "assets/001-kemacetan-terakhir/attempt-06/window-wide.webp": "gritty-dark-anime-comic",
       "assets/001-kemacetan-terakhir/attempt-06/turn-character.webp": "gritty-dark-anime-comic",
       "assets/001-kemacetan-terakhir/attempt-06/headrest-knock.webp": "gritty-dark-anime-comic",
-      "assets/001-kemacetan-terakhir/attempt-06/passenger-distinct.webp": "gritty-dark-anime-comic"
+      "assets/001-kemacetan-terakhir/attempt-06/passenger-distinct.webp": "gritty-dark-anime-comic",
+      "assets/001-kemacetan-terakhir/attempt-06/passenger-teen-v1.png": "gritty-dark-anime-comic"
     }
   },
   "script": {
@@ -151,27 +294,29 @@
           "at": 0,
           "duration": 50,
           "revealFrames": 12
-        },
-        {
-          "id": "warning",
-          "type": "tacticalCallout",
-          "text": "JANGAN MENOLEH",
-          "at": 12,
-          "duration": 45,
-          "revealFrames": 12,
-          "box": {
-            "x": 0.08,
-            "y": 0.16,
-            "width": 0.84,
-            "height": 0.23
-          }
         }
       ],
       "editorial": {
         "protagonist": "reaction",
         "purpose": "character-emotion",
         "evidence": "Driver visibly tense beside the threatened window."
-      }
+      },
+      "cues": [
+        {
+          "name": "Hook tap one",
+          "asset": "sfx/prepared/glass-knock.wav",
+          "at": 0,
+          "duration": 12,
+          "gain": 0.8
+        },
+        {
+          "name": "Hook tap two",
+          "asset": "sfx/prepared/glass-knock.wav",
+          "at": 7,
+          "duration": 12,
+          "gain": 0.8
+        }
+      ]
     },
     {
       "id": "driver",
@@ -949,7 +1094,7 @@
       "id": "supplies",
       "name": "Air dan baterai",
       "at": 1470,
-      "plate": "assets/001-kemacetan-terakhir/attempt-06/supplies-character.webp",
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/traffic-character.webp",
       "camera": {
         "from": {
           "scale": 1.03,
@@ -974,9 +1119,9 @@
           "revealFrames": 55,
           "box": {
             "x": 0.07,
-            "y": 0.5,
+            "y": 0.42,
             "width": 0.6,
-            "height": 0.22
+            "height": 0.2
           },
           "items": [
             {
@@ -1002,7 +1147,7 @@
       "id": "wait",
       "name": "Menunggu pagi",
       "at": 1542,
-      "plate": "assets/001-kemacetan-terakhir/attempt-06/hook-character.webp",
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/supplies-character.webp",
       "camera": {
         "from": {
           "scale": 1.03,
@@ -1022,8 +1167,9 @@
       "editorial": {
         "protagonist": "reaction",
         "purpose": "character-emotion",
-        "evidence": "Driver waits and watches the dark window."
-      }
+        "evidence": "The driver waits quietly with limited water and battery."
+      },
+      "cameraPreset": "slow-push"
     },
     {
       "id": "stay",
@@ -1092,7 +1238,7 @@
       "id": "silence",
       "name": "Jalan menjadi sunyi",
       "at": 1749,
-      "plate": "assets/001-kemacetan-terakhir/attempt-06/traffic-character.webp",
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/window-wide.webp",
       "camera": {
         "from": {
           "scale": 1.03,
@@ -1110,14 +1256,16 @@
       },
       "hud": [],
       "editorial": {
-        "protagonist": "reaction",
-        "purpose": "character-emotion",
-        "evidence": "Driver watches the road as it goes quiet."
-      }
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "The dark empty side window suggests a quiet road."
+      },
+      "cameraPreset": "slow-push",
+      "brightness": 0.72
     },
     {
       "id": "two-taps",
-      "name": "Dua ketukan di kaca",
+      "name": "Tiga ketukan di kaca",
       "at": 1815,
       "plate": "assets/001-kemacetan-terakhir/attempt-06/window-close.webp",
       "camera": {
@@ -1139,22 +1287,29 @@
       "editorial": {
         "protagonist": "absent",
         "purpose": "threat-proximity",
-        "evidence": "The side glass fills the frame as two taps draw attention there."
+        "evidence": "The side glass fills the frame as three dull knocks draw attention there."
       },
       "cues": [
         {
-          "name": "Ketukan kaca satu",
-          "asset": "sfx/glass-tick.wav",
+          "name": "Climax tap 1",
+          "asset": "sfx/prepared/glass-knock.wav",
           "at": 3,
-          "duration": 6,
-          "gain": 0.5
+          "duration": 12,
+          "gain": 0.9
         },
         {
-          "name": "Ketukan kaca dua",
-          "asset": "sfx/glass-tick.wav",
-          "at": 21,
-          "duration": 6,
-          "gain": 0.5
+          "name": "Climax tap 2",
+          "asset": "sfx/prepared/glass-knock.wav",
+          "at": 15,
+          "duration": 12,
+          "gain": 0.9
+        },
+        {
+          "name": "Climax tap 3",
+          "asset": "sfx/prepared/glass-knock.wav",
+          "at": 27,
+          "duration": 12,
+          "gain": 0.9
         }
       ]
     },
@@ -1162,7 +1317,7 @@
       "id": "empty-window",
       "name": "Jendela kosong",
       "at": 1875,
-      "plate": "assets/001-kemacetan-terakhir/attempt-06/window-wide.webp",
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/waiting-character.webp",
       "camera": {
         "from": {
           "scale": 1.03,
@@ -1195,9 +1350,9 @@
         }
       ],
       "editorial": {
-        "protagonist": "absent",
-        "purpose": "threat-proximity",
-        "evidence": "A distinct wider view establishes the empty exterior."
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "The driver studies the empty window."
       }
     },
     {
@@ -1228,11 +1383,11 @@
       },
       "cues": [
         {
-          "name": "Ketukan dari belakang",
-          "asset": "sfx/glass-knock.wav",
+          "name": "Headrest thud",
+          "asset": "sfx/prepared/headrest-thud.wav",
           "at": 0,
-          "duration": 13,
-          "gain": 0.45
+          "duration": 19,
+          "gain": 0.8
         }
       ]
     },
@@ -1267,7 +1422,7 @@
       "id": "passenger",
       "name": "Penumpang di belakang",
       "at": 2019,
-      "plate": "assets/001-kemacetan-terakhir/attempt-06/passenger-distinct.webp",
+      "plate": "assets/001-kemacetan-terakhir/attempt-06/passenger-teen-v1.png",
       "camera": {
         "from": {
           "scale": 1.03,
@@ -1302,7 +1457,7 @@
       "editorial": {
         "protagonist": "absent",
         "purpose": "threat-proximity",
-        "evidence": "The infected passenger is revealed in the back seat."
+        "evidence": "The infected teenage passenger is revealed in the back seat."
       },
       "cameraPreset": "punch-in",
       "blackout": {
@@ -1312,13 +1467,15 @@
       },
       "cues": [
         {
-          "name": "Gema penemuan",
-          "asset": "sfx/metal-resonance.wav",
+          "name": "Reveal sting",
+          "asset": "sfx/prepared/reveal-sting.wav",
           "at": 0,
-          "duration": 23,
-          "gain": 0.11
+          "duration": 42,
+          "gain": 0.87
         }
       ]
     }
-  ]
+  ],
+  "openingTitle": "ATURAN MACET ZOMBIE",
+  "effectBusGain": 0.5
 }

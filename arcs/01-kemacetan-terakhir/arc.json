@@ -1,0 +1,102 @@
+{
+  "arcId": "01-kemacetan-terakhir",
+  "title": "Kemacetan Terakhir",
+  "maxEpisodes": 7,
+  "threatStyle": "Grounded survival outbreak with uncanny, quiet niskala behavior: fixed stares, eerie smiles, and patient rule-testing.",
+  "benchmark": "out/kemacetan-terakhir-attempt06-teen-zombie.mp4",
+  "characters": [
+    {
+      "id": "arc-01-driver",
+      "role": "protagonist",
+      "sheetPath": "assets/characters/arc-01-driver/sheet.png",
+      "generationRecordPath": "assets/characters/arc-01-driver/generation-record.json",
+      "visualDNA": "Adult Indonesian woman with short tousled black hair, an olive work jacket over a dark shirt, and a consistent Indonesian right-hand-drive car interior."
+    },
+    {
+      "id": "arc-01-passenger-teen",
+      "role": "infected passenger",
+      "sheetPath": "assets/characters/arc-01-passenger-teen/sheet.png",
+      "generationRecordPath": "assets/characters/arc-01-passenger-teen/generation-record.json",
+      "visualDNA": "Teenage Indonesian girl with uneven dark hair, a fixed stare, and an unsettling closed-mouth smile. Sits quietly in the back seat."
+    }
+  ],
+  "episodes": [
+    {
+      "episodeNumber": 1,
+      "arcStage": "Containment",
+      "startClock": "HARI 1 • MALAM",
+      "endClock": "HARI 1 • 03:00",
+      "entryInventory": null,
+      "exitInventory": {"water": "50%", "battery": "60%"},
+      "startLocation": "Kursi pengemudi di jalan tol macet",
+      "endLocation": "Mobil terkunci di jalan tol macet",
+      "endingHook": "Remaja perempuan dengan tatapan kosong dan senyum aneh duduk diam di kursi belakang, ternyata sudah mengamati sejak lama"
+    },
+    {
+      "episodeNumber": 2,
+      "arcStage": "Immediate Escape",
+      "startClock": null,
+      "endClock": null,
+      "entryInventory": null,
+      "exitInventory": null,
+      "startLocation": null,
+      "endLocation": null,
+      "endingHook": null
+    },
+    {
+      "episodeNumber": 3,
+      "arcStage": "Resource Crisis",
+      "startClock": null,
+      "endClock": null,
+      "entryInventory": null,
+      "exitInventory": null,
+      "startLocation": null,
+      "endLocation": null,
+      "endingHook": null
+    },
+    {
+      "episodeNumber": 4,
+      "arcStage": "False Sanctuary",
+      "startClock": null,
+      "endClock": null,
+      "entryInventory": null,
+      "exitInventory": null,
+      "startLocation": null,
+      "endLocation": null,
+      "endingHook": null
+    },
+    {
+      "episodeNumber": 5,
+      "arcStage": "Human Variable",
+      "startClock": null,
+      "endClock": null,
+      "entryInventory": null,
+      "exitInventory": null,
+      "startLocation": null,
+      "endLocation": null,
+      "endingHook": null
+    },
+    {
+      "episodeNumber": 6,
+      "arcStage": "Rule Breakdown",
+      "startClock": null,
+      "endClock": null,
+      "entryInventory": null,
+      "exitInventory": null,
+      "startLocation": null,
+      "endLocation": null,
+      "endingHook": null
+    },
+    {
+      "episodeNumber": 7,
+      "arcStage": "Finale & Handoff to Arc 02",
+      "startClock": null,
+      "endClock": null,
+      "entryInventory": null,
+      "exitInventory": null,
+      "startLocation": null,
+      "endLocation": null,
+      "endingHook": null
+    }
+  ]
+}
