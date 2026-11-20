@@ -11,6 +11,23 @@ const profiles = {
   'toa-megaphone': 'highpass=f=500,lowpass=f=2800,asoftclip=type=tanh:threshold=0.8:oversample=2,aecho=0.8:0.25:85:0.18',
 };
 const args = process.argv.slice(2);
+// Rebuild only the new climax derivatives; never overwrite the established library.
+if (args.length === 1 && args[0] === '--climax') {
+  const build = (inputs, graph, output) => {
+    const temp = `public/sfx/prepared/_${output}.wav`;
+    const dest = `public/sfx/prepared/${output}.wav`;
+    const invoke = a => { const p = spawnSync('ffmpeg', ['-hide_banner', '-nostdin', ...a], {encoding:'utf8'}); if (p.status !== 0) throw Error(p.stderr); return p.stderr; };
+    invoke(['-y','-loglevel','error', ...inputs.flatMap(i => ['-i',i]), '-filter_complex', graph, '-c:a','pcm_s24le',temp]);
+    const peak = Number(invoke(['-i',temp,'-af','volumedetect','-f','null','-']).match(/max_volume:\s*(-?[\d.]+) dB/)?.[1]);
+    if (!Number.isFinite(peak)) throw Error(`No peak: ${output}`);
+    invoke(['-y','-loglevel','error','-i',temp,'-af',`volume=${-1-peak}dB`,'-c:a','pcm_s24le',dest]);
+    rmSync(temp);
+    console.log(`${dest}: normalized to approximately -1 dBFS`);
+  };
+  build(['public/sfx/tension-rise.wav'], '[0:a]silenceremove=start_periods=1:start_duration=0:start_threshold=-50dB,atrim=duration=3.8,asetpts=PTS-STARTPTS,highpass=f=55,lowpass=f=5000,equalizer=f=1400:t=q:w=0.7:g=-8,afade=t=in:st=0:d=2.8,afade=t=out:st=3.65:d=0.15', 'climax-riser');
+  build(['public/sfx/body-fall.wav','public/sfx/metal-resonance.wav','public/sfx/sub-drone.wav'], '[0:a]atrim=duration=0.55,asetpts=PTS-STARTPTS,highpass=f=65,lowpass=f=3500,volume=0.8[a];[1:a]atrim=duration=0.9,asetpts=PTS-STARTPTS,highpass=f=500,equalizer=f=2200:t=q:w=1:g=5,afade=t=out:st=0.1:d=0.8,volume=0.9[b];[2:a]atrim=start=3:duration=0.9,asetpts=PTS-STARTPTS,lowpass=f=180,afade=t=out:st=0.1:d=0.8,volume=1.4[c];[a][b][c]amix=inputs=3:duration=longest:normalize=0,silenceremove=start_periods=1:start_duration=0:start_threshold=-50dB', 'climax-stinger');
+  process.exit(0);
+}
 if (args.length) {
   const validKeys = new Set(['--profile', '--input', '--output']);
   if (args.length !== 6 || args.some((arg, i) => i % 2 === 0 && !validKeys.has(arg)))

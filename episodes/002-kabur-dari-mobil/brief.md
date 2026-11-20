@@ -84,3 +84,7 @@ Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan
 ## 4. Handoff dan review
 
 Usulan ID komposisi `Arc01Episode02`. Target akhir 61–72 detik. Angka di HUD dan takarir harus sama. Konfirmasi penonton baru memahami ancaman, pilihan, hasil dan petunjuk tanpa menonton episode sebelumnya. Review audio, gambar dan hak pakai masih menunggu produksi. Catat kontinuitas final di arc record setelah cut diterima.
+
+### Jolt recut cue sheet ? 20 November 2026
+
+The recut preserves the silent mirror clue. A CC0-derived `climax-riser` runs 01:03.60?01:07.40 and then cuts out. The existing lock and cloth stand-ins begin at 01:07.80 and 01:07.87, after the prepared take; the layered CC BY/CC0 `climax-stinger` begins at 01:08.13. The footage cuts to black at 01:09.23. The separate seatbelt stand-ins are not confirmed to sound like a buckle and retract; in-context listening is still required. The slam is an edited body-impact source, not a verified recording of a vehicle door.

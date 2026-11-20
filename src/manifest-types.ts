@@ -49,6 +49,8 @@ export type EpisodeManifest = {
   captions: string;
   narration: {asset: string; at: number; duration: number; gain: number; ducks?: {startSec: number; endSec: number; gainDb: number; fadeSec?: number}[]};
   openingTitle?: string | {text: string; startSec?: number; endSec?: number};
+  tensionRamp?: {startSec: number; endSec: number; extraScale: number; vignetteStrength: number};
+  finalJolt?: {triggerSec: number; durationSec: number; joltImageSrc?: string; zoomFrom: number; zoomTo: number; shakePx: number; shakeDecayMs: number; flashFrames: number; rgbSplitPx: number; blackoutSec: number};
   effectBusGain?: number;
   beds: Bed[];
   scenes: Scene[];

@@ -39,3 +39,7 @@ Source `ambient_horror.ogg`, [Ambient horror](https://opengameart.org/content/am
 | --- | --- |
 | `sub-drone` | 20 s excerpt from 0.1 s with low-pass filtering and fades |
 | `tension-rise` | 4.7 s excerpt from 15.9 s, reversed, filtered and faded |
+
+## Climax derivatives
+
+`prepared/climax-riser.wav` is a filtered, faded and peak-normalized derivative of techiew's CC0 `tension-rise`. `prepared/climax-stinger.wav` layers dklon's CC BY 3.0 `body-fall` with rubberduck's CC0 `metal-resonance` and techiew's CC0 `sub-drone`, filtered, faded and peak-normalized. Rebuild these two files with `node scripts/prep-sfx.mjs --climax`; originals are retained. The dklon attribution above applies to every cut using the stinger. Peak normalization is to approximately ?1 dBFS, not a true-peak guarantee for the finished mix.

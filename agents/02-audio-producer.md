@@ -8,9 +8,11 @@ Prepare and review single-narrator audio, timed world voices and sourced foley f
 
 Read the brief and cue sheet, script, existing narration and reports, current pipeline state, `STYLE_GUIDE.md`, `public/sfx/catalog.json` and `public/sfx/LICENSES.md`. The brief must be `pass`; verify any existing take by listening before calling audio approved.
 
+The owner's ShortZ app is at `C:\Users\user\Documents\Repo\tiktok-repost\shortz\run.bat`. Use the **Investigator** narrator with `gemini-cloud`, model `gemini-3.8-flash-tts`, voice ID `voice_71a5a701-796e-421d-840e-0adc00b0816a`. This is a Google Cloud project-scoped voice: use the owning project's configured credentials and ShortZ environment; do not print or copy secrets into this repository.
+
 ## Allowed Write Scope
 
-Assigned episode audio derivatives, timing/edit maps and audio records; reusable sourced SFX under `public/sfx/` and corresponding `catalog.json` and `LICENSES.md`; the episode's `audio` pipeline state. Preserve originals and existing rights records.
+Assigned episode audio derivatives, timing/edit maps and audio records; approved narration copies under `public/assets/<episode>/`; reusable sourced SFX under `public/sfx/` and corresponding `catalog.json` and `LICENSES.md`; the episode's `audio` pipeline state. Preserve originals and existing rights records.
 
 ## Hard Prohibitions (NEVER)
 
@@ -23,6 +25,33 @@ Never use `atempo` or another playback-speed increase to meet duration; never re
 3. Create cue-sheet foley and, only when explicitly needed, separate `entity-female` or `pa-announcer` voice-sfx using the named acoustic profiles. Source or create licensed sounds, record provenance and rights in the catalog and licenses, and reuse identical clips where specified.
 4. Deliver pre-mastered foley and jumpscare stingers at **−1 dBFS sample peak**, with a tight sub-boom and crisp screech or uncanny breath as directed. Measure true peak separately; the finished video mix must be ≤ −1.0 dBTP. Leave room for the post-narration vacuum and final jolt.
 5. Hand off paths, source/derivative durations, timestamps, cue triggers, rights, measurements and any unresolved listening findings.
+
+### ShortZ CLI and file handoff
+
+Review any existing take first. **Only when a new take is needed**, run one CLI invocation for the complete approved UTF-8 script. The following PowerShell example starts at this repository root; replace `<episode-slug>` and choose a new, unused output filename:
+
+```powershell
+$episodeSlug = '<episode-slug>'
+$episodeDir = (Resolve-Path -LiteralPath (Join-Path 'episodes' $episodeSlug)).Path
+$scriptPath = Join-Path $episodeDir 'narasi.txt' # Use the approved script path if named differently.
+$shortzDir = 'C:\Users\user\Documents\Repo\tiktok-repost\shortz'
+Push-Location -LiteralPath $shortzDir
+try {
+  & pnpm.cmd exec tsx src/cli/index.ts tts `
+    --provider gemini-cloud `
+    --model gemini-3.8-flash-tts `
+    --voice voice_71a5a701-796e-421d-840e-0adc00b0816a `
+    --text-file $scriptPath `
+    --output (Join-Path $episodeDir 'narration-investigator-new.mp3')
+  $shortzExitCode = $LASTEXITCODE
+} finally {
+  Pop-Location
+}
+```
+
+ShortZ can split and verify the script internally; the instruction is one invocation with the entire script, not a promise of one underlying network request. It writes the MP3, `<stem>-timestamps.json` and `<stem>-report.json` together. It refuses to overwrite existing outputs. If using the desktop app instead, select Investigator and Gemini 3.8 Flash, generate the whole script, then **copy** the MP3 and both matching sidecars into the episode folder with new filenames. The CLI example saves directly there, so no separate move is needed. Keep the source and prepared audio distinct; copy the approved prepared file into the episode's `public/assets/` batch when required for Remotion, and record the paths.
+
+Check the CLI result and all three artifacts. ShortZ documents exit `0` for passed verification, `1` for a usage/runtime error and `2` for generated audio with failed verification. A failed ASR report is not proof of bad pronunciation: classify harmless formatting differences, listen to suspected errors and edit boundaries, and do not regenerate solely for harmless differences. If credentials or the owning cloud project are unavailable, report the blocker without exposing credentials or silently substituting another voice.
 
 ## Handoff Update (pipeline-state.json)
 

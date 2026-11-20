@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "id": "KemacetanTerakhirMotionComicAttempt06",
   "fps": 30,
-  "duration": 2157,
+  "duration": 2160,
   "captions": "captions.json",
   "narration": {
     "asset": "assets/001-kemacetan-terakhir/attempt-06/narration-edit.wav",
@@ -200,6 +200,15 @@
           "gain": 0
         }
       ]
+    },
+    {
+      "name": "Climax riser",
+      "asset": "sfx/prepared/climax-riser.wav",
+      "at": 1890,
+      "duration": 125,
+      "gain": 0.14,
+      "fadeIn": 8,
+      "fadeOut": 0
     }
   ],
   "art": {
@@ -307,14 +316,14 @@
           "asset": "sfx/prepared/glass-knock.wav",
           "at": 0,
           "duration": 12,
-          "gain": 0.8
+          "gain": 0.4
         },
         {
           "name": "Hook tap two",
           "asset": "sfx/prepared/glass-knock.wav",
           "at": 7,
           "duration": 12,
-          "gain": 0.8
+          "gain": 0.4
         }
       ]
     },
@@ -510,7 +519,7 @@
           "asset": "sfx/door-lock.wav",
           "at": 30,
           "duration": 18,
-          "gain": 0.15
+          "gain": 0.075
         }
       ]
     },
@@ -620,7 +629,7 @@
           "asset": "sfx/body-fall.wav",
           "at": 15,
           "duration": 19,
-          "gain": 0.15
+          "gain": 0.075
         }
       ]
     },
@@ -671,7 +680,7 @@
           "asset": "sfx/coat-shift.wav",
           "at": 7,
           "duration": 9,
-          "gain": 0.08
+          "gain": 0.04
         }
       ]
     },
@@ -707,7 +716,7 @@
           "asset": "sfx/door-lock.wav",
           "at": 3,
           "duration": 18,
-          "gain": 0.15
+          "gain": 0.075
         }
       ]
     },
@@ -896,21 +905,21 @@
           "asset": "sfx/ignition-click.wav",
           "at": 15,
           "duration": 6,
-          "gain": 0.13
+          "gain": 0.065
         },
         {
           "name": "Lampu",
           "asset": "sfx/console-switch.wav",
           "at": 40,
           "duration": 6,
-          "gain": 0.12
+          "gain": 0.06
         },
         {
           "name": "Radio",
           "asset": "sfx/console-switch.wav",
           "at": 58,
           "duration": 6,
-          "gain": 0.1
+          "gain": 0.05
         }
       ]
     },
@@ -1025,14 +1034,14 @@
           "asset": "sfx/shoe-left.wav",
           "at": 25,
           "duration": 12,
-          "gain": 0.12
+          "gain": 0.06
         },
         {
           "name": "Langkah di samping",
           "asset": "sfx/shoe-right.wav",
           "at": 43,
           "duration": 10,
-          "gain": 0.13
+          "gain": 0.065
         }
       ]
     },
@@ -1295,21 +1304,21 @@
           "asset": "sfx/prepared/glass-knock.wav",
           "at": 3,
           "duration": 12,
-          "gain": 0.9
+          "gain": 0.45
         },
         {
           "name": "Climax tap 2",
           "asset": "sfx/prepared/glass-knock.wav",
           "at": 15,
           "duration": 12,
-          "gain": 0.9
+          "gain": 0.45
         },
         {
           "name": "Climax tap 3",
           "asset": "sfx/prepared/glass-knock.wav",
           "at": 27,
           "duration": 12,
-          "gain": 0.9
+          "gain": 0.45
         }
       ]
     },
@@ -1387,7 +1396,7 @@
           "asset": "sfx/prepared/headrest-thud.wav",
           "at": 0,
           "duration": 19,
-          "gain": 0.8
+          "gain": 0.4
         }
       ]
     },
@@ -1471,11 +1480,35 @@
           "asset": "sfx/prepared/reveal-sting.wav",
           "at": 0,
           "duration": 42,
-          "gain": 0.87
+          "gain": 0.435
+        },
+        {
+          "name": "Final climax stinger",
+          "asset": "sfx/prepared/climax-stinger.wav",
+          "at": 103,
+          "duration": 29,
+          "gain": 0.85
         }
       ]
     }
   ],
   "openingTitle": "ATURAN MACET ZOMBIE",
-  "effectBusGain": 0.5
+  "effectBusGain": 1,
+  "tensionRamp": {
+    "startSec": 63,
+    "endSec": 67.1,
+    "extraScale": 0.06,
+    "vignetteStrength": 0.34
+  },
+  "finalJolt": {
+    "triggerSec": 70.733333,
+    "durationSec": 1,
+    "zoomFrom": 1,
+    "zoomTo": 1.24,
+    "shakePx": 16,
+    "shakeDecayMs": 320,
+    "flashFrames": 2,
+    "rgbSplitPx": 6,
+    "blackoutSec": 0.266667
+  }
 }

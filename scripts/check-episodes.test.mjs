@@ -47,6 +47,16 @@ const captions = [{startMs: 0, endMs: 1000, timestampMs: null, confidence: null,
 const clone = () => structuredClone(base);
 const validate = (manifest, cap = captions) => validateEpisode(manifest, cap, opts);
 
+test("climax timing and optional image must be valid and fit the composition", () => {
+  const a = clone();
+  a.tensionRamp = {startSec: 65, endSec: 68, extraScale: .06, vignetteStrength: .3};
+  a.finalJolt = {triggerSec: 68.5, durationSec: 1, blackoutSec: .25, zoomFrom: 1, zoomTo: 1.24, shakePx: 16, shakeDecayMs: 320, flashFrames: 2, rgbSplitPx: 6};
+  assert.doesNotThrow(() => validate(a));
+  a.finalJolt.blackoutSec = 1; assert.throws(() => validate(a), /clipped blackout/);
+  a.finalJolt.blackoutSec = .25; a.finalJolt.joltImageSrc = `${assetDir}/missing.webp`; assert.throws(() => validate(a), /missing asset/);
+  delete a.finalJolt.joltImageSrc; a.tensionRamp.endSec = a.tensionRamp.startSec; assert.throws(() => validate(a), /tensionRamp/);
+});
+
 test("valid v2 and the exact comparison baseline", () => {
   assert.doesNotThrow(() => validate(clone()));
   const old = JSON.parse(readFileSync("episodes/001-kemacetan-terakhir/manifest.json"));

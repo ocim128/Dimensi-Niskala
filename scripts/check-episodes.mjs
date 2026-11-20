@@ -90,6 +90,19 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   };
   fail(nonempty(id) && /^[a-zA-Z0-9-]+$/.test(id), "invalid composition id");
   fail(isFrame(fps) && fps > 0 && isFrame(duration) && duration > 0, "invalid duration/fps");
+  if (manifest.tensionRamp !== undefined) {
+    const r = manifest.tensionRamp;
+    fail(r && Number.isFinite(r.startSec) && r.startSec >= 0 && Number.isFinite(r.endSec) && r.endSec > r.startSec && r.endSec * fps <= duration && unit(r.extraScale) && unit(r.vignetteStrength), "invalid tensionRamp");
+  }
+  if (manifest.finalJolt !== undefined) {
+    const j = manifest.finalJolt;
+    fail(j && Number.isFinite(j.triggerSec) && j.triggerSec >= 0 && Number.isFinite(j.durationSec) && j.durationSec > 0 && Number.isFinite(j.blackoutSec) && j.blackoutSec > 0 && Math.round(j.triggerSec * fps) + Math.round(j.durationSec * fps) + Math.round(j.blackoutSec * fps) <= duration, "invalid finalJolt timing or clipped blackout");
+    fail([j.zoomFrom, j.zoomTo].every(v => Number.isFinite(v) && v > 0) && [j.shakePx, j.shakeDecayMs, j.rgbSplitPx].every(v => Number.isFinite(v) && v >= 0) && Number.isInteger(j.flashFrames) && j.flashFrames >= 0, "invalid finalJolt effect settings");
+    if (j.joltImageSrc !== undefined) {
+      batchAsset(j.joltImageSrc, "finalJolt image");
+      if (strict) fail(manifest.art?.rasterAssets?.[j.joltImageSrc] === manifest.art?.styleId, "finalJolt image: missing or mixed style ID");
+    }
+  }
   if (manifest.arcEpisode !== undefined) {
     fail(Number.isInteger(manifest.arcEpisode) && manifest.arcEpisode >= 1 && manifest.arcEpisode <= 7,
       "arcEpisode must be an integer from 1 to 7");

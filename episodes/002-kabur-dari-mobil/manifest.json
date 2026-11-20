@@ -7,7 +7,7 @@
     "assets/characters/arc-01-passenger-teen/sheet.png"
   ],
   "fps": 30,
-  "duration": 2065,
+  "duration": 2085,
   "captions": "captions.json",
   "openingTitle": "KABUR DARI MOBIL",
   "narration": {
@@ -16,7 +16,7 @@
     "duration": 2029,
     "gain": 0.9
   },
-  "effectBusGain": 0.5,
+  "effectBusGain": 1,
   "beds": [
     {
       "name": "Hujan jalan tol",
@@ -77,6 +77,15 @@
           "gain": 0.01
         }
       ]
+    },
+    {
+      "name": "Climax riser",
+      "asset": "sfx/prepared/climax-riser.wav",
+      "at": 1908,
+      "duration": 114,
+      "gain": 0.13,
+      "fadeIn": 5,
+      "fadeOut": 0
     }
   ],
   "art": {
@@ -444,7 +453,7 @@
           "asset": "sfx/prepared/door-lock.wav",
           "at": 147,
           "duration": 13,
-          "gain": 0.18
+          "gain": 0.09
         }
       ]
     },
@@ -537,7 +546,7 @@
           "asset": "sfx/prepared/door-lock.wav",
           "at": 28,
           "duration": 14,
-          "gain": 0.18
+          "gain": 0.09
         }
       ]
     },
@@ -813,26 +822,42 @@
         {
           "name": "Klik pengait sabuk",
           "asset": "sfx/prepared/door-lock.wav",
-          "at": 175,
+          "at": 180,
           "duration": 13,
-          "gain": 0.75
+          "gain": 0.375
         },
         {
           "name": "Tarikan sabuk",
           "asset": "sfx/prepared/coat-shift.wav",
-          "at": 177,
+          "at": 182,
           "duration": 9,
-          "gain": 0.24
+          "gain": 0.12
         },
         {
-          "name": "Dengung akhir",
-          "asset": "sfx/prepared/episode02-sub-sting-delayed.wav",
-          "at": 175,
-          "duration": 36,
-          "gain": 0.38,
-          "fadeOut": 30
+          "name": "Final climax stinger",
+          "asset": "sfx/prepared/climax-stinger.wav",
+          "at": 190,
+          "duration": 29,
+          "gain": 0.98
         }
       ]
     }
-  ]
+  ],
+  "tensionRamp": {
+    "startSec": 63.2,
+    "endSec": 67.4,
+    "extraScale": 0.06,
+    "vignetteStrength": 0.32
+  },
+  "finalJolt": {
+    "triggerSec": 68.133333,
+    "durationSec": 1.1,
+    "zoomFrom": 1,
+    "zoomTo": 1.24,
+    "shakePx": 16,
+    "shakeDecayMs": 320,
+    "flashFrames": 2,
+    "rgbSplitPx": 6,
+    "blackoutSec": 0.266667
+  }
 }

@@ -25,3 +25,8 @@ Keep the supplied MP3 as the source. Save any timing edit under a separate filen
 Start the two side-window taps around **60.60 and 61.20 s**. Place the rear knock around **65.00 s**, then show the protagonist’s reaction before the reveal. These replace Attempt 05’s absolute cue times. The proposed map leaves room for a **71.20-second** cut. Confirm that the shortened delivery still sounds natural and that the knocks sit in quiet gaps. Use the [shared foley files and credits](../../../public/sfx/LICENSES.md). Align captions and HUD to the edited audio, with the passenger reveal by 70.00 s.
 
 Build acceptance is pending. Review the edited narration solo, then the effects and full mix, and verify the 60–72 s runtime, caption sync and protagonist coverage in Studio. Record the exact edit timing and rights status in the episode review.
+
+
+### Jolt recut audio cue sheet ? 20 November 2026
+
+The existing opening and 01:00 taps, 01:05 headrest impact, reveal sting and narration are retained. The new CC0-derived `climax-riser` starts at 01:03.00 and ends before the 01:07.30 reveal; ambient beds fall silent before that reveal. The existing narrated line continues through approximately 01:10.56, so the new layered CC BY/CC0 `climax-stinger` and final snap-zoom occur at 01:10.73, after the last word. Black begins at 01:11.73. This deliberately differs from a 01:07 jolt to avoid blacking out the locked captions and narration. Check the timing and sound by listening.

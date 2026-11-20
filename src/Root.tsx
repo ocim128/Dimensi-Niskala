@@ -38,7 +38,7 @@ export const audioFirstMetadata = (manifest: EpisodeManifest | EpisodeManifestV2
     audio.load();
   });
   return {
-    durationInFrames: manifest.narration.at + Math.ceil((seconds + 1.2) * manifest.fps),
+    durationInFrames: Math.max(manifest.narration.at + Math.ceil((seconds + 1.2) * manifest.fps), manifest.finalJolt ? Math.round(manifest.finalJolt.triggerSec * manifest.fps) + Math.round(manifest.finalJolt.durationSec * manifest.fps) + Math.round(manifest.finalJolt.blackoutSec * manifest.fps) : 0),
     props: {...props, narrationDurationInFrames: Math.ceil(seconds * manifest.fps)},
   };
 };

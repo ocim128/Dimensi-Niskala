@@ -74,6 +74,22 @@
         "public/sfx/metal-resonance.wav"
       ],
       "processing": "Filtered, layered and faded in scripts/prep-sfx.mjs; normalized to -1 dBFS."
+    },
+    {
+      "name": "climax-riser",
+      "sources": [
+        "public/sfx/tension-rise.wav"
+      ],
+      "processing": "--climax: 3.8 s filtered swell, vocal-range dip, peak normalized to -1 dBFS."
+    },
+    {
+      "name": "climax-stinger",
+      "sources": [
+        "public/sfx/body-fall.wav",
+        "public/sfx/metal-resonance.wav",
+        "public/sfx/sub-drone.wav"
+      ],
+      "processing": "--climax: layered impact, filtered metal and sub, peak normalized to -1 dBFS."
     }
   ]
 }

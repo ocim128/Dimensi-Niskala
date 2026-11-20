@@ -1,5 +1,5 @@
 import {Audio} from "@remotion/media";
-import {AbsoluteFill, Easing, interpolate, Sequence, staticFile, Track, useCurrentFrame, useVideoConfig} from "remotion";
+import {AbsoluteFill, Easing, Img, interpolate, Sequence, staticFile, Track, useCurrentFrame, useVideoConfig} from "remotion";
 import {Captions} from "./components/Captions";
 import {EpisodeAudio} from "./components/EpisodeAudio";
 import {RasterScene} from "./components/RasterScene";
@@ -42,24 +42,42 @@ function OpeningTitle({title, duration}: {title: string; duration: number}) {
 export function Episode({manifest, captions, showCaptions, soundOn, narrationOn = true, effectsOn = true, narrationDurationInFrames}: Props) {
   const {narration, scenes} = manifest;
   const {durationInFrames, fps} = useVideoConfig();
+  const frame = useCurrentFrame();
+  const ramp = manifest.tensionRamp;
+  const jolt = manifest.finalJolt;
+  const p = ramp ? interpolate(frame / fps, [ramp.startSec, ramp.endSec], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"}) : 0;
+  const joltFrame = jolt ? frame - Math.round(jolt.triggerSec * fps) : -1;
+  const activeJolt = !!jolt && joltFrame >= 0 && joltFrame < Math.round(jolt.durationSec * fps);
+  const blackout = !!jolt && joltFrame >= Math.round(jolt.durationSec * fps);
+  const decay = activeJolt && jolt ? Math.max(0, 1 - joltFrame / Math.max(1, jolt.shakeDecayMs * fps / 1000)) : 0;
+  const snap = activeJolt && jolt ? interpolate(joltFrame, [0, Math.max(1, Math.round(.14 * fps))], [jolt.zoomFrom, jolt.zoomTo], {extrapolateRight: "clamp", easing: Easing.out(Easing.cubic)}) : 1;
+  const x = activeJolt && jolt ? Math.sin(joltFrame * 2.4 + 1.1) * jolt.shakePx * decay : Math.sin(frame * 1.9) * p;
+  const y = activeJolt && jolt ? Math.sin(joltFrame * 3.1 + .7) * jolt.shakePx * decay : Math.cos(frame * 1.7) * p;
+  const activeIndex = scenes.filter(scene => scene.at <= frame).length - 1;
+  const activeScene = scenes[activeIndex];
+  const activeDuration = activeScene ? Math.min(scenes[activeIndex + 1]?.at ?? durationInFrames, durationInFrames) - activeScene.at : 0;
   const visibleScenes = scenes.filter(scene => scene.at < durationInFrames);
   const title = typeof manifest.openingTitle === "string" ? {text: manifest.openingTitle} : manifest.openingTitle;
   const titleStart = Math.max(0, Math.round((title?.startSec ?? 0) * fps));
   const titleEnd = Math.min(durationInFrames, Math.round((title?.endSec ?? 1.8) * fps));
   return <AbsoluteFill style={{backgroundColor: "#080c16"}}>
-    <Track name="Gambar">
+    <AbsoluteFill style={{overflow: "hidden"}}><AbsoluteFill style={{transform: `translate(${x}px, ${y}px) scale(${(1 + p * (ramp?.extraScale ?? 0)) * snap})`}}><Track name="Gambar">
       {visibleScenes.map((scene, index) => {
         const duration = Math.min(visibleScenes[index + 1]?.at ?? durationInFrames, durationInFrames) - scene.at;
         return <Sequence key={scene.id} name={scene.name} from={scene.at} durationInFrames={duration} premountFor={12}>
           <AbsoluteFill style={{filter: scene.brightness === undefined ? undefined : `brightness(${scene.brightness})`}}><RasterScene scene={scene} duration={duration} /></AbsoluteFill>
         </Sequence>;
       })}
-    </Track>
+    </Track>{activeJolt && jolt?.joltImageSrc && <Img src={staticFile(jolt.joltImageSrc)} style={{width: "100%", height: "100%", objectFit: "cover", position: "absolute"}} />}
+    {activeJolt && jolt && decay > 0 && activeScene && <AbsoluteFill style={{transform: `translateX(${jolt.rgbSplitPx * decay}px)`, opacity: .28 * decay, mixBlendMode: "screen", filter: "sepia(1) saturate(8) hue-rotate(315deg)", pointerEvents: "none"}}>{jolt.joltImageSrc ? <Img src={staticFile(jolt.joltImageSrc)} style={{width: "100%", height: "100%", objectFit: "cover"}} /> : <Sequence from={activeScene.at} durationInFrames={activeDuration}><AbsoluteFill style={{filter: activeScene.brightness === undefined ? undefined : `brightness(${activeScene.brightness})`}}><RasterScene scene={activeScene} duration={activeDuration} /></AbsoluteFill></Sequence>}</AbsoluteFill>}</AbsoluteFill>
+    {p > 0 && <AbsoluteFill style={{background: `radial-gradient(ellipse, transparent 38%, rgba(0,0,0,${p * (ramp?.vignetteStrength ?? 0)}) 100%)`, pointerEvents: "none"}} />}
+    {activeJolt && jolt && joltFrame < jolt.flashFrames && <AbsoluteFill style={{backgroundColor: "white", opacity: .65, mixBlendMode: "screen", pointerEvents: "none"}} />}</AbsoluteFill>
     {title && titleEnd > titleStart && <Sequence name="Opening title" from={titleStart} durationInFrames={titleEnd - titleStart}><OpeningTitle title={title.text} duration={titleEnd - titleStart} /></Sequence>}
     {soundOn && effectsOn && <EpisodeAudio manifest={manifest} />}
     {(soundOn || showCaptions) && <Sequence name="Narasi dan takarir" from={narration.at} durationInFrames={narrationDurationInFrames ?? narration.duration}>
       {soundOn && narrationOn && <Narration narration={narration} />}
       {showCaptions && <Captions captions={captions} />}
     </Sequence>}
+    {blackout && <AbsoluteFill style={{backgroundColor: "black", pointerEvents: "none"}} />}
   </AbsoluteFill>;
 }
