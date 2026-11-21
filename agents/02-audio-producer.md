@@ -26,6 +26,10 @@ Never use `atempo` or another playback-speed increase to meet duration; never re
 4. Deliver pre-mastered foley and jumpscare stingers at **−1 dBFS sample peak**, with a tight sub-boom and crisp screech or uncanny breath as directed. Measure true peak separately; the finished video mix must be ≤ −1.0 dBTP. Leave room for the post-narration vacuum and final jolt.
 5. Hand off paths, source/derivative durations, timestamps, cue triggers, rights, measurements and any unresolved listening findings.
 
+### Narration timestamp continuity
+
+In `prepare-audio.mjs` (or the episode's equivalent preparation script), assemble silence splices on one continuous PCM sample timeline, rebuild timestamps from the sample count and encode the prepared MP3 once. Every `narration-prepared.mp3` must have monotonic presentation timestamps with zero splice-related gaps, overlaps, resets or edit-list jumps. Use `ffprobe` to compare each audio packet's PTS and duration with the next packet's PTS across the splices, accounting for timestamp rounding and normal codec priming or end padding. Confirm the decoded length and remapped word timestamps against the intended edit before handoff.
+
 ### ShortZ CLI and file handoff
 
 Reuse any existing take first. **Only when a new take is needed**, run one CLI invocation for the complete approved UTF-8 script. The following PowerShell example starts at this repository root; replace `<episode-slug>` and choose a new, unused output filename:

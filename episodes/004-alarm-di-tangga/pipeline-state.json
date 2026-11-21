@@ -1,0 +1,26 @@
+{
+  "brief": {
+    "status": "pending",
+    "notes": "The episode brief is labelled draft. The owner approved the proposed spatial layout with an unbarred balcony window and specified the room, seating and reveal; image anchors record that override. No separate approval of the entire brief is claimed."
+  },
+  "audio": {
+    "status": "pass",
+    "notes": "The existing prepared Investigator narration is 68.260 s with timing and edit map present. Owner automatically accepts this narrator; no listening review is claimed. Agent 04 handles SFX and final mix."
+  },
+  "images": {
+    "status": "ready",
+    "notes": "Directed revisions to 05, 06 and 10 pass still-image self-audit with mixed-footprint continuity caveat; full brief remains pending independently. Review and approve brief before passing handoff. See sources/prompts.md."
+  },
+  "render": {
+    "status": "pending",
+    "notes": ""
+  },
+  "audit": {
+    "status": "pending",
+    "notes": ""
+  },
+  "publish": {
+    "status": "pending",
+    "notes": ""
+  }
+}

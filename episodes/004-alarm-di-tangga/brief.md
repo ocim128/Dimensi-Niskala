@@ -33,11 +33,17 @@ Master aktif [narration-investigator-revised.mp3](narration-investigator-revised
 
 ## 3. Sepuluh panel 9:16
 
+### Spatial & Camera Layout
+
+- Tangga beton di belakang ruko naik ke bordes lantai dua. Dari bordes, pintu kamar kayu membuka ke dalam. Di dinding belakang kamar, jendela berengsel tanpa teralis menghadap balkon jemuran sempit yang menjadi jalur kabur.
+- Pengemudi duduk dekat dinding belakang di sisi jendela, menghadap pintu kayu yang tertutup. Gadis berjongkok di sudut gelap tepat di samping ambang, di dalam kamar dan di luar garis pandang langsung pengemudi ke daun pintu.
+- Dari posisi pengemudi, arahkan kamera menyudut ke pintu. Pertahankan posisi pintu, sudut gelap dan botol di samping sepatu dari reveal ke jolt.
+
 Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan penanda waktu dan persediaan dari entry dan exit state. Jadikan panel pembuka latar judul 00:00.0–00:01.8, dengan frame cover di 00:00.2. Ciptakan perubahan aksi atau framing di dalam panel yang menahan beberapa detik. Gunakan batch gambar baru berdasarkan dua lembar karakter yang dikunci.
 
 1. Pengemudi menahan napas di depan deretan ruko. Stiker `DISEWAKAN` yang pudar menempel di kaca depan. Bayangan orang bergerak di trotoar.
 2. Ia memilih tangga belakang dan membiarkan rolling door berkarat di posisi semula.
-3. Sebelum menutup pintu lantai dua, pengemudi mengintip lewat jendela berteralis besi ke balkon jemuran sempit.
+3. Sebelum menutup pintu kamar lantai dua, pengemudi mengintip lewat jendela berengsel tanpa teralis ke balkon jemuran sempit.
 4. Ia membuka tas kain. Botol kosong bertutup merah mudah dikenali.
 5. Pengemudi memasang botol di anak tangga dan memeriksa naik-turun jalurnya.
 6. Senter singkat menangkap jejak berlumpur di atas botol. Pengemudi menatap pijakannya sendiri.

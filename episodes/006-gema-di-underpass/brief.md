@@ -1,13 +1,13 @@
 # Episode 006 · Gema di Underpass
 
-**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 121 kata](narasi.txt)
+**Status brief: disetujui.** [Naskah ShortZ · 121 kata](narasi.txt). Jumlah ini sesuai batas 115–130 kata Arc 01.
 
 ## Arc Context
 
 - **Arc ID** — [01-kemacetan-terakhir](../../arcs/01-kemacetan-terakhir/arc.json)
 - **Episode 6 of 7** — Rule Breakdown
 - **Entry State** — HARI 4 • 22:00 · 15% air · 3% baterai HP · mulut terowongan menuju stasiun. Senter terpisah masih berfungsi.
-- **Exit State sementara** — HARI 4 • 22:12 · 15% air · 0% baterai HP · cekungan tangga darurat di luar terowongan. Senter mulai redup.
+- **Exit State sementara** — HARI 4 • 22:12 · 15% air · 0% baterai HP · ceruk tangga darurat di sisi luar lorong utama. Senter mulai redup.
 - **Jembatan dari episode sebelumnya** — Gunakan penanda waktu dan cuplikan peta yang disimpan dari SMS. Setelah satu hari berpindah dan menunggu, air dan daya turun. Senter memakai daya sendiri. [Draft episode sebelumnya](../005-suara-dari-rumah-kosong/brief.md)
 - **Locked Character Sheet Paths** — `assets/characters/arc-01-driver/sheet.png` dan `assets/characters/arc-01-passenger-teen/sheet.png`
 
@@ -35,6 +35,12 @@ Master aktif [narration-investigator-revised.mp3](narration-investigator-revised
 
 ## 3. Sepuluh panel 9:16
 
+### Spatial & Camera Layout
+
+- Terowongan pejalan kaki panjang dari beton lembap. Tiang-tiang penyangga beton persegi berulang di sepanjang satu dinding. Genangan membuat lantai licin dan memantulkan cahaya redup.
+- Di tengah dinding bertiang ada ceruk beton bertanda `TANGGA DARURAT`. Di ujung jauh terowongan, papan hijau terang bertuliskan `PINTU KELUAR` terpasang di atas sekat kaca pintu masuk stasiun.
+- Tetapkan arah pandang dari mulut terowongan menuju pintu stasiun. Dari ceruk tangga, pertahankan sudut pandang menyusuri dinding ke kaca di ujung jauh. Gunakan kaca yang sama untuk ketukan dan jolt.
+
 Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan penanda waktu dan persediaan dari entry dan exit state. Jadikan panel pembuka latar judul 00:00.0–00:01.8, dengan frame cover di 00:00.2. Ciptakan perubahan aksi atau framing di dalam panel yang menahan beberapa detik. Gunakan batch gambar baru berdasarkan dua lembar karakter yang dikunci.
 
 1. Pengemudi memeriksa ujung gelap dari mulut terowongan. Senter mengarah ke lantai.
@@ -43,10 +49,10 @@ Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan
 4. Sepatu pengemudi melewati pangkal tiang beton berikutnya. Jarak antartiang terbaca di gambar.
 5. Pengemudi mengurangi langkah saat gema bertumpuk. Jaga wajah baca jelas.
 6. Di ujung lingkaran senter, bayangan kedua terlambat berhenti.
-7. Ia melewati tanda `TANGGA DARURAT`. Papan penunjuk stasiun berwarna hijau bertuliskan `PINTU KELUAR / STASIUN` terlihat di kejauhan.
+7. Ia melewati tanda `TANGGA DARURAT`. Papan hijau terang bertuliskan `PINTU KELUAR` terlihat di atas sekat kaca pintu masuk stasiun.
 8. HP padam. Pengemudi menurunkan senter ketika langkahnya sendiri berhenti.
 9. Bunyi langkah berlanjut melewati gelap di sisi pengemudi. Ia mundur pelan ke cekungan tangga darurat. HUD air tetap 15%, HP 0%.
-10. Di bawah lampu hijau stasiun, gadis itu menatap ke arah tangga darurat dan mengetuk kaca pos tiga kali.
+10. Di bawah papan hijau stasiun, gadis itu menatap ke arah tangga darurat dan mengetuk sekat kaca pintu masuk stasiun tiga kali.
 
 **Aset dan hak pakai** — Lembar karakter dan pustaka foley tercatat di atas. Catat prompt, file terpilih, sumber bunyi baru dan status hak pakai setelah produksi.
 

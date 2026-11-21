@@ -36,6 +36,12 @@ Audit the final narration for every described in-world sound and stop. Keep `inv
 
 ## 3. Plan the panels
 
+### Spatial & Camera Layout
+
+- **Floor plan and route** — [entry, exit, stairs or landings, connecting spaces, and each character’s position at the reveal]
+- **Openings and barriers** — [door and window type, hinge and swing direction, bars or glass, which side each character is on, and exact plot-bearing signage]
+- **Camera and sightlines** — [where the camera stands, what it looks toward, and which corner, barrier or reflection conceals or reveals the threat. Carry that geometry through the reveal and final jolt.]
+
 Target **10–12 unique 9:16 key panels**, roughly **5–6 seconds per beat**. Keep each image path unique and avoid shot reuse across moods. For an Indonesian vehicle interior, specify **right-hand drive** in every relevant prompt. Keep the wheel, driver and cabin layout consistent.
 
 | Beat and time | Unique panel and narrative purpose | Motion, HUD or effect |

@@ -11,7 +11,7 @@
 
 - Keep one locked protagonist for up to seven episodes, then rotate to a new survivor on the same outbreak timeline. Read the arc record and canonical character sheets before writing. Use the current stage and the preceding episode’s exit clock, inventory and location to fill the brief’s entry state. After the cut is accepted, write its exit state and hook back to the same arc record. [Arc 01](arcs/01-kemacetan-terakhir/arc.json)
 - Aim for 80% standalone FYP and 20% serialized continuity. Start with the immediate emergency and rule. Carry the previous state through the opening scene, `TimestampBadge` and `PERSEDIAAN`. Keep recap lines out of the hook. End with a quiet `niskala` reveal that exposes a blind spot in the rule the survivor followed.
-- The sole visual and audio benchmark is Episode 001 Attempt 06, [the teenage passenger cut](out/kemacetan-terakhir-attempt06-teen-zombie.mp4). Use the shared sheets and generation records named in the arc record. Treat Attempts 02–05 as production history.
+- Use the locked Arc 01 character sheets and the latest approved panel batch as the visual benchmark. Use Episode 003’s approved panels for the current handoff. The [handpicked Episode 003 export](out/handpick/ep003-bel-minimarket_compressed.mp4) is an optional playback reference. Treat Episode 001 Attempts 02–05 as production history.
 
 ## Episode 002+ factory loop
 

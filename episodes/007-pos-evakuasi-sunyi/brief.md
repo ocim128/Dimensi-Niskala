@@ -1,6 +1,6 @@
 # Episode 007 · Pos Evakuasi Sunyi
 
-**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 116 kata](narasi.txt)
+**Status brief: disetujui.** [Naskah ShortZ · 116 kata](narasi.txt). Jumlah ini sesuai batas 115–130 kata Arc 01.
 
 ## Arc Context
 
@@ -34,6 +34,12 @@ Master aktif [narration-investigator-final.mp3](narration-investigator-final.mp3
 | Handoff `HARI 5 • MALAM`: sepatu berhenti, senter menyala | foley: sepatu PDL dan klik mekanis senter | Langkah lambat berat di beton/kerikil, klik jelas dekat | Hentikan langkah di depan tulisan, lalu picu klik senter bersih; sisakan ruang dari narasi. |
 
 ## 3. Sepuluh panel 9:16
+
+### Spatial & Camera Layout
+
+- Pagar dan gerbang besi hitam yang tinggi dan tertutup memisahkan area beton luar dari pelataran stasiun yang terang. Para pengungsi berdiri diam dalam barisan kaku di bawah lampu berkedip. Pengeras suara TOA terpasang pada tiang di dalam pagar.
+- Jalur kerikil sempit di samping rel tetap di luar pagar, menyusuri sisi luar dinding beton perimeter. Pengemudi menulis `JANGAN IKUT BARISAN` di muka luar dinding yang menghadap jalur itu. Satpam menemukan tulisan yang sama saat malam.
+- Ambil pandangan pengemudi dari luar secara menyudut melalui jeruji ke barisan. Pertahankan sisi pagar dan arah pandang saat gerbang terbuka dan barisan menoleh pada jolt.
 
 Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan penanda waktu dan persediaan dari entry dan exit state. Jadikan panel pembuka latar judul 00:00.0–00:01.8, dengan frame cover di 00:00.2. Ciptakan perubahan aksi atau framing di dalam panel yang menahan beberapa detik. Gunakan batch gambar baru berdasarkan dua lembar karakter yang dikunci.
 

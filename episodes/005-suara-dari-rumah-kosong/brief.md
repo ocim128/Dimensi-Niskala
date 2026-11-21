@@ -1,6 +1,8 @@
 # Episode 005 · Suara dari Rumah Kosong
 
-**Draft naskah dan panel · tahap pra-audio.** [Naskah ShortZ · 131 kata](narasi.txt)
+**Status brief: disetujui.** [Naskah ShortZ · 131 kata](narasi.txt)
+
+**Pengecualian Arc 01 disetujui pemilik.** Naskah terkunci berisi 131 kata, satu di atas batas 115–130. Agent 03 dan Agent 05 memakai naskah dan narasi yang disetujui sebagai acuan. Jumlah ini tidak menghambat pembuatan panel atau audit.
 
 ## Arc Context
 
@@ -35,6 +37,12 @@ Master aktif [narration-investigator.mp3](narration-investigator.mp3), ShortZ Ge
 | Bayangan diam pada kaca rumah | bed-cut: larangan aksen | Pertahankan perspektif plea di balik dinding | **Nol aksen SFX** khusus pada petunjuk rewatch. |
 
 ## 3. Sepuluh panel 9:16
+
+### Spatial & Camera Layout
+
+- Gang permukiman Indonesia sempit dan basah. Tembok dan pagar beton berada di satu sisi, berseberangan dengan rumah terkunci yang jendela depannya berteralis dan bertirai. Gang lurus bermuara ke jalan utama di kaki tangga JPO.
+- Pos jaga kecil berdinding kaca menempel di sisi kaki tangga JPO. Saat pengemudi berhenti untuk mengecek HP yang bergetar, satu panel kaca pos berada tepat di belakang bahunya.
+- Dari balik tembok, pandang menyudut ke jendela rumah. Di pos jaga, bingkai HP dari sisi depan pengemudi dengan kaca tetap di belakang bahunya. Gunakan panel kaca yang sama untuk ketukan, pantulan gadis dan jolt.
 
 Urutan panel awal; waktu harus disesuaikan dengan master yang dipilih. Tampilkan penanda waktu dan persediaan dari entry dan exit state. Jadikan panel pembuka latar judul 00:00.0–00:01.8, dengan frame cover di 00:00.2. Ciptakan perubahan aksi atau framing di dalam panel yang menahan beberapa detik. Gunakan batch gambar baru berdasarkan dua lembar karakter yang dikunci.
 

@@ -7,7 +7,7 @@
     "assets/characters/arc-01-passenger-teen/sheet.png"
   ],
   "fps": 30,
-  "duration": 2193,
+  "duration": 2190,
   "captions": "captions.json",
   "openingTitle": "ATURAN MINIMARKET KOSONG",
   "narration": {
@@ -680,7 +680,7 @@
         {
           "name": "Lunge stinger",
           "asset": "sfx/prepared/climax-stinger.wav",
-          "at": 292,
+          "at": 289,
           "duration": 27,
           "gain": 0.5,
           "fadeOut": 3
@@ -688,7 +688,7 @@
         {
           "name": "Phone-band metallic bite",
           "asset": "sfx/prepared/metal-resonance.wav",
-          "at": 292,
+          "at": 289,
           "duration": 22,
           "gain": 0.16,
           "fadeOut": 7
@@ -703,7 +703,7 @@
     "vignetteStrength": 0.48
   },
   "finalJolt": {
-    "triggerSec": 71.93333333333334,
+    "triggerSec": 71.83333333333333,
     "durationSec": 0.9,
     "joltImageSrc": "assets/003-bel-minimarket/panel-final-jolt.webp",
     "zoomFrom": 1,

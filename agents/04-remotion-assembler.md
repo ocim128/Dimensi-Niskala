@@ -23,6 +23,11 @@ Never regenerate the main narration TTS, rewrite scripts, invent or generate rep
 3. Target **−14.0 LUFS integrated** and **≤ −1.0 dBTP** for the complete mix; mix climax SFX peaks within **−8 to −2 dB relative to narration peaks**, then measure the finished result and true peak. Keep the impact crisp without clipping.
 4. Run `npm run check`, render the MP4 and export verification stills including 00:00.2, representative HUD/face frames and final jolt/black. Deliver manifest, captions, composition ID, render path, duration, mix measurements, rights and verification evidence.
 
+### Audio timestamps and exported jolt sync
+
+- Inspect narration and SFX timestamps before the final mix and mux. When an input has a PTS discontinuity, build a working PCM copy with continuous timestamps derived from its sample count. Preserve intentional pauses and cue placement on the composition timeline. Verify the normalized input before mixing.
+- Decode the AAC in the final exported MP4 to PCM and locate the stinger onset in the waveform. Read the presentation timestamp of the first visual `finalJolt` flash frame from the exported video. Compare both on the MP4 presentation timeline, accounting for stream offsets and AAC priming or trim. Require an absolute offset of **at most one frame (approximately ±33 ms at 30 fps)**. Record the frame number, both timestamps and the signed offset in the handoff. If the limit is exceeded, correct the timing, export again and repeat the measurement before sending the cut to Agent 05.
+
 For Arc 01, because Agent 02 is skipped, use the existing prepared narration and timing sidecars and finish missing sound cues here. Source licensed effects and record rights; generate `entity-female` or `pa-announcer` **only** where the brief explicitly calls for an in-world voice. For Episode 005, preserve the narration file and non-destructively mute or trim only its final quoted line in the composition/edit map before inserting the specified whisper voice-sfx. Resolve provisional cue timings against the composition, measure the final mix, and flag real defects without claiming a listening review that did not happen. Do not regenerate the main narrator.
 
 ## Handoff Update (pipeline-state.json)

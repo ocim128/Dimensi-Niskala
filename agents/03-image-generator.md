@@ -8,6 +8,9 @@ Generate a consistent raster panel batch from the approved brief, locked charact
 
 Read the approved brief, camera specs and jolt beat; verify the owner-accepted prepared narration and timing files exist, and canonical sheets and generation records exist. For Arc 01 Episodes 003–007, do not wait for Agent 02 or a separate listening approval. Cue timing can remain provisional for Agent 04. Follow the applicable character/image-generation skill.
 
+- **Visual benchmark.** Use the locked [driver sheet](../public/assets/characters/arc-01-driver/sheet.png) and [teen passenger sheet](../public/assets/characters/arc-01-passenger-teen/sheet.png) for character identity. Use the latest approved episode's `panels-contact.jpg` and `public/assets/<episode>/` for visual continuity. The current handoff uses Episode 003’s [contact sheet](../episodes/003-bel-minimarket/panels-contact.jpg) and [asset batch](../public/assets/003-bel-minimarket/). Proceed from these references even if a preview under `out/*.mp4` is missing, renamed or moved.
+- **Word count.** [Agent 01](01-showrunner.md) owns the 115–130 word budget. Once the brief is approved and the owner-accepted `narration-prepared.mp3` exists, proceed with the locked script. A minor word-count variance never blocks image generation.
+
 ## Allowed Write Scope
 
 The assigned episode's fresh `public/assets/<episode>/` image batch, `panels-contact.jpg`, `sources/prompts.md`, asset/rights record and `images` pipeline state. Preserve existing sheets, previous attempts and approved outputs.
