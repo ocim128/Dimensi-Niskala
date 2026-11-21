@@ -75,6 +75,7 @@ For Episode 007, place the crowd’s synchronized head-snap jolt after the final
 - Use the shared sheets as design references for fresh panels. For an arc episode, put its number in the manifest’s `arcEpisode` and list the canonical public-relative sheet paths in `characterSheets`. These fields record continuity for the validator. Rendered plates and cutouts still come from the episode’s own batch.
 - Bake characters into the scene or cleanly mask them behind an authored foreground seat, dashboard or other occluder. **Soft bottom-feathered character cutouts are prohibited.** Review seat contact and edges through the movement, especially for poses like the driver at 00:03 and 00:16 in the comparison cut.
 - Show constraints and consequences in the picture. In *Kemacetan Terakhir*, the cars visibly block the driver and a hand contacts the headrest before the reveal. Sync the sound cue to the event.
+- Lock recurring architecture and hero props in a `Set & Prop Anchors` block before generating panels. Reuse each location anchor verbatim in every prompt for that location, especially from reveal to final jolt. Check floor and doorway scale, peeking sightlines, barrier contact, subtle reflections and exact Indonesian signage in the contact sheet and again in the finished MP4. [Image generator contract](agents/03-image-generator.md) · [QA auditor contract](agents/05-qa-auditor.md)
 
 ## Narration, captions and sound
 

@@ -34,6 +34,7 @@ export type Scene = {
   at: number;
   plate: string;
   camera: {from: Camera; to: Camera};
+  reframes?: {at: number; duration: number; scale: number; x: number; y: number}[];
   layers?: RasterLayer[];
   hit?: {at: number; duration: number; strength: number};
   blackout?: {at: number; duration: number; opacity: number};

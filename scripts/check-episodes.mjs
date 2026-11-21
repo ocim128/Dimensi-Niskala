@@ -183,6 +183,12 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
     const plate = raster(scene.plate, `${scene.id} plate`);
     if (strict) plateUses.push({scene, fingerprint: batchAssets.get(plate).fingerprint});
     fail(scene.camera?.from && scene.camera?.to && [scene.camera.from, scene.camera.to].every(c => Number.isFinite(c.scale) && c.scale > 0 && Number.isFinite(c.x) && Number.isFinite(c.y)), `${scene.id}: invalid camera`);
+    let previousReframeEnd = 0;
+    for (const r of scene.reframes ?? []) {
+      fail(isFrame(r.at) && isFrame(r.duration) && r.duration > 0 && r.at >= previousReframeEnd && r.at + r.duration <= length && Number.isFinite(r.scale) && r.scale > 0 && Number.isFinite(r.x) && Number.isFinite(r.y), `${scene.id}: invalid reframe`);
+      activityInterval(scene.at + r.at, scene.at + r.at + r.duration);
+      previousReframeEnd = r.at + r.duration;
+    }
     let layers = scene.layers ?? [];
     if (v2) {
       fail(!("layers" in scene) && !("label" in scene), `${scene.id}: legacy layers/label are forbidden`);

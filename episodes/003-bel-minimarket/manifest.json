@@ -1,0 +1,717 @@
+{
+  "schemaVersion": 2,
+  "id": "Arc01Episode03",
+  "arcEpisode": 3,
+  "characterSheets": [
+    "assets/characters/arc-01-driver/sheet.png",
+    "assets/characters/arc-01-passenger-teen/sheet.png"
+  ],
+  "fps": 30,
+  "duration": 2193,
+  "captions": "captions.json",
+  "openingTitle": "ATURAN MINIMARKET KOSONG",
+  "narration": {
+    "asset": "assets/003-bel-minimarket/narration-prepared.mp3",
+    "at": 0,
+    "duration": 2150,
+    "gain": 1
+  },
+  "effectBusGain": 1,
+  "beds": [
+    {
+      "name": "Udara rest area",
+      "asset": "sfx/prepared/night-air.wav",
+      "at": 0,
+      "duration": 2148,
+      "gain": 0.075,
+      "fadeIn": 20,
+      "fadeOut": 15,
+      "loop": true
+    },
+    {
+      "name": "Rising dread",
+      "asset": "sfx/prepared/climax-riser.wav",
+      "at": 2035,
+      "duration": 113,
+      "gain": 0.13,
+      "fadeIn": 8,
+      "fadeOut": 3
+    }
+  ],
+  "art": {
+    "styleId": "gritty-dark-anime-comic",
+    "rasterAssets": {
+      "assets/003-bel-minimarket/panel-01.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-02.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-03.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-06.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-07.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-04.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-05.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-08.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-09.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-10.webp": "gritty-dark-anime-comic",
+      "assets/003-bel-minimarket/panel-final-jolt.webp": "gritty-dark-anime-comic"
+    }
+  },
+  "script": {
+    "format": "survival-tactics-curiosity-gap",
+    "hook": {
+      "at": 0,
+      "line": "Cari air saat wabah, jauhi pintu depan."
+    },
+    "promise": {
+      "at": 90,
+      "line": "Bel gerak terdengar sampai belakang.",
+      "openLoop": "Siapa yang membunyikan bel?"
+    },
+    "tactics": {
+      "at": 360,
+      "steps": [
+        {
+          "number": 1,
+          "at": 503,
+          "line": "Cari pintu gudang belakang.",
+          "detail": "Gunakan celah di samping galon."
+        },
+        {
+          "number": 2,
+          "at": 877,
+          "line": "Ambil air dari rak belakang.",
+          "detail": "Bawa botol tersegel dan senter."
+        },
+        {
+          "number": 3,
+          "at": 1214,
+          "line": "Batasi waktu.",
+          "detail": "Pasang pengatur waktu tanpa suara."
+        }
+      ]
+    },
+    "ending": {
+      "at": 1650,
+      "twistAt": 1866,
+      "payoff": "Gadis sudah ada di toko dan mendorong pintu dari dalam."
+    }
+  },
+  "scenes": [
+    {
+      "id": "panel-01",
+      "name": "Minimarket dan aturan",
+      "at": 0,
+      "plate": "assets/003-bel-minimarket/panel-01.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-entry",
+          "type": "timestampBadge",
+          "text": "HARI 1 • 05:30",
+          "at": 0,
+          "duration": 110,
+          "revealFrames": 12
+        },
+        {
+          "id": "rule",
+          "type": "tacticalCallout",
+          "text": "JAUHI PINTU DEPAN",
+          "box": {
+            "x": 0.08,
+            "y": 0.3,
+            "width": 0.84,
+            "height": 0.08
+          },
+          "at": 60,
+          "duration": 100,
+          "revealFrames": 14
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi di depan toko"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-02",
+      "name": "Persediaan di parkiran",
+      "at": 255,
+      "plate": "assets/003-bel-minimarket/panel-02.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.56,
+            "y": 0.08,
+            "width": 0.41,
+            "height": 0.22
+          },
+          "at": 12,
+          "duration": 110,
+          "revealFrames": 20,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.4,
+              "display": "40%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.48,
+              "display": "48%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memeriksa air dan ponsel"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-03",
+      "name": "Celah gudang",
+      "at": 498,
+      "plate": "assets/003-bel-minimarket/panel-03.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 258,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 322,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memeriksa pintu gudang"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-04",
+      "name": "Botol tersegel dan pantulan",
+      "at": 876,
+      "plate": "assets/003-bel-minimarket/panel-06.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi mengambil botol di depan kulkas"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-05",
+      "name": "Air dan senter",
+      "at": 990,
+      "plate": "assets/003-bel-minimarket/panel-07.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.52,
+            "y": 0.42,
+            "width": 0.44,
+            "height": 0.22
+          },
+          "at": 12,
+          "duration": 110,
+          "revealFrames": 20,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 1,
+              "display": "100%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.45,
+              "display": "45%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi mengemas air dan mengambil senter"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-06",
+      "name": "Pengatur waktu senyap",
+      "at": 1212,
+      "plate": "assets/003-bel-minimarket/panel-04.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi mengatur ponsel"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-07",
+      "name": "Cermin sudut",
+      "at": 1422,
+      "plate": "assets/003-bel-minimarket/panel-05.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memeriksa cermin lorong"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-08",
+      "name": "Keluar gudang",
+      "at": 1584,
+      "plate": "assets/003-bel-minimarket/panel-08.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi keluar gudang"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-09",
+      "name": "Menoleh di pojok",
+      "at": 1668,
+      "plate": "assets/003-bel-minimarket/panel-09.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-exit",
+          "type": "timestampBadge",
+          "text": "HARI 1 • 05:40",
+          "at": 4,
+          "duration": 95,
+          "revealFrames": 12
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi menoleh di pojok"
+      },
+      "cues": [
+        {
+          "name": "Bel depan dari luar",
+          "asset": "sfx/prepared/minimarket-doorbell-outside.wav",
+          "at": 0,
+          "duration": 36,
+          "gain": 0.17,
+          "fadeOut": 4
+        }
+      ]
+    },
+    {
+      "id": "panel-10",
+      "name": "Pintu depan dari dalam",
+      "at": 1866,
+      "plate": "assets/003-bel-minimarket/panel-10.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 258,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Gadis di balik pintu"
+      },
+      "cues": [
+        {
+          "name": "Derit pintu kaca",
+          "asset": "sfx/prepared/minimarket-door-creak-outside.wav",
+          "at": 27,
+          "duration": 46,
+          "gain": 0.1,
+          "fadeOut": 8
+        },
+        {
+          "name": "Lunge stinger",
+          "asset": "sfx/prepared/climax-stinger.wav",
+          "at": 292,
+          "duration": 27,
+          "gain": 0.5,
+          "fadeOut": 3
+        },
+        {
+          "name": "Phone-band metallic bite",
+          "asset": "sfx/prepared/metal-resonance.wav",
+          "at": 292,
+          "duration": 22,
+          "gain": 0.16,
+          "fadeOut": 7
+        }
+      ]
+    }
+  ],
+  "tensionRamp": {
+    "startSec": 67.83,
+    "endSec": 71.57,
+    "extraScale": 0.075,
+    "vignetteStrength": 0.48
+  },
+  "finalJolt": {
+    "triggerSec": 71.93333333333334,
+    "durationSec": 0.9,
+    "joltImageSrc": "assets/003-bel-minimarket/panel-final-jolt.webp",
+    "zoomFrom": 1,
+    "zoomTo": 1.18,
+    "shakePx": 20,
+    "shakeDecayMs": 300,
+    "flashFrames": 2,
+    "rgbSplitPx": 8,
+    "blackoutSec": 0.26666666666666666
+  }
+}

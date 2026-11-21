@@ -53,11 +53,15 @@ export function RasterScene({scene, duration}: {scene: Scene | SceneV2; duration
   const punch = preset === "punch-in" ? interpolate(frame, [0, 16], [1, 1.12], clamp) : preset === "slow-push" ? interpolate(progress, [0, 1], [1, 1.035]) : 1;
   const presetShake = preset === "impact-shake" ? Math.sin(frame * 1.7) * interpolate(frame, [0, 1, 14], [0, 15, 0], clamp) : 0;
   const drift = preset === "dread-drift" ? Math.sin(frame / 45) * 8 : 0;
+  const reframe = (scene.reframes ?? []).reduce((current, next) => {
+    const t = interpolate(frame, [next.at, next.at + next.duration], [0, 1], {...clamp, easing: smooth});
+    return {scale: current.scale + (next.scale - current.scale) * t, x: current.x + (next.x - current.x) * t, y: current.y + (next.y - current.y) * t};
+  }, {scale: 1, x: 0, y: 0});
 
   return <AbsoluteFill data-scene={scene.id} style={{overflow: "hidden"}}>
     <AbsoluteFill style={{
-      scale: String(interpolate(progress, [0, 1], [from.scale, to.scale], {easing: smooth}) * punch),
-      translate: `${interpolate(progress, [0, 1], [from.x, to.x]) + shake + presetShake + drift}px ${interpolate(progress, [0, 1], [from.y, to.y])}px`,
+      scale: String(interpolate(progress, [0, 1], [from.scale, to.scale], {easing: smooth}) * punch * reframe.scale),
+      translate: `${interpolate(progress, [0, 1], [from.x, to.x]) + shake + presetShake + drift + reframe.x}px ${interpolate(progress, [0, 1], [from.y, to.y]) + reframe.y}px`,
     }}>
       <Img src={staticFile(scene.plate)} style={{width: "100%", height: "100%", objectFit: "cover"}} />
       {layers?.map((layer) => <CharacterLayer key={layer.asset} layer={layer} progress={progress} legacy={legacy} />)}

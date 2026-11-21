@@ -55,4 +55,6 @@ Tahan chime dan derit sesuai cue sheet, tanpa aksen pada petunjuk kulkas; akhiri
 
 ## 4. Handoff dan review
 
+**Assembly:** `Arc01Episode03`; manifest `manifest.json`, captions `captions.json`, output `out/ep003-bel-minimarket.mp4`. Prepared narration is owner-accepted without a claimed listening review. The rewatch reflection has no accent; the bell and creak are separate CC0 cue-sheet effects. The final image and lunge follow the later owner direction recorded in `pipeline-state.json`, superseding the glass-strike draft above. Final continuity remains provisional until the cut is accepted.
+
 Usulan ID komposisi `Arc01Episode03`. Target video akhir 62–75 detik termasuk tail. Angka di HUD dan takarir harus sama. Konfirmasi penonton baru memahami ancaman, pilihan, hasil dan petunjuk tanpa menonton episode sebelumnya. Review audio, gambar dan hak pakai masih menunggu produksi. Catat kontinuitas final di arc record setelah cut diterima.
