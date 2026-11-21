@@ -12,8 +12,8 @@
     "notes": "Directed revisions to 05, 06 and 10 pass still-image self-audit with mixed-footprint continuity caveat; full brief remains pending independently. Review and approve brief before passing handoff. See sources/prompts.md."
   },
   "render": {
-    "status": "pending",
-    "notes": ""
+    "status": "fail",
+    "notes": "Assembly preconditions are unmet: brief is pending and images are ready, not pass. The owner/orchestrator must resolve the full brief; Agent 03 owns the image-stage handoff. The still-image advisory pass is not a pipeline pass. No assembly, render, mix or independent post-MP4 audit has been completed. Once both stages pass, Agent 04 must supply the close plastic scrape and breath, preserve the silent footprint clue, and assemble and verify the cut."
   },
   "audit": {
     "status": "pending",
