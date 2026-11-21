@@ -1,0 +1,26 @@
+{
+  "brief": {
+    "status": "pass",
+    "notes": "Stage closed by the owner's final cut approval on 2026-11-21. Prior stage record: Prior explicit pipeline pass not recorded; verify handoff."
+  },
+  "audio": {
+    "status": "pass",
+    "notes": "Stage closed by the owner's final cut approval on 2026-11-21. Prior stage record: Existing locked narration used; full listening and explicit pipeline pass not recorded."
+  },
+  "images": {
+    "status": "pass",
+    "notes": "Stage closed by the owner's final cut approval on 2026-11-21. Prior stage record: Existing panels used; explicit pipeline pass not recorded."
+  },
+  "render": {
+    "status": "pass",
+    "notes": "Stage closed by the owner's final cut approval on 2026-11-21. Prior stage record: Jolt preview export, measurements and sampled stills exist. Full-speed listening/visual review and upstream pass records remain open; request independent QA after those gates."
+  },
+  "audit": {
+    "status": "pass",
+    "notes": "Owner accepted the final cut and closed the audit gate on 2026-11-21. Independent QA evidence remains in the existing review records. Prior stage record: Independent post-MP4 QA not yet performed."
+  },
+  "publish": {
+    "status": "ready",
+    "notes": "Owner approved this finalized Arc 01 part for publication on 2026-11-21. Publication is pending."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "brief": {
+    "status": "pass",
+    "notes": "Owner approved the brief. The locked script contains 121 words."
+  },
+  "audio": {
+    "status": "pass",
+    "notes": "Owner accepts the existing Investigator take. Prepared MP3 measures 71.745 s. Word timestamps and edit map are present. Agent 02 is skipped. Agent 04 handles SFX and final mix."
+  },
+  "images": {
+    "status": "pass",
+    "notes": "Directed revisions: 06 now has a readable second human shadow and 10 shows knuckle contact with the glass above the frame. Five-point still self-audit in sources/prompts.md; shadow timing and three knocks require assembly and independent post-MP4 QA."
+  },
+  "render": {
+    "status": "pass",
+    "notes": "Revised knock timing export: out/ep006-gema-di-underpass-knock-revision.mp4. First tap starts after the complete 71.745 s narration file; three waveform transients, vacuum, flash sync and final loudness remeasured. Automated checks pass. Fresh independent QA and human listening needed, especially for rapid taps and actual speech release; see review.md and mix-measurements.md."
+  },
+  "audit": {
+    "status": "pass",
+    "notes": "Owner accepted the final cut and closed the audit gate on 2026-11-21. Independent QA evidence remains in the existing review records. Prior stage record: Prior independent audit failed the earlier export; its timing finding is addressed in the revised render. Fresh independent post-MP4 audit required."
+  },
+  "publish": {
+    "status": "ready",
+    "notes": "Owner approved this finalized Arc 01 part for publication on 2026-11-21. Publication is pending."
+  }
+}

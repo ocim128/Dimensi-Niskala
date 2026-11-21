@@ -50,6 +50,9 @@ export function RasterScene({scene, duration}: {scene: Scene | SceneV2; duration
   const darkness = blackout
     ? interpolate(frame, [blackout.at, blackout.at + blackout.duration], [0, blackout.opacity], clamp)
     : 0;
+  const light = scene.lightUp ? interpolate(frame, [scene.lightUp.at, scene.lightUp.at + scene.lightUp.duration], [scene.lightUp.minBrightness, 1], clamp) : 1;
+  const sweep = scene.lightUp?.sweep;
+  const sweepProgress = sweep && scene.lightUp ? interpolate(frame, [scene.lightUp.at, scene.lightUp.at + scene.lightUp.duration], [0, 1], clamp) : 0;
   const punch = preset === "punch-in" ? interpolate(frame, [0, 16], [1, 1.12], clamp) : preset === "slow-push" ? interpolate(progress, [0, 1], [1, 1.035]) : 1;
   const presetShake = preset === "impact-shake" ? Math.sin(frame * 1.7) * interpolate(frame, [0, 1, 14], [0, 15, 0], clamp) : 0;
   const drift = preset === "dread-drift" ? Math.sin(frame / 45) * 8 : 0;
@@ -63,7 +66,9 @@ export function RasterScene({scene, duration}: {scene: Scene | SceneV2; duration
       scale: String(interpolate(progress, [0, 1], [from.scale, to.scale], {easing: smooth}) * punch * reframe.scale),
       translate: `${interpolate(progress, [0, 1], [from.x, to.x]) + shake + presetShake + drift + reframe.x}px ${interpolate(progress, [0, 1], [from.y, to.y]) + reframe.y}px`,
     }}>
-      <Img src={staticFile(scene.plate)} style={{width: "100%", height: "100%", objectFit: "cover"}} />
+      <Img src={staticFile(scene.plate)} style={{width: "100%", height: "100%", objectFit: "cover", filter: light === 1 ? undefined : `brightness(${light})`}} />
+      {scene.lightUp?.offMask && frame < scene.lightUp.at && <Img src={staticFile(scene.plate)} style={{position: "absolute", width: "100%", height: "100%", objectFit: "cover", filter: "brightness(.06) saturate(.5)", maskImage: `radial-gradient(ellipse ${scene.lightUp.offMask.radiusX * 100}% ${scene.lightUp.offMask.radiusY * 100}% at ${scene.lightUp.offMask.x * 100}% ${scene.lightUp.offMask.y * 100}%, black 75%, transparent 100%)`}} />}
+      {sweep && <Img src={staticFile(scene.plate)} style={{position: "absolute", width: "100%", height: "100%", objectFit: "cover", filter: "brightness(1.5)", opacity: Math.min(1, sweepProgress * 3), maskImage: `radial-gradient(ellipse 28% 23% at ${(sweep.fromX + (sweep.toX - sweep.fromX) * sweepProgress) * 100}% ${sweep.y * 100}%, black, transparent)`}} />}
       {layers?.map((layer) => <CharacterLayer key={layer.asset} layer={layer} progress={progress} legacy={legacy} />)}
       {foreground && <Img src={staticFile(foreground)} style={{position: "absolute", width: "100%", height: "100%", objectFit: "cover"}} />}
       {label && frame >= label.at && <span style={{

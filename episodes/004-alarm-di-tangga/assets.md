@@ -11,3 +11,9 @@ Agent 04 must source or prepare the brief's separate foley and complete the mix 
 ## Directed image corrections - 21 November 2026
 
 Revised panels use built-in image generation and the locked references. Selected source IDs, prompts, prior versions and self-audit are recorded in `sources/`. Image service terms and publication-specific rights have not been independently verified.
+
+## Agent 04 assembly ? 21 November 2026
+
+The owner approved the full brief and selected panel batch in conversation. The prepared Investigator narration is owner-accepted without a claimed listening review; the served MP3 matches the episode master SHA-256 `F2ACD76DF9828AFF5768B0639F37614C85BADDBC4EA73C410DCE19F43AF601E2`. Timing is provisional ASR.
+
+The separate bottle scrape and survivor breath use CC0 Freesound HQ preview files; the precise sources, hashes, derivations and caveats are in [the shared sound record](../../public/sfx/LICENSES.md). The bottle source was recorded on wood, so its fit for the depicted floor requires listening. The final stinger incorporates CC BY 3.0 material from dklon; the credit in the sound record applies. Voice, generated image service, and publication-specific rights remain unverified.

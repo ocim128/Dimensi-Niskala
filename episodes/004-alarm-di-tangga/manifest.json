@@ -1,0 +1,718 @@
+{
+  "schemaVersion": 2,
+  "id": "Arc01Episode04",
+  "arcEpisode": 4,
+  "characterSheets": [
+    "assets/characters/arc-01-driver/sheet.png",
+    "assets/characters/arc-01-passenger-teen/sheet.png"
+  ],
+  "fps": 30,
+  "duration": 2088,
+  "captions": "captions.json",
+  "openingTitle": "JANGAN TIDUR DI BAWAH",
+  "narration": {
+    "asset": "assets/004-alarm-di-tangga/narration-prepared.mp3",
+    "at": 0,
+    "duration": 2048,
+    "gain": 1
+  },
+  "effectBusGain": 1,
+  "beds": [
+    {
+      "name": "Udara malam sebelum gesekan",
+      "asset": "sfx/prepared/night-air.wav",
+      "at": 0,
+      "duration": 1410,
+      "gain": 0.065,
+      "fadeIn": 20,
+      "fadeOut": 20,
+      "loop": true
+    },
+    {
+      "name": "Udara malam sesudah gesekan",
+      "asset": "sfx/prepared/night-air.wav",
+      "at": 1557,
+      "duration": 491,
+      "gain": 0.045,
+      "fadeIn": 20,
+      "fadeOut": 10,
+      "loop": true
+    },
+    {
+      "name": "Rising dread",
+      "asset": "sfx/prepared/climax-riser.wav",
+      "at": 1934,
+      "duration": 114,
+      "gain": 0.13,
+      "fadeIn": 8,
+      "fadeOut": 4
+    }
+  ],
+  "art": {
+    "styleId": "gritty-dark-anime-comic",
+    "rasterAssets": {
+      "assets/004-alarm-di-tangga/panel-01.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-02.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-03.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-04.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-05.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-06.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-07.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-08.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-09.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-10.webp": "gritty-dark-anime-comic",
+      "assets/004-alarm-di-tangga/panel-final-jolt.webp": "gritty-dark-anime-comic"
+    }
+  },
+  "script": {
+    "format": "survival-tactics-curiosity-gap",
+    "hook": {
+      "at": 0,
+      "line": "Sembunyi di ruko kosong, jauhi lantai satu."
+    },
+    "promise": {
+      "at": 90,
+      "line": "Lantai atas memberimu waktu istirahat, asal kamu tahu siapa yang bisa mencapai pintumu.",
+      "openLoop": "Siapa yang sudah mencapai pintu?"
+    },
+    "tactics": {
+      "at": 360,
+      "steps": [
+        {
+          "number": 1,
+          "at": 428,
+          "line": "Jangan tarik pintu besi.",
+          "detail": "Naik lewat tangga belakang dan cari jendela balkon."
+        },
+        {
+          "number": 2,
+          "at": 708,
+          "line": "Taruh botol kosong bertutup merah di anak tangga.",
+          "detail": "Botol menjadi penanda orang naik."
+        },
+        {
+          "number": 3,
+          "at": 1035,
+          "line": "Duduk menghadap pintu.",
+          "detail": "Matikan layar ponsel dan pegang senter."
+        }
+      ]
+    },
+    "ending": {
+      "at": 1650,
+      "twistAt": 1845,
+      "payoff": "Gadis sudah di kamar dan mengembalikan botol di samping sepatu."
+    }
+  },
+  "scenes": [
+    {
+      "id": "panel-01",
+      "name": "Ruko kosong",
+      "at": 0,
+      "plate": "assets/004-alarm-di-tangga/panel-01.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 258,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 322,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 386,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-entry",
+          "type": "timestampBadge",
+          "text": "HARI 2 • 21:00",
+          "at": 0,
+          "duration": 115,
+          "revealFrames": 12
+        },
+        {
+          "id": "entry-supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.54,
+            "y": 0.38,
+            "width": 0.42,
+            "height": 0.22
+          },
+          "at": 65,
+          "duration": 120,
+          "revealFrames": 18,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.8,
+              "display": "80%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.3,
+              "display": "30%"
+            }
+          ]
+        },
+        {
+          "id": "rule",
+          "type": "tacticalCallout",
+          "text": "JAUHI LANTAI SATU",
+          "box": {
+            "x": 0.08,
+            "y": 0.29,
+            "width": 0.84,
+            "height": 0.08
+          },
+          "at": 10,
+          "duration": 48,
+          "revealFrames": 8
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi di depan ruko"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-02",
+      "name": "Tangga belakang",
+      "at": 423,
+      "plate": "assets/004-alarm-di-tangga/panel-02.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memilih tangga belakang"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-03",
+      "name": "Jendela balkon",
+      "at": 594,
+      "plate": "assets/004-alarm-di-tangga/panel-03.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memeriksa jendela"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-04",
+      "name": "Botol dalam tas",
+      "at": 705,
+      "plate": "assets/004-alarm-di-tangga/panel-04.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi membuka tas"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-05",
+      "name": "Memasang penanda",
+      "at": 780,
+      "plate": "assets/004-alarm-di-tangga/panel-05.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memasang botol"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-06",
+      "name": "Jejak di atas penanda",
+      "at": 870,
+      "plate": "assets/004-alarm-di-tangga/panel-06.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memeriksa tangga"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-07",
+      "name": "Menunggu menghadap pintu",
+      "at": 1032,
+      "plate": "assets/004-alarm-di-tangga/panel-07.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 258,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "exit-supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.54,
+            "y": 0.35,
+            "width": 0.42,
+            "height": 0.22
+          },
+          "at": 25,
+          "duration": 110,
+          "revealFrames": 18,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.7,
+              "display": "70%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.25,
+              "display": "25%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi duduk menghadap pintu"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-08",
+      "name": "Suara dekat",
+      "at": 1344,
+      "plate": "assets/004-alarm-di-tangga/panel-08.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-exit",
+          "type": "timestampBadge",
+          "text": "HARI 2 • 23:30",
+          "at": 0,
+          "duration": 110,
+          "revealFrames": 12
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi meraih senter"
+      },
+      "cues": [
+        {
+          "name": "Gesekan botol dekat sepatu",
+          "asset": "sfx/prepared/ep004-bottle-scrape.wav",
+          "at": 126,
+          "duration": 42,
+          "gain": 0.22,
+          "fadeOut": 6
+        },
+        {
+          "name": "Napas pengemudi",
+          "asset": "sfx/prepared/ep004-survivor-breath.wav",
+          "at": 168,
+          "duration": 42,
+          "gain": 0.12,
+          "fadeOut": 5
+        }
+      ]
+    },
+    {
+      "id": "panel-09",
+      "name": "Botol di samping sepatu",
+      "at": 1527,
+      "plate": "assets/004-alarm-di-tangga/panel-09.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 258,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi melihat botol di samping sepatu"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-10",
+      "name": "Gadis di sudut",
+      "at": 1845,
+      "plate": "assets/004-alarm-di-tangga/panel-10.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.07,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 66,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        },
+        {
+          "at": 130,
+          "duration": 13,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 194,
+          "duration": 13,
+          "scale": 1.055,
+          "x": -12,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Gadis di sudut kamar"
+      },
+      "cues": [
+        {
+          "name": "Kinetic stinger",
+          "asset": "sfx/prepared/climax-stinger.wav",
+          "at": 208,
+          "duration": 27,
+          "gain": 0.5,
+          "fadeOut": 3
+        },
+        {
+          "name": "Metallic edge",
+          "asset": "sfx/prepared/metal-resonance.wav",
+          "at": 208,
+          "duration": 22,
+          "gain": 0.16,
+          "fadeOut": 7
+        }
+      ]
+    }
+  ],
+  "tensionRamp": {
+    "startSec": 64.45,
+    "endSec": 68.26,
+    "extraScale": 0.075,
+    "vignetteStrength": 0.48
+  },
+  "finalJolt": {
+    "triggerSec": 68.43333333333334,
+    "durationSec": 0.9,
+    "joltImageSrc": "assets/004-alarm-di-tangga/panel-final-jolt.webp",
+    "zoomFrom": 1,
+    "zoomTo": 1.18,
+    "shakePx": 16,
+    "shakeDecayMs": 320,
+    "flashFrames": 2,
+    "rgbSplitPx": 8,
+    "blackoutSec": 0.26666666666666666
+  }
+}

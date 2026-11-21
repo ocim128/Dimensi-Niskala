@@ -18,12 +18,12 @@ const comparisonManifests = new Map([
   ["001-kemacetan-terakhir/attempt-05/manifest.json", "3b9c322738c5dd01398eedac8e52ccc29882296a2d7f2337c5087056cc1f8280"],
 ]);
 
-function checkEditorial(scenes, fps, twistAt, fail) {
+function checkEditorial(scenes, fps, twistAt, fail, studioV2) {
   const visible = scenes.filter(scene => scene.editorial.protagonist !== "absent");
   fail(5 * visible.length >= 2 * scenes.length, `protagonist appears in ${visible.length}/${scenes.length} shots; at least 40% required`);
   fail(visible.some(scene => scene.at < 3 * fps), "opening 0–3 s needs a visible protagonist");
   const reactions = visible.filter(scene => scene.editorial.protagonist === "reaction");
-  fail(reactions.filter(scene => scene.at >= 12 * fps && scene.at < 55 * fps).length >= 2,
+  if (!studioV2) fail(reactions.filter(scene => scene.at >= 12 * fps && scene.at < 55 * fps).length >= 2,
     "12–55 s needs at least two protagonist reaction/action shots");
   const reveal = scenes.findIndex(scene => scene.at === twistAt);
   fail(reveal > 0, `final reveal must start a shot at twist frame ${twistAt}`);
@@ -56,6 +56,10 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
     if (legacyFactoryCut) warnings.push(message);
     else fail(false, message);
   };
+  const pipelineVersion = manifest.pipelineVersion === undefined ? 1 : manifest.pipelineVersion;
+  fail(pipelineVersion === 1 || (pipelineVersion === 2 && manifest.schemaVersion === 2 && !legacyFactoryCut),
+    "invalid pipelineVersion for this manifest");
+  const studioV2 = pipelineVersion === 2;
   const strict = manifest.schemaVersion === 2 && !comparison;
   if (strict) fail(typeof manifestPath === "string" && /^(?:[\w-]+\/)+manifest\.json$/.test(manifestPath),
     "expected an episode-relative manifest path to determine the asset folder");
@@ -96,7 +100,7 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   }
   if (manifest.finalJolt !== undefined) {
     const j = manifest.finalJolt;
-    fail(j && Number.isFinite(j.triggerSec) && j.triggerSec >= 0 && Number.isFinite(j.durationSec) && j.durationSec > 0 && Number.isFinite(j.blackoutSec) && j.blackoutSec > 0 && Math.round(j.triggerSec * fps) + Math.round(j.durationSec * fps) + Math.round(j.blackoutSec * fps) <= duration, "invalid finalJolt timing or clipped blackout");
+    fail(j && Number.isFinite(j.triggerSec) && j.triggerSec >= 0 && Number.isFinite(j.durationSec) && j.durationSec > 0 && (j.handoffSec === undefined || (Number.isFinite(j.handoffSec) && j.handoffSec >= 0)) && Number.isFinite(j.blackoutSec) && j.blackoutSec > 0 && Math.round(j.triggerSec * fps) + Math.round(j.durationSec * fps) + Math.round((j.handoffSec ?? 0) * fps) + Math.round(j.blackoutSec * fps) <= duration, "invalid finalJolt timing or clipped blackout");
     fail([j.zoomFrom, j.zoomTo].every(v => Number.isFinite(v) && v > 0) && [j.shakePx, j.shakeDecayMs, j.rgbSplitPx].every(v => Number.isFinite(v) && v >= 0) && Number.isInteger(j.flashFrames) && j.flashFrames >= 0, "invalid finalJolt effect settings");
     if (j.joltImageSrc !== undefined) {
       batchAsset(j.joltImageSrc, "finalJolt image");
@@ -113,7 +117,10 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   const baseline = manifest.schemaVersion === undefined && comparison;
   const v2 = manifest.schemaVersion === 2;
   fail(baseline || v2, "unsupported or missing schema version (only the exact comparison cut is grandfathered)");
-  for (const [label, frames] of [["episode", duration], ["narration", narration?.duration]]) {
+  if (studioV2 && (duration < 90 * fps || duration > 210 * fps)) {
+    warnings.push("episode duration is outside the 90–210 s studio v2 target");
+  }
+  if (!studioV2) for (const [label, frames] of [["episode", duration], ["narration", narration?.duration]]) {
     if (isFrame(frames) && frames > 0) {
       const seconds = frames / fps;
       if (frames < 61 * fps || frames > 78 * fps)
@@ -128,26 +135,41 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   }
   if (v2) {
     asset("fonts/theboldfont.ttf", "caption font");
-    if (legacyFactoryCut) {
-      fail(duration >= 60 * fps && duration <= 72 * fps, `duration ${duration} frames must be 60–72 s`);
+    if (studioV2) {
+      const script = manifest.script;
+      fail(script?.format === "decision-consequence" && ["branch-rewind", "earned-consequence", "both"].includes(script.engine),
+        "studio v2 requires a decision-consequence script engine");
+      fail(script.hook?.at === 0 && nonempty(script.hook.line), "invalid hook at frame 0");
+      const ending = script.ending;
+      fail(isFrame(ending?.at) && ending.at > 0 && isFrame(ending.twistAt) && ending.twistAt >= ending.at &&
+        ending.twistAt < duration && nonempty(ending.payoff), "invalid ending/twist");
+      if (script.wordCount !== undefined) {
+        fail(Number.isInteger(script.wordCount) && script.wordCount > 0, "invalid spoken word count");
+        if (script.wordCount < 200 || script.wordCount > 480) warnings.push("spoken word count is outside the 200–480 word studio v2 target");
+      }
     } else {
-      fail(duration >= 62 * fps && duration <= 75 * fps, `episode duration ${duration} frames must be 62–75 s`);
-      fail(isFrame(narration?.duration) && narration.duration >= 60 * fps && narration.duration <= 73 * fps,
-        "prepared narration duration must be 60–73 s");
+      if (legacyFactoryCut) {
+        fail(duration >= 60 * fps && duration <= 72 * fps, `duration ${duration} frames must be 60–72 s`);
+      } else {
+        fail(duration >= 62 * fps && duration <= 75 * fps, `episode duration ${duration} frames must be 62–75 s`);
+        fail(isFrame(narration?.duration) && narration.duration >= 60 * fps && narration.duration <= 73 * fps,
+          "prepared narration duration must be 60–73 s");
+      }
+      const s = manifest.script;
+      fail(s?.format === "survival-tactics-curiosity-gap", "invalid script format");
+      fail(s.hook?.at === 0 && nonempty(s.hook.line), "invalid hook at frame 0");
+      fail(s.promise?.at === 3 * fps && nonempty(s.promise.line) && nonempty(s.promise.openLoop), `invalid promise at frame ${3 * fps}`);
+      fail(s.tactics?.at === 12 * fps && Array.isArray(s.tactics.steps) && s.tactics.steps.length >= 2, "invalid tactical steps");
+      let previous = 12 * fps - 1;
+      s.tactics.steps.forEach((step, i) => {
+        fail(step.number === i + 1 && isFrame(step.at) && step.at > previous && step.at >= 12 * fps && step.at < 55 * fps && nonempty(step.line) && nonempty(step.detail), `invalid tactical step ${i + 1} at ${step.at}`);
+        previous = step.at;
+      });
+      fail(s.ending?.at === 55 * fps && isFrame(s.ending.twistAt) && s.ending.twistAt > 55 * fps && s.ending.twistAt <= (legacyFactoryCut ? 70 : 74) * fps && s.ending.twistAt < duration && nonempty(s.ending.payoff), "invalid ending/twist");
     }
-    const s = manifest.script;
-    fail(s?.format === "survival-tactics-curiosity-gap", "invalid script format");
-    fail(s.hook?.at === 0 && nonempty(s.hook.line), "invalid hook at frame 0");
-    fail(s.promise?.at === 3 * fps && nonempty(s.promise.line) && nonempty(s.promise.openLoop), `invalid promise at frame ${3 * fps}`);
-    fail(s.tactics?.at === 12 * fps && Array.isArray(s.tactics.steps) && s.tactics.steps.length >= 2, "invalid tactical steps");
-    let previous = 12 * fps - 1;
-    s.tactics.steps.forEach((step, i) => {
-      fail(step.number === i + 1 && isFrame(step.at) && step.at > previous && step.at >= 12 * fps && step.at < 55 * fps && nonempty(step.line) && nonempty(step.detail), `invalid tactical step ${i + 1} at ${step.at}`);
-      previous = step.at;
-    });
-    fail(s.ending?.at === 55 * fps && isFrame(s.ending.twistAt) && s.ending.twistAt > 55 * fps && s.ending.twistAt <= (legacyFactoryCut ? 70 : 74) * fps && s.ending.twistAt < duration && nonempty(s.ending.payoff), "invalid ending/twist");
+    const expectedStyle = studioV2 ? "urban-silhouette-noir" : styleId;
     fail(nonempty(manifest.art?.styleId) && manifest.art.rasterAssets && typeof manifest.art.rasterAssets === "object", "missing art style map");
-    if (strict) fail(manifest.art.styleId === styleId, `art.styleId must be ${styleId}`);
+    if (strict) fail(manifest.art.styleId === expectedStyle, `art.styleId must be ${expectedStyle}`);
     for (const [path, style] of Object.entries(manifest.art.rasterAssets)) {
       batchAsset(path, "art style map");
       fail(style === manifest.art.styleId, `art style map: missing or mixed style ID for ${path}`);
@@ -155,6 +177,9 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
   }
   fail(Array.isArray(scenes) && scenes[0]?.at === 0 && Array.isArray(beds), "missing scenes, beds, or scene at frame zero");
   clip(narration, duration, "narration");
+  if (studioV2 && (scenes.length < 15 || scenes.length > 28)) {
+    warnings.push("scene count is outside the 15–28 panel studio v2 planning range");
+  }
   const sceneIds = new Set();
   const plateUses = [];
   const firstRasterUses = new Map();
@@ -183,6 +208,9 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
     const plate = raster(scene.plate, `${scene.id} plate`);
     if (strict) plateUses.push({scene, fingerprint: batchAssets.get(plate).fingerprint});
     fail(scene.camera?.from && scene.camera?.to && [scene.camera.from, scene.camera.to].every(c => Number.isFinite(c.scale) && c.scale > 0 && Number.isFinite(c.x) && Number.isFinite(c.y)), `${scene.id}: invalid camera`);
+    if (studioV2 && length <= 9 * fps && ["x", "y", "scale"].some(key => scene.camera.from[key] !== scene.camera.to[key])) {
+      activityInterval(scene.at, end);
+    }
     let previousReframeEnd = 0;
     for (const r of scene.reframes ?? []) {
       fail(isFrame(r.at) && isFrame(r.duration) && r.duration > 0 && r.at >= previousReframeEnd && r.at + r.duration <= length && Number.isFinite(r.scale) && r.scale > 0 && Number.isFinite(r.x) && Number.isFinite(r.y), `${scene.id}: invalid reframe`);
@@ -248,6 +276,11 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
       fail(isFrame(event.at) && Number.isInteger(event.duration) && event.duration > 0 && event.at + event.duration <= length, `${scene.id}: invalid ${name} interval`);
       if ((name === "hit" && event.strength > 0) || (name === "blackout" && event.opacity > 0)) activityInterval(scene.at + event.at, scene.at + event.at + event.duration);
     }
+    if (scene.lightUp) {
+      const l = scene.lightUp;
+      fail(isFrame(l.at) && Number.isInteger(l.duration) && l.duration > 0 && l.at + l.duration <= length && unit(l.minBrightness) && (l.sweep === undefined || (unit(l.sweep.fromX) && unit(l.sweep.toX) && unit(l.sweep.y))) && (l.offMask === undefined || (unit(l.offMask.x) && unit(l.offMask.y) && unit(l.offMask.radiusX) && l.offMask.radiusX > 0 && unit(l.offMask.radiusY) && l.offMask.radiusY > 0)), `${scene.id}: invalid lightUp interval`);
+      activityInterval(scene.at + l.at, scene.at + l.at + l.duration);
+    }
     if (v2 && index > 0) {
       const prev = scenes[index - 1];
       const distinct = prev.plate !== scene.plate || JSON.stringify(prev.characters) !== JSON.stringify(scene.characters) || JSON.stringify(prev.camera.to) !== JSON.stringify(scene.camera.from);
@@ -264,7 +297,7 @@ export function validateEpisode(manifest, captions, {publicDir, manifestPath, ba
     }
   }
   if (strict) {
-    checkEditorial(scenes, fps, manifest.script.ending.twistAt, fail);
+    checkEditorial(scenes, fps, manifest.script.ending.twistAt, fail, studioV2);
     const previousByPlate = new Map();
     for (const {scene, fingerprint} of plateUses) {
       const previous = previousByPlate.get(fingerprint);

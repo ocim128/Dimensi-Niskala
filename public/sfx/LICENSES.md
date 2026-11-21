@@ -50,3 +50,29 @@ Source `ambient_horror.ogg`, [Ambient horror](https://opengameart.org/content/am
 - `sources/laleksic-door-creak-open-original.wav`: `door_creak_open.wav` from [Various Sound Effects by laleksic](https://opengameart.org/content/various-sound-effects), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). SHA-256 `67ec6952f3de32852ea5a188e6118546107e4d2ca15b3fd4cab64d8993877227`. `prepared/minimarket-door-creak-outside.wav` is high-passed at 150 Hz, low-passed at 2200 Hz and normalized to -1 dBFS sample peak. Candidate: appropriateness for the glass-door action still needs listening.
 
 These candidates and the existing climax derivatives require listening in the episode mix; sample peak is not a finished-mix true-peak guarantee.
+
+## Episode 004 candidate effects
+
+- `sources/ep004-bottle-slide-preview.mp3`: HQ preview of [Bottle Slide Wood by lucaslara](https://freesound.org/people/lucaslara/sounds/154407/), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). SHA-256 `5BFA26012324CF5CA9AF90EC80EE3A1E531C8A13E43BC82C70F9A051E6014AF3`. `prepared/ep004-bottle-scrape.wav` trims 0.25?1.65 seconds, filters 180?7000 Hz and fades. The source is a plastic bottle sliding on wood, used as a candidate for tile/concrete; suitability needs listening.
+- `sources/ep004-female-breath-preview.mp3`: HQ preview of [breathing_female.wav by Kuroseishin](https://freesound.org/people/Kuroseishin/sounds/95567/), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). SHA-256 `8B5AE938748E27B08761A5D64B7A29254DAE8A47BABAC74AF1B48B80545CC7C2`. `prepared/ep004-survivor-breath.wav` trims 0?1.4 seconds, filters 140?7000 Hz and fades. Listening in the mix remains pending.
+
+## Episode 005 in-world voices and phone cue
+
+- `sources/ep005-entity-plea-original.wav` and `sources/ep005-entity-whisper-original.wav` were generated for this episode with the configured Google Cloud Gemini 3.8 Flash TTS model and the same Aoede voice, using the exact cue-sheet text and young female, flat / close-whisper style prompts. `prepared/ep005-entity-plea.wav` applies the `behind-wall` profile; `prepared/ep005-entity-whisper.wav` applies `close-whisper`. The source WAVs are retained. AI-generation service terms and publication rights have not been independently verified. ASR recognizes the intended words; delivery, identity consistency and mix have not been reviewed by ear.
+- `prepared/ep005-phone-vibration.wav` is a locally synthesized 125 Hz sine with 28 Hz tremolo, band filtering and fades, generated using FFmpeg; no third-party recording is used. Its suitability needs listening.
+- The glass taps and climax stinger use the existing dklon/rubberduck/techiew derivatives documented above; the dklon CC BY 3.0 credit applies.
+
+## Episode 006 tunnel footsteps
+
+- `prepared/ep006-step-left.wav` and `prepared/ep006-step-right.wav` derive from rubberduck's CC0 `shoe-left` and `shoe-right` above, with 130–4500 Hz filtering and a 95 ms echo. These derivatives and their wet-concrete suitability require listening in context. Glass taps and the climax use the shared dklon and other derivatives; the CC BY 3.0 attribution above applies.
+
+
+## Episode 007 PA, siren and station foley
+
+- `sources/ep007-pa-original.wav`: generated through Google Cloud Gemini 3.8 Flash TTS, Orus, for the specified formal Indonesian PA line. `prepared/ep007-pa.wav` applies the `toa-megaphone` profile. The original is retained. ASR recognized the requested sentence; performance and mix have not been reviewed by ear. Google service and voice publication terms have not been independently verified.
+- `sources/ep007-tinyworlds-storm-siren.ogg`: [Storm & Siren by TinyWorlds](https://opengameart.org/content/storm-siren), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/); SHA-256 `3658A27BDE10028531371FFBC2D57810FAD0CECBFF4B2D496714CD4AA7176D99`. `prepared/ep007-siren-loop.wav` uses seconds 38–55, 200–1800 Hz filtering and short end fades; its intelligibility as a distant siren requires listening.
+- `sources/ep007-antumdeluge-scrapes.zip`: [Scrapes by AntumDeluge](https://opengameart.org/content/scrapes), CC0 1.0; SHA-256 `9598070DDD77ED99E922DF1D4472A249624ADCD945794D1B6EBA88AC77F6A014`. `sources/ep007-scrape-original.wav` is `scrape-3.wav` from the archive; `prepared/ep007-stone-scrape.wav` filters 150–6000 Hz. Recorded on cinder block; writing suitability requires listening.
+- `sources/ep007-rubberduck-metal-wood.zip`: [100 CC0 metal and wood SFX by rubberduck](https://opengameart.org/content/100-cc0-metal-and-wood-sfx), CC0 1.0; SHA-256 `BE6EBA63B03409AC0C77787A956B1503A7C186403D04AEF9725C52644A4B7878`. `sources/ep007-metal-open-original.ogg` is `metal_open_01.ogg` from that pack; `prepared/ep007-gate-open.wav` filters 90–5000 Hz. Heavy gate suitability requires listening.
+- The guard steps and flashlight click use the existing rubberduck CC0 library. The shared climax stinger contains dklon's CC BY 3.0 foley; its attribution above applies.
+
+For the Episode 007 assembly, `prepared/ep007-pa-mixready.wav` adds 22 dB to the processed PA and `prepared/ep007-siren-mixready.wav` adds 23.1 dB to the filtered siren loop, placing their source sample peaks near -1 dBFS. Original and intermediate files are retained. Finished loudness and true peak are measured on the exported mix; source normalization is not a listening review.

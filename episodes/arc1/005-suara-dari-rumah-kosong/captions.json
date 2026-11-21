@@ -1,0 +1,1003 @@
+[
+  {
+    "startMs": 0,
+    "endMs": 2140,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SAAT",
+        "startMs": 0,
+        "endMs": 640
+      },
+      {
+        "text": "DENGAR",
+        "startMs": 640,
+        "endMs": 1060
+      },
+      {
+        "text": "TERIAKAN",
+        "startMs": 1060,
+        "endMs": 1660,
+        "color": "red"
+      },
+      {
+        "text": "DARI",
+        "startMs": 1660,
+        "endMs": 2140
+      }
+    ]
+  },
+  {
+    "startMs": 2140,
+    "endMs": 3100,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "RUMAH",
+        "startMs": 2140,
+        "endMs": 2480
+      },
+      {
+        "text": "TERKUNCI,",
+        "startMs": 2480,
+        "endMs": 3100
+      }
+    ]
+  },
+  {
+    "startMs": 3570,
+    "endMs": 4570,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "JANGAN",
+        "startMs": 3570,
+        "endMs": 4030,
+        "color": "yellow"
+      },
+      {
+        "text": "SAHUT,",
+        "startMs": 4030,
+        "endMs": 4570,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 5630,
+    "endMs": 6750,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KAMU",
+        "startMs": 5630,
+        "endMs": 5870
+      },
+      {
+        "text": "PERLU",
+        "startMs": 5870,
+        "endMs": 6130
+      },
+      {
+        "text": "LEWAT",
+        "startMs": 6130,
+        "endMs": 6510
+      },
+      {
+        "text": "GANG",
+        "startMs": 6510,
+        "endMs": 6750
+      }
+    ]
+  },
+  {
+    "startMs": 6750,
+    "endMs": 8290,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "INI",
+        "startMs": 6750,
+        "endMs": 7130
+      },
+      {
+        "text": "UNTUK",
+        "startMs": 7130,
+        "endMs": 7610
+      },
+      {
+        "text": "SAMPAI",
+        "startMs": 7610,
+        "endMs": 8110
+      },
+      {
+        "text": "KE",
+        "startMs": 8110,
+        "endMs": 8290
+      }
+    ]
+  },
+  {
+    "startMs": 8290,
+    "endMs": 9410,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "JEMBATAN",
+        "startMs": 8290,
+        "endMs": 8830
+      },
+      {
+        "text": "PENYEBERANGAN.",
+        "startMs": 8830,
+        "endMs": 9410
+      }
+    ]
+  },
+  {
+    "startMs": 9747,
+    "endMs": 10527,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DI",
+        "startMs": 9747,
+        "endMs": 9903
+      },
+      {
+        "text": "SEBERANG,",
+        "startMs": 9903,
+        "endMs": 10527
+      }
+    ]
+  },
+  {
+    "startMs": 10527,
+    "endMs": 13187,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SESEORANG",
+        "startMs": 10527,
+        "endMs": 11627
+      },
+      {
+        "text": "MELAMBAI",
+        "startMs": 11627,
+        "endMs": 12367
+      },
+      {
+        "text": "DARI",
+        "startMs": 12367,
+        "endMs": 12787
+      },
+      {
+        "text": "BALIK",
+        "startMs": 12787,
+        "endMs": 13187
+      }
+    ]
+  },
+  {
+    "startMs": 13187,
+    "endMs": 13607,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TEMBOK.",
+        "startMs": 13187,
+        "endMs": 13607,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 14107,
+    "endMs": 15787,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DARI",
+        "startMs": 14107,
+        "endMs": 14567
+      },
+      {
+        "text": "RUMAH",
+        "startMs": 14567,
+        "endMs": 14947
+      },
+      {
+        "text": "DI",
+        "startMs": 14947,
+        "endMs": 15167
+      },
+      {
+        "text": "SEBELAHMU,",
+        "startMs": 15167,
+        "endMs": 15787
+      }
+    ]
+  },
+  {
+    "startMs": 16223,
+    "endMs": 17923,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TERDENGAR",
+        "startMs": 16223,
+        "endMs": 16803
+      },
+      {
+        "text": "ORANG",
+        "startMs": 16803,
+        "endMs": 17103
+      },
+      {
+        "text": "MINTA",
+        "startMs": 17103,
+        "endMs": 17463
+      },
+      {
+        "text": "TOLONG.",
+        "startMs": 17463,
+        "endMs": 17923,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 18235,
+    "endMs": 18793,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "PERTAMA,",
+        "startMs": 18235,
+        "endMs": 18793
+      }
+    ]
+  },
+  {
+    "startMs": 19267,
+    "endMs": 21607,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DENGARKAN",
+        "startMs": 19267,
+        "endMs": 19827
+      },
+      {
+        "text": "SAMPAI",
+        "startMs": 19827,
+        "endMs": 20367
+      },
+      {
+        "text": "KALIMATNYA",
+        "startMs": 20367,
+        "endMs": 21107
+      },
+      {
+        "text": "SELESAI.",
+        "startMs": 21107,
+        "endMs": 21607
+      }
+    ]
+  },
+  {
+    "startMs": 21607,
+    "endMs": 23644,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SUARA",
+        "startMs": 21607,
+        "endMs": 22324
+      },
+      {
+        "text": "ITU",
+        "startMs": 22324,
+        "endMs": 22604
+      },
+      {
+        "text": "MENGULANG",
+        "startMs": 22604,
+        "endMs": 23184
+      },
+      {
+        "text": "KATA",
+        "startMs": 23184,
+        "endMs": 23644
+      }
+    ]
+  },
+  {
+    "startMs": 23644,
+    "endMs": 25555,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "YANG",
+        "startMs": 23644,
+        "endMs": 23904
+      },
+      {
+        "text": "SAMA",
+        "startMs": 23904,
+        "endMs": 24264
+      },
+      {
+        "text": "DENGAN",
+        "startMs": 24264,
+        "endMs": 24995
+      },
+      {
+        "text": "JEDA",
+        "startMs": 24995,
+        "endMs": 25555
+      }
+    ]
+  },
+  {
+    "startMs": 25555,
+    "endMs": 26115,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "YANG",
+        "startMs": 25555,
+        "endMs": 25715
+      },
+      {
+        "text": "SAMA.",
+        "startMs": 25715,
+        "endMs": 26115
+      }
+    ]
+  },
+  {
+    "startMs": 26575,
+    "endMs": 28355,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KAMU",
+        "startMs": 26575,
+        "endMs": 26915
+      },
+      {
+        "text": "MENUNGGU",
+        "startMs": 26915,
+        "endMs": 27495
+      },
+      {
+        "text": "SATU",
+        "startMs": 27495,
+        "endMs": 27915
+      },
+      {
+        "text": "PUTARAN",
+        "startMs": 27915,
+        "endMs": 28355
+      }
+    ]
+  },
+  {
+    "startMs": 28355,
+    "endMs": 28755,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "LAGI.",
+        "startMs": 28355,
+        "endMs": 28755
+      }
+    ]
+  },
+  {
+    "startMs": 29359,
+    "endMs": 29719,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KEDUA,",
+        "startMs": 29359,
+        "endMs": 29719
+      }
+    ]
+  },
+  {
+    "startMs": 30317,
+    "endMs": 31737,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "CARI",
+        "startMs": 30317,
+        "endMs": 30717
+      },
+      {
+        "text": "SIAPA",
+        "startMs": 30717,
+        "endMs": 31197
+      },
+      {
+        "text": "YANG",
+        "startMs": 31197,
+        "endMs": 31437
+      },
+      {
+        "text": "BISA",
+        "startMs": 31437,
+        "endMs": 31737
+      }
+    ]
+  },
+  {
+    "startMs": 31737,
+    "endMs": 33237,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "MELIHATMU",
+        "startMs": 31737,
+        "endMs": 32357
+      },
+      {
+        "text": "DARI",
+        "startMs": 32357,
+        "endMs": 32577
+      },
+      {
+        "text": "TEMPAT",
+        "startMs": 32577,
+        "endMs": 32857
+      },
+      {
+        "text": "AMAN.",
+        "startMs": 32857,
+        "endMs": 33237
+      }
+    ]
+  },
+  {
+    "startMs": 33835,
+    "endMs": 35455,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KAMU",
+        "startMs": 33835,
+        "endMs": 34115
+      },
+      {
+        "text": "TUNJUK",
+        "startMs": 34115,
+        "endMs": 34555
+      },
+      {
+        "text": "ARAH",
+        "startMs": 34555,
+        "endMs": 35035
+      },
+      {
+        "text": "JPO",
+        "startMs": 35035,
+        "endMs": 35455,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 35455,
+    "endMs": 36915,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KE",
+        "startMs": 35455,
+        "endMs": 36015
+      },
+      {
+        "text": "ORANG",
+        "startMs": 36015,
+        "endMs": 36375
+      },
+      {
+        "text": "DI",
+        "startMs": 36375,
+        "endMs": 36483
+      },
+      {
+        "text": "SEBERANG.",
+        "startMs": 36483,
+        "endMs": 36915
+      }
+    ]
+  },
+  {
+    "startMs": 37335,
+    "endMs": 38715,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DIA",
+        "startMs": 37335,
+        "endMs": 37675
+      },
+      {
+        "text": "MENUNJUK",
+        "startMs": 37675,
+        "endMs": 38215
+      },
+      {
+        "text": "BALIK,",
+        "startMs": 38215,
+        "endMs": 38715
+      }
+    ]
+  },
+  {
+    "startMs": 38965,
+    "endMs": 40725,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "LALU",
+        "startMs": 38965,
+        "endMs": 39325
+      },
+      {
+        "text": "MUNDUR",
+        "startMs": 39325,
+        "endMs": 39885
+      },
+      {
+        "text": "DARI",
+        "startMs": 39885,
+        "endMs": 40245
+      },
+      {
+        "text": "PAGAR.",
+        "startMs": 40245,
+        "endMs": 40725
+      }
+    ]
+  },
+  {
+    "startMs": 41212,
+    "endMs": 41672,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KETIGA,",
+        "startMs": 41212,
+        "endMs": 41672
+      }
+    ]
+  },
+  {
+    "startMs": 42432,
+    "endMs": 43852,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SUSURI",
+        "startMs": 42432,
+        "endMs": 42832
+      },
+      {
+        "text": "TEMBOK",
+        "startMs": 42832,
+        "endMs": 43252,
+        "color": "yellow"
+      },
+      {
+        "text": "GANG",
+        "startMs": 43252,
+        "endMs": 43512
+      },
+      {
+        "text": "ITU",
+        "startMs": 43512,
+        "endMs": 43852
+      }
+    ]
+  },
+  {
+    "startMs": 43852,
+    "endMs": 45412,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TANPA",
+        "startMs": 43852,
+        "endMs": 44792
+      },
+      {
+        "text": "BERSUARA.",
+        "startMs": 44792,
+        "endMs": 45412
+      }
+    ]
+  },
+  {
+    "startMs": 45412,
+    "endMs": 47394,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DI",
+        "startMs": 45412,
+        "endMs": 46094
+      },
+      {
+        "text": "KAKI",
+        "startMs": 46094,
+        "endMs": 46494
+      },
+      {
+        "text": "TANGGA",
+        "startMs": 46494,
+        "endMs": 46894
+      },
+      {
+        "text": "JPO",
+        "startMs": 46894,
+        "endMs": 47394,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 47394,
+    "endMs": 49714,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KAMU",
+        "startMs": 47394,
+        "endMs": 48214
+      },
+      {
+        "text": "BERHENTI",
+        "startMs": 48214,
+        "endMs": 48674
+      },
+      {
+        "text": "DI",
+        "startMs": 48674,
+        "endMs": 49294
+      },
+      {
+        "text": "SAMPING",
+        "startMs": 49294,
+        "endMs": 49714
+      }
+    ]
+  },
+  {
+    "startMs": 49714,
+    "endMs": 52314,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "POS",
+        "startMs": 49714,
+        "endMs": 49994
+      },
+      {
+        "text": "BERKACA",
+        "startMs": 49994,
+        "endMs": 50594
+      },
+      {
+        "text": "PONSELMU",
+        "startMs": 50594,
+        "endMs": 51694,
+        "color": "yellow"
+      },
+      {
+        "text": "BERGETAR",
+        "startMs": 51694,
+        "endMs": 52314
+      }
+    ]
+  },
+  {
+    "startMs": 52314,
+    "endMs": 54678,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "POS",
+        "startMs": 52314,
+        "endMs": 53078
+      },
+      {
+        "text": "EVAKUASI",
+        "startMs": 53078,
+        "endMs": 53678,
+        "color": "yellow"
+      },
+      {
+        "text": "STASIUN",
+        "startMs": 53678,
+        "endMs": 54258
+      },
+      {
+        "text": "DIBUKA",
+        "startMs": 54258,
+        "endMs": 54678
+      }
+    ]
+  },
+  {
+    "startMs": 54678,
+    "endMs": 55776,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "HARI",
+        "startMs": 54678,
+        "endMs": 54958
+      },
+      {
+        "text": "5,",
+        "startMs": 54958,
+        "endMs": 55776
+      }
+    ]
+  },
+  {
+    "startMs": 55776,
+    "endMs": 57458,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "PUKUL",
+        "startMs": 55776,
+        "endMs": 56255,
+        "color": "yellow"
+      },
+      {
+        "text": "05:00.",
+        "startMs": 56255,
+        "endMs": 57458
+      }
+    ]
+  },
+  {
+    "startMs": 57458,
+    "endMs": 59368,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TERIAKAN",
+        "startMs": 57458,
+        "endMs": 58068,
+        "color": "red"
+      },
+      {
+        "text": "DARI",
+        "startMs": 58068,
+        "endMs": 58408
+      },
+      {
+        "text": "GANG",
+        "startMs": 58408,
+        "endMs": 58668
+      },
+      {
+        "text": "BERHENTI",
+        "startMs": 58668,
+        "endMs": 59368
+      }
+    ]
+  },
+  {
+    "startMs": 59368,
+    "endMs": 61468,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KACA",
+        "startMs": 59368,
+        "endMs": 60088
+      },
+      {
+        "text": "POS",
+        "startMs": 60088,
+        "endMs": 60468
+      },
+      {
+        "text": "DI",
+        "startMs": 60468,
+        "endMs": 60828
+      },
+      {
+        "text": "BELAKANGMU",
+        "startMs": 60828,
+        "endMs": 61468
+      }
+    ]
+  },
+  {
+    "startMs": 61468,
+    "endMs": 62068,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DIKETUK.",
+        "startMs": 61468,
+        "endMs": 62068,
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "startMs": 62068,
+    "endMs": 65028,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DI",
+        "startMs": 62068,
+        "endMs": 62968
+      },
+      {
+        "text": "PANTULANNYA",
+        "startMs": 62968,
+        "endMs": 63748
+      },
+      {
+        "text": "KAMU",
+        "startMs": 63748,
+        "endMs": 64648
+      },
+      {
+        "text": "LIHAT",
+        "startMs": 64648,
+        "endMs": 65028
+      }
+    ]
+  },
+  {
+    "startMs": 65028,
+    "endMs": 66808,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "GADIS",
+        "startMs": 65028,
+        "endMs": 65468,
+        "color": "red"
+      },
+      {
+        "text": "ITU",
+        "startMs": 65468,
+        "endMs": 65728
+      },
+      {
+        "text": "BERDIRI",
+        "startMs": 65728,
+        "endMs": 66248
+      },
+      {
+        "text": "DEKAT",
+        "startMs": 66248,
+        "endMs": 66808
+      }
+    ]
+  },
+  {
+    "startMs": 66848,
+    "endMs": 68408,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DIA",
+        "startMs": 66848,
+        "endMs": 67748
+      },
+      {
+        "text": "BERBISIK",
+        "startMs": 67748,
+        "endMs": 68408
+      }
+    ]
+  },
+  {
+    "startMs": 68900,
+    "endMs": 70220,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KALAU",
+        "startMs": 68900,
+        "endMs": 69140
+      },
+      {
+        "text": "KACA",
+        "startMs": 69140,
+        "endMs": 69540
+      },
+      {
+        "text": "DIKETUK,",
+        "startMs": 69540,
+        "endMs": 70220,
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "startMs": 70833,
+    "endMs": 72520,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KENAPA",
+        "startMs": 70833,
+        "endMs": 71160
+      },
+      {
+        "text": "KAMU",
+        "startMs": 71160,
+        "endMs": 71460
+      },
+      {
+        "text": "MASIH",
+        "startMs": 71460,
+        "endMs": 71740
+      },
+      {
+        "text": "MENOLEH?",
+        "startMs": 71740,
+        "endMs": 72520
+      }
+    ]
+  }
+]

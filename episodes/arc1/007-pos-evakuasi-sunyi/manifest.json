@@ -1,0 +1,913 @@
+{
+  "schemaVersion": 2,
+  "id": "Arc01Episode07",
+  "arcEpisode": 7,
+  "characterSheets": [
+    "assets/characters/arc-01-driver/sheet.png",
+    "assets/characters/arc-01-passenger-teen/sheet.png"
+  ],
+  "fps": 30,
+  "duration": 2204,
+  "captions": "captions.json",
+  "openingTitle": "JANGAN IKUT BARISAN",
+  "narration": {
+    "asset": "assets/007-pos-evakuasi-sunyi/narration-prepared.mp3",
+    "at": 0,
+    "duration": 2161,
+    "gain": 1
+  },
+  "effectBusGain": 1,
+  "beds": [
+    {
+      "name": "Sirene jauh",
+      "asset": "sfx/prepared/ep007-siren-mixready.wav",
+      "at": 0,
+      "duration": 1440,
+      "gain": 0.25,
+      "fadeIn": 12,
+      "fadeOut": 0,
+      "loop": true
+    },
+    {
+      "name": "Tension rise",
+      "asset": "sfx/prepared/climax-riser.wav",
+      "at": 2046,
+      "duration": 115,
+      "gain": 0.14,
+      "fadeIn": 10,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 0",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 0,
+      "duration": 177,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 195",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 195,
+      "duration": 177,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 390",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 390,
+      "duration": 177,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 585",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 585,
+      "duration": 177,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 780",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 780,
+      "duration": 177,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 975",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 975,
+      "duration": 177,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 1170",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 1170,
+      "duration": 177,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    },
+    {
+      "name": "TOA 1365",
+      "asset": "sfx/prepared/ep007-pa-mixready.wav",
+      "at": 1365,
+      "duration": 75,
+      "gain": 0.18,
+      "fadeIn": 0,
+      "fadeOut": 0
+    }
+  ],
+  "art": {
+    "styleId": "gritty-dark-anime-comic",
+    "rasterAssets": {
+      "assets/007-pos-evakuasi-sunyi/panel-01.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-02.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-03.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-04.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-05.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-06.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-07.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-08.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-09.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-10.webp": "gritty-dark-anime-comic",
+      "assets/007-pos-evakuasi-sunyi/panel-final-jolt.webp": "gritty-dark-anime-comic"
+    }
+  },
+  "script": {
+    "format": "survival-tactics-curiosity-gap",
+    "hook": {
+      "at": 0,
+      "line": "Di pos evakuasi, jauhi barisan yang membisu."
+    },
+    "promise": {
+      "at": 90,
+      "line": "Orang di dalam berdiri tanpa bicara.",
+      "openLoop": "Mengapa tak ada yang menyahut?"
+    },
+    "tactics": {
+      "at": 360,
+      "steps": [
+        {
+          "number": 1,
+          "at": 550,
+          "line": "Cari orang yang memberi arahan.",
+          "detail": "Dengar nomor antrean yang diulang."
+        },
+        {
+          "number": 2,
+          "at": 852,
+          "line": "Cek jalan keluar sebelum maju.",
+          "detail": "Susuri tembok luar menuju jalur samping rel."
+        },
+        {
+          "number": 3,
+          "at": 1083,
+          "line": "Tinggalkan tanda untuk orang berikutnya.",
+          "detail": "Tulis peringatan dengan serpihan batu putih."
+        }
+      ]
+    },
+    "ending": {
+      "at": 1650,
+      "twistAt": 1752,
+      "payoff": "Survivor mundur lewat jalur rel; jolt barisan baru terjadi setelah narasi."
+    }
+  },
+  "scenes": [
+    {
+      "id": "panel-01",
+      "name": "Pos dan barisan",
+      "at": 0,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-01.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-entry",
+          "type": "timestampBadge",
+          "text": "HARI 5 • 05:00",
+          "at": 0,
+          "duration": 135,
+          "revealFrames": 8
+        },
+        {
+          "id": "opening-rule",
+          "type": "tacticalCallout",
+          "text": "JAUHI BARISAN MEMBISU",
+          "box": {
+            "x": 0.07,
+            "y": 0.24,
+            "width": 0.86,
+            "height": 0.08
+          },
+          "at": 58,
+          "duration": 110,
+          "revealFrames": 8
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Survivor di luar pagar dan barisan diam"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-02",
+      "name": "Air terakhir",
+      "at": 183,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-02.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "entry-supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.53,
+            "y": 0.08,
+            "width": 0.45,
+            "height": 0.23
+          },
+          "at": 8,
+          "duration": 125,
+          "revealFrames": 14,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.15,
+              "display": "15%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0,
+              "display": "0%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Survivor meminum air terakhir"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-03",
+      "name": "Sirene dan toa",
+      "at": 381,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-03.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "empty-supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.54,
+            "y": 0.06,
+            "width": 0.44,
+            "height": 0.23
+          },
+          "at": 8,
+          "duration": 130,
+          "revealFrames": 14,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0,
+              "display": "0%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0,
+              "display": "0%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Survivor mendengar toa di pagar"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-04",
+      "name": "Mengintip antrean",
+      "at": 630,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-04.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Survivor mengintip barisan dari luar"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-05",
+      "name": "Rute di luar pagar",
+      "at": 849,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-05.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 257,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 321,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "route-diagram",
+          "type": "blueprintOverlay",
+          "box": {
+            "x": 0.49,
+            "y": 0.1,
+            "width": 0.46,
+            "height": 0.21
+          },
+          "at": 5,
+          "duration": 165,
+          "revealFrames": 22,
+          "paths": [
+            {
+              "points": [
+                {
+                  "x": 0.9,
+                  "y": 0.2
+                },
+                {
+                  "x": 0.08,
+                  "y": 0.2
+                }
+              ],
+              "label": "PAGAR"
+            },
+            {
+              "points": [
+                {
+                  "x": 0.85,
+                  "y": 0.75
+                },
+                {
+                  "x": 0.08,
+                  "y": 0.65
+                }
+              ],
+              "label": "JALUR REL",
+              "arrow": true
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Survivor berada di jalur luar pagar"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-06",
+      "name": "Peringatan di beton",
+      "at": 1212,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-06.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Survivor menulis peringatan di dinding"
+      },
+      "cues": [
+        {
+          "name": "Batu pada beton pertama",
+          "asset": "sfx/prepared/ep007-stone-scrape.wav",
+          "at": 33,
+          "duration": 43,
+          "gain": 0.28,
+          "fadeOut": 3
+        },
+        {
+          "name": "Batu pada beton kedua",
+          "asset": "sfx/prepared/ep007-stone-scrape.wav",
+          "at": 80,
+          "duration": 43,
+          "gain": 0.24,
+          "fadeOut": 4
+        }
+      ]
+    },
+    {
+      "id": "panel-07",
+      "name": "Sirene berhenti",
+      "at": 1392,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-07.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Survivor tegang setelah sirene berhenti"
+      },
+      "cues": []
+    },
+    {
+      "id": "panel-08",
+      "name": "Gerbang terbuka",
+      "at": 1482,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-08.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Survivor bereaksi di luar gerbang"
+      },
+      "cues": [
+        {
+          "name": "Pagar besi membuka",
+          "asset": "sfx/prepared/ep007-gate-open.wav",
+          "at": 0,
+          "duration": 35,
+          "gain": 0.32,
+          "fadeOut": 3
+        }
+      ]
+    },
+    {
+      "id": "panel-09",
+      "name": "Jalur samping rel",
+      "at": 1752,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-09.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.06,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.065,
+          "x": -12,
+          "y": 6
+        },
+        {
+          "at": 120,
+          "duration": 30,
+          "scale": 1.72,
+          "x": 405,
+          "y": -425
+        },
+        {
+          "at": 195,
+          "duration": 12,
+          "scale": 1.74,
+          "x": 410,
+          "y": -425
+        },
+        {
+          "at": 259,
+          "duration": 12,
+          "scale": 1.72,
+          "x": 405,
+          "y": -425
+        },
+        {
+          "at": 323,
+          "duration": 12,
+          "scale": 1.74,
+          "x": 410,
+          "y": -425
+        },
+        {
+          "at": 387,
+          "duration": 12,
+          "scale": 1.72,
+          "x": 405,
+          "y": -425
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-exit",
+          "type": "timestampBadge",
+          "text": "HARI 5 • 05:12",
+          "at": 0,
+          "duration": 100,
+          "revealFrames": 8
+        },
+        {
+          "id": "arc-exit",
+          "type": "tacticalCallout",
+          "text": "ARC 01 • KELUAR JALUR",
+          "box": {
+            "x": 0.06,
+            "y": 0.18,
+            "width": 0.88,
+            "height": 0.09
+          },
+          "at": 8,
+          "duration": 120,
+          "revealFrames": 10
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Survivor berjalan pergi di samping rel"
+      },
+      "cues": [
+        {
+          "name": "Langkah satpam pertama",
+          "asset": "sfx/prepared/shoe-left.wav",
+          "at": 208,
+          "duration": 10,
+          "gain": 0.18,
+          "fadeOut": 2
+        },
+        {
+          "name": "Langkah satpam kedua",
+          "asset": "sfx/prepared/shoe-right.wav",
+          "at": 233,
+          "duration": 10,
+          "gain": 0.18,
+          "fadeOut": 2
+        },
+        {
+          "name": "Jolt barisan",
+          "asset": "sfx/prepared/climax-stinger.wav",
+          "at": 413,
+          "duration": 21,
+          "gain": 0.52,
+          "fadeOut": 4
+        }
+      ]
+    },
+    {
+      "id": "panel-10",
+      "name": "Penjaga malam",
+      "at": 2186,
+      "plate": "assets/007-pos-evakuasi-sunyi/panel-10.webp",
+      "camera": {
+        "from": {
+          "scale": 1.01,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.01,
+          "x": 0,
+          "y": -6
+        }
+      },
+      "reframes": [],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "night",
+          "type": "timestampBadge",
+          "text": "HARI 5 • MALAM",
+          "at": 0,
+          "duration": 18,
+          "revealFrames": 1
+        }
+      ],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Sepatu dan senter satpam di depan tulisan"
+      },
+      "brightness": 1.35,
+      "lightUp": {
+        "at": 4,
+        "duration": 7,
+        "minBrightness": 0.5,
+        "sweep": {
+          "fromX": 0.35,
+          "toX": 0.62,
+          "y": 0.62
+        },
+        "offMask": {
+          "x": 0.5,
+          "y": 0.6,
+          "radiusX": 0.43,
+          "radiusY": 0.45
+        }
+      },
+      "cues": [
+        {
+          "name": "Langkah terakhir satpam",
+          "asset": "sfx/prepared/shoe-left.wav",
+          "at": 0,
+          "duration": 7,
+          "gain": 0.15,
+          "fadeOut": 2
+        },
+        {
+          "name": "Klik senter",
+          "asset": "sfx/prepared/console-switch.wav",
+          "at": 4,
+          "duration": 6,
+          "gain": 0.21,
+          "fadeOut": 1
+        }
+      ]
+    }
+  ],
+  "tensionRamp": {
+    "startSec": 68.2,
+    "endSec": 72.033,
+    "extraScale": 0.065,
+    "vignetteStrength": 0.42
+  },
+  "finalJolt": {
+    "triggerSec": 72.16666666666667,
+    "durationSec": 0.7,
+    "handoffSec": 0.4,
+    "joltImageSrc": "assets/007-pos-evakuasi-sunyi/panel-final-jolt.webp",
+    "zoomFrom": 1,
+    "zoomTo": 1.18,
+    "shakePx": 16,
+    "shakeDecayMs": 320,
+    "flashFrames": 2,
+    "rgbSplitPx": 8,
+    "blackoutSec": 0.2
+  }
+}

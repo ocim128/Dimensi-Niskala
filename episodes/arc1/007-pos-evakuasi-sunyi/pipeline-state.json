@@ -1,0 +1,26 @@
+{
+  "brief": {
+    "status": "pass",
+    "notes": "Owner approved the brief. The locked script contains 116 words."
+  },
+  "audio": {
+    "status": "pass",
+    "notes": "Owner accepts the existing Investigator take. Prepared MP3 measures 72.004 s. Word timestamps and edit map are present. Agent 02 is skipped. Agent 04 handles SFX and final mix."
+  },
+  "images": {
+    "status": "pass",
+    "notes": "Directed revisions: 04 reveals the teen while keeping the wall blank; 08 crops above ground and gate base; jolt queue member no longer resembles the survivor. Five-point still self-audit in sources/prompts.md; motion and post-MP4 QA remain open."
+  },
+  "render": {
+    "status": "pass",
+    "notes": "Revised after independent post-MP4 FAIL: out/ep007-pos-evakuasi-sunyi-qa-revision.mp4 (73.466667 s). Station cropped out by frame 1909; flashlight beam hidden on frames 2186-2189 and revealed with click at frame 2190. Prior render is preserved. All 3444 AAC packets and timestamps match the earlier master; final mix -14.0 LUFS / -1.5 dBTP, stinger/flash offset 0.000 ms, measured vacuum 158.813 ms. npm run check passed 23 tests. Fresh independent post-MP4 QA and full listening remain pending; see review.md and mix-measurements.md."
+  },
+  "audit": {
+    "status": "pass",
+    "notes": "Owner accepted the final cut and closed the audit gate on 2026-11-21. Independent QA evidence remains in the existing review records."
+  },
+  "publish": {
+    "status": "ready",
+    "notes": "Owner approved this finalized Arc 01 part for publication on 2026-11-21. Publication is pending. Arc 02 handoff: HARI 5 • MALAM at the exterior concrete perimeter wall beside the train tracks. JANGAN IKUT BARISAN is chalked on the wall. The new survivor’s boot appears as their flashlight beam sweeps the lettering."
+  }
+}

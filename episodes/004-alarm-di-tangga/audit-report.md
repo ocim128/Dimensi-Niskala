@@ -1,3 +1,35 @@
+# Episode 004 ? independent post-MP4 audit, 21 November 2026
+
+**Verdict: PASS WITH NOTES.** No blocking defect was demonstrated in the sampled exported picture or measured audio gates. The human orchestrator records `audit: pass` and carries the notes and unchecked items forward. This does not authorize publication, and the assembler's `render: ready` state records that full playback and listening remain outstanding. No source, audio, image, render or pipeline state was edited by this reviewer.
+
+## Measured technical gates
+
+- **Export:** `out/ep004-alarm-di-tangga.mp4`, `Arc01Episode04`: H.264 1080 ? 1920, 30 fps, **2,088 frames / 69.600 s**. The AAC stream reports 69.600 s and both streams report start 0. The first AAC packet has PTS ?0.021333 s and specifies 1,024 skipped priming samples. PCM measurements below use the decoded, priming-trimmed stream on the video presentation timeline. Decoded AAC is approximately 69.525 s; the shortfall is in the final black tail.
+- **Jolt sync:** Exported frame **2052 (68.400000 s)** still shows the girl by the door; frame **2053 (68.433333 s)** is the first flash/jolt. The finished AAC first exceeds ?60 dBFS in the stinger window at **68.433333 s** and exceeds ?40 dBFS at **68.433521 s**. Signed audio-minus-video offset is **0.000 ms** at the ?60 dBFS threshold, within ?33 ms.
+- **Vacuum and tail:** The last pre-sting finished-mix sample above ?60 dBFS is approximately **68.262438 s**, yielding **170.9 ms** of near-silence before the stinger, within 120?180 ms. The prepared narration decodes to 68.260 s and has signal above ?40 dBFS until approximately 68.252 s; this is a waveform boundary, not proof of an audibly natural final consonant. Jolt lasts 27 frames / 0.900 s. Black starts at frame 2080 (69.333333 s) for eight frames / 0.267 s. From the narration-file end to video end is 1.340 s, within the 1.0?1.5 s tail budget.
+- **Loudness:** Independent FFmpeg EBU R128 measurement on final AAC gives **?14.0 LUFS integrated and ?1.4 dBTP**, meeting the ? ?1.0 dBTP limit. The assembler reports a ?5.7 dB peak difference between a narration-plus-effects window and the isolated stinger window; this is not an isolated narrator-stem comparison.
+- **Automated checks:** `npm run check` passed TypeScript, episode validation and **23/23 tests**. Warnings are from older comparison cuts. These checks do not prove perceptual quality or caption-to-speech sync.
+
+## Picture, script and cue evidence
+
+- **Script and captions:** Normalizing case and punctuation yields **122 script words and 122 caption words in the same order**. The timing sidecar is provisional ASR; matching text alone does not establish narration intelligibility or actual caption-to-speech synchronization.
+- **Cover and HUD:** Actual frame 6 (00:00.2) displays the four-word `JANGAN TIDUR DI BAWAH` title in the upper portion of the centered 3:4 crop; the title component schedules it for 0?1.8 s. The entry badge and supply data are `HARI 2 ? 21:00`, water 80%, battery 30%; the exit badge and card are `HARI 2 ? 23:30`, water 70%, battery 25%. Sampled HUD frames do not obscure the survivor's face. An actual platform profile preview and continuous all-frame clearance were not checked.
+- **Five visual checks:** (1) Sampled frames show the closed ruko shutter, rear stair, unbarred balcony window, brown room door and red-capped bottle; reveal and jolt retain the girl next to the brown door and dark corner. (2) Selected wide stair views show plausible figures; the reveal includes the floor to show the bottle by the shoe and the crouching girl, while the jolt is a face/upper-body close-up. The corrected panel 10 arm is visibly connected and the bottle remains beside the shoe. (3) Panels 07?09 place the survivor by the window looking toward the door; the close reveal and jolt retain the door-side corner. Static samples support the sightline but cannot establish the transition's feel in motion. (4) The balcony window is unbarred and the bottle rests on a stair, then appears beside the shoe. The muddy prints are identifiable in the sampled 30 s view without a graphic or dedicated accent. (5) `DISEWAKAN` is visible in the opening art but is incidental to the spoken story; no other plot-bearing environmental lettering is required. The locked survivor and teen retain recognizable face, hair and clothing cues. No vehicle is shown, so RHD/windshield geometry is not applicable.
+- **Foley timeline:** The manifest schedules a close bottle scrape at **49.000 s** and a breath at **50.400 s**, after the ASR-estimated `plastik bergesek dekat sekali` end at 48.915 s. The picture next shows the bottle at the shoe from 50.900 s. The quiet clue has no dedicated SFX cue. This is timeline evidence, not a claim of audible realism, intelligibility or final sync; no sound of a bottle falling down stairs is scheduled.
+
+## Notes and limits
+
+- **Mixed footprints:** Panel 06 contains both bare-foot-like and shoe-tread marks above the alarm. This may imply multiple tracks; it is an incidental continuity ambiguity in the sampled still, not a demonstrated contradiction of the narration. Check whether it distracts in the actual cut without accenting the clue.
+- **Record note:** An earlier paragraph in `assets.md` still says full brief approval is pending, but the later assembly section and pipeline state record the owner's full-brief and selected-image approval. The orchestrator can reconcile the stale wording without changing the approved artwork.
+- **Review coverage:** The approved brief, script, timing/edit records, manifest/captions, locked sheets, contact sheet, asset record and assembler review were compared. Actual MP4 frames were sampled across all ten panels, the reveal, flash and black. The complete cut was not played at normal speed, and no listening, first-viewer test or platform preview was available. Thus exact final-word release, narration edit joins, caption sync, bottle-scrape suitability, breath/mix balance, flash comfort and subjective transitions remain unchecked. The owner's automatic narrator acceptance does not imply listening.
+
+**Human listening:** Review the full cut and caption sync, narrator edit joins and final word, bottle scrape on the depicted floor, breath, stinger and mix balance.<br>
+**Rights and release:** Verify generated voice/image and font terms, required CC BY attribution, platform disclosure and explicit publication authorization.
+
+---
+
+## Earlier image-stage advisory audits ? historical
+
 # Re-audit ? 21 November 2026
 
 **Advisory still-image result: PASS WITH NOTE.** The earlier image defects below are superseded by this recheck. This does not pass the post-MP4 gate or change pipeline state. The full brief remains pending; the spatial-layout approval is not full-brief approval.

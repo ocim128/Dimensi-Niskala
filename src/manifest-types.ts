@@ -38,6 +38,7 @@ export type Scene = {
   layers?: RasterLayer[];
   hit?: {at: number; duration: number; strength: number};
   blackout?: {at: number; duration: number; opacity: number};
+  lightUp?: {at: number; duration: number; minBrightness: number; sweep?: {fromX: number; toX: number; y: number}; offMask?: {x: number; y: number; radiusX: number; radiusY: number}};
   label?: {text: string; at: number; x: number; y: number};
   cues?: Action[];
   brightness?: number;
@@ -51,7 +52,7 @@ export type EpisodeManifest = {
   narration: {asset: string; at: number; duration: number; gain: number; ducks?: {startSec: number; endSec: number; gainDb: number; fadeSec?: number}[]};
   openingTitle?: string | {text: string; startSec?: number; endSec?: number};
   tensionRamp?: {startSec: number; endSec: number; extraScale: number; vignetteStrength: number};
-  finalJolt?: {triggerSec: number; durationSec: number; joltImageSrc?: string; zoomFrom: number; zoomTo: number; shakePx: number; shakeDecayMs: number; flashFrames: number; rgbSplitPx: number; blackoutSec: number};
+  finalJolt?: {triggerSec: number; durationSec: number; handoffSec?: number; joltImageSrc?: string; zoomFrom: number; zoomTo: number; shakePx: number; shakeDecayMs: number; flashFrames: number; rgbSplitPx: number; blackoutSec: number};
   effectBusGain?: number;
   beds: Bed[];
   scenes: Scene[];

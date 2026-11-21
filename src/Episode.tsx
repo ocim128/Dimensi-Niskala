@@ -45,11 +45,12 @@ export function Episode({manifest, captions, showCaptions, soundOn, narrationOn 
   const frame = useCurrentFrame();
   const ramp = manifest.tensionRamp;
   const jolt = manifest.finalJolt;
-  const p = ramp ? interpolate(frame / fps, [ramp.startSec, ramp.endSec], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"}) : 0;
   const joltFrame = jolt ? frame - Math.round(jolt.triggerSec * fps) : -1;
   const activeJolt = !!jolt && joltFrame >= 0 && joltFrame < Math.round(jolt.durationSec * fps);
+  const activeHandoff = !!jolt && joltFrame >= Math.round(jolt.durationSec * fps) && joltFrame < Math.round(jolt.durationSec * fps) + Math.round((jolt.handoffSec ?? 0) * fps);
+  const p = ramp && !activeHandoff ? interpolate(frame / fps, [ramp.startSec, ramp.endSec], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"}) : 0;
   const episode03Flash = manifest.id === "Arc01Episode03" && activeJolt && !!jolt && joltFrame < jolt.flashFrames;
-  const blackout = !!jolt && joltFrame >= Math.round(jolt.durationSec * fps);
+  const blackout = !!jolt && joltFrame >= Math.round(jolt.durationSec * fps) + Math.round((jolt.handoffSec ?? 0) * fps);
   const decay = activeJolt && jolt ? Math.max(0, 1 - joltFrame / Math.max(1, jolt.shakeDecayMs * fps / 1000)) : 0;
   const snap = activeJolt && jolt ? interpolate(joltFrame, [0, Math.max(1, Math.round(.14 * fps))], [jolt.zoomFrom, jolt.zoomTo], {extrapolateRight: "clamp", easing: Easing.out(Easing.cubic)}) : 1;
   const x = activeJolt && jolt ? Math.sin(joltFrame * 2.4 + 1.1) * jolt.shakePx * decay : Math.sin(frame * 1.9) * p;

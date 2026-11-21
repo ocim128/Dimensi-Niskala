@@ -13,7 +13,13 @@
 - Aim for 80% standalone FYP and 20% serialized continuity. Start with the immediate emergency and rule. Carry the previous state through the opening scene, `TimestampBadge` and `PERSEDIAAN`. Keep recap lines out of the hook. End with a quiet `niskala` reveal that exposes a blind spot in the rule the survivor followed.
 - Use the locked Arc 01 character sheets and the latest approved panel batch as the visual benchmark. Use Episode 003’s approved panels for the current handoff. The [handpicked Episode 003 export](out/handpick/ep003-bel-minimarket_compressed.mp4) is an optional playback reference. Treat Episode 001 Attempts 02–05 as production history.
 
-## Episode 002+ factory loop
+## Studio v2 · Arc 02 onward
+
+Use the [v2 style guide](STYLE_GUIDE.md#studio-v2-arc-02-onward) and [studio contracts](agents/README.md). Arc 02 starts with [Part 001 only](arcs/02-jalur-samping-rel/arc.json), picking up the Part 007 night handoff. Agent 01 writes the pilot and a three-line premise before the production loop. Parts 002–007 wait for the pilot review.
+
+Plan a 90–210-second cut with roughly 200–480 spoken Indonesian words and a hook in the first three seconds. Build around Decision → Consequence, time the narrated action to the panel that shows it, and make room for multiple in-world voice or audio beats. Use [Urban Silhouette Noir](experiments/attempt-07-silhouette-noir/brief.md). Set `pipelineVersion: 2` on new manifests when assembly begins.
+
+## Archived v1 · Arc 01 factory loop
 
 Use the [studio role contracts and pipeline state](agents/README.md) for new episode handoffs. The orchestrator contract is currently human-operated; it does not authorize agents to publish.
 

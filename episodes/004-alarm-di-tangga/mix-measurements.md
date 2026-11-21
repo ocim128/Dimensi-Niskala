@@ -1,0 +1,11 @@
+# Episode 004 ? mix and timing measurements
+
+- `Arc01Episode04`, `out/ep004-alarm-di-tangga.mp4`: 1080 ? 1920, 30 fps, 2,088 frames, 69.600 s; audio and video stream start times 0 and durations 69.600 s.
+- Finished AAC, measured with FFmpeg EBU R128: **?14.0 LUFS integrated, ?1.4 dBTP**, LRA 3.0 LU. This is a measurement, not a listening review.
+- On the decoded final AAC, 0?68.2 s has ?1.4 dBTP; isolated 68.433?69.333 s stinger window has ?7.1 dBTP, **?5.7 dB relative**. The first window includes narration plus ambience and foley, so this is a window comparison, not a separated narration stem.
+- Narration waveform continues through approximately 68.26 s, beyond the ASR final-word estimate 68.095 s. A near-silent vacuum from 68.267?68.433 s measures ?99.6 dBFS RMS, ?71.2 dBFS sample peak. Video flash begins at frame **2053**, whose exported presentation timestamp is **68.433333 s**. Decoded AAC first exceeds ?60 dBFS at **68.433333 s**, signed audio-minus-video offset **0.000 ms**, measured after AAC decoding with both output streams starting at zero. It exceeds ?40 dBFS at 68.433521 s. Blackout begins at frame 2080 and lasts eight frames (0.267 s). From the file end of narration to cut end is 1.34 s.
+- All source audio frame timestamps were checked against their actual sample rates: no discontinuity greater than 0.1 ms. The narration MP3 first decoded timestamp is 0.023021 s due to MP3 priming; Remotion uses its decoded track. The untouched prepared MP3 and served copy have matching SHA-256 `F2ACD76DF9828AFF5768B0639F37614C85BADDBC4EA73C410DCE19F43AF601E2`.
+
+## Reproduction and mastering
+
+Run `node episodes/004-alarm-di-tangga/build-assembly.cjs`, `npm run check`, and `npx remotion render src/index.ts Arc01Episode04 out/ep004-alarm-di-tangga-premaster.mp4 --codec h264 --concurrency 4`, using new destination names to avoid overwrite. Loudnorm first pass reported I ?13.85, TP ?1.20, LRA 3.20, threshold ?24.57 and offset +0.32. The final export stream-copies video and applies `loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-13.85:measured_TP=-1.20:measured_LRA=3.20:measured_thresh=-24.57:offset=0.32:linear=false`, AAC 256 kb/s, 48 kHz, 69.6 s. Re-measure the output and sync if rebuilt. Decoded PCM and sampled frame stills are in `verification/`.

@@ -1,0 +1,930 @@
+[
+  {
+    "startMs": 0,
+    "endMs": 1660,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DI",
+        "startMs": 0,
+        "endMs": 420
+      },
+      {
+        "text": "POS",
+        "startMs": 420,
+        "endMs": 740
+      },
+      {
+        "text": "EVAKUASI,",
+        "startMs": 740,
+        "endMs": 1660
+      }
+    ]
+  },
+  {
+    "startMs": 2120,
+    "endMs": 3920,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "JAUHI",
+        "startMs": 2120,
+        "endMs": 2680,
+        "color": "yellow"
+      },
+      {
+        "text": "BARISAN",
+        "startMs": 2680,
+        "endMs": 3160,
+        "color": "red"
+      },
+      {
+        "text": "YANG",
+        "startMs": 3160,
+        "endMs": 3420
+      },
+      {
+        "text": "MEMBISU,",
+        "startMs": 3420,
+        "endMs": 3920
+      }
+    ]
+  },
+  {
+    "startMs": 4443,
+    "endMs": 6243,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "PAGAR",
+        "startMs": 4443,
+        "endMs": 4903,
+        "color": "yellow"
+      },
+      {
+        "text": "STASIUN",
+        "startMs": 4903,
+        "endMs": 5583
+      },
+      {
+        "text": "TERTUTUP,",
+        "startMs": 5583,
+        "endMs": 6243
+      }
+    ]
+  },
+  {
+    "startMs": 6803,
+    "endMs": 7743,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "LAMPU",
+        "startMs": 6803,
+        "endMs": 7303
+      },
+      {
+        "text": "BERKEDIP,",
+        "startMs": 7303,
+        "endMs": 7743
+      }
+    ]
+  },
+  {
+    "startMs": 8363,
+    "endMs": 9863,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SUARA",
+        "startMs": 8363,
+        "endMs": 8663
+      },
+      {
+        "text": "PERINGATAN",
+        "startMs": 8663,
+        "endMs": 9343
+      },
+      {
+        "text": "MERAUNG,",
+        "startMs": 9343,
+        "endMs": 9863
+      }
+    ]
+  },
+  {
+    "startMs": 10583,
+    "endMs": 12503,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DAN",
+        "startMs": 10583,
+        "endMs": 10683
+      },
+      {
+        "text": "TOA",
+        "startMs": 10683,
+        "endMs": 11223,
+        "color": "yellow"
+      },
+      {
+        "text": "MENGULANG",
+        "startMs": 11223,
+        "endMs": 11903
+      },
+      {
+        "text": "PENGUMUMAN.",
+        "startMs": 11903,
+        "endMs": 12503
+      }
+    ]
+  },
+  {
+    "startMs": 13023,
+    "endMs": 14843,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "ORANG",
+        "startMs": 13023,
+        "endMs": 13403
+      },
+      {
+        "text": "DI",
+        "startMs": 13403,
+        "endMs": 13583
+      },
+      {
+        "text": "DALAM",
+        "startMs": 13583,
+        "endMs": 13923
+      },
+      {
+        "text": "BERDIRI",
+        "startMs": 13923,
+        "endMs": 14843
+      }
+    ]
+  },
+  {
+    "startMs": 14843,
+    "endMs": 15923,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TANPA",
+        "startMs": 14843,
+        "endMs": 15483
+      },
+      {
+        "text": "BICARA,",
+        "startMs": 15483,
+        "endMs": 15923
+      }
+    ]
+  },
+  {
+    "startMs": 16583,
+    "endMs": 17563,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SUDAH",
+        "startMs": 16583,
+        "endMs": 16983
+      },
+      {
+        "text": "SEMALAMAN.",
+        "startMs": 16983,
+        "endMs": 17563
+      }
+    ]
+  },
+  {
+    "startMs": 18323,
+    "endMs": 18723,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "PERTAMA,",
+        "startMs": 18323,
+        "endMs": 18723
+      }
+    ]
+  },
+  {
+    "startMs": 19543,
+    "endMs": 21143,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "CARI",
+        "startMs": 19543,
+        "endMs": 19823
+      },
+      {
+        "text": "ORANG",
+        "startMs": 19823,
+        "endMs": 20183
+      },
+      {
+        "text": "YANG",
+        "startMs": 20183,
+        "endMs": 20663
+      },
+      {
+        "text": "MEMBERI",
+        "startMs": 20663,
+        "endMs": 21143
+      }
+    ]
+  },
+  {
+    "startMs": 21143,
+    "endMs": 21603,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "ARAHAN.",
+        "startMs": 21143,
+        "endMs": 21603
+      }
+    ]
+  },
+  {
+    "startMs": 22163,
+    "endMs": 23343,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DARI",
+        "startMs": 22163,
+        "endMs": 22463
+      },
+      {
+        "text": "LUAR",
+        "startMs": 22463,
+        "endMs": 22763
+      },
+      {
+        "text": "PAGAR,",
+        "startMs": 22763,
+        "endMs": 23343,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 23983,
+    "endMs": 25843,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TOA",
+        "startMs": 23983,
+        "endMs": 24283,
+        "color": "yellow"
+      },
+      {
+        "text": "MEMANGGIL",
+        "startMs": 24283,
+        "endMs": 24823
+      },
+      {
+        "text": "NOMOR",
+        "startMs": 24823,
+        "endMs": 25203
+      },
+      {
+        "text": "ANTREAN",
+        "startMs": 25203,
+        "endMs": 25843,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 25843,
+    "endMs": 26163,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SAMA.",
+        "startMs": 25843,
+        "endMs": 26163
+      }
+    ]
+  },
+  {
+    "startMs": 26163,
+    "endMs": 28083,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TAK",
+        "startMs": 26163,
+        "endMs": 27163
+      },
+      {
+        "text": "ADA",
+        "startMs": 27163,
+        "endMs": 27443
+      },
+      {
+        "text": "YANG",
+        "startMs": 27443,
+        "endMs": 27623
+      },
+      {
+        "text": "MENYAHUT.",
+        "startMs": 27623,
+        "endMs": 28083
+      }
+    ]
+  },
+  {
+    "startMs": 28386,
+    "endMs": 28946,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KEDUA,",
+        "startMs": 28386,
+        "endMs": 28946
+      }
+    ]
+  },
+  {
+    "startMs": 29706,
+    "endMs": 31666,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "CEK",
+        "startMs": 29706,
+        "endMs": 30026
+      },
+      {
+        "text": "JALAN",
+        "startMs": 30026,
+        "endMs": 30386,
+        "color": "yellow"
+      },
+      {
+        "text": "KELUAR",
+        "startMs": 30386,
+        "endMs": 30726,
+        "color": "yellow"
+      },
+      {
+        "text": "SEBELUM",
+        "startMs": 30726,
+        "endMs": 31666
+      }
+    ]
+  },
+  {
+    "startMs": 31666,
+    "endMs": 31966,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "MAJU.",
+        "startMs": 31666,
+        "endMs": 31966
+      }
+    ]
+  },
+  {
+    "startMs": 32266,
+    "endMs": 33966,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SUSURI",
+        "startMs": 32266,
+        "endMs": 32906
+      },
+      {
+        "text": "TEMBOK",
+        "startMs": 32906,
+        "endMs": 33426
+      },
+      {
+        "text": "LUAR",
+        "startMs": 33426,
+        "endMs": 33726
+      },
+      {
+        "text": "POS",
+        "startMs": 33726,
+        "endMs": 33966
+      }
+    ]
+  },
+  {
+    "startMs": 33966,
+    "endMs": 35746,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "MENUJU",
+        "startMs": 33966,
+        "endMs": 34646
+      },
+      {
+        "text": "JALAN",
+        "startMs": 34646,
+        "endMs": 35106,
+        "color": "yellow"
+      },
+      {
+        "text": "SAMPING",
+        "startMs": 35106,
+        "endMs": 35526
+      },
+      {
+        "text": "REL.",
+        "startMs": 35526,
+        "endMs": 35746,
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "startMs": 36111,
+    "endMs": 36598,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KETIGA,",
+        "startMs": 36111,
+        "endMs": 36598
+      }
+    ]
+  },
+  {
+    "startMs": 37278,
+    "endMs": 37958,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KALAU",
+        "startMs": 37278,
+        "endMs": 37438
+      },
+      {
+        "text": "MUNDUR,",
+        "startMs": 37438,
+        "endMs": 37958
+      }
+    ]
+  },
+  {
+    "startMs": 38578,
+    "endMs": 40218,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TINGGALKAN",
+        "startMs": 38578,
+        "endMs": 39278
+      },
+      {
+        "text": "TANDA",
+        "startMs": 39278,
+        "endMs": 39618,
+        "color": "yellow"
+      },
+      {
+        "text": "UNTUK",
+        "startMs": 39618,
+        "endMs": 39898
+      },
+      {
+        "text": "ORANG",
+        "startMs": 39898,
+        "endMs": 40218
+      }
+    ]
+  },
+  {
+    "startMs": 40218,
+    "endMs": 40798,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "BERIKUTNYA.",
+        "startMs": 40218,
+        "endMs": 40798
+      }
+    ]
+  },
+  {
+    "startMs": 41181,
+    "endMs": 42721,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "PAKAI",
+        "startMs": 41181,
+        "endMs": 41641
+      },
+      {
+        "text": "SERPIHAN",
+        "startMs": 41641,
+        "endMs": 42141
+      },
+      {
+        "text": "BATU",
+        "startMs": 42141,
+        "endMs": 42361,
+        "color": "yellow"
+      },
+      {
+        "text": "PUTIH,",
+        "startMs": 42361,
+        "endMs": 42721
+      }
+    ]
+  },
+  {
+    "startMs": 43341,
+    "endMs": 44241,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TULIS",
+        "startMs": 43341,
+        "endMs": 43621
+      },
+      {
+        "text": "DI",
+        "startMs": 43621,
+        "endMs": 43781
+      },
+      {
+        "text": "BETON",
+        "startMs": 43781,
+        "endMs": 43941
+      },
+      {
+        "text": "LUAR.",
+        "startMs": 43941,
+        "endMs": 44241
+      }
+    ]
+  },
+  {
+    "startMs": 44669,
+    "endMs": 46189,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "JANGAN",
+        "startMs": 44669,
+        "endMs": 45209
+      },
+      {
+        "text": "IKUT",
+        "startMs": 45209,
+        "endMs": 45829
+      },
+      {
+        "text": "BARISAN.",
+        "startMs": 45829,
+        "endMs": 46189,
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "startMs": 46609,
+    "endMs": 48609,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SUARA",
+        "startMs": 46609,
+        "endMs": 47209
+      },
+      {
+        "text": "PERINGATAN",
+        "startMs": 47209,
+        "endMs": 47949
+      },
+      {
+        "text": "BERHENTI.",
+        "startMs": 47949,
+        "endMs": 48609
+      }
+    ]
+  },
+  {
+    "startMs": 49449,
+    "endMs": 50589,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "PAGAR",
+        "startMs": 49449,
+        "endMs": 49909,
+        "color": "yellow"
+      },
+      {
+        "text": "TERBUKA.",
+        "startMs": 49909,
+        "endMs": 50589
+      }
+    ]
+  },
+  {
+    "startMs": 50589,
+    "endMs": 53409,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "GADIS",
+        "startMs": 50589,
+        "endMs": 51989,
+        "color": "red"
+      },
+      {
+        "text": "ITU",
+        "startMs": 51989,
+        "endMs": 52289
+      },
+      {
+        "text": "TERSENYUM",
+        "startMs": 52289,
+        "endMs": 53129
+      },
+      {
+        "text": "DARI",
+        "startMs": 53129,
+        "endMs": 53409
+      }
+    ]
+  },
+  {
+    "startMs": 53409,
+    "endMs": 54389,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "UJUNG",
+        "startMs": 53409,
+        "endMs": 53869
+      },
+      {
+        "text": "BARISAN.",
+        "startMs": 53869,
+        "endMs": 54389,
+        "color": "red"
+      }
+    ]
+  },
+  {
+    "startMs": 55409,
+    "endMs": 57149,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SEMUA",
+        "startMs": 55409,
+        "endMs": 55849
+      },
+      {
+        "text": "KEPALA",
+        "startMs": 55849,
+        "endMs": 56269
+      },
+      {
+        "text": "MENOLEH",
+        "startMs": 56269,
+        "endMs": 56989,
+        "color": "red"
+      },
+      {
+        "text": "KE",
+        "startMs": 56989,
+        "endMs": 57149
+      }
+    ]
+  },
+  {
+    "startMs": 57149,
+    "endMs": 58189,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "TEMPATMU",
+        "startMs": 57149,
+        "endMs": 57789
+      },
+      {
+        "text": "TADI.",
+        "startMs": 57789,
+        "endMs": 58189
+      }
+    ]
+  },
+  {
+    "startMs": 58589,
+    "endMs": 60789,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "KAMU",
+        "startMs": 58589,
+        "endMs": 59009
+      },
+      {
+        "text": "MUNDUR",
+        "startMs": 59009,
+        "endMs": 59629
+      },
+      {
+        "text": "LEWAT",
+        "startMs": 59629,
+        "endMs": 60269
+      },
+      {
+        "text": "JALUR",
+        "startMs": 60269,
+        "endMs": 60789
+      }
+    ]
+  },
+  {
+    "startMs": 60789,
+    "endMs": 62829,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SAMPING",
+        "startMs": 60789,
+        "endMs": 61249
+      },
+      {
+        "text": "REL",
+        "startMs": 61249,
+        "endMs": 61589,
+        "color": "yellow"
+      },
+      {
+        "text": "SAMPAI",
+        "startMs": 61589,
+        "endMs": 62269
+      },
+      {
+        "text": "LAMPU",
+        "startMs": 62269,
+        "endMs": 62829
+      }
+    ]
+  },
+  {
+    "startMs": 62829,
+    "endMs": 63689,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "POS",
+        "startMs": 62829,
+        "endMs": 63169
+      },
+      {
+        "text": "HILANG.",
+        "startMs": 63169,
+        "endMs": 63689
+      }
+    ]
+  },
+  {
+    "startMs": 64429,
+    "endMs": 66929,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "MALAMNYA",
+        "startMs": 64429,
+        "endMs": 65209
+      },
+      {
+        "text": "SEPATU",
+        "startMs": 65209,
+        "endMs": 66149
+      },
+      {
+        "text": "BOT",
+        "startMs": 66149,
+        "endMs": 66309
+      },
+      {
+        "text": "BERHENTI",
+        "startMs": 66309,
+        "endMs": 66929
+      }
+    ]
+  },
+  {
+    "startMs": 66929,
+    "endMs": 68069,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "DI",
+        "startMs": 66929,
+        "endMs": 67169
+      },
+      {
+        "text": "DEPAN",
+        "startMs": 67169,
+        "endMs": 67429
+      },
+      {
+        "text": "TULISANMU.",
+        "startMs": 67429,
+        "endMs": 68069
+      }
+    ]
+  },
+  {
+    "startMs": 68609,
+    "endMs": 69869,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SENTER",
+        "startMs": 68609,
+        "endMs": 69149,
+        "color": "yellow"
+      },
+      {
+        "text": "MENYALA.",
+        "startMs": 69149,
+        "endMs": 69869
+      }
+    ]
+  },
+  {
+    "startMs": 70249,
+    "endMs": 71909,
+    "timestampMs": null,
+    "confidence": null,
+    "words": [
+      {
+        "text": "SESEORANG",
+        "startMs": 70249,
+        "endMs": 71129
+      },
+      {
+        "text": "MEMBACA.",
+        "startMs": 71129,
+        "endMs": 71909
+      }
+    ]
+  }
+]

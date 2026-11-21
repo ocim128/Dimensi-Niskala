@@ -18,6 +18,10 @@ Never edit source, audio, images, renders, scripts, state or rights records, fix
 
 ## Severity Rubric
 
+- **Studio v2 runtime.** Review pacing against 90–210 s and roughly 200–480 spoken Indonesian words. Check the immediate three-second hook, visible choice and consequence, and authored audio theater. Treat those ranges as planning targets. Apply Arc 01's existing v1 rules to its locked parts.
+- **Show-What-You-Say is a BLOCKER.** Compare each mapped narration line to the actual exported frames. A narrated threat or action must be visible during that line. A reaction shot alone does not satisfy the lock.
+- **Silhouette QA.** Accept graphic-novel mirror exaggeration when RHD, reflected sightlines and phone readability remain clear. Flag broken anatomy or legs, indoor falling rain, unrequested figures and incorrect plot-bearing signage as blockers.
+
 - **BLOCKER → FAIL.** Use for demonstrated output defects or an unverified mandatory technical gate. Cite the exported frame, timecode or waveform measurement, explain the impact and name the owning role and exact fix. One blocker sets the overall verdict to **FAIL**.
 - **NOTE → PASS WITH NOTES.** Use for paperwork gaps and incidental details that leave the output intact. If there are notes and all mandatory gates pass, issue **PASS WITH NOTES**. With no findings, issue **PASS**.
 - Judge continuity from exported pixels. When the reveal and jolt preserve architecture, lighting and props, a missing or paraphrased verbatim anchor in `sources/prompts.md` is always a **NOTE**. Keep the generation record accurate and never request regeneration solely for prompt-log formatting.

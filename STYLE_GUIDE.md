@@ -1,6 +1,18 @@
 # Style guide
 
-Give viewers an unbelievable survival experience in an imagined world. Show the danger, the character’s choice and its consequence clearly enough to follow without prior episodes. Treat continuity as established only when the episode brief explicitly adopts it. The following rules are mandatory for new episodes and recuts.
+Give viewers an unbelievable survival experience in an imagined world. Show the danger, the character’s choice and its consequence clearly enough to follow without prior episodes. Treat continuity as established only when the episode brief explicitly adopts it.
+
+## Studio v2 Arc 02 onward
+
+- **Pilot first.** Draft and lock Arc 02 Part 001 and a three-line arc premise. Pick up `HARI 5 • MALAM` from Part 007 and review the pilot end to end before drafting Parts 002–007.
+- **Pacing.** Hook viewers in the first three seconds. Aim for **1.5–3.5 minutes (90–210 s)** and roughly **200–480 spoken Indonesian words**. Let consequences, dialogue and silences set the pace.
+- **Decision → Consequence.** Replace arbitrary numbered survival lectures with a concrete temptation and an outcome the viewer can see. In **Branch-Rewind**, play the intuitive bad choice through to a visceral or lethal outcome, snap back with a tape/glitch rewind and take a harder survival path that carries a cost or lingering dread. In **Earned Consequence**, show someone else take the bait and pay immediately, or have the protagonist make a human error with a permanent consequence that carries forward. An episode can use both.
+- **Show-What-You-Say Panel Lock.** Time each narrated threat or visible action to a panel that depicts it. A reaction shot can follow the action. An export that substitutes a reaction for the narrated reveal fails QA.
+- **Audio theater.** Keep Investigator as the narrator and cue multiple separate world-audio or non-narrator voice beats, such as TOA or radio, survivor dialogue or panic, muffled pleas or whispers. Plan deliberate 1–3 s dread silences. Label speakers or use consistent caption colors for dialogue.
+- **Urban Silhouette Noir.** Use the [Attempt 07 sandbox](experiments/attempt-07-silhouette-noir/brief.md) as the visual benchmark. Draw matte `#07080B` graphic silhouettes with crisp edges and expressive poses. Keep skin and faces flat. Reserve thin colored rims and stark pale eye glints for the threat in focus. Use charcoal and slate-blue Indonesian urban settings with 1–2 practical light accents per scene, such as taillights, fluorescents, exit signs, streetlights or a flashlight. Shift to harsh red or amber on bad branches.
+- **Panels and motion.** Plan roughly 16–26 purposeful panels for a 2–3 minute cut. Hold atmospheric shots for 5–9 seconds with slow camera motion or practical light flicker. Cut tightly on action and jolt beats. Keep falling rain outdoors or visible beyond a window or doorway. Keep the existing climax and final mix checks, including ±1 frame exported jolt sync.
+
+The sections below record the Arc 01 v1 format and shared craft guidance. The v2 runtime, narrative, palette and hold rules above take precedence for Arc 02 onward. Keep the shared Indonesian grounding, continuity, cover, caption, sound and editorial checks where compatible.
 
 ## Seven-episode anthology arcs
 
@@ -19,7 +31,7 @@ Give viewers an unbelievable survival experience in an imagined world. Show the 
 | 06 | Rule Breakdown |
 | 07 | Finale & Handoff to Arc 02 |
 
-The sole visual and audio benchmark is Episode 001 Attempt 06 with the smiling teenage passenger reveal. Use the canonical driver and passenger sheets under `public/assets/characters/`. The copied generation records preserve prompt provenance, and the arc record designates the locked sheets. Attempts 02–05 are production history. [Locked benchmark cut](out/kemacetan-terakhir-attempt06-teen-zombie.mp4)
+Episode 001 Attempt 06 with the smiling teenage passenger reveal is an Arc 01 v1 reference. Its canonical driver and passenger sheets and generation records are under `public/assets/characters/`. Attempts 02–05 are production history.
 
 ## Indonesian Grounding Rule
 

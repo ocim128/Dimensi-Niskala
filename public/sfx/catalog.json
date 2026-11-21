@@ -106,6 +106,97 @@
       "output": "public/sfx/prepared/minimarket-door-creak-outside.wav",
       "processing": "highpass 150 Hz, lowpass 2200 Hz, peak normalized to -1 dBFS; candidate requires listening in context",
       "license": "CC0 1.0; laleksic; see LICENSES.md"
+    },
+    {
+      "name": "ep004-bottle-scrape",
+      "source": "public/sfx/sources/ep004-bottle-slide-preview.mp3",
+      "output": "public/sfx/prepared/ep004-bottle-scrape.wav",
+      "processing": "HQ MP3 preview; excerpt 0.25?1.65 s, highpass 180 Hz, lowpass 7000 Hz, fades; sample-derived PTS; listening pending",
+      "license": "CC0 1.0; lucaslara; see LICENSES.md"
+    },
+    {
+      "name": "ep004-survivor-breath",
+      "source": "public/sfx/sources/ep004-female-breath-preview.mp3",
+      "output": "public/sfx/prepared/ep004-survivor-breath.wav",
+      "processing": "HQ MP3 preview; excerpt 0?1.4 s, highpass 140 Hz, lowpass 7000 Hz, fades; sample-derived PTS; listening pending",
+      "license": "CC0 1.0; Kuroseishin; see LICENSES.md"
+    },
+    {
+      "name": "ep005-entity-plea",
+      "source": "public/sfx/sources/ep005-entity-plea-original.wav",
+      "output": "public/sfx/prepared/ep005-entity-plea.wav",
+      "processing": "Gemini 3.8 Flash TTS Aoede female in-world voice, behind-wall profile; repeat same file, no listening review",
+      "license": "Generated via Google Cloud; publication terms not independently verified; see LICENSES.md"
+    },
+    {
+      "name": "ep005-entity-whisper",
+      "source": "public/sfx/sources/ep005-entity-whisper-original.wav",
+      "output": "public/sfx/prepared/ep005-entity-whisper.wav",
+      "processing": "Gemini 3.8 Flash TTS Aoede female in-world voice, close-whisper profile; no listening review",
+      "license": "Generated via Google Cloud; publication terms not independently verified; see LICENSES.md"
+    },
+    {
+      "name": "ep005-phone-vibration",
+      "source": "synthetic FFmpeg 125 Hz sine",
+      "output": "public/sfx/prepared/ep005-phone-vibration.wav",
+      "processing": "28 Hz amplitude tremolo, 95?450 Hz bandpass and fades; synthesized locally; listening pending",
+      "license": "Locally generated synthesized tone, no external recording"
+    },
+    {
+      "name": "ep006-step-left",
+      "source": "public/sfx/shoe-left.wav",
+      "output": "public/sfx/prepared/ep006-step-left.wav",
+      "processing": "High-pass 130 Hz, low-pass 4500 Hz, 95 ms slapback echo, continuous sample-derived PCM timestamps; mix listening pending.",
+      "license": "CC0 1.0; rubberduck; see LICENSES.md"
+    },
+    {
+      "name": "ep006-step-right",
+      "source": "public/sfx/shoe-right.wav",
+      "output": "public/sfx/prepared/ep006-step-right.wav",
+      "processing": "High-pass 130 Hz, low-pass 4500 Hz, 95 ms slapback echo, continuous sample-derived PCM timestamps; mix listening pending.",
+      "license": "CC0 1.0; rubberduck; see LICENSES.md"
+    },
+    {
+      "name": "ep007-pa",
+      "source": "public/sfx/sources/ep007-pa-original.wav",
+      "output": "public/sfx/prepared/ep007-pa.wav",
+      "processing": "Google Cloud Gemini 3.8 Flash TTS Orus, formal Indonesian PA; toa-megaphone profile; repeated as identical file; listening pending",
+      "license": "Generated via Google Cloud; publication terms not independently verified; see LICENSES.md"
+    },
+    {
+      "name": "ep007-siren-loop",
+      "source": "public/sfx/sources/ep007-tinyworlds-storm-siren.ogg",
+      "output": "public/sfx/prepared/ep007-siren-loop.wav",
+      "processing": "CC0 recording: seconds 38?55, 200?1800 Hz filter and endpoint fades; continuous PCM; listening pending",
+      "license": "CC0 1.0; TinyWorlds; see LICENSES.md"
+    },
+    {
+      "name": "ep007-stone-scrape",
+      "source": "public/sfx/sources/ep007-scrape-original.wav",
+      "output": "public/sfx/prepared/ep007-stone-scrape.wav",
+      "processing": "scrape-3.wav from CC0 pack; highpass 150 Hz, lowpass 6000 Hz; continuous PCM; listening pending",
+      "license": "CC0 1.0; AntumDeluge; see LICENSES.md"
+    },
+    {
+      "name": "ep007-gate-open",
+      "source": "public/sfx/sources/ep007-metal-open-original.ogg",
+      "output": "public/sfx/prepared/ep007-gate-open.wav",
+      "processing": "metal_open_01.ogg from CC0 pack; highpass 90 Hz, lowpass 5000 Hz; continuous PCM; listening pending",
+      "license": "CC0 1.0; rubberduck; see LICENSES.md"
+    },
+    {
+      "name": "ep007-pa-mixready",
+      "source": "public/sfx/prepared/ep007-pa.wav",
+      "output": "public/sfx/prepared/ep007-pa-mixready.wav",
+      "processing": "Additional +22 dB sample-peak normalization for mix; listening pending",
+      "license": "Generated via Google Cloud; terms unverified"
+    },
+    {
+      "name": "ep007-siren-mixready",
+      "source": "public/sfx/prepared/ep007-siren-loop.wav",
+      "output": "public/sfx/prepared/ep007-siren-mixready.wav",
+      "processing": "Additional +23.1 dB sample-peak normalization for mix; listening pending",
+      "license": "CC0 1.0; TinyWorlds; see LICENSES.md"
     }
   ]
 }

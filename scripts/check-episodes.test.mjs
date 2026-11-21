@@ -47,14 +47,51 @@ const captions = [{startMs: 0, endMs: 1000, timestampMs: null, confidence: null,
 const clone = () => structuredClone(base);
 const validate = (manifest, cap = captions) => validateEpisode(manifest, cap, opts);
 
+test("studio v2 accepts a long decision-consequence pilot without changing the v1 ceiling", () => {
+  const pilot = clone();
+  pilot.pipelineVersion = 2;
+  pilot.duration = 120 * pilot.fps;
+  pilot.narration.duration = 115 * pilot.fps;
+  pilot.art.styleId = "urban-silhouette-noir";
+  for (const path of Object.keys(pilot.art.rasterAssets)) pilot.art.rasterAssets[path] = pilot.art.styleId;
+  pilot.scenes = pilot.scenes.slice(0, 20).map((scene, i) => ({
+    ...scene, at: i * 180, camera: {...camera, to: {...camera.to, scale: 1.05}},
+    editorial: {...scene.editorial, protagonist: i === 18 ? "reaction" : scene.editorial.protagonist},
+  }));
+  pilot.script = {
+    format: "decision-consequence", engine: "branch-rewind", wordCount: 300,
+    hook: {at: 0, line: "Jangan ikut barisan."},
+    ending: {at: 3060, twistAt: 3420, payoff: "Barisan itu menunggu."},
+  };
+  assert.deepEqual(validate(pilot).warnings, []);
+  assert.throws(() => validate({...pilot, pipelineVersion: 1}), /62–75 s/);
+  assert.throws(() => validate({...pilot, pipelineVersion: 3}), /invalid pipelineVersion/);
+  pilot.script.wordCount = 185;
+  assert.ok(validate(pilot).warnings.some(warning => /spoken word count/.test(warning)));
+});
+
 test("climax timing and optional image must be valid and fit the composition", () => {
   const a = clone();
   a.tensionRamp = {startSec: 65, endSec: 68, extraScale: .06, vignetteStrength: .3};
   a.finalJolt = {triggerSec: 68.5, durationSec: 1, blackoutSec: .25, zoomFrom: 1, zoomTo: 1.24, shakePx: 16, shakeDecayMs: 320, flashFrames: 2, rgbSplitPx: 6};
   assert.doesNotThrow(() => validate(a));
   a.finalJolt.blackoutSec = 1; assert.throws(() => validate(a), /clipped blackout/);
+  a.finalJolt.blackoutSec = .25; a.finalJolt.handoffSec = .5; assert.throws(() => validate(a), /clipped blackout/);
+  a.finalJolt.handoffSec = -.1; assert.throws(() => validate(a), /clipped blackout/);
+  a.finalJolt.handoffSec = .1; assert.doesNotThrow(() => validate(a)); delete a.finalJolt.handoffSec;
   a.finalJolt.blackoutSec = .25; a.finalJolt.joltImageSrc = `${assetDir}/missing.webp`; assert.throws(() => validate(a), /missing asset/);
   delete a.finalJolt.joltImageSrc; a.tensionRamp.endSec = a.tensionRamp.startSec; assert.throws(() => validate(a), /tensionRamp/);
+});
+
+test("a handoff light-up must fit its scene and use a valid brightness", () => {
+  const a = clone();
+  a.scenes[0].lightUp = {at: 5, duration: 5, minBrightness: .3};
+  assert.doesNotThrow(() => validate(a));
+  a.scenes[0].lightUp.minBrightness = -1; assert.throws(() => validate(a), /invalid lightUp/);
+  a.scenes[0].lightUp = {at: 5, duration: 5, minBrightness: .3, sweep: {fromX: .2, toX: 1.1, y: .5}}; assert.throws(() => validate(a), /invalid lightUp/);
+  a.scenes[0].lightUp = {at: 5, duration: 5, minBrightness: .3, offMask: {x: .5, y: .6, radiusX: .4, radiusY: .4}}; assert.doesNotThrow(() => validate(a));
+  a.scenes[0].lightUp.offMask.radiusX = 0; assert.throws(() => validate(a), /invalid lightUp/);
+  a.scenes[0].lightUp = {at: 68, duration: 5, minBrightness: .3}; assert.throws(() => validate(a), /invalid lightUp/);
 });
 
 test("valid v2 and the exact comparison baseline", () => {
@@ -252,6 +289,20 @@ test("arc metadata is optional and supports both ends of a seven-episode arc", (
   assert.throws(() => validate({...clone(), arcEpisode: 2}), /requires at least one characterSheets path/);
   assert.throws(() => validate({...clone(), arcEpisode: 2, characterSheets: [sheet, "assets/characters/missing.png"]}), /character sheet: missing asset/);
   assert.throws(() => validate({...clone(), arcEpisode: 2, characterSheets: ["../outside.png"]}), /character sheet: missing asset/);
+});
+
+test("Episode 005 keeps narrator and whisper in separately timed caption beats", () => {
+  const beats = JSON.parse(readFileSync("episodes/005-suara-dari-rumah-kosong/captions.json", "utf8"));
+  const text = beat => beat.words.map(word => word.text).join(" ");
+  const narrator = beats.find(beat => text(beat).includes("BERBISIK"));
+  const whisper = beats.find(beat => text(beat).includes("KALAU"));
+  assert.equal(text(narrator), "DIA BERBISIK");
+  assert.ok(narrator.endMs <= 68500, "narrator beat must end before the whisper clip");
+  assert.ok(whisper.startMs >= 68900, "whisper caption must not appear before its measured onset");
+  assert.equal(text(whisper), "KALAU KACA DIKETUK,");
+  const next = beats[beats.indexOf(whisper) + 1];
+  assert.equal(text(next), "KENAPA KAMU MASIH MENOLEH?");
+  assert.ok(next.startMs >= 70833 && next.endMs <= 72567);
 });
 
 test("pipeline state accepts documented statuses and rejects missing or invalid stages", () => {

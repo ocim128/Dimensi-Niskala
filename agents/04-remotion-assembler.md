@@ -23,6 +23,15 @@ Never regenerate the main narration TTS, rewrite scripts, invent or generate rep
 3. Target **−14.0 LUFS integrated** and **≤ −1.0 dBTP** for the complete mix; mix climax SFX peaks within **−8 to −2 dB relative to narration peaks**, then measure the finished result and true peak. Keep the impact crisp without clipping.
 4. Run `npm run check`, render the MP4 and export verification stills including 00:00.2, representative HUD/face frames and final jolt/black. Deliver manifest, captions, composition ID, render path, duration, mix measurements, rights and verification evidence.
 
+### Studio v2 assembly contract
+
+Implement these capabilities during Part 001 assembly. Record `pipelineVersion: 2` separately from `schemaVersion: 2`. Use `art.styleId: "urban-silhouette-noir"` and `script.format: "decision-consequence"` with `script.engine` set to `branch-rewind`, `earned-consequence` or `both`. Keep the frame-zero hook and timed ending/reveal. Record the spoken count in `script.wordCount`.
+
+- **Silhouette atmosphere.** Use subtle deterministic grain and practical light flicker on 5–9 s atmospheric holds.
+- **`branchRewind`.** Where scripted, use a 0.35–0.55 s scanline tear/static snap with reverse whoosh or tape-stop audio. Cut from the bad outcome to the established choice point.
+- **Optional 2.5D silhouette motion.** On 1–2 scripted hero beats, layer a moving silhouette such as a hand or shadow over the still.
+- **Picture and sound.** Check the Show-What-You-Say map against the cut before export. Keep each action or threat on screen during its narration. Mix multiple world-audio or dialogue beats and preserve 1–3 s dread silences. Use speaker labels or consistent colors for dialogue captions. Keep `tensionRamp`, `finalJolt`, −14.0 LUFS, ≤ −1.0 dBTP and the ±1-frame exported PCM sync check.
+
 ### Audio timestamps and exported jolt sync
 
 - Inspect narration and SFX timestamps before the final mix and mux. When an input has a PTS discontinuity, build a working PCM copy with continuous timestamps derived from its sample count. Preserve intentional pauses and cue placement on the composition timeline. Verify the normalized input before mixing.

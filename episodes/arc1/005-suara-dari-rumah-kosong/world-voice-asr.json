@@ -1,0 +1,64 @@
+{
+  "plea": {
+    "transcript": "Tolong buka pintunya.",
+    "words": [
+      {
+        "word": "Tolong",
+        "start": 0,
+        "end": 1.2
+      },
+      {
+        "word": "buka",
+        "start": 1.2,
+        "end": 2.3
+      },
+      {
+        "word": "pintunya.",
+        "start": 2.3,
+        "end": 3.32
+      }
+    ],
+    "durationSec": 4.005
+  },
+  "whisper": {
+    "transcript": "Kalau kaca diketuk, kenapa kamu masih menoleh?",
+    "words": [
+      {
+        "word": "Kalau",
+        "start": 0,
+        "end": 0.64
+      },
+      {
+        "word": "kaca",
+        "start": 0.64,
+        "end": 1.04
+      },
+      {
+        "word": "diketuk,",
+        "start": 1.04,
+        "end": 1.72
+      },
+      {
+        "word": "kenapa",
+        "start": 2.06,
+        "end": 2.66
+      },
+      {
+        "word": "kamu",
+        "start": 2.66,
+        "end": 2.96
+      },
+      {
+        "word": "masih",
+        "start": 2.96,
+        "end": 3.24
+      },
+      {
+        "word": "menoleh?",
+        "start": 3.24,
+        "end": 4.02
+      }
+    ],
+    "durationSec": 4.16
+  }
+}

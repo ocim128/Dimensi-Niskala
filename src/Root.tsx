@@ -15,6 +15,14 @@ import episode02 from "../episodes/002-kabur-dari-mobil/manifest.json";
 import episode02Captions from "../episodes/002-kabur-dari-mobil/captions.json";
 import episode03 from "../episodes/003-bel-minimarket/manifest.json";
 import episode03Captions from "../episodes/003-bel-minimarket/captions.json";
+import episode04 from "../episodes/004-alarm-di-tangga/manifest.json";
+import episode04Captions from "../episodes/004-alarm-di-tangga/captions.json";
+import episode05 from "../episodes/005-suara-dari-rumah-kosong/manifest.json";
+import episode05Captions from "../episodes/005-suara-dari-rumah-kosong/captions.json";
+import episode06 from "../episodes/006-gema-di-underpass/manifest.json";
+import episode06Captions from "../episodes/006-gema-di-underpass/captions.json";
+import episode07 from "../episodes/007-pos-evakuasi-sunyi/manifest.json";
+import episode07Captions from "../episodes/007-pos-evakuasi-sunyi/captions.json";
 
 // Use for new episode registrations: the source file, not a fixed cap or the
 // editable manifest's potentially stale narration.duration, sets the runtime.
@@ -40,7 +48,7 @@ export const audioFirstMetadata = (manifest: EpisodeManifest | EpisodeManifestV2
     audio.load();
   });
   return {
-    durationInFrames: Math.max(manifest.narration.at + Math.ceil((seconds + 1.2) * manifest.fps), manifest.finalJolt ? Math.round(manifest.finalJolt.triggerSec * manifest.fps) + Math.round(manifest.finalJolt.durationSec * manifest.fps) + Math.round(manifest.finalJolt.blackoutSec * manifest.fps) : 0),
+    durationInFrames: Math.max(manifest.narration.at + Math.ceil((seconds + 1.2) * manifest.fps), manifest.finalJolt ? Math.round(manifest.finalJolt.triggerSec * manifest.fps) + Math.round(manifest.finalJolt.durationSec * manifest.fps) + Math.round((manifest.finalJolt.handoffSec ?? 0) * manifest.fps) + Math.round(manifest.finalJolt.blackoutSec * manifest.fps) : 0),
     props: {...props, narrationDurationInFrames: Math.ceil(seconds * manifest.fps)},
   };
 };
@@ -60,6 +68,10 @@ const KemacetanAttempt05 = (options: PreviewOptions) => <Episode manifest={attem
 const KemacetanAttempt06 = (options: PreviewOptions) => <Episode manifest={attempt06 as EpisodeManifestV2} captions={attempt06Captions as CaptionBeat[]} {...options} />;
 const Arc01Episode02 = (options: PreviewOptions) => <Episode manifest={episode02 as EpisodeManifestV2} captions={episode02Captions as CaptionBeat[]} {...options} />;
 const Arc01Episode03 = (options: PreviewOptions) => <Episode manifest={episode03 as EpisodeManifestV2} captions={episode03Captions as CaptionBeat[]} {...options} />;
+const Arc01Episode04 = (options: PreviewOptions) => <Episode manifest={episode04 as EpisodeManifestV2} captions={episode04Captions as CaptionBeat[]} {...options} />;
+const Arc01Episode05 = (options: PreviewOptions) => <Episode manifest={episode05 as EpisodeManifestV2} captions={episode05Captions as CaptionBeat[]} {...options} />;
+const Arc01Episode06 = (options: PreviewOptions) => <Episode manifest={episode06 as EpisodeManifestV2} captions={episode06Captions as CaptionBeat[]} {...options} />;
+const Arc01Episode07 = (options: PreviewOptions) => <Episode manifest={episode07 as EpisodeManifestV2} captions={episode07Captions as CaptionBeat[]} {...options} />;
 
 export const Root = () => <><Composition
   id="KemacetanTerakhirMotionComic"
@@ -86,4 +98,8 @@ export const Root = () => <><Composition
 }} />
 <Composition id="Arc01Episode02" component={Arc01Episode02} width={1080} height={1920} fps={episode02.fps} durationInFrames={episode02.duration} calculateMetadata={audioFirstMetadata(episode02 as EpisodeManifestV2)} defaultProps={{showCaptions: true, soundOn: true, narrationOn: true, effectsOn: true}} />
 <Composition id="Arc01Episode03" component={Arc01Episode03} width={1080} height={1920} fps={episode03.fps} durationInFrames={episode03.duration} calculateMetadata={audioFirstMetadata(episode03 as EpisodeManifestV2)} defaultProps={{showCaptions: true, soundOn: true, narrationOn: true, effectsOn: true}} />
+<Composition id="Arc01Episode04" component={Arc01Episode04} width={1080} height={1920} fps={episode04.fps} durationInFrames={episode04.duration} calculateMetadata={audioFirstMetadata(episode04 as EpisodeManifestV2)} defaultProps={{showCaptions: true, soundOn: true, narrationOn: true, effectsOn: true}} />
+<Composition id="Arc01Episode05" component={Arc01Episode05} width={1080} height={1920} fps={episode05.fps} durationInFrames={episode05.duration} calculateMetadata={audioFirstMetadata(episode05 as EpisodeManifestV2)} defaultProps={{showCaptions: true, soundOn: true, narrationOn: true, effectsOn: true}} />
+<Composition id="Arc01Episode06" component={Arc01Episode06} width={1080} height={1920} fps={episode06.fps} durationInFrames={episode06.duration} calculateMetadata={audioFirstMetadata(episode06 as EpisodeManifestV2)} defaultProps={{showCaptions: true, soundOn: true, narrationOn: true, effectsOn: true}} />
+<Composition id="Arc01Episode07" component={Arc01Episode07} width={1080} height={1920} fps={episode07.fps} durationInFrames={episode07.duration} calculateMetadata={audioFirstMetadata(episode07 as EpisodeManifestV2)} defaultProps={{showCaptions: true, soundOn: true, narrationOn: true, effectsOn: true}} />
 </>;

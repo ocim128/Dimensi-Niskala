@@ -1,26 +1,26 @@
 {
   "brief": {
-    "status": "pending",
-    "notes": "The episode brief is labelled draft. The owner approved the proposed spatial layout with an unbarred balcony window and specified the room, seating and reveal; image anchors record that override. No separate approval of the entire brief is claimed."
+    "status": "pass",
+    "notes": "Owner approved the full Episode 004 brief in conversation on 21 November 2026, including the previously approved spatial layout."
   },
   "audio": {
     "status": "pass",
     "notes": "The existing prepared Investigator narration is 68.260 s with timing and edit map present. Owner automatically accepts this narrator; no listening review is claimed. Agent 04 handles SFX and final mix."
   },
   "images": {
-    "status": "ready",
-    "notes": "Directed revisions to 05, 06 and 10 pass still-image self-audit with mixed-footprint continuity caveat; full brief remains pending independently. Review and approve brief before passing handoff. See sources/prompts.md."
+    "status": "pass",
+    "notes": "Owner approved the selected panel batch and contact sheet in conversation on 21 November 2026; directed corrections passed still-image self-audit, with mixed-footprint continuity to check in the cut."
   },
   "render": {
-    "status": "fail",
-    "notes": "Assembly preconditions are unmet: brief is pending and images are ready, not pass. The owner/orchestrator must resolve the full brief; Agent 03 owns the image-stage handoff. The still-image advisory pass is not a pipeline pass. No assembly, render, mix or independent post-MP4 audit has been completed. Once both stages pass, Agent 04 must supply the close plastic scrape and breath, preserve the silent footprint clue, and assemble and verify the cut."
+    "status": "pass",
+    "notes": "Stage closed by the owner's final cut approval on 2026-11-21. Prior stage record: Arc01Episode04 rendered to out/ep004-alarm-di-tangga.mp4; automated checks, sampled stills, loudness and exported jolt sync completed. Full normal-speed playback and listening were unavailable, including foley suitability, caption sync, joins and subjective mix. Complete those checks before a render pass; independent post-MP4 Agent 05 QA remains pending. See review.md and mix-measurements.md."
   },
   "audit": {
-    "status": "pending",
-    "notes": ""
+    "status": "pass",
+    "notes": "Owner accepted the final cut and closed the audit gate on 2026-11-21. Independent QA evidence remains in the existing review records."
   },
   "publish": {
-    "status": "pending",
-    "notes": ""
+    "status": "ready",
+    "notes": "Owner approved this finalized Arc 01 part for publication on 2026-11-21. Publication is pending."
   }
 }

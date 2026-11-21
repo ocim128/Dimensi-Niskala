@@ -1,0 +1,1091 @@
+{
+  "schemaVersion": 2,
+  "id": "Arc01Episode06",
+  "arcEpisode": 6,
+  "characterSheets": [
+    "assets/characters/arc-01-driver/sheet.png",
+    "assets/characters/arc-01-passenger-teen/sheet.png"
+  ],
+  "fps": 30,
+  "duration": 2192,
+  "captions": "captions.json",
+  "openingTitle": "ATURAN TEROWONGAN GELAP",
+  "narration": {
+    "asset": "assets/006-gema-di-underpass/narration-prepared.wav",
+    "at": 0,
+    "duration": 2152,
+    "gain": 1
+  },
+  "effectBusGain": 1,
+  "beds": [
+    {
+      "name": "Tunnel ambience",
+      "asset": "sfx/prepared/night-air.wav",
+      "at": 0,
+      "duration": 2161,
+      "gain": 0.045,
+      "fadeIn": 12,
+      "fadeOut": 0,
+      "loop": true
+    },
+    {
+      "name": "Tension rise",
+      "asset": "sfx/prepared/climax-riser.wav",
+      "at": 2049,
+      "duration": 112,
+      "gain": 0.14,
+      "fadeIn": 12,
+      "fadeOut": 0
+    }
+  ],
+  "art": {
+    "styleId": "gritty-dark-anime-comic",
+    "rasterAssets": {
+      "assets/006-gema-di-underpass/panel-01.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-02.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-03.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-04.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-05.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-06.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-07.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-08.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-09.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-10.webp": "gritty-dark-anime-comic",
+      "assets/006-gema-di-underpass/panel-final-jolt.webp": "gritty-dark-anime-comic"
+    }
+  },
+  "script": {
+    "format": "survival-tactics-curiosity-gap",
+    "hook": {
+      "at": 0,
+      "line": "Kalau terowongan gelap, arahkan senter ke lantai."
+    },
+    "promise": {
+      "at": 90,
+      "line": "Peta menunjukkan stasiun di ujung terowongan.",
+      "openLoop": "Siapa lagi di sana?"
+    },
+    "tactics": {
+      "at": 360,
+      "steps": [
+        {
+          "number": 1,
+          "at": 463,
+          "line": "Sorot lantai dekat kakimu.",
+          "detail": "Lihat pijakan berikutnya."
+        },
+        {
+          "number": 2,
+          "at": 735,
+          "line": "Susuri dinding dan hitung tiang beton.",
+          "detail": "Ingat letak tangga darurat."
+        },
+        {
+          "number": 3,
+          "at": 1005,
+          "line": "Hitung langkahmu sendiri.",
+          "detail": "Dengarkan gema dan ritmenya."
+        }
+      ]
+    },
+    "ending": {
+      "at": 1650,
+      "twistAt": 1929,
+      "payoff": "Gadis mengetuk kaca stasiun."
+    }
+  },
+  "scenes": [
+    {
+      "id": "panel-01",
+      "name": "Mulut terowongan",
+      "at": 0,
+      "plate": "assets/006-gema-di-underpass/panel-01.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-entry",
+          "type": "timestampBadge",
+          "text": "HARI 4 • 22:00",
+          "at": 0,
+          "duration": 115,
+          "revealFrames": 10
+        },
+        {
+          "id": "rule",
+          "type": "tacticalCallout",
+          "text": "SENTER KE LANTAI",
+          "box": {
+            "x": 0.08,
+            "y": 0.24,
+            "width": 0.84,
+            "height": 0.08
+          },
+          "at": 5,
+          "duration": 85,
+          "revealFrames": 8
+        }
+      ],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memeriksa mulut terowongan"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 1",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 12,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 2",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 44,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 3",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 75,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 4",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 107,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-02",
+      "name": "Peta stasiun",
+      "at": 120,
+      "plate": "assets/006-gema-di-underpass/panel-02.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 257,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 321,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "entry-supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.53,
+            "y": 0.035,
+            "width": 0.45,
+            "height": 0.23
+          },
+          "at": 8,
+          "duration": 130,
+          "revealFrames": 12,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.15,
+              "display": "15%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0.03,
+              "display": "3%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "tactical-hud",
+        "evidence": "Ponsel menunjukkan peta"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 5",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 18,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 6",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 49,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 7",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 81,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 8",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 112,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 9",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 144,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 10",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 176,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 11",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 207,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 12",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 239,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 13",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 270,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 14",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 302,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 15",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 333,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-03",
+      "name": "Sorot lantai",
+      "at": 462,
+      "plate": "assets/006-gema-di-underpass/panel-03.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi menyusuri dinding"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 16",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 23,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 17",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 54,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 18",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 86,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 19",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 117,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 20",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 149,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 21",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 180,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-04",
+      "name": "Pijakan basah",
+      "at": 660,
+      "plate": "assets/006-gema-di-underpass/panel-04.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Kaki melangkah melewati tiang"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 22",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 14,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 23",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 45,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 24",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 77,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-05",
+      "name": "Tiang beton",
+      "at": 750,
+      "plate": "assets/006-gema-di-underpass/panel-05.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi memperlambat langkah"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 25",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 18,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 26",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 50,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 27",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 81,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 28",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 113,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-06",
+      "name": "Bayangan kedua",
+      "at": 882,
+      "plate": "assets/006-gema-di-underpass/panel-06.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Bayangan kedua di batas cahaya"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 29",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 12,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 30",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 44,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 31",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 75,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 32",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 107,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-07",
+      "name": "Lorong bertiang",
+      "at": 1005,
+      "plate": "assets/006-gema-di-underpass/panel-07.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 257,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 321,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Tangga darurat dan pintu stasiun"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 33",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 15,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 34",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 47,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 35",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 78,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 36",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 110,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 37",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 141,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 38",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 172,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 39",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 204,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 40",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 235,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 41",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 267,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 42",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 298,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 43",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 330,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 44",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 361,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-08",
+      "name": "Ponsel padam",
+      "at": 1395,
+      "plate": "assets/006-gema-di-underpass/panel-08.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "visible",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi dan ponsel padam"
+      },
+      "cues": [
+        {
+          "name": "Langkah pengemudi 45",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 3,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 46",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 34,
+          "duration": 22,
+          "gain": 0.14
+        },
+        {
+          "name": "Langkah pengemudi 47",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 66,
+          "duration": 22,
+          "gain": 0.14
+        }
+      ]
+    },
+    {
+      "id": "panel-09",
+      "name": "Mundur ke tangga",
+      "at": 1500,
+      "plate": "assets/006-gema-di-underpass/panel-09.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 257,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 321,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 385,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [
+        {
+          "id": "clock-exit",
+          "type": "timestampBadge",
+          "text": "HARI 4 • 22:12",
+          "at": 321,
+          "duration": 105,
+          "revealFrames": 10
+        },
+        {
+          "id": "exit-supplies",
+          "type": "supplyChecklist",
+          "box": {
+            "x": 0.04,
+            "y": 0.12,
+            "width": 0.4,
+            "height": 0.23
+          },
+          "at": 321,
+          "duration": 100,
+          "revealFrames": 12,
+          "items": [
+            {
+              "label": "AIR",
+              "value": 0.15,
+              "display": "15%"
+            },
+            {
+              "label": "BATERAI",
+              "value": 0,
+              "display": "0%"
+            }
+          ]
+        }
+      ],
+      "editorial": {
+        "protagonist": "reaction",
+        "purpose": "character-emotion",
+        "evidence": "Pengemudi bereaksi dan mundur di dekat tangga"
+      },
+      "cues": [
+        {
+          "name": "Langkah kedua 1",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 90,
+          "duration": 22,
+          "gain": 0.15
+        },
+        {
+          "name": "Langkah kedua 2",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 123,
+          "duration": 22,
+          "gain": 0.15
+        },
+        {
+          "name": "Langkah kedua 3",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 156,
+          "duration": 22,
+          "gain": 0.15
+        },
+        {
+          "name": "Langkah kedua 4",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 189,
+          "duration": 22,
+          "gain": 0.15
+        },
+        {
+          "name": "Langkah kedua 5",
+          "asset": "sfx/prepared/ep006-step-right.wav",
+          "at": 222,
+          "duration": 22,
+          "gain": 0.15
+        },
+        {
+          "name": "Langkah kedua 6",
+          "asset": "sfx/prepared/ep006-step-left.wav",
+          "at": 255,
+          "duration": 22,
+          "gain": 0.15
+        }
+      ]
+    },
+    {
+      "id": "panel-10",
+      "name": "Gadis di kaca",
+      "at": 1929,
+      "plate": "assets/006-gema-di-underpass/panel-10.webp",
+      "camera": {
+        "from": {
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        "to": {
+          "scale": 1.065,
+          "x": 0,
+          "y": -8
+        }
+      },
+      "reframes": [
+        {
+          "at": 65,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        },
+        {
+          "at": 129,
+          "duration": 12,
+          "scale": 1.02,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "at": 193,
+          "duration": 12,
+          "scale": 1.08,
+          "x": -16,
+          "y": 8
+        }
+      ],
+      "characters": {
+        "mode": "baked"
+      },
+      "hud": [],
+      "editorial": {
+        "protagonist": "absent",
+        "purpose": "threat-proximity",
+        "evidence": "Gadis menyentuh kaca stasiun"
+      },
+      "cues": [
+        {
+          "name": "Ketuk kaca 1",
+          "asset": "sfx/prepared/glass-knock.wav",
+          "at": 224,
+          "duration": 2,
+          "gain": 0.32
+        },
+        {
+          "name": "Ketuk kaca 2",
+          "asset": "sfx/prepared/glass-knock.wav",
+          "at": 227,
+          "duration": 2,
+          "gain": 0.32
+        },
+        {
+          "name": "Ketuk kaca 3",
+          "asset": "sfx/prepared/glass-knock.wav",
+          "at": 230,
+          "duration": 2,
+          "gain": 0.32
+        },
+        {
+          "name": "Jolt stinger",
+          "asset": "sfx/prepared/climax-stinger.wav",
+          "at": 236,
+          "duration": 21,
+          "gain": 0.5
+        }
+      ]
+    }
+  ],
+  "tensionRamp": {
+    "startSec": 68.3,
+    "endSec": 72.033333,
+    "extraScale": 0.07,
+    "vignetteStrength": 0.48
+  },
+  "finalJolt": {
+    "triggerSec": 72.166667,
+    "durationSec": 0.7,
+    "joltImageSrc": "assets/006-gema-di-underpass/panel-final-jolt.webp",
+    "zoomFrom": 1,
+    "zoomTo": 1.18,
+    "shakePx": 16,
+    "shakeDecayMs": 320,
+    "flashFrames": 2,
+    "rgbSplitPx": 8,
+    "blackoutSec": 0.2
+  }
+}
